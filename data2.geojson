@@ -1,705 +1,145 @@
 {
   "type": "FeatureCollection",
   "features": [
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-58.232, -32.487] },
-      "properties": { "Cliente": "GRUPO EL FRESNO S.R.L.", "Cuit": "33716673699", "Provincia": "ENTRE RIOS", "Localidad": "URUGUAY", "Base": "Picadores", "marker-color": "#3498db" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-60.517, -31.744] },
-      "properties": { "Cliente": "KRANEVITTER MARIO OMAR Y KRANEVITTER ALBERTO RAUL SOCIEDAD DE HECHO", "Cuit": "30711314217", "Provincia": "ENTRE RIOS", "Localidad": "PARANA", "Base": "Picadores", "marker-color": "#3498db" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-55.745, -27.458] },
-      "properties": { "Cliente": "GOTTE DARIO FABIAN", "Cuit": "20177311635", "Provincia": "MISIONES", "Localidad": "CANDELARIA", "Base": "Picadores", "marker-color": "#3498db" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-60.638, -32.066] },
-      "properties": { "Cliente": "FELLER SRL", "Cuit": "30597372147", "Provincia": "ENTRE RIOS", "Localidad": "DIAMANTE", "Base": "Picadores", "marker-color": "#3498db" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-60.6381, -32.0661] },
-      "properties": { "Cliente": "LA AGRICOLA REGIONAL COOPERATIVA LIMITADA...", "Cuit": "33504047089", "Provincia": "ENTRE RIOS", "Localidad": "DIAMANTE", "Base": "Picadores", "marker-color": "#3498db" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-59.788, -32.393] },
-      "properties": { "Cliente": "ROTHEX S.A.", "Cuit": "30710945914", "Provincia": "ENTRE RIOS", "Localidad": "NOGOYA", "Base": "Picadores", "marker-color": "#3498db" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-59.689, -32.306] },
-      "properties": { "Cliente": "ROTH S.R.L.", "Cuit": "30555181619", "Provincia": "ENTRE RIOS", "Localidad": "TALA", "Base": "Picadores", "marker-color": "#3498db" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-60.103, -34.063] },
-      "properties": { "Cliente": "JEICA S A", "Cuit": "30666814637", "Provincia": "BUENOS AIRES", "Localidad": "ARRECIFES", "Base": "Picadores", "marker-color": "#3498db" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-60.1031, -34.0631] },
-      "properties": { "Cliente": "KRUGUER SA", "Cuit": "30655583110", "Provincia": "BUENOS AIRES", "Localidad": "ARRECIFES", "Base": "Picadores", "marker-color": "#3498db" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-59.508, -33.811] },
-      "properties": { "Cliente": "AVICOLA BEROCH- PETTINARO S.R.L.", "Cuit": "30709302996", "Provincia": "BUENOS AIRES", "Localidad": "BARADERO", "Base": "CAPIA", "marker-color": "#e67e22" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-58.224, -35.168] },
-      "properties": { "Cliente": "AVICOLA BRANDSEN S A", "Cuit": "30639436671", "Provincia": "BUENOS AIRES", "Localidad": "CORONEL BRANDSEN", "Base": "CAPIA", "marker-color": "#e67e22" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-58.2241, -35.1681] },
-      "properties": { "Cliente": "OVOBRAND SA", "Cuit": "33710607279", "Provincia": "BUENOS AIRES", "Localidad": "CORONEL BRANDSEN", "Base": "CAPIA", "marker-color": "#e67e22" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-58.763, -35.051] },
-      "properties": { "Cliente": "AVICOLA SANTA CLARA S.A.", "Cuit": "30716895188", "Provincia": "BUENOS AIRES", "Localidad": "CAÑUELAS", "Base": "CAPIA", "marker-color": "#e67e22" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-59.149, -34.296] },
-      "properties": { "Cliente": "NUTRICAR AVES S.R.L.", "Cuit": "30715610953", "Provincia": "BUENOS AIRES", "Localidad": "EXALTACION DE LA CRUZ", "Base": "CAPIA", "marker-color": "#e67e22" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-59.1491, -34.2961] },
-      "properties": { "Cliente": "TANACORSA SA", "Cuit": "30708292598", "Provincia": "BUENOS AIRES", "Localidad": "EXALTACION DE LA CRUZ", "Base": "Picadores", "marker-color": "#3498db" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-60.016, -34.895] },
-      "properties": { "Cliente": "OLACLARA SOCIEDAD ANONIMA", "Cuit": "30709966622", "Provincia": "BUENOS AIRES", "Localidad": "CHIVILCOY", "Base": "Picadores", "marker-color": "#3498db" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-61.307, -34.303] },
-      "properties": { "Cliente": "MERCOU S R L", "Cuit": "30633903952", "Provincia": "BUENOS AIRES", "Localidad": "GENERAL ARENALES", "Base": "Picadores", "marker-color": "#3498db" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-61.3071, -34.3031] },
-      "properties": { "Cliente": "ZALEI AGROPECUARIA S.A.", "Cuit": "30710842724", "Provincia": "BUENOS AIRES", "Localidad": "GENERAL ARENALES", "Base": "Picadores", "marker-color": "#3498db" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-58.494, -35.769] },
-      "properties": { "Cliente": "AVICOLA LA SORPRESA S R L", "Cuit": "30591685224", "Provincia": "BUENOS AIRES", "Localidad": "GENERAL BELGRANO", "Base": "CAPIA", "marker-color": "#e67e22" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-58.947, -34.925] },
-      "properties": { "Cliente": "COOPERATIVA DE TRABAJO AVICOLA CIUDAD DEL ARBOL...", "Cuit": "33715132139", "Provincia": "BUENOS AIRES", "Localidad": "GENERAL LAS HERAS", "Base": "CAPIA", "marker-color": "#e67e22" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-58.9471, -34.9251] },
-      "properties": { "Cliente": "CORPORACION AVICOLA S A", "Cuit": "30707945105", "Provincia": "BUENOS AIRES", "Localidad": "GENERAL LAS HERAS", "Base": "CAPIA", "marker-color": "#e67e22" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-58.9472, -34.9252] },
-      "properties": { "Cliente": "LENTINO ENRIQUE FELIPE", "Cuit": "20123617488", "Provincia": "BUENOS AIRES", "Localidad": "GENERAL LAS HERAS", "Base": "Picadores", "marker-color": "#3498db" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-58.01, -35.573] },
-      "properties": { "Cliente": "LEZAVI S.A.", "Cuit": "30711384622", "Provincia": "BUENOS AIRES", "Localidad": "CHASCOMUS", "Base": "Picadores", "marker-color": "#3498db" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-59.105, -34.57] },
-      "properties": { "Cliente": "DE LAFUENTE ARIEL ANDRES", "Cuit": "23258369319", "Provincia": "BUENOS AIRES", "Localidad": "LUJAN", "Base": "Picadores", "marker-color": "#3498db" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-59.1051, -34.5701] },
-      "properties": { "Cliente": "SALVATORE MARIANA", "Cuit": "27037541376", "Provincia": "BUENOS AIRES", "Localidad": "LUJAN", "Base": "Picadores", "marker-color": "#3498db" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-59.43, -34.651] },
-      "properties": { "Cliente": "FALENA S.A.", "Cuit": "30711082774", "Provincia": "BUENOS AIRES", "Localidad": "MERCEDES", "Base": "Picadores", "marker-color": "#3498db" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-59.4301, -34.6511] },
-      "properties": { "Cliente": "IRUANYAK S R L", "Cuit": "30708554266", "Provincia": "BUENOS AIRES", "Localidad": "MERCEDES", "Base": "Picadores", "marker-color": "#3498db" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-59.4302, -34.6512] },
-      "properties": { "Cliente": "OVODEC S.A.", "Cuit": "33710217209", "Provincia": "BUENOS AIRES", "Localidad": "MERCEDES", "Base": "CAPIA", "marker-color": "#e67e22" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-59.4303, -34.6513] },
-      "properties": { "Cliente": "PRODUCTORES AVICOLAS SAN MARTIN S.A.", "Cuit": "30709415790", "Provincia": "BUENOS AIRES", "Localidad": "MERCEDES", "Base": "CAPIA", "marker-color": "#e67e22" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-60.573, -33.891] },
-      "properties": { "Cliente": "AVIALES DE JELICICH ESTEBAN Y COURETOT ALEJANDRO S. A.", "Cuit": "30666770400", "Provincia": "BUENOS AIRES", "Localidad": "PERGAMINO", "Base": "CAPIA", "marker-color": "#e67e22" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-60.5731, -33.8911] },
-      "properties": { "Cliente": "AVICOLA LA NORMA S.A.", "Cuit": "30707574794", "Provincia": "BUENOS AIRES", "Localidad": "PERGAMINO", "Base": "CAPIA", "marker-color": "#e67e22" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-60.5732, -33.8912] },
-      "properties": { "Cliente": "AVICOLA TELOS S A", "Cuit": "30561063180", "Provincia": "BUENOS AIRES", "Localidad": "PERGAMINO", "Base": "CAPIA", "marker-color": "#e67e22" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-59.781, -35.637] },
-      "properties": { "Cliente": "CABAÑA BARHY SOCIEDAD DE RESPONSABILIDAD LIMITADA", "Cuit": "30647242746", "Provincia": "BUENOS AIRES", "Localidad": "SALADILLO", "Base": "CAPIA", "marker-color": "#e67e22" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-59.662, -33.679] },
-      "properties": { "Cliente": "ESPINOSA CRISTIAN", "Cuit": "20164961193", "Provincia": "BUENOS AIRES", "Localidad": "SAN PEDRO", "Base": "Picadores", "marker-color": "#3498db" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-59.689, -34.77] },
-      "properties": { "Cliente": "AVIBER S R L", "Cuit": "30650849805", "Provincia": "BUENOS AIRES", "Localidad": "SUIPACHA", "Base": "CAPIA", "marker-color": "#e67e22" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-59.6891, -34.7701] },
-      "properties": { "Cliente": "CABA#A CAMILA S A", "Cuit": "30688716930", "Provincia": "BUENOS AIRES", "Localidad": "SUIPACHA", "Base": "CAPIA", "marker-color": "#e67e22" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-59.028, -34.099] },
-      "properties": { "Cliente": "FERNANDES DE MOURA HNOS S.H.", "Cuit": "30568581969", "Provincia": "BUENOS AIRES", "Localidad": "ZARATE", "Base": "Picadores", "marker-color": "#3498db" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-59.858, -36.777] },
-      "properties": { "Cliente": "PYG SA", "Cuit": "30664054635", "Provincia": "BUENOS AIRES", "Localidad": "AZUL", "Base": "Picadores", "marker-color": "#3498db" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-62.272, -38.719] },
-      "properties": { "Cliente": "GRANJA SAN MIGUEL S.A.", "Cuit": "30560296408", "Provincia": "BUENOS AIRES", "Localidad": "BAHIA BLANCA", "Base": "CAPIA", "marker-color": "#e67e22" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-63.05, -37.16] },
-      "properties": { "Cliente": "GRANJA AVICOLA DON ANDRES S.A.", "Cuit": "30714121614", "Provincia": "BUENOS AIRES", "Localidad": "ADOLFO ALSINA", "Base": "CAPIA", "marker-color": "#e67e22" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-57.839, -38.268] },
-      "properties": { "Cliente": "FLORES SANTIAGO", "Cuit": "20337285695", "Provincia": "BUENOS AIRES", "Localidad": "GENERAL ALVARADO", "Base": "Picadores", "marker-color": "#3498db" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-60.099, -38.031] },
-      "properties": { "Cliente": "ALDASORO MARIA LUZ", "Cuit": "27179405992", "Provincia": "BUENOS AIRES", "Localidad": "GONZALES CHAVES", "Base": "Picadores", "marker-color": "#3498db" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-60.0991, -38.0311] },
-      "properties": { "Cliente": "AMBROSIUS CHRISTIAN FEDERICO", "Cuit": "23244171419", "Provincia": "BUENOS AIRES", "Localidad": "GONZALES CHAVES", "Base": "Picadores", "marker-color": "#3498db" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-60.0992, -38.0312] },
-      "properties": { "Cliente": "CASOMAR AVICOLA S.R.L.", "Cuit": "30717133494", "Provincia": "BUENOS AIRES", "Localidad": "GONZALES CHAVES", "Base": "CAPIA", "marker-color": "#e67e22" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-60.0993, -38.0313] },
-      "properties": { "Cliente": "JOSE LUIS COLONNA Y MARIO ANGEL COLONNA", "Cuit": "30667479076", "Provincia": "BUENOS AIRES", "Localidad": "GONZALES CHAVES", "Base": "Picadores", "marker-color": "#3498db" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-58.781, -38.156] },
-      "properties": { "Cliente": "PARDINI JAVIER ANGEL", "Cuit": "20166752672", "Provincia": "BUENOS AIRES", "Localidad": "LOBERIA", "Base": "Picadores", "marker-color": "#3498db" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-58.7811, -38.1561] },
-      "properties": { "Cliente": "RODRIGUEZ HUGO IGNACIO", "Cuit": "20316823484", "Provincia": "BUENOS AIRES", "Localidad": "LOBERIA", "Base": "Picadores", "marker-color": "#3498db" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-57.422, -37.742] },
-      "properties": { "Cliente": "AVICOLA VIVORATA S.R.L", "Cuit": "30712634703", "Provincia": "BUENOS AIRES", "Localidad": "MAR CHIQUITA", "Base": "CAPIA", "marker-color": "#e67e22" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-57.4221, -37.7421] },
-      "properties": { "Cliente": "ONETO OSVALDO RAUL", "Cuit": "20123229100", "Provincia": "BUENOS AIRES", "Localidad": "MAR CHIQUITA", "Base": "Picadores", "marker-color": "#3498db" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-57.4222, -37.7422] },
-      "properties": { "Cliente": "SUCESION DE CAVIA EMILIO", "Cuit": "20053329943", "Provincia": "BUENOS AIRES", "Localidad": "MAR CHIQUITA", "Base": "Picadores", "marker-color": "#3498db" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-57.556, -38.0] },
-      "properties": { "Cliente": "AGROAVIR MDP S.A.", "Cuit": "30716938596", "Provincia": "BUENOS AIRES", "Localidad": "GENERAL PUEYRREDON", "Base": "Picadores", "marker-color": "#3498db" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-57.5561, -38.0001] },
-      "properties": { "Cliente": "AGROPECUARIA EL CANDIL SOCIEDAD ANONIMA", "Cuit": "30644808021", "Provincia": "BUENOS AIRES", "Localidad": "GENERAL PUEYRREDON", "Base": "Picadores", "marker-color": "#3498db" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-57.5562, -38.0002] },
-      "properties": { "Cliente": "BUSTAMANTE JORGE JAVIER", "Cuit": "20370582921", "Provincia": "BUENOS AIRES", "Localidad": "GENERAL PUEYRREDON", "Base": "Picadores", "marker-color": "#3498db" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-57.5563, -38.0003] },
-      "properties": { "Cliente": "GRANJA AL SALAM S.R.L.", "Cuit": "30707007814", "Provincia": "BUENOS AIRES", "Localidad": "GENERAL PUEYRREDON", "Base": "CAPIA", "marker-color": "#e67e22" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-57.5564, -38.0004] },
-      "properties": { "Cliente": "LOVRINICH OMAR ERNESTO", "Cuit": "20105281715", "Provincia": "BUENOS AIRES", "Localidad": "GENERAL PUEYRREDON", "Base": "Picadores", "marker-color": "#3498db" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-57.5565, -38.0005] },
-      "properties": { "Cliente": "NAVARRO FERNANDO RUBEN Y NAVARRO NORBERTO", "Cuit": "30591811106", "Provincia": "BUENOS AIRES", "Localidad": "GENERAL PUEYRREDON", "Base": "Picadores", "marker-color": "#3498db" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-57.5566, -38.0006] },
-      "properties": { "Cliente": "SCORNAIENCHI MARIA FERNANDA", "Cuit": "27167297671", "Provincia": "BUENOS AIRES", "Localidad": "GENERAL PUEYRREDON", "Base": "Picadores", "marker-color": "#3498db" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-57.5567, -38.0007] },
-      "properties": { "Cliente": "SUCESION DE FICICCHIA ALDO FRANCISCO", "Cuit": "20053038450", "Provincia": "BUENOS AIRES", "Localidad": "GENERAL PUEYRREDON", "Base": "Picadores", "marker-color": "#3498db" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-62.703, -39.268] },
-      "properties": { "Cliente": "EL PEREGRINO S R L", "Cuit": "30681176108", "Provincia": "BUENOS AIRES", "Localidad": "VILLARINO", "Base": "Picadores", "marker-color": "#3498db" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-58.739, -38.555] },
-      "properties": { "Cliente": "JENSEN JURADO S.R.L", "Cuit": "30708538783", "Provincia": "BUENOS AIRES", "Localidad": "NECOCHEA", "Base": "Picadores", "marker-color": "#3498db" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-58.7391, -38.5551] },
-      "properties": { "Cliente": "LA ALIANZA AVICOLA", "Cuit": "30716819813", "Provincia": "BUENOS AIRES", "Localidad": "NECOCHEA", "Base": "CAPIA", "marker-color": "#e67e22" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-58.7392, -38.5552] },
-      "properties": { "Cliente": "PRODUCTORA AVICOLA NECOCHENSE S.A.", "Cuit": "30715045784", "Provincia": "BUENOS AIRES", "Localidad": "NECOCHEA", "Base": "CAPIA", "marker-color": "#e67e22" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-60.323, -36.893] },
-      "properties": { "Cliente": "SUCESORES DE RAUL OMAR IGUIÑIZ SOSIEDAD ANONIMA.", "Cuit": "30709202894", "Provincia": "BUENOS AIRES", "Localidad": "OLAVARRIA", "Base": "Picadores", "marker-color": "#3498db" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-59.613, -38.346] },
-      "properties": { "Cliente": "VAN STRIEN CORNELIO", "Cuit": "20102166966", "Provincia": "BUENOS AIRES", "Localidad": "SAN CAYETANO", "Base": "Picadores", "marker-color": "#3498db" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-62.084, -31.423] },
-      "properties": { "Cliente": "PAEMPO S.A.", "Cuit": "30714086657", "Provincia": "CORDOBA", "Localidad": "SAN JUSTO", "Base": "Picadores", "marker-color": "#3498db" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-62.996, -32.806] },
-      "properties": { "Cliente": "RIBBA JOSE MARIA", "Cuit": "20273572792", "Provincia": "CORDOBA", "Localidad": "UNION", "Base": "Picadores", "marker-color": "#3498db" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-63.65, -33.127] },
-      "properties": { "Cliente": "PONEDORAS SUR S A", "Cuit": "30562754705", "Provincia": "CORDOBA", "Localidad": "JUAREZ CELMAN", "Base": "CAPIA", "marker-color": "#e67e22" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-64.114, -32.175] },
-      "properties": { "Cliente": "GLOBOAVES ARGENTINA S A", "Cuit": "33696227719", "Provincia": "CORDOBA", "Localidad": "TERCERO ARRIBA", "Base": "CAPIA", "marker-color": "#e67e22" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-58.83, -27.469] },
-      "properties": { "Cliente": "AVICOLA SANTA ANA SOCIEDAD ANONIMA", "Cuit": "30606304230", "Provincia": "CORRIENTES", "Localidad": "CAPITAL", "Base": "CAPIA", "marker-color": "#e67e22" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-68.778, -32.889] },
-      "properties": { "Cliente": "AVICOLA SANTA ROSA DE JUAN JOSE MAROTO Y MARIO ALBERTO MAROT", "Cuit": "30714296198", "Provincia": "MENDOZA", "Localidad": "GUAYMALLEN", "Base": "CAPIA", "marker-color": "#e67e22" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-68.78, -32.977] },
-      "properties": { "Cliente": "BRUGNOLI ORLANDO", "Cuit": "20112865382", "Provincia": "MENDOZA", "Localidad": "MAIPU", "Base": "Picadores", "marker-color": "#3498db" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-68.7781, -32.8891] },
-      "properties": { "Cliente": "CLAUDIO JAVIER CATALA, RAUL GONZALO CATALA Y MARCELO GABRIEL", "Cuit": "30708469471", "Provincia": "MENDOZA", "Localidad": "GUAYMALLEN", "Base": "Picadores", "marker-color": "#3498db" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-68.828, -32.852] },
-      "properties": { "Cliente": "CRUZ MARTINEZ LUIS FELIPE", "Cuit": "20925025039", "Provincia": "MENDOZA", "Localidad": "LAS HERAS", "Base": "Picadores", "marker-color": "#3498db" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-68.7801, -32.9771] },
-      "properties": { "Cliente": "H3 SOCIEDAD ANONIMA", "Cuit": "30711973296", "Provincia": "MENDOZA", "Localidad": "MAIPU", "Base": "Picadores", "marker-color": "#3498db" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-68.472, -33.132] },
-      "properties": { "Cliente": "F.E.D. SOCIEDAD ANONIMA", "Cuit": "30708144122", "Provincia": "MENDOZA", "Localidad": "JUNIN", "Base": "Picadores", "marker-color": "#3498db" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-68.586, -31.683] },
-      "properties": { "Cliente": "ADRA SRL", "Cuit": "30715550128", "Provincia": "SAN JUAN", "Localidad": "POCITO", "Base": "Picadores", "marker-color": "#3498db" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-68.494, -31.539] },
-      "properties": { "Cliente": "BUBICA MARIO", "Cuit": "23184984539", "Provincia": "SAN JUAN", "Localidad": "SANTA LUCIA", "Base": "Picadores", "marker-color": "#3498db" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-68.533, -31.483] },
-      "properties": { "Cliente": "ESTABLECIMIENTO AVICOLA ALICIA S.R.L.", "Cuit": "30610710766", "Provincia": "SAN JUAN", "Localidad": "CHIMBAS", "Base": "CAPIA", "marker-color": "#e67e22" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-68.5861, -31.6831] },
-      "properties": { "Cliente": "OLYGA S.A.", "Cuit": "30710831471", "Provincia": "SAN JUAN", "Localidad": "POCITO", "Base": "Picadores", "marker-color": "#3498db" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-68.466, -31.2] },
-      "properties": { "Cliente": "PIE DE PALO S R L", "Cuit": "30648006426", "Provincia": "SAN JUAN", "Localidad": "ANGACO", "Base": "Picadores", "marker-color": "#3498db" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-58.139, -32.223] },
-      "properties": { "Cliente": "C Y B S.A", "Cuit": "30709850411", "Provincia": "ENTRE RIOS", "Localidad": "COLON", "Base": "Picadores", "marker-color": "#3498db" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-60.6382, -32.0662] },
-      "properties": { "Cliente": "GRANJA DON PEPE S.R.L.", "Cuit": "30714530395", "Provincia": "ENTRE RIOS", "Localidad": "DIAMANTE", "Base": "CAPIA", "marker-color": "#e67e22" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-59.645, -30.741] },
-      "properties": { "Cliente": "COBB ARGENTINA S A", "Cuit": "30670824949", "Provincia": "ENTRE RIOS", "Localidad": "LA PAZ", "Base": "Picadores", "marker-color": "#3498db" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-59.7881, -32.3931] },
-      "properties": { "Cliente": "BERNHARDT ANIBAL MARCELINO", "Cuit": "20204459135", "Provincia": "ENTRE RIOS", "Localidad": "NOGOYA", "Base": "Picadores", "marker-color": "#3498db" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-59.7882, -32.3932] },
-      "properties": { "Cliente": "CABAÑA AVICOLA MODELO S.R.L.", "Cuit": "30711222703", "Provincia": "ENTRE RIOS", "Localidad": "NOGOYA", "Base": "CAPIA", "marker-color": "#e67e22" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-59.7883, -32.3933] },
-      "properties": { "Cliente": "PROAVI S.R.L.", "Cuit": "30708607467", "Provincia": "ENTRE RIOS", "Localidad": "NOGOYA", "Base": "CAPIA", "marker-color": "#e67e22" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-60.5171, -31.7441] },
-      "properties": { "Cliente": "AVICOLA 38 S.R.L.", "Cuit": "30710531648", "Provincia": "ENTRE RIOS", "Localidad": "PARANA", "Base": "CAPIA", "marker-color": "#e67e22" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-60.5172, -31.7442] },
-      "properties": { "Cliente": "BASSI MARIANO FRANCISCO", "Cuit": "20248996200", "Provincia": "ENTRE RIOS", "Localidad": "PARANA", "Base": "Picadores", "marker-color": "#3498db" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-60.5173, -31.7443] },
-      "properties": { "Cliente": "FEIL ROSA LILIANA", "Cuit": "27162009686", "Provincia": "ENTRE RIOS", "Localidad": "PARANA", "Base": "Picadores", "marker-color": "#3498db" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-60.5174, -31.7444] },
-      "properties": { "Cliente": "FERRICHER SUSANA ADELA", "Cuit": "27060558340", "Provincia": "ENTRE RIOS", "Localidad": "PARANA", "Base": "Picadores", "marker-color": "#3498db" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-60.5175, -31.7445] },
-      "properties": { "Cliente": "KEMERER DANIEL GERMAN...", "Cuit": "30709297208", "Provincia": "ENTRE RIOS", "Localidad": "PARANA", "Base": "Picadores", "marker-color": "#3498db" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-60.5176, -31.7446] },
-      "properties": { "Cliente": "KRIGER HNOS. S.R.L.", "Cuit": "30709776939", "Provincia": "ENTRE RIOS", "Localidad": "PARANA", "Base": "Picadores", "marker-color": "#3498db" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-60.5177, -31.7447] },
-      "properties": { "Cliente": "REGNER DARIO RUBEN", "Cuit": "23230001529", "Provincia": "ENTRE RIOS", "Localidad": "PARANA", "Base": "Picadores", "marker-color": "#3498db" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-60.5178, -31.7448] },
-      "properties": { "Cliente": "TRES ROBLES S.R.L.", "Cuit": "30711724717", "Provincia": "ENTRE RIOS", "Localidad": "PARANA", "Base": "Picadores", "marker-color": "#3498db" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-60.5179, -31.7449] },
-      "properties": { "Cliente": "WAGNER JUAN CRUZ", "Cuit": "20311793110", "Provincia": "ENTRE RIOS", "Localidad": "PARANA", "Base": "Picadores", "marker-color": "#3498db" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-60.154, -32.618] },
-      "properties": { "Cliente": "CURMONA MIGUEL", "Cuit": "20077051571", "Provincia": "ENTRE RIOS", "Localidad": "VICTORIA", "Base": "Picadores", "marker-color": "#3498db" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-60.1541, -32.6181] },
-      "properties": { "Cliente": "DON BERNARDO S.A.", "Cuit": "33690462619", "Provincia": "ENTRE RIOS", "Localidad": "VICTORIA", "Base": "Picadores", "marker-color": "#3498db" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-60.1542, -32.6182] },
-      "properties": { "Cliente": "MAIOCCO CEREALES S.A.", "Cuit": "30709243752", "Provincia": "ENTRE RIOS", "Localidad": "VICTORIA", "Base": "Picadores", "marker-color": "#3498db" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-58.277, -34.806] },
-      "properties": { "Cliente": "AVICOLA LA CAPILLA SA", "Cuit": "30707818898", "Provincia": "BUENOS AIRES", "Localidad": "FLORENCIO VARELA", "Base": "CAPIA", "marker-color": "#e67e22" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-58.952, -34.608] },
-      "properties": { "Cliente": "SA AVICOLA ENTRE RIOS", "Cuit": "30584727493", "Provincia": "BUENOS AIRES", "Localidad": "GENERAL RODRIGUEZ", "Base": "CAPIA", "marker-color": "#e67e22" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-57.954, -34.921] },
-      "properties": { "Cliente": "ARGENOVO SRL", "Cuit": "30709731609", "Provincia": "BUENOS AIRES", "Localidad": "LA PLATA", "Base": "Picadores", "marker-color": "#3498db" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-57.9541, -34.9211] },
-      "properties": { "Cliente": "AVICOLA AMANECER SRL", "Cuit": "30708481137", "Provincia": "BUENOS AIRES", "Localidad": "LA PLATA", "Base": "CAPIA", "marker-color": "#e67e22" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-57.9542, -34.9212] },
-      "properties": { "Cliente": "AVICOLA EL TRIANGULO SA", "Cuit": "33708756119", "Provincia": "BUENOS AIRES", "Localidad": "LA PLATA", "Base": "CAPIA", "marker-color": "#e67e22" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-57.9543, -34.9213] },
-      "properties": { "Cliente": "AVICOLA LOS MANANTIALES SRL", "Cuit": "30709089346", "Provincia": "BUENOS AIRES", "Localidad": "LA PLATA", "Base": "CAPIA", "marker-color": "#e67e22" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-57.9544, -34.9214] },
-      "properties": { "Cliente": "BENOVO S.A.", "Cuit": "30716892448", "Provincia": "BUENOS AIRES", "Localidad": "LA PLATA", "Base": "Picadores", "marker-color": "#3498db" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-57.9545, -34.9215] },
-      "properties": { "Cliente": "GRANJA DEL SUR SRL", "Cuit": "30710097336", "Provincia": "BUENOS AIRES", "Localidad": "LA PLATA", "Base": "CAPIA", "marker-color": "#e67e22" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-57.9546, -34.9216] },
-      "properties": { "Cliente": "VADALA MATIAS EZEQUIEL", "Cuit": "20338748621", "Provincia": "BUENOS AIRES", "Localidad": "LA PLATA", "Base": "Picadores", "marker-color": "#3498db" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-58.84, -34.78] },
-      "properties": { "Cliente": "ALFONZO GRACIELA NOEMI", "Cuit": "27161061862", "Provincia": "BUENOS AIRES", "Localidad": "MARCOS PAZ", "Base": "Picadores", "marker-color": "#3498db" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-58.8401, -34.7801] },
-      "properties": { "Cliente": "LA NUEVA COLONIA S. R. L.", "Cuit": "30717695840", "Provincia": "BUENOS AIRES", "Localidad": "MARCOS PAZ", "Base": "Picadores", "marker-color": "#3498db" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-58.8402, -34.7802] },
-      "properties": { "Cliente": "LINARES DIEGO MARTIN", "Cuit": "20274413221", "Provincia": "BUENOS AIRES", "Localidad": "MARCOS PAZ", "Base": "Picadores", "marker-color": "#3498db" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-58.8403, -34.7803] },
-      "properties": { "Cliente": "NEW TRADERS CORP S A", "Cuit": "30635898212", "Provincia": "BUENOS AIRES", "Localidad": "MARCOS PAZ", "Base": "Picadores", "marker-color": "#3498db" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-58.8404, -34.7804] },
-      "properties": { "Cliente": "RUFFO ARIEL HUMBERTO", "Cuit": "23204705739", "Provincia": "BUENOS AIRES", "Localidad": "MARCOS PAZ", "Base": "Picadores", "marker-color": "#3498db" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-65.533, -25.1] },
-      "properties": { "Cliente": "BAISSAC GUSTAVO DANIEL", "Cuit": "20175818341", "Provincia": "SALTA", "Localidad": "CHICOANA", "Base": "Picadores", "marker-color": "#3498db" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-64.603, -26.113] },
-      "properties": { "Cliente": "TUCUMAN AVICOLA S R L", "Cuit": "30685733087", "Provincia": "SALTA", "Localidad": "CANDELARIA", "Base": "CAPIA", "marker-color": "#e67e22" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-65.487, -24.897] },
-      "properties": { "Cliente": "AGROPECUARIA LA CAUTIVA S.R.L.", "Cuit": "30714566896", "Provincia": "SALTA", "Localidad": "CERRILLOS", "Base": "Picadores", "marker-color": "#3498db" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-65.581, -24.98] },
-      "properties": { "Cliente": "ALEJANDRO MANUEL COLQUI Y LEONARDO ANIBAL COLQUI S.H.", "Cuit": "30714666785", "Provincia": "SALTA", "Localidad": "ROSARIO DE LERMA", "Base": "Picadores", "marker-color": "#3498db" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-65.4871, -24.8971] },
-      "properties": { "Cliente": "ASTILLAS DE PLATA S.A.", "Cuit": "30707061533", "Provincia": "SALTA", "Localidad": "CERRILLOS", "Base": "Picadores", "marker-color": "#3498db" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-65.5811, -24.9801] },
-      "properties": { "Cliente": "BARRIOS ORTEGA JOSE LUIS", "Cuit": "20302214469", "Provincia": "SALTA", "Localidad": "ROSARIO DE LERMA", "Base": "Picadores", "marker-color": "#3498db" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-65.4872, -24.8972] },
-      "properties": { "Cliente": "FERMOSELLE SERGIO GERARDO", "Cuit": "20293371262", "Provincia": "SALTA", "Localidad": "CERRILLOS", "Base": "Picadores", "marker-color": "#3498db" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-65.5812, -24.9802] },
-      "properties": { "Cliente": "GARCIA MARIA MARTA, GARCIA FRANCISCO MATIAS, GARCIA MARIANA", "Cuit": "33711239559", "Provincia": "SALTA", "Localidad": "ROSARIO DE LERMA", "Base": "Picadores", "marker-color": "#3498db" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-65.391, -24.595] },
-      "properties": { "Cliente": "GRANJA AVICOLA LA CAÑADA S.A", "Cuit": "33708378769", "Provincia": "SALTA", "Localidad": "LA CALDERA", "Base": "CAPIA", "marker-color": "#e67e22" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-65.4873, -24.8973] },
-      "properties": { "Cliente": "HUEVOS K S.R.L.", "Cuit": "30711575185", "Provincia": "SALTA", "Localidad": "CERRILLOS", "Base": "CAPIA", "marker-color": "#e67e22" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-65.05, -24.67] },
-      "properties": { "Cliente": "PRODUCTOS ALIMENTICIOS SOFIA S.A", "Cuit": "30710345992", "Provincia": "SALTA", "Localidad": "GENERAL GUEMES", "Base": "Picadores", "marker-color": "#3498db" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-65.5813, -24.9803] },
-      "properties": { "Cliente": "SAYUS JAVIER ALEJANDRO", "Cuit": "20175805258", "Provincia": "SALTA", "Localidad": "ROSARIO DE LERMA", "Base": "Picadores", "marker-color": "#3498db" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-65.211, -24.256] },
-      "properties": { "Cliente": "LA MAGALI S.R.L.", "Cuit": "30708889632", "Provincia": "JUJUY", "Localidad": "PALPALA", "Base": "Picadores", "marker-color": "#3498db" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-65.573, -27.77] },
-      "properties": { "Cliente": "MESTRE JUAN JOSE", "Cuit": "20133248782", "Provincia": "TUCUMAN", "Localidad": "LA COCHA", "Base": "Picadores", "marker-color": "#3498db" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-64.8, -26.5] },
-      "properties": { "Cliente": "GUYRA S.A.S", "Cuit": "30717074544", "Provincia": "TUCUMAN", "Localidad": "BURRUYACU", "Base": "Picadores", "marker-color": "#3498db" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-64.8001, -26.5001] },
-      "properties": { "Cliente": "LA GRANJA DOÑA ISABEL S.R.L.", "Cuit": "33711343429", "Provincia": "TUCUMAN", "Localidad": "BURRUYACU", "Base": "CAPIA", "marker-color": "#e67e22" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-65.25, -27.2] },
-      "properties": { "Cliente": "LABORDA DELACROIX RODRIGO MARTIN", "Cuit": "20253807319", "Provincia": "TUCUMAN", "Localidad": "LEALES", "Base": "Picadores", "marker-color": "#3498db" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-65.2501, -27.2001] },
-      "properties": { "Cliente": "RAMOS NORA ALICIA", "Cuit": "27149669545", "Provincia": "TUCUMAN", "Localidad": "LEALES", "Base": "Picadores", "marker-color": "#3498db" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-67.583, -39.033] },
-      "properties": { "Cliente": "ORELL MARIANO TOMAS", "Cuit": "20308428835", "Provincia": "RIO NEGRO", "Localidad": "GENERAL ROCA", "Base": "Picadores", "marker-color": "#3498db" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-67.5831, -39.0331] },
-      "properties": { "Cliente": "PALOMEQUE MARTIN ANDRES", "Cuit": "20303951890", "Provincia": "RIO NEGRO", "Localidad": "GENERAL ROCA", "Base": "Picadores", "marker-color": "#3498db" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-68.059, -38.951] },
-      "properties": { "Cliente": "SUCESION DE TIEPPO ISIDORO CARLOS", "Cuit": "20051763379", "Provincia": "NEUQUEN", "Localidad": "CONFLUENCIA", "Base": "Picadores", "marker-color": "#3498db" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-65.492, -43.289] },
-      "properties": { "Cliente": "CARPAT S.A.", "Cuit": "30707411089", "Provincia": "CHUBUT", "Localidad": "GAIMAN", "Base": "Picadores", "marker-color": "#3498db" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-61.306, -32.944] },
-      "properties": { "Cliente": "DAINESI, EDUARDO L., ADRIAN H. Y CHRISTIAN, D. S.R.L.", "Cuit": "30621924423", "Provincia": "SANTA FE", "Localidad": "IRIONDO", "Base": "Picadores", "marker-color": "#3498db" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-61.168, -33.047] },
-      "properties": { "Cliente": "AVICOLA LOS MOLINOS SRL.", "Cuit": "30710102933", "Provincia": "SANTA FE", "Localidad": "CASEROS", "Base": "CAPIA", "marker-color": "#e67e22" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-60.731, -31.744] },
-      "properties": { "Cliente": "AVICOLA SAN AGUSTIN S.R.L.", "Cuit": "33714442339", "Provincia": "SANTA FE", "Localidad": "LAS COLONIAS", "Base": "CAPIA", "marker-color": "#e67e22" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-60.7311, -31.7441] },
-      "properties": { "Cliente": "COMPAÑIA AVICOLA SA", "Cuit": "30686966417", "Provincia": "SANTA FE", "Localidad": "LAS COLONIAS", "Base": "CAPIA", "marker-color": "#e67e22" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-61.5, -31.25] },
-      "properties": { "Cliente": "LUCERNA YARI NAHUEL", "Cuit": "20242366167", "Provincia": "SANTA FE", "Localidad": "CASTELLANOS", "Base": "Picadores", "marker-color": "#3498db" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-60.7, -31.633] },
-      "properties": { "Cliente": "SCHNEIDER DANIEL ATILIO", "Cuit": "20131184264", "Provincia": "SANTA FE", "Localidad": "LA CAPITAL", "Base": "Picadores", "marker-color": "#3498db" }
-    }
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-58.232, -32.487] }, "properties": { "Cliente": "GRUPO EL FRESNO S.R.L.", "Cuit": "33716673699", "Provincia": "ENTRE RIOS", "Localidad": "URUGUAY", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-60.517, -31.744] }, "properties": { "Cliente": "KRANEVITTER MARIO OMAR Y KRANEVITTER ALBERTO RAUL...", "Cuit": "30711314217", "Provincia": "ENTRE RIOS", "Localidad": "PARANA", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-55.745, -27.458] }, "properties": { "Cliente": "GOTTE DARIO FABIAN", "Cuit": "20177311635", "Provincia": "MISIONES", "Localidad": "CANDELARIA", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-60.638, -32.066] }, "properties": { "Cliente": "FELLER SRL", "Cuit": "30597372147", "Provincia": "ENTRE RIOS", "Localidad": "DIAMANTE", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-60.6381, -32.0661] }, "properties": { "Cliente": "LA AGRICOLA REGIONAL COOPERATIVA LIMITADA...", "Cuit": "33504047089", "Provincia": "ENTRE RIOS", "Localidad": "DIAMANTE", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-59.788, -32.393] }, "properties": { "Cliente": "ROTHEX S.A.", "Cuit": "30710945914", "Provincia": "ENTRE RIOS", "Localidad": "NOGOYA", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-59.689, -32.306] }, "properties": { "Cliente": "ROTH S.R.L.", "Cuit": "30555181619", "Provincia": "ENTRE RIOS", "Localidad": "TALA", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-60.103, -34.063] }, "properties": { "Cliente": "JEICA S A", "Cuit": "30666814637", "Provincia": "BUENOS AIRES", "Localidad": "ARRECIFES", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-60.1031, -34.0631] }, "properties": { "Cliente": "KRUGUER SA", "Cuit": "30655583110", "Provincia": "BUENOS AIRES", "Localidad": "ARRECIFES", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-59.508, -33.811] }, "properties": { "Cliente": "AVICOLA BEROCH- PETTINARO S.R.L.", "Cuit": "30709302996", "Provincia": "BUENOS AIRES", "Localidad": "BARADERO", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-58.224, -35.168] }, "properties": { "Cliente": "AVICOLA BRANDSEN S A", "Cuit": "30639436671", "Provincia": "BUENOS AIRES", "Localidad": "CORONEL BRANDSEN", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-58.2241, -35.1681] }, "properties": { "Cliente": "OVOBRAND SA", "Cuit": "33710607279", "Provincia": "BUENOS AIRES", "Localidad": "CORONEL BRANDSEN", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-58.763, -35.051] }, "properties": { "Cliente": "AVICOLA SANTA CLARA S.A.", "Cuit": "30716895188", "Provincia": "BUENOS AIRES", "Localidad": "CAÑUELAS", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-59.149, -34.296] }, "properties": { "Cliente": "NUTRICAR AVES S.R.L.", "Cuit": "30715610953", "Provincia": "BUENOS AIRES", "Localidad": "EXALTACION DE LA CRUZ", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-59.1491, -34.2961] }, "properties": { "Cliente": "TANACORSA SA", "Cuit": "30708292598", "Provincia": "BUENOS AIRES", "Localidad": "EXALTACION DE LA CRUZ", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-60.016, -34.895] }, "properties": { "Cliente": "OLACLARA SOCIEDAD ANONIMA", "Cuit": "30709966622", "Provincia": "BUENOS AIRES", "Localidad": "CHIVILCOY", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-61.307, -34.303] }, "properties": { "Cliente": "MERCOU S R L", "Cuit": "30633903952", "Provincia": "BUENOS AIRES", "Localidad": "GENERAL ARENALES", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-61.3071, -34.3031] }, "properties": { "Cliente": "ZALEI AGROPECUARIA S.A.", "Cuit": "30710842724", "Provincia": "BUENOS AIRES", "Localidad": "GENERAL ARENALES", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-58.494, -35.769] }, "properties": { "Cliente": "AVICOLA LA SORPRESA S R L", "Cuit": "30591685224", "Provincia": "BUENOS AIRES", "Localidad": "GENERAL BELGRANO", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-58.947, -34.925] }, "properties": { "Cliente": "COOPERATIVA DE TRABAJO AVICOLA CIUDAD DEL ARBOL...", "Cuit": "33715132139", "Provincia": "BUENOS AIRES", "Localidad": "GENERAL LAS HERAS", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-58.9471, -34.9251] }, "properties": { "Cliente": "CORPORACION AVICOLA S A", "Cuit": "30707945105", "Provincia": "BUENOS AIRES", "Localidad": "GENERAL LAS HERAS", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-58.9472, -34.9252] }, "properties": { "Cliente": "LENTINO ENRIQUE FELIPE", "Cuit": "20123617488", "Provincia": "BUENOS AIRES", "Localidad": "GENERAL LAS HERAS", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-58.01, -35.573] }, "properties": { "Cliente": "LEZAVI S.A.", "Cuit": "30711384622", "Provincia": "BUENOS AIRES", "Localidad": "CHASCOMUS", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-59.105, -34.57] }, "properties": { "Cliente": "DE LAFUENTE ARIEL ANDRES", "Cuit": "23258369319", "Provincia": "BUENOS AIRES", "Localidad": "LUJAN", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-59.1051, -34.5701] }, "properties": { "Cliente": "SALVATORE MARIANA", "Cuit": "27037541376", "Provincia": "BUENOS AIRES", "Localidad": "LUJAN", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-59.43, -34.651] }, "properties": { "Cliente": "FALENA S.A.", "Cuit": "30711082774", "Provincia": "BUENOS AIRES", "Localidad": "MERCEDES", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-59.4301, -34.6511] }, "properties": { "Cliente": "IRUANYAK S R L", "Cuit": "30708554266", "Provincia": "BUENOS AIRES", "Localidad": "MERCEDES", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-59.4302, -34.6512] }, "properties": { "Cliente": "OVODEC S.A.", "Cuit": "33710217209", "Provincia": "BUENOS AIRES", "Localidad": "MERCEDES", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-59.4303, -34.6513] }, "properties": { "Cliente": "PRODUCTORES AVICOLAS SAN MARTIN S.A.", "Cuit": "30709415790", "Provincia": "BUENOS AIRES", "Localidad": "MERCEDES", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-60.573, -33.891] }, "properties": { "Cliente": "AVIALES DE JELICICH ESTEBAN Y COURETOT ALEJANDRO S. A.", "Cuit": "30666770400", "Provincia": "BUENOS AIRES", "Localidad": "PERGAMINO", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-60.5731, -33.8911] }, "properties": { "Cliente": "AVICOLA LA NORMA S.A.", "Cuit": "30707574794", "Provincia": "BUENOS AIRES", "Localidad": "PERGAMINO", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-60.5732, -33.8912] }, "properties": { "Cliente": "AVICOLA TELOS S A", "Cuit": "30561063180", "Provincia": "BUENOS AIRES", "Localidad": "PERGAMINO", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-59.781, -35.637] }, "properties": { "Cliente": "CABAÑA BARHY S.R.L.", "Cuit": "30647242746", "Provincia": "BUENOS AIRES", "Localidad": "SALADILLO", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-59.662, -33.679] }, "properties": { "Cliente": "ESPINOSA CRISTIAN", "Cuit": "20164961193", "Provincia": "BUENOS AIRES", "Localidad": "SAN PEDRO", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-59.689, -34.77] }, "properties": { "Cliente": "AVIBER S R L", "Cuit": "30650849805", "Provincia": "BUENOS AIRES", "Localidad": "SUIPACHA", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-59.6891, -34.7701] }, "properties": { "Cliente": "CABA#A CAMILA S A", "Cuit": "30688716930", "Provincia": "BUENOS AIRES", "Localidad": "SUIPACHA", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-59.028, -34.099] }, "properties": { "Cliente": "FERNANDES DE MOURA HNOS S.H.", "Cuit": "30568581969", "Provincia": "BUENOS AIRES", "Localidad": "ZARATE", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-59.858, -36.777] }, "properties": { "Cliente": "PYG SA", "Cuit": "30664054635", "Provincia": "BUENOS AIRES", "Localidad": "AZUL", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-62.272, -38.719] }, "properties": { "Cliente": "GRANJA SAN MIGUEL S.A.", "Cuit": "30560296408", "Provincia": "BUENOS AIRES", "Localidad": "BAHIA BLANCA", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-63.05, -37.16] }, "properties": { "Cliente": "GRANJA AVICOLA DON ANDRES S.A.", "Cuit": "30714121614", "Provincia": "BUENOS AIRES", "Localidad": "ADOLFO ALSINA", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-57.839, -38.268] }, "properties": { "Cliente": "FLORES SANTIAGO", "Cuit": "20337285695", "Provincia": "BUENOS AIRES", "Localidad": "GENERAL ALVARADO", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-60.099, -38.031] }, "properties": { "Cliente": "ALDASORO MARIA LUZ", "Cuit": "27179405992", "Provincia": "BUENOS AIRES", "Localidad": "GONZALES CHAVES", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-60.0991, -38.0311] }, "properties": { "Cliente": "AMBROSIUS CHRISTIAN FEDERICO", "Cuit": "23244171419", "Provincia": "BUENOS AIRES", "Localidad": "GONZALES CHAVES", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-60.0992, -38.0312] }, "properties": { "Cliente": "CASOMAR AVICOLA S.R.L.", "Cuit": "30717133494", "Provincia": "BUENOS AIRES", "Localidad": "GONZALES CHAVES", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-60.0993, -38.0313] }, "properties": { "Cliente": "JOSE LUIS COLONNA Y MARIO ANGEL COLONNA", "Cuit": "30667479076", "Provincia": "BUENOS AIRES", "Localidad": "GONZALES CHAVES", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-58.781, -38.156] }, "properties": { "Cliente": "PARDINI JAVIER ANGEL", "Cuit": "20166752672", "Provincia": "BUENOS AIRES", "Localidad": "LOBERIA", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-58.7811, -38.1561] }, "properties": { "Cliente": "RODRIGUEZ HUGO IGNACIO", "Cuit": "20316823484", "Provincia": "BUENOS AIRES", "Localidad": "LOBERIA", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-57.422, -37.742] }, "properties": { "Cliente": "AVICOLA VIVORATA S.R.L", "Cuit": "30712634703", "Provincia": "BUENOS AIRES", "Localidad": "MAR CHIQUITA", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-57.4221, -37.7421] }, "properties": { "Cliente": "ONETO OSVALDO RAUL", "Cuit": "20123229100", "Provincia": "BUENOS AIRES", "Localidad": "MAR CHIQUITA", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-57.4222, -37.7422] }, "properties": { "Cliente": "SUCESION DE CAVIA EMILIO", "Cuit": "20053329943", "Provincia": "BUENOS AIRES", "Localidad": "MAR CHIQUITA", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-57.556, -38.0] }, "properties": { "Cliente": "AGROAVIR MDP S.A.", "Cuit": "30716938596", "Provincia": "BUENOS AIRES", "Localidad": "GENERAL PUEYRREDON", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-57.5561, -38.0001] }, "properties": { "Cliente": "AGROPECUARIA EL CANDIL SOCIEDAD ANONIMA", "Cuit": "30644808021", "Provincia": "BUENOS AIRES", "Localidad": "GENERAL PUEYRREDON", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-57.5562, -38.0002] }, "properties": { "Cliente": "BUSTAMANTE JORGE JAVIER", "Cuit": "20370582921", "Provincia": "BUENOS AIRES", "Localidad": "GENERAL PUEYRREDON", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-57.5563, -38.0003] }, "properties": { "Cliente": "GRANJA AL SALAM S.R.L.", "Cuit": "30707007814", "Provincia": "BUENOS AIRES", "Localidad": "GENERAL PUEYRREDON", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-57.5564, -38.0004] }, "properties": { "Cliente": "LOVRINICH OMAR ERNESTO", "Cuit": "20105281715", "Provincia": "BUENOS AIRES", "Localidad": "GENERAL PUEYRREDON", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-57.5565, -38.0005] }, "properties": { "Cliente": "NAVARRO FERNANDO RUBEN Y NAVARRO NORBERTO", "Cuit": "30591811106", "Provincia": "BUENOS AIRES", "Localidad": "GENERAL PUEYRREDON", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-57.5566, -38.0006] }, "properties": { "Cliente": "SCORNAIENCHI MARIA FERNANDA", "Cuit": "27167297671", "Provincia": "BUENOS AIRES", "Localidad": "GENERAL PUEYRREDON", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-57.5567, -38.0007] }, "properties": { "Cliente": "SUCESION DE FICICCHIA ALDO FRANCISCO", "Cuit": "20053038450", "Provincia": "BUENOS AIRES", "Localidad": "GENERAL PUEYRREDON", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-62.703, -39.268] }, "properties": { "Cliente": "EL PEREGRINO S R L", "Cuit": "30681176108", "Provincia": "BUENOS AIRES", "Localidad": "VILLARINO", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-58.739, -38.555] }, "properties": { "Cliente": "JENSEN JURADO S.R.L", "Cuit": "30708538783", "Provincia": "BUENOS AIRES", "Localidad": "NECOCHEA", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-58.7391, -38.5551] }, "properties": { "Cliente": "LA ALIANZA AVICOLA", "Cuit": "30716819813", "Provincia": "BUENOS AIRES", "Localidad": "NECOCHEA", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-58.7392, -38.5552] }, "properties": { "Cliente": "PRODUCTORA AVICOLA NECOCHENSE S.A.", "Cuit": "30715045784", "Provincia": "BUENOS AIRES", "Localidad": "NECOCHEA", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-60.323, -36.893] }, "properties": { "Cliente": "SUCESORES DE RAUL OMAR IGUIÑIZ SOCIEDAD ANONIMA.", "Cuit": "30709202894", "Provincia": "BUENOS AIRES", "Localidad": "OLAVARRIA", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-59.613, -38.346] }, "properties": { "Cliente": "VAN STRIEN CORNELIO", "Cuit": "20102166966", "Provincia": "BUENOS AIRES", "Localidad": "SAN CAYETANO", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-62.084, -31.423] }, "properties": { "Cliente": "PAEMPO S.A.", "Cuit": "30714086657", "Provincia": "CORDOBA", "Localidad": "SAN JUSTO", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-62.996, -32.806] }, "properties": { "Cliente": "RIBBA JOSE MARIA", "Cuit": "20273572792", "Provincia": "CORDOBA", "Localidad": "UNION", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-63.65, -33.127] }, "properties": { "Cliente": "PONEDORAS SUR S A", "Cuit": "30562754705", "Provincia": "CORDOBA", "Localidad": "JUAREZ CELMAN", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-64.114, -32.175] }, "properties": { "Cliente": "GLOBOAVES ARGENTINA S A", "Cuit": "33696227719", "Provincia": "CORDOBA", "Localidad": "TERCERO ARRIBA", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-58.83, -27.469] }, "properties": { "Cliente": "AVICOLA SANTA ANA SOCIEDAD ANONIMA", "Cuit": "30606304230", "Provincia": "CORRIENTES", "Localidad": "CAPITAL", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-68.778, -32.889] }, "properties": { "Cliente": "AVICOLA SANTA ROSA DE JUAN JOSE MAROTO Y MARIO ALBERTO MAROT", "Cuit": "30714296198", "Provincia": "MENDOZA", "Localidad": "GUAYMALLEN", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-68.78, -32.977] }, "properties": { "Cliente": "BRUGNOLI ORLANDO", "Cuit": "20112865382", "Provincia": "MENDOZA", "Localidad": "MAIPU", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-68.7781, -32.8891] }, "properties": { "Cliente": "CLAUDIO JAVIER CATALA, RAUL GONZALO CATALA Y MARCELO GABRIEL", "Cuit": "30708469471", "Provincia": "MENDOZA", "Localidad": "GUAYMALLEN", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-68.828, -32.852] }, "properties": { "Cliente": "CRUZ MARTINEZ LUIS FELIPE", "Cuit": "20925025039", "Provincia": "MENDOZA", "Localidad": "LAS HERAS", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-68.7801, -32.9771] }, "properties": { "Cliente": "H3 SOCIEDAD ANONIMA", "Cuit": "30711973296", "Provincia": "MENDOZA", "Localidad": "MAIPU", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-68.472, -33.132] }, "properties": { "Cliente": "F.E.D. SOCIEDAD ANONIMA", "Cuit": "30708144122", "Provincia": "MENDOZA", "Localidad": "JUNIN", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-68.586, -31.683] }, "properties": { "Cliente": "ADRA SRL", "Cuit": "30715550128", "Provincia": "SAN JUAN", "Localidad": "POCITO", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-68.494, -31.539] }, "properties": { "Cliente": "BUBICA MARIO", "Cuit": "23184984539", "Provincia": "SAN JUAN", "Localidad": "SANTA LUCIA", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-68.533, -31.483] }, "properties": { "Cliente": "ESTABLECIMIENTO AVICOLA ALICIA S.R.L.", "Cuit": "30610710766", "Provincia": "SAN JUAN", "Localidad": "CHIMBAS", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-68.5861, -31.6831] }, "properties": { "Cliente": "OLYGA S.A.", "Cuit": "30710831471", "Provincia": "SAN JUAN", "Localidad": "POCITO", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-68.466, -31.2] }, "properties": { "Cliente": "PIE DE PALO S R L", "Cuit": "30648006426", "Provincia": "SAN JUAN", "Localidad": "ANGACO", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-58.139, -32.223] }, "properties": { "Cliente": "C Y B S.A", "Cuit": "30709850411", "Provincia": "ENTRE RIOS", "Localidad": "COLON", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-60.6382, -32.0662] }, "properties": { "Cliente": "GRANJA DON PEPE S.R.L.", "Cuit": "30714530395", "Provincia": "ENTRE RIOS", "Localidad": "DIAMANTE", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-59.645, -30.741] }, "properties": { "Cliente": "COBB ARGENTINA S A", "Cuit": "30670824949", "Provincia": "ENTRE RIOS", "Localidad": "LA PAZ", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-59.7881, -32.3931] }, "properties": { "Cliente": "BERNHARDT ANIBAL MARCELINO", "Cuit": "20204459135", "Provincia": "ENTRE RIOS", "Localidad": "NOGOYA", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-59.7882, -32.3932] }, "properties": { "Cliente": "CABAÑA AVICOLA MODELO S.R.L.", "Cuit": "30711222703", "Provincia": "ENTRE RIOS", "Localidad": "NOGOYA", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-59.7883, -32.3933] }, "properties": { "Cliente": "PROAVI S.R.L.", "Cuit": "30708607467", "Provincia": "ENTRE RIOS", "Localidad": "NOGOYA", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-60.5171, -31.7441] }, "properties": { "Cliente": "AVICOLA 38 S.R.L.", "Cuit": "30710531648", "Provincia": "ENTRE RIOS", "Localidad": "PARANA", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-60.5172, -31.7442] }, "properties": { "Cliente": "BASSI MARIANO FRANCISCO", "Cuit": "20248996200", "Provincia": "ENTRE RIOS", "Localidad": "PARANA", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-60.5173, -31.7443] }, "properties": { "Cliente": "FEIL ROSA LILIANA", "Cuit": "27162009686", "Provincia": "ENTRE RIOS", "Localidad": "PARANA", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-60.5174, -31.7444] }, "properties": { "Cliente": "FERRICHER SUSANA ADELA", "Cuit": "27060558340", "Provincia": "ENTRE RIOS", "Localidad": "PARANA", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-60.5175, -31.7445] }, "properties": { "Cliente": "KEMERER DANIEL GERMAN, KEMERER CLAUDIO MARTIN Y KEMERER ELBIO HERNAN SOCIEDAD DE HECHO", "Cuit": "30709297208", "Provincia": "ENTRE RIOS", "Localidad": "PARANA", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-60.5176, -31.7446] }, "properties": { "Cliente": "KRIGER HNOS. S.R.L.", "Cuit": "30709776939", "Provincia": "ENTRE RIOS", "Localidad": "PARANA", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-60.5177, -31.7447] }, "properties": { "Cliente": "REGNER DARIO RUBEN", "Cuit": "23230001529", "Provincia": "ENTRE RIOS", "Localidad": "PARANA", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-60.5178, -31.7448] }, "properties": { "Cliente": "TRES ROBLES S.R.L.", "Cuit": "30711724717", "Provincia": "ENTRE RIOS", "Localidad": "PARANA", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-60.5179, -31.7449] }, "properties": { "Cliente": "WAGNER JUAN CRUZ", "Cuit": "20311793110", "Provincia": "ENTRE RIOS", "Localidad": "PARANA", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-60.154, -32.618] }, "properties": { "Cliente": "CURMONA MIGUEL", "Cuit": "20077051571", "Provincia": "ENTRE RIOS", "Localidad": "VICTORIA", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-60.1541, -32.6181] }, "properties": { "Cliente": "DON BERNARDO S.A.", "Cuit": "33690462619", "Provincia": "ENTRE RIOS", "Localidad": "VICTORIA", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-60.1542, -32.6182] }, "properties": { "Cliente": "MAIOCCO CEREALES S.A.", "Cuit": "30709243752", "Provincia": "ENTRE RIOS", "Localidad": "VICTORIA", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-58.277, -34.806] }, "properties": { "Cliente": "AVICOLA LA CAPILLA SA", "Cuit": "30707818898", "Provincia": "BUENOS AIRES", "Localidad": "FLORENCIO VARELA", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-58.952, -34.608] }, "properties": { "Cliente": "SA AVICOLA ENTRE RIOS", "Cuit": "30584727493", "Provincia": "BUENOS AIRES", "Localidad": "GENERAL RODRIGUEZ", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-57.954, -34.921] }, "properties": { "Cliente": "ARGENOVO SRL", "Cuit": "30709731609", "Provincia": "BUENOS AIRES", "Localidad": "LA PLATA", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-57.9541, -34.9211] }, "properties": { "Cliente": "AVICOLA AMANECER SRL", "Cuit": "30708481137", "Provincia": "BUENOS AIRES", "Localidad": "LA PLATA", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-57.9542, -34.9212] }, "properties": { "Cliente": "AVICOLA EL TRIANGULO SA", "Cuit": "33708756119", "Provincia": "BUENOS AIRES", "Localidad": "LA PLATA", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-57.9543, -34.9213] }, "properties": { "Cliente": "AVICOLA LOS MANANTIALES SRL", "Cuit": "30709089346", "Provincia": "BUENOS AIRES", "Localidad": "LA PLATA", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-57.9544, -34.9214] }, "properties": { "Cliente": "BENOVO S.A.", "Cuit": "30716892448", "Provincia": "BUENOS AIRES", "Localidad": "LA PLATA", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-57.9545, -34.9215] }, "properties": { "Cliente": "GRANJA DEL SUR SRL", "Cuit": "30710097336", "Provincia": "BUENOS AIRES", "Localidad": "LA PLATA", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-57.9546, -34.9216] }, "properties": { "Cliente": "VADALA MATIAS EZEQUIEL", "Cuit": "20338748621", "Provincia": "BUENOS AIRES", "Localidad": "LA PLATA", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-58.84, -34.78] }, "properties": { "Cliente": "ALFONZO GRACIELA NOEMI", "Cuit": "27161061862", "Provincia": "BUENOS AIRES", "Localidad": "MARCOS PAZ", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-58.8401, -34.7801] }, "properties": { "Cliente": "LA NUEVA COLONIA S. R. L.", "Cuit": "30717695840", "Provincia": "BUENOS AIRES", "Localidad": "MARCOS PAZ", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-58.8402, -34.7802] }, "properties": { "Cliente": "LINARES DIEGO MARTIN", "Cuit": "20274413221", "Provincia": "BUENOS AIRES", "Localidad": "MARCOS PAZ", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-58.8403, -34.7803] }, "properties": { "Cliente": "NEW TRADERS CORP S A", "Cuit": "30635898212", "Provincia": "BUENOS AIRES", "Localidad": "MARCOS PAZ", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-58.8404, -34.7804] }, "properties": { "Cliente": "RUFFO ARIEL HUMBERTO", "Cuit": "23204705739", "Provincia": "BUENOS AIRES", "Localidad": "MARCOS PAZ", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-65.533, -25.1] }, "properties": { "Cliente": "BAISSAC GUSTAVO DANIEL", "Cuit": "20175818341", "Provincia": "SALTA", "Localidad": "CHICOANA", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-64.603, -26.113] }, "properties": { "Cliente": "TUCUMAN AVICOLA S R L", "Cuit": "30685733087", "Provincia": "SALTA", "Localidad": "CANDELARIA", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-65.487, -24.897] }, "properties": { "Cliente": "AGROPECUARIA LA CAUTIVA S.R.L.", "Cuit": "30714566896", "Provincia": "SALTA", "Localidad": "CERRILLOS", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-65.581, -24.98] }, "properties": { "Cliente": "ALEJANDRO MANUEL COLQUI Y LEONARDO ANIBAL COLQUI S.H.", "Cuit": "30714666785", "Provincia": "SALTA", "Localidad": "ROSARIO DE LERMA", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-65.4871, -24.8971] }, "properties": { "Cliente": "ASTILLAS DE PLATA S.A.", "Cuit": "30707061533", "Provincia": "SALTA", "Localidad": "CERRILLOS", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-65.5811, -24.9801] }, "properties": { "Cliente": "BARRIOS ORTEGA JOSE LUIS", "Cuit": "20302214469", "Provincia": "SALTA", "Localidad": "ROSARIO DE LERMA", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-65.4872, -24.8972] }, "properties": { "Cliente": "FERMOSELLE SERGIO GERARDO", "Cuit": "20293371262", "Provincia": "SALTA", "Localidad": "CERRILLOS", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-65.5812, -24.9802] }, "properties": { "Cliente": "GARCIA MARIA MARTA, GARCIA FRANCISCO MATIAS, GARCIA MARIANA", "Cuit": "33711239559", "Provincia": "SALTA", "Localidad": "ROSARIO DE LERMA", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-65.391, -24.595] }, "properties": { "Cliente": "GRANJA AVICOLA LA CAÑADA S.A", "Cuit": "33708378769", "Provincia": "SALTA", "Localidad": "LA CALDERA", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-65.4873, -24.8973] }, "properties": { "Cliente": "HUEVOS K S.R.L.", "Cuit": "30711575185", "Provincia": "SALTA", "Localidad": "CERRILLOS", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-65.05, -24.67] }, "properties": { "Cliente": "PRODUCTOS ALIMENTICIOS SOFIA S.A", "Cuit": "30710345992", "Provincia": "SALTA", "Localidad": "GENERAL GUEMES", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-65.5813, -24.9803] }, "properties": { "Cliente": "SAYUS JAVIER ALEJANDRO", "Cuit": "20175805258", "Provincia": "SALTA", "Localidad": "ROSARIO DE LERMA", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-65.211, -24.256] }, "properties": { "Cliente": "LA MAGALI S.R.L.", "Cuit": "30708889632", "Provincia": "JUJUY", "Localidad": "PALPALA", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-65.573, -27.77] }, "properties": { "Cliente": "MESTRE JUAN JOSE", "Cuit": "20133248782", "Provincia": "TUCUMAN", "Localidad": "LA COCHA", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-64.8, -26.5] }, "properties": { "Cliente": "GUYRA S.A.S", "Cuit": "30717074544", "Provincia": "TUCUMAN", "Localidad": "BURRUYACU", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-64.8001, -26.5001] }, "properties": { "Cliente": "LA GRANJA DOÑA ISABEL SOCIEDAD DE RESPONSABILIDAD LIMITADA", "Cuit": "33711343429", "Provincia": "TUCUMAN", "Localidad": "BURRUYACU", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-65.25, -27.2] }, "properties": { "Cliente": "LABORDA DELACROIX RODRIGO MARTIN", "Cuit": "20253807319", "Provincia": "TUCUMAN", "Localidad": "LEALES", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-65.2501, -27.2001] }, "properties": { "Cliente": "RAMOS NORA ALICIA", "Cuit": "27149669545", "Provincia": "TUCUMAN", "Localidad": "LEALES", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-67.583, -39.033] }, "properties": { "Cliente": "ORELL MARIANO TOMAS", "Cuit": "20308428835", "Provincia": "RIO NEGRO", "Localidad": "GENERAL ROCA", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-67.5831, -39.0331] }, "properties": { "Cliente": "PALOMEQUE MARTIN ANDRES", "Cuit": "20303951890", "Provincia": "RIO NEGRO", "Localidad": "GENERAL ROCA", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-68.059, -38.951] }, "properties": { "Cliente": "SUCESION DE TIEPPO ISIDORO CARLOS", "Cuit": "20051763379", "Provincia": "NEUQUEN", "Localidad": "CONFLUENCIA", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-65.492, -43.289] }, "properties": { "Cliente": "CARPAT S.A.", "Cuit": "30707411089", "Provincia": "CHUBUT", "Localidad": "GAIMAN", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-61.306, -32.944] }, "properties": { "Cliente": "DAINESI, EDUARDO L., ADRIAN H. Y CHRISTIAN, D. S.R.L.", "Cuit": "30621924423", "Provincia": "SANTA FE", "Localidad": "IRIONDO", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-61.168, -33.047] }, "properties": { "Cliente": "AVICOLA LOS MOLINOS SRL.", "Cuit": "30710102933", "Provincia": "SANTA FE", "Localidad": "CASEROS", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-60.731, -31.744] }, "properties": { "Cliente": "AVICOLA SAN AGUSTIN S.R.L.", "Cuit": "33714442339", "Provincia": "SANTA FE", "Localidad": "LAS COLONIAS", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-60.7311, -31.7441] }, "properties": { "Cliente": "COMPAÑIA AVICOLA SA", "Cuit": "30686966417", "Provincia": "SANTA FE", "Localidad": "LAS COLONIAS", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-61.5, -31.25] }, "properties": { "Cliente": "LUCERNA YARI NAHUEL", "Cuit": "20242366167", "Provincia": "SANTA FE", "Localidad": "CASTELLANOS", "Base": "CAPIA", "marker-color": "#e67e22" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-60.7, -31.633] }, "properties": { "Cliente": "SCHNEIDER DANIEL ATILIO", "Cuit": "20131184264", "Provincia": "SANTA FE", "Localidad": "LA CAPITAL", "Base": "CAPIA", "marker-color": "#e67e22" } }
   ]
 }
