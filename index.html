@@ -1,56 +1,131 @@
-<h2>Mapa de Clientes</h2>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mapa de Clientes</title>
+  <meta charset="utf-8" />
 
-<select id="filtroCRM">
-  <option value="todos">Todos</option>
-  <option value="SI">CRM SI</option>
-  <option value="NO">CRM NO</option>
-</select>
+  <!-- Leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
 
-<div id="map" style="height: 600px;"></div>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
 
+    #map {
+      height: 100vh;
+    }
+
+    /* Panel flotante */
+    #panelCapas {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      z-index: 1000;
+      background: #2f3e4e;
+      color: white;
+      padding: 15px;
+      border-radius: 12px;
+      width: 200px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    #panelCapas h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+
+    #panelCapas select {
+      width: 100%;
+      padding: 6px;
+      border-radius: 6px;
+      border: none;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- Panel -->
+<div id="panelCapas">
+  <h3>Capas</h3>
+
+  <label>CRM:</label>
+  <select id="filtroCRM">
+    <option value="todos">Todos</option>
+    <option value="SI">CRM SI</option>
+    <option value="NO">CRM NO</option>
+  </select>
+</div>
+
+<!-- Mapa -->
+<div id="map"></div>
+
+<!-- Leaflet JS -->
 <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 
 <script>
-var map = L.map('map').setView([-31.65, -60.71], 6);
+  var map = L.map('map').setView([-32, -63], 6);
 
-// Mapa base (gratis)
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-  attribution: '© OpenStreetMap'
-}).addTo(map);
+  // mapa base
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© OpenStreetMap'
+  }).addTo(map);
 
-// Traer datos
-let geojsonLayer;
-let datosGlobal;
+  let geojsonLayer;
+  let datosGlobal;
 
-fetch('data.geojson')
-  .then(res => res.json())
-  .then(data => {
-    datosGlobal = data;
-    renderMapa("todos");
-  });
+  // cargar datos
+  fetch('data.geojson')
+    .then(res => res.json())
+    .then(data => {
+      datosGlobal = data;
+      renderMapa("todos");
+    });
 
-function renderMapa(filtro) {
+  function renderMapa(filtro) {
 
-  if (geojsonLayer) {
-    map.removeLayer(geojsonLayer);
+    // limpiar capa anterior
+    if (geojsonLayer) {
+      map.removeLayer(geojsonLayer);
+    }
+
+    geojsonLayer = L.geoJSON(datosGlobal, {
+
+      // filtro CRM
+      filter: function (feature) {
+        if (filtro === "todos") return true;
+        return feature.properties.crm === filtro;
+      },
+
+      // popup
+      onEachFeature: function (feature, layer) {
+
+        const maquinas = feature.properties.maquinas
+          ? feature.properties.maquinas.split(", ")
+          : [];
+
+        layer.bindPopup(`
+          <b>${feature.properties.empresa}</b><br>
+          📍 ${feature.properties.direccion}<br>
+          📞 ${feature.properties.telefono}<br>
+          ✉️ ${feature.properties.email}<br><br>
+          🚜 :${feature.properties.maquinas}<br><br>
+          🔢 Cantidad: ${feature.properties.cantidad}<br>
+          📊 CRM: ${feature.properties.crm}
+        `);
+      }
+
+    }).addTo(map);
   }
 
-  geojsonLayer = L.geoJSON(datosGlobal, {
-    filter: function (feature) {
-      if (filtro === "todos") return true;
-      return feature.properties.crm === filtro;
-    },
-    onEachFeature: function (feature, layer) {
-      layer.bindPopup(`
-        <b>${feature.properties.empresa}</b><br>
-        📊 CRM: ${feature.properties.crm}<br>
-        🔢 Cantidad: ${feature.properties.cantidad}
-      `);
-    }
-  }).addTo(map);
-}
+  // evento filtro
+  document.getElementById("filtroCRM").addEventListener("change", function(e) {
+    renderMapa(e.target.value);
+  });
 
-document.getElementById("filtroCRM").addEventListener("change", function(e) {
-  renderMapa(e.target.value);
-});
+</script>
 
+</body>
+</html>
