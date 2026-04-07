@@ -23,7 +23,7 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-60.638, -32.066] },
+      "geometry": { "type": "Point", "coordinates": [-60.6381, -32.0661] },
       "properties": { "Cliente": "LA AGRICOLA REGIONAL COOPERATIVA LIMITADA, AGROPECUARIA, DE CONSUMO Y DE SERVICIOS PUBLICOS", "Cuit": "33504047089", "Provincia": "ENTRE RIOS", "Localidad": "DIAMANTE", "CRM": "SI", "RELEVADO": "SI" }
     },
     {
@@ -43,7 +43,7 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-60.103, -34.063] },
+      "geometry": { "type": "Point", "coordinates": [-60.1031, -34.0631] },
       "properties": { "Cliente": "KRUGUER SA", "Cuit": "30655583110", "Provincia": "BUENOS AIRES", "Localidad": "ARRECIFES", "CRM": "NO", "RELEVADO": "-" }
     },
     {
@@ -58,7 +58,7 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-58.224, -35.168] },
+      "geometry": { "type": "Point", "coordinates": [-58.2241, -35.1681] },
       "properties": { "Cliente": "OVOBRAND SA", "Cuit": "33710607279", "Provincia": "BUENOS AIRES", "Localidad": "CORONEL BRANDSEN", "CRM": "NO", "RELEVADO": "-" }
     },
     {
@@ -73,7 +73,7 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-59.149, -34.296] },
+      "geometry": { "type": "Point", "coordinates": [-59.1491, -34.2961] },
       "properties": { "Cliente": "TANACORSA SA", "Cuit": "30708292598", "Provincia": "BUENOS AIRES", "Localidad": "EXALTACION DE LA CRUZ", "CRM": "NO", "RELEVADO": "-" }
     },
     {
@@ -88,7 +88,7 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-61.307, -34.303] },
+      "geometry": { "type": "Point", "coordinates": [-61.3071, -34.3031] },
       "properties": { "Cliente": "ZALEI AGROPECUARIA S.A.", "Cuit": "30710842724", "Provincia": "BUENOS AIRES", "Localidad": "GENERAL ARENALES", "CRM": "SI", "RELEVADO": "NO" }
     },
     {
@@ -103,12 +103,12 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-58.947, -34.925] },
+      "geometry": { "type": "Point", "coordinates": [-58.9471, -34.9251] },
       "properties": { "Cliente": "CORPORACION AVICOLA S A", "Cuit": "30707945105", "Provincia": "BUENOS AIRES", "Localidad": "GENERAL LAS HERAS", "CRM": "NO", "RELEVADO": "-" }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-58.947, -34.925] },
+      "geometry": { "type": "Point", "coordinates": [-58.9472, -34.9252] },
       "properties": { "Cliente": "LENTINO ENRIQUE FELIPE", "Cuit": "20123617488", "Provincia": "BUENOS AIRES", "Localidad": "GENERAL LAS HERAS", "CRM": "NO", "RELEVADO": "-" }
     },
     {
@@ -123,7 +123,7 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-59.105, -34.570] },
+      "geometry": { "type": "Point", "coordinates": [-59.1051, -34.5701] },
       "properties": { "Cliente": "SALVATORE MARIANA", "Cuit": "27037541376", "Provincia": "BUENOS AIRES", "Localidad": "LUJAN", "CRM": "NO", "RELEVADO": "-" }
     },
     {
@@ -133,17 +133,17 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-59.430, -34.651] },
+      "geometry": { "type": "Point", "coordinates": [-59.4301, -34.6511] },
       "properties": { "Cliente": "IRUANYAK S R L", "Cuit": "30708554266", "Provincia": "BUENOS AIRES", "Localidad": "MERCEDES", "CRM": "NO", "RELEVADO": "-" }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-59.430, -34.651] },
+      "geometry": { "type": "Point", "coordinates": [-59.4302, -34.6512] },
       "properties": { "Cliente": "OVODEC S.A.", "Cuit": "33710217209", "Provincia": "BUENOS AIRES", "Localidad": "MERCEDES", "CRM": "NO", "RELEVADO": "-" }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-59.430, -34.651] },
+      "geometry": { "type": "Point", "coordinates": [-59.4303, -34.6513] },
       "properties": { "Cliente": "PRODUCTORES AVICOLAS SAN MARTIN S.A.", "Cuit": "30709415790", "Provincia": "BUENOS AIRES", "Localidad": "MERCEDES", "CRM": "NO", "RELEVADO": "-" }
     },
     {
@@ -153,12 +153,12 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-60.573, -33.891] },
+      "geometry": { "type": "Point", "coordinates": [-60.5731, -33.8911] },
       "properties": { "Cliente": "AVICOLA LA NORMA S.A.", "Cuit": "30707574794", "Provincia": "BUENOS AIRES", "Localidad": "PERGAMINO", "CRM": "NO", "RELEVADO": "-" }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-60.573, -33.891] },
+      "geometry": { "type": "Point", "coordinates": [-60.5732, -33.8912] },
       "properties": { "Cliente": "AVICOLA TELOS S A", "Cuit": "30561063180", "Provincia": "BUENOS AIRES", "Localidad": "PERGAMINO", "CRM": "NO", "RELEVADO": "-" }
     },
     {
@@ -178,7 +178,7 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-59.689, -34.770] },
+      "geometry": { "type": "Point", "coordinates": [-59.6891, -34.7701] },
       "properties": { "Cliente": "CABA#A CAMILA S A", "Cuit": "30688716930", "Provincia": "BUENOS AIRES", "Localidad": "SUIPACHA", "CRM": "NO", "RELEVADO": "-" }
     },
     {
@@ -213,17 +213,17 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-60.099, -38.031] },
+      "geometry": { "type": "Point", "coordinates": [-60.0991, -38.0311] },
       "properties": { "Cliente": "AMBROSIUS CHRISTIAN FEDERICO", "Cuit": "23244171419", "Provincia": "BUENOS AIRES", "Localidad": "GONZALES CHAVES", "CRM": "NO", "RELEVADO": "-" }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-60.099, -38.031] },
+      "geometry": { "type": "Point", "coordinates": [-60.0992, -38.0312] },
       "properties": { "Cliente": "CASOMAR AVICOLA S.R.L.", "Cuit": "30717133494", "Provincia": "BUENOS AIRES", "Localidad": "GONZALES CHAVES", "CRM": "NO", "RELEVADO": "-" }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-60.099, -38.031] },
+      "geometry": { "type": "Point", "coordinates": [-60.0993, -38.0313] },
       "properties": { "Cliente": "JOSE LUIS COLONNA Y MARIO ANGEL COLONNA", "Cuit": "30667479076", "Provincia": "BUENOS AIRES", "Localidad": "GONZALES CHAVES", "CRM": "NO", "RELEVADO": "-" }
     },
     {
@@ -233,7 +233,7 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-58.781, -38.156] },
+      "geometry": { "type": "Point", "coordinates": [-58.7811, -38.1561] },
       "properties": { "Cliente": "RODRIGUEZ HUGO IGNACIO", "Cuit": "20316823484", "Provincia": "BUENOS AIRES", "Localidad": "LOBERIA", "CRM": "NO", "RELEVADO": "-" }
     },
     {
@@ -243,52 +243,52 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-57.422, -37.742] },
+      "geometry": { "type": "Point", "coordinates": [-57.4221, -37.7421] },
       "properties": { "Cliente": "ONETO OSVALDO RAUL", "Cuit": "20123229100", "Provincia": "BUENOS AIRES", "Localidad": "MAR CHIQUITA", "CRM": "NO", "RELEVADO": "-" }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-57.422, -37.742] },
+      "geometry": { "type": "Point", "coordinates": [-57.4222, -37.7422] },
       "properties": { "Cliente": "SUCESION DE CAVIA EMILIO", "Cuit": "20053329943", "Provincia": "BUENOS AIRES", "Localidad": "MAR CHIQUITA", "CRM": "NO", "RELEVADO": "-" }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-57.556, -38.000] },
+      "geometry": { "type": "Point", "coordinates": [-57.556, -38.0] },
       "properties": { "Cliente": "AGROAVIR MDP S.A.", "Cuit": "30716938596", "Provincia": "BUENOS AIRES", "Localidad": "GENERAL PUEYRREDON", "CRM": "NO", "RELEVADO": "-" }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-57.556, -38.000] },
+      "geometry": { "type": "Point", "coordinates": [-57.5561, -38.0001] },
       "properties": { "Cliente": "AGROPECUARIA EL CANDIL SOCIEDAD ANONIMA", "Cuit": "30644808021", "Provincia": "BUENOS AIRES", "Localidad": "GENERAL PUEYRREDON", "CRM": "NO", "RELEVADO": "-" }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-57.556, -38.000] },
+      "geometry": { "type": "Point", "coordinates": [-57.5562, -38.0002] },
       "properties": { "Cliente": "BUSTAMANTE JORGE JAVIER", "Cuit": "20370582921", "Provincia": "BUENOS AIRES", "Localidad": "GENERAL PUEYRREDON", "CRM": "NO", "RELEVADO": "-" }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-57.556, -38.000] },
+      "geometry": { "type": "Point", "coordinates": [-57.5563, -38.0003] },
       "properties": { "Cliente": "GRANJA AL SALAM S.R.L.", "Cuit": "30707007814", "Provincia": "BUENOS AIRES", "Localidad": "GENERAL PUEYRREDON", "CRM": "NO", "RELEVADO": "-" }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-57.556, -38.000] },
+      "geometry": { "type": "Point", "coordinates": [-57.5564, -38.0004] },
       "properties": { "Cliente": "LOVRINICH OMAR ERNESTO", "Cuit": "20105281715", "Provincia": "BUENOS AIRES", "Localidad": "GENERAL PUEYRREDON", "CRM": "NO", "RELEVADO": "-" }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-57.556, -38.000] },
+      "geometry": { "type": "Point", "coordinates": [-57.5565, -38.0005] },
       "properties": { "Cliente": "NAVARRO FERNANDO RUBEN Y NAVARRO NORBERTO", "Cuit": "30591811106", "Provincia": "BUENOS AIRES", "Localidad": "GENERAL PUEYRREDON", "CRM": "NO", "RELEVADO": "-" }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-57.556, -38.000] },
+      "geometry": { "type": "Point", "coordinates": [-57.5566, -38.0006] },
       "properties": { "Cliente": "SCORNAIENCHI MARIA FERNANDA", "Cuit": "27167297671", "Provincia": "BUENOS AIRES", "Localidad": "GENERAL PUEYRREDON", "CRM": "NO", "RELEVADO": "-" }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-57.556, -38.000] },
+      "geometry": { "type": "Point", "coordinates": [-57.5567, -38.0007] },
       "properties": { "Cliente": "SUCESION DE FICICCHIA ALDO FRANCISCO", "Cuit": "20053038450", "Provincia": "BUENOS AIRES", "Localidad": "GENERAL PUEYRREDON", "CRM": "NO", "RELEVADO": "-" }
     },
     {
@@ -303,12 +303,12 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-58.739, -38.555] },
+      "geometry": { "type": "Point", "coordinates": [-58.7391, -38.5551] },
       "properties": { "Cliente": "LA ALIANZA AVICOLA", "Cuit": "30716819813", "Provincia": "BUENOS AIRES", "Localidad": "NECOCHEA", "CRM": "NO", "RELEVADO": "-" }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-58.739, -38.555] },
+      "geometry": { "type": "Point", "coordinates": [-58.7392, -38.5552] },
       "properties": { "Cliente": "PRODUCTORA AVICOLA NECOCHENSE S.A.", "Cuit": "30715045784", "Provincia": "BUENOS AIRES", "Localidad": "NECOCHEA", "CRM": "NO", "RELEVADO": "-" }
     },
     {
@@ -333,7 +333,7 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-63.650, -33.127] },
+      "geometry": { "type": "Point", "coordinates": [-63.65, -33.127] },
       "properties": { "Cliente": "PONEDORAS SUR S A", "Cuit": "30562754705", "Provincia": "CORDOBA", "Localidad": "JUAREZ CELMAN", "CRM": "NO", "RELEVADO": "-" }
     },
     {
@@ -343,7 +343,7 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-58.830, -27.469] },
+      "geometry": { "type": "Point", "coordinates": [-58.83, -27.469] },
       "properties": { "Cliente": "AVICOLA SANTA ANA SOCIEDAD ANONIMA", "Cuit": "30606304230", "Provincia": "CORRIENTES", "Localidad": "CAPITAL", "CRM": "NO", "RELEVADO": "-" }
     },
     {
@@ -353,12 +353,12 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-68.780, -32.977] },
+      "geometry": { "type": "Point", "coordinates": [-68.78, -32.977] },
       "properties": { "Cliente": "BRUGNOLI ORLANDO", "Cuit": "20112865382", "Provincia": "MENDOZA", "Localidad": "MAIPU", "CRM": "NO", "RELEVADO": "-" }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-68.778, -32.889] },
+      "geometry": { "type": "Point", "coordinates": [-68.7781, -32.8891] },
       "properties": { "Cliente": "CLAUDIO JAVIER CATALA, RAUL GONZALO CATALA Y MARCELO GABRIEL", "Cuit": "30708469471", "Provincia": "MENDOZA", "Localidad": "GUAYMALLEN", "CRM": "NO", "RELEVADO": "-" }
     },
     {
@@ -368,7 +368,7 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-68.780, -32.977] },
+      "geometry": { "type": "Point", "coordinates": [-68.7801, -32.9771] },
       "properties": { "Cliente": "H3 SOCIEDAD ANONIMA", "Cuit": "30711973296", "Provincia": "MENDOZA", "Localidad": "MAIPU", "CRM": "NO", "RELEVADO": "-" }
     },
     {
@@ -393,12 +393,12 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-68.586, -31.683] },
+      "geometry": { "type": "Point", "coordinates": [-68.5861, -31.6831] },
       "properties": { "Cliente": "OLYGA S.A.", "Cuit": "30710831471", "Provincia": "SAN JUAN", "Localidad": "POCITO", "CRM": "NO", "RELEVADO": "-" }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-68.466, -31.200] },
+      "geometry": { "type": "Point", "coordinates": [-68.466, -31.2] },
       "properties": { "Cliente": "PIE DE PALO S R L", "Cuit": "30648006426", "Provincia": "SAN JUAN", "Localidad": "ANGACO", "CRM": "NO", "RELEVADO": "-" }
     },
     {
@@ -408,7 +408,7 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-60.638, -32.066] },
+      "geometry": { "type": "Point", "coordinates": [-60.6382, -32.0662] },
       "properties": { "Cliente": "GRANJA DON PEPE S.R.L.", "Cuit": "30714530395", "Provincia": "ENTRE RIOS", "Localidad": "DIAMANTE", "CRM": "SI", "RELEVADO": "NO" }
     },
     {
@@ -418,62 +418,62 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-59.788, -32.393] },
+      "geometry": { "type": "Point", "coordinates": [-59.7881, -32.3931] },
       "properties": { "Cliente": "BERNHARDT ANIBAL MARCELINO", "Cuit": "20204459135", "Provincia": "ENTRE RIOS", "Localidad": "NOGOYA", "CRM": "SI", "RELEVADO": "NO" }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-59.788, -32.393] },
+      "geometry": { "type": "Point", "coordinates": [-59.7882, -32.3932] },
       "properties": { "Cliente": "CABAÑA AVICOLA MODELO S.R.L.", "Cuit": "30711222703", "Provincia": "ENTRE RIOS", "Localidad": "NOGOYA", "CRM": "NO", "RELEVADO": "-" }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-59.788, -32.393] },
+      "geometry": { "type": "Point", "coordinates": [-59.7883, -32.3933] },
       "properties": { "Cliente": "PROAVI S.R.L.", "Cuit": "30708607467", "Provincia": "ENTRE RIOS", "Localidad": "NOGOYA", "CRM": "SI", "RELEVADO": "SI" }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-60.517, -31.744] },
+      "geometry": { "type": "Point", "coordinates": [-60.5171, -31.7441] },
       "properties": { "Cliente": "AVICOLA 38 S.R.L.", "Cuit": "30710531648", "Provincia": "ENTRE RIOS", "Localidad": "PARANA", "CRM": "SI", "RELEVADO": "NO" }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-60.517, -31.744] },
+      "geometry": { "type": "Point", "coordinates": [-60.5172, -31.7442] },
       "properties": { "Cliente": "BASSI MARIANO FRANCISCO", "Cuit": "20248996200", "Provincia": "ENTRE RIOS", "Localidad": "PARANA", "CRM": "SI", "RELEVADO": "NO" }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-60.517, -31.744] },
+      "geometry": { "type": "Point", "coordinates": [-60.5173, -31.7443] },
       "properties": { "Cliente": "FEIL ROSA LILIANA", "Cuit": "27162009686", "Provincia": "ENTRE RIOS", "Localidad": "PARANA", "CRM": "SI", "RELEVADO": "NO" }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-60.517, -31.744] },
+      "geometry": { "type": "Point", "coordinates": [-60.5174, -31.7444] },
       "properties": { "Cliente": "FERRICHER SUSANA ADELA", "Cuit": "27060558340", "Provincia": "ENTRE RIOS", "Localidad": "PARANA", "CRM": "NO", "RELEVADO": "-" }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-60.517, -31.744] },
+      "geometry": { "type": "Point", "coordinates": [-60.5175, -31.7445] },
       "properties": { "Cliente": "KEMERER DANIEL GERMAN, KEMERER CLAUDIO MARTIN Y KEMERER ELBIO HERNAN SOCIEDAD DE HECHO", "Cuit": "30709297208", "Provincia": "ENTRE RIOS", "Localidad": "PARANA", "CRM": "NO", "RELEVADO": "-" }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-60.517, -31.744] },
+      "geometry": { "type": "Point", "coordinates": [-60.5176, -31.7446] },
       "properties": { "Cliente": "KRIGER HNOS. S.R.L.", "Cuit": "30709776939", "Provincia": "ENTRE RIOS", "Localidad": "PARANA", "CRM": "SI", "RELEVADO": "SI" }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-60.517, -31.744] },
+      "geometry": { "type": "Point", "coordinates": [-60.5177, -31.7447] },
       "properties": { "Cliente": "REGNER DARIO RUBEN", "Cuit": "23230001529", "Provincia": "ENTRE RIOS", "Localidad": "PARANA", "CRM": "SI", "RELEVADO": "NO" }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-60.517, -31.744] },
+      "geometry": { "type": "Point", "coordinates": [-60.5178, -31.7448] },
       "properties": { "Cliente": "TRES ROBLES S.R.L.", "Cuit": "30711724717", "Provincia": "ENTRE RIOS", "Localidad": "PARANA", "CRM": "SI", "RELEVADO": "NO" }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-60.517, -31.744] },
+      "geometry": { "type": "Point", "coordinates": [-60.5179, -31.7449] },
       "properties": { "Cliente": "WAGNER JUAN CRUZ", "Cuit": "20311793110", "Provincia": "ENTRE RIOS", "Localidad": "PARANA", "CRM": "NO", "RELEVADO": "-" }
     },
     {
@@ -483,12 +483,12 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-60.154, -32.618] },
+      "geometry": { "type": "Point", "coordinates": [-60.1541, -32.6181] },
       "properties": { "Cliente": "DON BERNARDO S.A.", "Cuit": "33690462619", "Provincia": "ENTRE RIOS", "Localidad": "VICTORIA", "CRM": "SI", "RELEVADO": "SI" }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-60.154, -32.618] },
+      "geometry": { "type": "Point", "coordinates": [-60.1542, -32.6182] },
       "properties": { "Cliente": "MAIOCCO CEREALES S.A.", "Cuit": "30709243752", "Provincia": "ENTRE RIOS", "Localidad": "VICTORIA", "CRM": "SI", "RELEVADO": "SI" }
     },
     {
@@ -508,62 +508,62 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-57.954, -34.921] },
+      "geometry": { "type": "Point", "coordinates": [-57.9541, -34.9211] },
       "properties": { "Cliente": "AVICOLA AMANECER SRL", "Cuit": "30708481137", "Provincia": "BUENOS AIRES", "Localidad": "LA PLATA", "CRM": "NO", "RELEVADO": "-" }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-57.954, -34.921] },
+      "geometry": { "type": "Point", "coordinates": [-57.9542, -34.9212] },
       "properties": { "Cliente": "AVICOLA EL TRIANGULO SA", "Cuit": "33708756119", "Provincia": "BUENOS AIRES", "Localidad": "LA PLATA", "CRM": "NO", "RELEVADO": "-" }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-57.954, -34.921] },
+      "geometry": { "type": "Point", "coordinates": [-57.9543, -34.9213] },
       "properties": { "Cliente": "AVICOLA LOS MANANTIALES SRL", "Cuit": "30709089346", "Provincia": "BUENOS AIRES", "Localidad": "LA PLATA", "CRM": "NO", "RELEVADO": "-" }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-57.954, -34.921] },
+      "geometry": { "type": "Point", "coordinates": [-57.9544, -34.9214] },
       "properties": { "Cliente": "BENOVO S.A.", "Cuit": "30716892448", "Provincia": "BUENOS AIRES", "Localidad": "LA PLATA", "CRM": "NO", "RELEVADO": "-" }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-57.954, -34.921] },
+      "geometry": { "type": "Point", "coordinates": [-57.9545, -34.9215] },
       "properties": { "Cliente": "GRANJA DEL SUR SRL", "Cuit": "30710097336", "Provincia": "BUENOS AIRES", "Localidad": "LA PLATA", "CRM": "NO", "RELEVADO": "-" }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-57.954, -34.921] },
+      "geometry": { "type": "Point", "coordinates": [-57.9546, -34.9216] },
       "properties": { "Cliente": "VADALA MATIAS EZEQUIEL", "Cuit": "20338748621", "Provincia": "BUENOS AIRES", "Localidad": "LA PLATA", "CRM": "NO", "RELEVADO": "-" }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-58.840, -34.780] },
+      "geometry": { "type": "Point", "coordinates": [-58.84, -34.78] },
       "properties": { "Cliente": "ALFONZO GRACIELA NOEMI", "Cuit": "27161061862", "Provincia": "BUENOS AIRES", "Localidad": "MARCOS PAZ", "CRM": "NO", "RELEVADO": "-" }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-58.840, -34.780] },
+      "geometry": { "type": "Point", "coordinates": [-58.8401, -34.7801] },
       "properties": { "Cliente": "LA NUEVA COLONIA S. R. L.", "Cuit": "30717695840", "Provincia": "BUENOS AIRES", "Localidad": "MARCOS PAZ", "CRM": "NO", "RELEVADO": "-" }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-58.840, -34.780] },
+      "geometry": { "type": "Point", "coordinates": [-58.8402, -34.7802] },
       "properties": { "Cliente": "LINARES DIEGO MARTIN", "Cuit": "20274413221", "Provincia": "BUENOS AIRES", "Localidad": "MARCOS PAZ", "CRM": "NO", "RELEVADO": "-" }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-58.840, -34.780] },
+      "geometry": { "type": "Point", "coordinates": [-58.8403, -34.7803] },
       "properties": { "Cliente": "NEW TRADERS CORP S A", "Cuit": "30635898212", "Provincia": "BUENOS AIRES", "Localidad": "MARCOS PAZ", "CRM": "NO", "RELEVADO": "-" }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-58.840, -34.780] },
+      "geometry": { "type": "Point", "coordinates": [-58.8404, -34.7804] },
       "properties": { "Cliente": "RUFFO ARIEL HUMBERTO", "Cuit": "23204705739", "Provincia": "BUENOS AIRES", "Localidad": "MARCOS PAZ", "CRM": "NO", "RELEVADO": "-" }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-65.533, -25.100] },
+      "geometry": { "type": "Point", "coordinates": [-65.533, -25.1] },
       "properties": { "Cliente": "BAISSAC GUSTAVO DANIEL", "Cuit": "20175818341", "Provincia": "SALTA", "Localidad": "CHICOANA", "CRM": "NO", "RELEVADO": "-" }
     },
     {
@@ -578,27 +578,27 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-65.581, -24.980] },
+      "geometry": { "type": "Point", "coordinates": [-65.581, -24.98] },
       "properties": { "Cliente": "ALEJANDRO MANUEL COLQUI Y LEONARDO ANIBAL COLQUI S.H.", "Cuit": "30714666785", "Provincia": "SALTA", "Localidad": "ROSARIO DE LERMA", "CRM": "NO", "RELEVADO": "-" }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-65.487, -24.897] },
+      "geometry": { "type": "Point", "coordinates": [-65.4871, -24.8971] },
       "properties": { "Cliente": "ASTILLAS DE PLATA S.A.", "Cuit": "30707061533", "Provincia": "SALTA", "Localidad": "CERRILLOS", "CRM": "NO", "RELEVADO": "-" }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-65.581, -24.980] },
+      "geometry": { "type": "Point", "coordinates": [-65.5811, -24.9801] },
       "properties": { "Cliente": "BARRIOS ORTEGA JOSE LUIS", "Cuit": "20302214469", "Provincia": "SALTA", "Localidad": "ROSARIO DE LERMA", "CRM": "NO", "RELEVADO": "-" }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-65.487, -24.897] },
+      "geometry": { "type": "Point", "coordinates": [-65.4872, -24.8972] },
       "properties": { "Cliente": "FERMOSELLE SERGIO GERARDO", "Cuit": "20293371262", "Provincia": "SALTA", "Localidad": "CERRILLOS", "CRM": "NO", "RELEVADO": "-" }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-65.581, -24.980] },
+      "geometry": { "type": "Point", "coordinates": [-65.5812, -24.9802] },
       "properties": { "Cliente": "GARCIA MARIA MARTA, GARCIA FRANCISCO MATIAS, GARCIA MARIANA", "Cuit": "33711239559", "Provincia": "SALTA", "Localidad": "ROSARIO DE LERMA", "CRM": "NO", "RELEVADO": "-" }
     },
     {
@@ -608,17 +608,17 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-65.487, -24.897] },
+      "geometry": { "type": "Point", "coordinates": [-65.4873, -24.8973] },
       "properties": { "Cliente": "HUEVOS K S.R.L.", "Cuit": "30711575185", "Provincia": "SALTA", "Localidad": "CERRILLOS", "CRM": "SI", "RELEVADO": "NO" }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-65.050, -24.670] },
+      "geometry": { "type": "Point", "coordinates": [-65.05, -24.67] },
       "properties": { "Cliente": "PRODUCTOS ALIMENTICIOS SOFIA S.A", "Cuit": "30710345992", "Provincia": "SALTA", "Localidad": "GENERAL GUEMES", "CRM": "NO", "RELEVADO": "-" }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-65.581, -24.980] },
+      "geometry": { "type": "Point", "coordinates": [-65.5813, -24.9803] },
       "properties": { "Cliente": "SAYUS JAVIER ALEJANDRO", "Cuit": "20175805258", "Provincia": "SALTA", "Localidad": "ROSARIO DE LERMA", "CRM": "NO", "RELEVADO": "-" }
     },
     {
@@ -628,27 +628,27 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-65.573, -27.770] },
+      "geometry": { "type": "Point", "coordinates": [-65.573, -27.77] },
       "properties": { "Cliente": "MESTRE JUAN JOSE", "Cuit": "20133248782", "Provincia": "TUCUMAN", "Localidad": "LA COCHA", "CRM": "NO", "RELEVADO": "-" }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-64.800, -26.500] },
+      "geometry": { "type": "Point", "coordinates": [-64.8, -26.5] },
       "properties": { "Cliente": "GUYRA S.A.S", "Cuit": "30717074544", "Provincia": "TUCUMAN", "Localidad": "BURRUYACU", "CRM": "NO", "RELEVADO": "-" }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-64.800, -26.500] },
+      "geometry": { "type": "Point", "coordinates": [-64.8001, -26.5001] },
       "properties": { "Cliente": "LA GRANJA DOÑA ISABEL SOCIEDAD DE RESPONSABILIDAD LIMITADA", "Cuit": "33711343429", "Provincia": "TUCUMAN", "Localidad": "BURRUYACU", "CRM": "NO", "RELEVADO": "-" }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-65.250, -27.200] },
+      "geometry": { "type": "Point", "coordinates": [-65.25, -27.2] },
       "properties": { "Cliente": "LABORDA DELACROIX RODRIGO MARTIN", "Cuit": "20253807319", "Provincia": "TUCUMAN", "Localidad": "LEALES", "CRM": "NO", "RELEVADO": "-" }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-65.250, -27.200] },
+      "geometry": { "type": "Point", "coordinates": [-65.2501, -27.2001] },
       "properties": { "Cliente": "RAMOS NORA ALICIA", "Cuit": "27149669545", "Provincia": "TUCUMAN", "Localidad": "LEALES", "CRM": "NO", "RELEVADO": "-" }
     },
     {
@@ -658,7 +658,7 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-67.583, -39.033] },
+      "geometry": { "type": "Point", "coordinates": [-67.5831, -39.0331] },
       "properties": { "Cliente": "PALOMEQUE MARTIN ANDRES", "Cuit": "20303951890", "Provincia": "RIO NEGRO", "Localidad": "GENERAL ROCA", "CRM": "NO", "RELEVADO": "-" }
     },
     {
@@ -688,17 +688,17 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-60.731, -31.744] },
+      "geometry": { "type": "Point", "coordinates": [-60.7311, -31.7441] },
       "properties": { "Cliente": "COMPAÑIA AVICOLA SA", "Cuit": "30686966417", "Provincia": "SANTA FE", "Localidad": "LAS COLONIAS", "CRM": "NO", "RELEVADO": "-" }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-61.500, -31.250] },
+      "geometry": { "type": "Point", "coordinates": [-61.5, -31.25] },
       "properties": { "Cliente": "LUCERNA YARI NAHUEL", "Cuit": "20242366167", "Provincia": "SANTA FE", "Localidad": "CASTELLANOS", "CRM": "SI", "RELEVADO": "SI" }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-60.700, -31.633] },
+      "geometry": { "type": "Point", "coordinates": [-60.7, -31.633] },
       "properties": { "Cliente": "SCHNEIDER DANIEL ATILIO", "Cuit": "20131184264", "Provincia": "SANTA FE", "Localidad": "LA CAPITAL", "CRM": "NO", "RELEVADO": "-" }
     }
   ]
