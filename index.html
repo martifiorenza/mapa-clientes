@@ -27,8 +27,8 @@ fetch('data.geojson')
     L.geoJSON(data, {
       onEachFeature: function (feature, layer) {
         layer.bindPopup(
-          "<b>" + feature.properties.cliente + "</b><br>" +
-          "Máquinas: " + feature.properties.maquinas
+        "<b>" + feature.properties.cliente + "</b><br>" +
+        "Máquinas: " + feature.properties.maquinas
         );
       }
     }).addTo(map);
