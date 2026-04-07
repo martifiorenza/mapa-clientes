@@ -1,224 +1,52 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="utf-8" />
-  <title>Mapa de Clientes Agrícolas - Argentina</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-    }
-
-    #map {
-      height: 100vh;
-      width: 100%;
-    }
-
-    /* Panel de Control a la Derecha */
-    #panelCapas {
-      position: absolute;
-      top: 20px;
-      right: 20px;
-      z-index: 1000;
-      background: #2c3e50;
-      color: white;
-      padding: 20px;
-      border-radius: 12px;
-      width: 260px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.4);
-      border: 1px solid rgba(255,255,255,0.1);
-    }
-
-    #panelCapas h3 {
-      margin: 0 0 15px 0;
-      font-size: 1.1em;
-      text-align: center;
-      letter-spacing: 1px;
-      border-bottom: 1px solid #444;
-      padding-bottom: 10px;
-    }
-
-    .control-group {
-      margin-bottom: 18px;
-    }
-
-    #panelCapas label {
-      display: block;
-      margin-bottom: 6px;
-      font-size: 0.75em;
-      font-weight: bold;
-      text-transform: uppercase;
-      color: #bdc3c7;
-    }
-
-    #panelCapas select {
-      width: 100%;
-      padding: 10px;
-      border-radius: 6px;
-      border: none;
-      background: #fdfdfd;
-      color: #333;
-      font-weight: 600;
-      font-size: 0.9em;
-      cursor: pointer;
-    }
-
-    #panelCapas select:focus {
-      outline: 3px solid #3498db;
-    }
-
-    /* Ajustes de Popup */
-    .leaflet-popup-content-wrapper {
-      border-radius: 8px;
-    }
-  </style>
-</head>
-
-<body>
-
-<div id="panelCapas">
-  <h3>CONTROL DE CLIENTES</h3>
-
-  <div class="control-group">
-    <label for="filtroBase">📂 Seleccionar Base:</label>
-    <select id="filtroBase">
-      <option value="todas">Todas las Bases</option>
-      <option value="base1">Picadores (data.geojson)</option>
-      <option value="base2">CAPIA (data2.geojson)</option>
-    </select>
-  </div>
-
-  <div class="control-group">
-    <label for="filtroCRM">📊 Filtrar por CRM:</label>
-    <select id="filtroCRM">
-      <option value="todos">Todos</option>
-      <option value="SI">Registrados (SI)</option>
-      <option value="NO">No Registrados (NO)</option>
-    </select>
-  </div>
-</div>
-
-<div id="map"></div>
-
-<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-
-<script>
-  // 1. Inicialización del Mapa centrado en la zona núcleo agrícola
-  var map = L.map('map', {
-      zoomControl: true
-  }).setView([-33.0, -62.5], 6);
-
-  // Capa base de OpenStreetMap
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '© OpenStreetMap contributors'
-  }).addTo(map);
-
-  let datosBase1 = { features: [] };
-  let datosBase2 = { features: [] };
-  let geojsonLayer;
-
-  // 2. Función para limpiar campos vacíos o undefined
-  function limpiar(valor, reemplazo = "No disponible") {
-    if (!valor || valor.toString().trim() === "" || valor === "undefined" || valor === null) {
-      return reemplazo;
-    }
-    return valor.toString().trim();
-  }
-
-  // 3. Función para armar la dirección completa (Direccion, Localidad, Provincia)
-  function construirDireccion(p) {
-    let partes = [];
-    if (p.direccion && p.direccion !== "undefined") partes.push(p.direccion);
-    if (p.localidad && p.localidad !== "undefined") partes.push(p.localidad);
-    if (p.provincia && p.provincia !== "undefined") partes.push(p.provincia);
-    
-    return partes.length > 0 ? partes.join(", ") : "Sin dirección cargada";
-  }
-
-  // 4. Carga de archivos GeoJSON vía Fetch
-  Promise.all([
-    fetch('data.geojson').then(res => res.json()).catch(err => {
-        console.warn("Base 1 no encontrada");
-        return { type: "FeatureCollection", features: [] };
-    }),
-    fetch('data2.geojson').then(res => res.json()).catch(err => {
-        return { type: "FeatureCollection", features: [] };
-    })
-  ]).then(([data1, data2]) => {
-    datosBase1 = data1;
-    datosBase2 = data2;
-    actualizarMapa();
-  });
-
-  // 5. Lógica de renderizado y filtrado
-  function actualizarMapa() {
-    const crmFiltro = document.getElementById("filtroCRM").value;
-    const baseFiltro = document.getElementById("filtroBase").value;
-
-    if (geojsonLayer) {
-      map.removeLayer(geojsonLayer);
-    }
-
-    let listadoAMostrar = [];
-    if (baseFiltro === "todas" || baseFiltro === "base1") {
-      listadoAMostrar = listadoAMostrar.concat(datosBase1.features);
-    }
-    if (baseFiltro === "todas" || baseFiltro === "base2") {
-      listadoAMostrar = listadoAMostrar.concat(datosBase2.features);
-    }
-
-    geojsonLayer = L.geoJSON(listadoAMostrar, {
-      filter: function (feature) {
-        if (crmFiltro === "todos") return true;
-        return feature.properties.crm === crmFiltro;
-      },
-
-      onEachFeature: function (feature, layer) {
-        const p = feature.properties;
+onEachFeature: function (f, layer) {
+        const p = f.properties;
         
-        // CORRECCIÓN: Si 'cliente' es undefined, usa un nombre genérico
-        const nombreCliente = limpiar(p.cliente, "Empresa / Cliente");
-        const direccionCompleta = construirDireccion(p);
+        // Buscamos los valores sin importar Mayus/Minus
+        const nombre = limpiar(obtenerValor(p, "cliente"), "Empresa sin nombre");
+        const localidad = limpiar(obtenerValor(p, "localidad"), "");
+        const provincia = limpiar(obtenerValor(p, "provincia"), "");
+        const crm = limpiar(obtenerValor(p, "crm"), "NO");
+        
+        // Detectamos si es CAPIA buscando el campo "Cuit" o "RELEVADO"
+        const esCapia = obtenerValor(p, "Cuit") !== null || obtenerValor(p, "RELEVADO") !== null;
 
-        layer.bindPopup(`
-          <div style="min-width: 220px; font-family: 'Segoe UI', Tahoma, sans-serif; line-height: 1.4;">
-            <b style="font-size: 14px; color: #e67e22; text-transform: uppercase;">${nombreCliente}</b>
+        let contenidoPopup = `
+          <div style="min-width: 220px; font-family: sans-serif;">
+            <b style="color: #e67e22; text-transform: uppercase; font-size: 14px;">${nombre}</b>
             <hr style="border: 0; border-top: 1px solid #eee; margin: 8px 0;">
-            
-            <div style="margin-bottom: 4px;">
-              <span style="color: #555;">📍</span> <b>Ubicación:</b><br>
-              <small>${direccionCompleta}</small>
+            <div style="margin-bottom: 5px;">
+              📍 <b>Ubicación:</b><br>
+              <small>${localidad}${localidad && provincia ? ', ' : ''}${provincia}</small>
             </div>
+        `;
 
-            <div style="margin-bottom: 4px;">
-              <span style="color: #555;">📞</span> <b>Tel:</b> ${limpiar(p.telefono)}
-            </div>
+        if (esCapia) {
+          // --- DISEÑO PARA CAPIA ---
+          const cuit = limpiar(obtenerValor(p, "Cuit"), "No registrado");
+          const relevado = limpiar(obtenerValor(p, "RELEVADO"), "NO");
+          
+          contenidoPopup += `
+            <div style="margin-bottom: 5px;"><b>🆔 CUIT:</b> ${cuit}</div>
+            <div style="margin-bottom: 5px;"><b>✅ Relevado:</b> ${relevado}</div>
+          `;
+        } else {
+          // --- DISEÑO PARA BASE 1 (MAQUINARIA) ---
+          const maquinas = limpiar(obtenerValor(p, "maquinas"), "Sin datos");
+          const cantidad = limpiar(obtenerValor(p, "cantidad"), "0");
+          
+          contenidoPopup += `
+            <div style="margin-bottom: 5px;"><b>🚜 Máquinas:</b> ${maquinas}</div>
+            <div style="margin-bottom: 5px;"><b>🔢 Cantidad:</b> ${cantidad}</div>
+          `;
+        }
 
-            <div style="margin-bottom: 4px;">
-              <span style="color: #555;">✉️</span> <b>Email:</b> <a href="mailto:${p.email}" style="color: #3498db; text-decoration: none;">${limpiar(p.email)}</a>
-            </div>
-
+        // El pie del popup con el CRM (común a ambos)
+        contenidoPopup += `
             <div style="background: #f8f9fa; padding: 10px; border-radius: 6px; margin-top: 10px; border-left: 4px solid #2c3e50;">
-              <b>🚜 Máquinas:</b> ${limpiar(p.maquinas, "Sin datos")}<br>
-              <b>🔢 Cantidad:</b> ${limpiar(p.cantidad, "0")}<br>
-              <b>📊 CRM:</b> <span style="color: ${p.crm === 'SI' ? '#27ae60' : '#e74c3c'}; font-weight: bold;">${limpiar(p.crm, "NO")}</span>
+              <b>📊 CRM:</b> <span style="color: ${crm === 'SI' ? '#27ae60' : '#e74c3c'}; font-weight: bold;">${crm}</span>
             </div>
           </div>
-        `);
+        `;
+
+        layer.bindPopup(contenidoPopup);
       }
-    }).addTo(map);
-  }
-
-  // 6. Escuchar cambios en los selectores
-  document.getElementById("filtroCRM").addEventListener("change", actualizarMapa);
-  document.getElementById("filtroBase").addEventListener("change", actualizarMapa);
-
-</script>
-
-</body>
-</html>
