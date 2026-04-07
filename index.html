@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="utf-8" />
-  <title>Dashboard de Clientes Agrícolas</title>
+  <title>Dashboard Agrícola Interactivos</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
@@ -54,7 +54,7 @@
 <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 
 <script>
-  // 1. Configuración inicial del mapa
+  // 1. Configuración del mapa
   var map = L.map('map').setView([-34.0, -61.0], 6);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { 
     attribution: '© OpenStreetMap' 
@@ -64,20 +64,23 @@
   let datosBase2 = { features: [] };
   let geojsonLayer;
 
-  // 2. Buscador de propiedades insensible a Mayúsculas/Minúsculas
+  // 2. Buscador de propiedades (insensible a Mayúsculas/Minúsculas/Acentos básicos)
   function buscarProp(props, clave) {
     if (!props) return null;
-    const realKey = Object.keys(props).find(k => k.toLowerCase() === clave.toLowerCase());
+    const realKey = Object.keys(props).find(k => 
+      k.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "") === 
+      clave.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+    );
     return realKey ? props[realKey] : null;
   }
 
-  // 3. Limpieza de datos (maneja undefined, nulos y guiones)
+  // 3. Limpieza de datos
   function limpiar(v, reemplazo = "No disponible") {
     if (v === undefined || v === null || v.toString().trim() === "" || v === "-") return reemplazo;
     return v.toString().trim();
   }
 
-  // 4. Carga de datos desde GitHub/Servidor
+  // 4. Carga de datos
   Promise.all([
     fetch('data.geojson').then(r => r.json()).catch(() => ({features:[]})),
     fetch('data2.geojson').then(r => r.json()).catch(() => ({features:[]}))
@@ -87,7 +90,7 @@
     actualizarMapa();
   });
 
-  // 5. Lógica principal de renderizado y filtros
+  // 5. Lógica de renderizado y filtros
   function actualizarMapa() {
     const crmFiltro = document.getElementById("filtroCRM").value;
     const baseFiltro = document.getElementById("filtroBase").value;
@@ -102,56 +105,61 @@
       filter: function(f) {
         if (crmFiltro === "todos") return true;
         let valorEnData = buscarProp(f.properties, "crm");
-        // Si no tiene CRM cargado, lo asume como "NO"
         if (!valorEnData) return crmFiltro === "NO";
         return valorEnData.toString().toUpperCase().trim() === crmFiltro;
       },
       onEachFeature: function(f, layer) {
         const p = f.properties;
         
-        // Identificamos de qué base viene (si tiene CUIT, es CAPIA)
+        // Identificación de Base (CAPIA tiene Cuit)
         const esCapia = buscarProp(p, "cuit") !== null;
 
-        // --- Lógica de Nombres y CRM ---
+        // Datos Comunes
         const nombre = limpiar(buscarProp(p, "cliente"), "Empresa");
         const crm = limpiar(buscarProp(p, "crm"), "NO").toUpperCase();
-
-        // --- Lógica de Ubicación Diferenciada ---
-        const dir = limpiar(buscarProp(p, "direccion"), "");
-        const loc = limpiar(buscarProp(p, "localidad"), "");
-        const prov = limpiar(buscarProp(p, "provincia"), "");
+        
+        // --- LÓGICA DE UBICACIÓN DIFERENCIADA ---
+        const calle = buscarProp(p, "direccion"); // Busca "direccion" o "dirección"
+        const loc = buscarProp(p, "localidad");
+        const prov = buscarProp(p, "provincia");
         
         let ubicacionHTML = "";
         if (esCapia) {
           // CAPIA: Solo Localidad, Provincia
-          ubicacionHTML = `${loc}${loc && prov ? ', ' : ''}${prov}`;
+          let partesCapia = [];
+          if (loc) partesCapia.push(limpiar(loc));
+          if (prov) partesCapia.push(limpiar(prov));
+          ubicacionHTML = partesCapia.join(", ");
         } else {
           // PICADORES: Dirección, Localidad, Provincia
-          let partes = [];
-          if (dir !== "No disponible" && dir !== "") partes.push(dir);
-          if (loc !== "No disponible" && loc !== "") partes.push(loc);
-          if (prov !== "No disponible" && prov !== "") partes.push(prov);
-          ubicacionHTML = partes.join(", ");
+          let partesPic = [];
+          if (calle && calle !== "-") partesPic.push(limpiar(calle));
+          if (loc && loc !== "-") partesPic.push(limpiar(loc));
+          if (prov && prov !== "-") partesPic.push(limpiar(prov));
+          ubicacionHTML = partesPic.join(", ");
         }
 
-        // --- Construcción del Popup ---
+        // --- CONSTRUCCIÓN DEL POPUP ---
         let html = `<div style="min-width: 220px; font-family: Arial, sans-serif; line-height: 1.5;">
           <b style="color: #d35400; text-transform: uppercase; font-size: 13px;">${nombre}</b>
           <hr style="border:0; border-top:1px solid #eee; margin:8px 0;">
-          📍 <b>Ubicación:</b><br>
-          <small style="color: #555;">${ubicacionHTML || "No disponible"}</small><br><br>`;
+          
+          <div style="margin-bottom: 8px;">
+            📍 <b>Ubicación:</b><br>
+            <small style="color: #555; font-size: 11px;">${ubicacionHTML || "No disponible"}</small>
+          </div>`;
 
         if (esCapia) {
-          // --- DATOS EXCLUSIVOS CAPIA ---
+          // INFO CAPIA
           html += `🆔 <b>CUIT:</b> ${limpiar(buscarProp(p, "cuit"))}<br>
                    ✅ <b>Relevado:</b> ${limpiar(buscarProp(p, "relevado"))}<br>`;
         } else {
-          // --- DATOS EXCLUSIVOS PICADORES ---
+          // INFO PICADORES
           html += `🚜 <b>Máquinas:</b> ${limpiar(buscarProp(p, "maquinas"))}<br>
                    🔢 <b>Cantidad:</b> ${limpiar(buscarProp(p, "cantidad"), "0")}<br>`;
         }
 
-        // --- Pie con CRM ---
+        // Pie CRM
         html += `<div style="background:#f8f9fa; padding:10px; border-radius:8px; margin-top:12px; border-left:5px solid #2c3e4e; display: flex; justify-content: space-between; align-items: center;">
           <span style="font-weight: bold; font-size: 11px; color: #7f8c8d;">ESTADO CRM</span>
           <span style="color: ${crm === 'SI' ? '#27ae60' : '#e74c3c'}; font-weight: 800;">${crm}</span>
@@ -162,7 +170,7 @@
     }).addTo(map);
   }
 
-  // 6. Eventos de interacción
+  // 6. Eventos
   document.getElementById("filtroCRM").addEventListener("change", actualizarMapa);
   document.getElementById("filtroBase").addEventListener("change", actualizarMapa);
 </script>
