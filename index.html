@@ -26,10 +26,15 @@ fetch('data.geojson')
   .then(data => {
     L.geoJSON(data, {
       onEachFeature: function (feature, layer) {
-        layer.bindPopup(
-        "<b>" + feature.properties.cliente + "</b><br>" +
-        "Máquinas: " + feature.properties.maquinas
-        );
+      layer.bindPopup(`
+      <b>${feature.properties.empresa}</b><br>
+      📍 Dirección: ${feature.properties.direccion}<br>
+      📞 Teléfono: ${feature.properties.telefono}<br>
+      ✉️ Email: ${feature.properties.email}<br>
+      🚜 Máquinas: ${feature.properties.maquinas}<br>
+      🔢 Cantidad: ${feature.properties.cantidad}<br>
+      📊 CRM: ${feature.properties.crm}
+`);
       }
     }).addTo(map);
   });
