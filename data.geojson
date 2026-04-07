@@ -4,7 +4,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Miguel Novello SRL",
+        "cliente": "Miguel Novello SRL",
         "direccion": "Mariano Moreno 167",
         "telefono": "'+54 9 353 569-8469",
         "email": "miguelnovellosrl@hotmail.com.ar",
@@ -23,7 +23,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Duckas SRL",
+        "cliente": "Duckas SRL",
         "direccion": "Lisandro de la Torre 125",
         "telefono": "'+54 9 2396 62-3266",
         "email": "patricio@duckas.com.ar",
@@ -42,7 +42,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Futuro Ganadero SRL",
+        "cliente": "Futuro Ganadero SRL",
         "direccion": "Alte Brown 1338",
         "telefono": "'+54 9 2284 50-6154",
         "email": "futuroganadero@yahoo.com.ar",
@@ -61,7 +61,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Agro La Merced SRL",
+        "cliente": "Agro La Merced SRL",
         "direccion": "Av. Smith 1138",
         "telefono": "'+54 9 2325 65-0924",
         "email": "mcirio@agrolamerced.com.ar",
@@ -80,7 +80,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Cuenca Mediterránea SRL",
+        "cliente": "Cuenca Mediterránea SRL",
         "direccion": "Coronel Dominguez y Ruta Nac. 10",
         "telefono": "'+54 9 3404 52-8089",
         "email": "marianonioi@prosilo.com.ar",
@@ -99,7 +99,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Ikurriña SRL",
+        "cliente": "Ikurriña SRL",
         "direccion": "Estrada 184",
         "telefono": "'+54 9 2324 69-1355",
         "email": "silajesikurrina@gmail.com",
@@ -118,7 +118,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Martinelli y Asociados SRL",
+        "cliente": "Martinelli y Asociados SRL",
         "direccion": "Necochea 2357",
         "telefono": "'+54 9 341 320-6448",
         "email": "jlmartinelli@martinellisilajes.com",
@@ -137,7 +137,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "WRB Silaje",
+        "cliente": "WRB Silaje",
         "direccion": "Ruta 188 km. 219.3",
         "telefono": "'+54 9 2355 57-1458",
         "email": "info@silajewrb.com.ar",
@@ -156,7 +156,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "22 La Melga SRL",
+        "cliente": "22 La Melga SRL",
         "direccion": "Emilio V. Bunge 369",
         "telefono": "'+54 9 3388 45-7297",
         "email": "agrosilajesbunge1@gmail.com",
@@ -175,7 +175,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Agroyemel SA",
+        "cliente": "Agroyemel SA",
         "direccion": "Rivadavia 217",
         "telefono": "'+54 9 2337401094",
         "email": "belenscarellasilajes@hotmail.com",
@@ -194,7 +194,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Buenar Hnos. Silajes",
+        "cliente": "Buenar Hnos. Silajes",
         "direccion": "Colonia Villa Elisa",
         "telefono": "'+54 9 3447 43-7935",
         "email": "buenarhnossilajes@gmail.com",
@@ -213,7 +213,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Con Rural SRL",
+        "cliente": "Con Rural SRL",
         "direccion": "Av. Eva Perón 2457",
         "telefono": "'+54 9 2317 41-7410",
         "email": "conruralsrl@hotmail.com",
@@ -232,7 +232,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Cooperativa de Tamberos La Tordilla Ltda",
+        "cliente": "Cooperativa de Tamberos La Tordilla Ltda",
         "direccion": "Av. Libertador 1580",
         "telefono": "'+54 9 3576 52-6501",
         "email": "administracion@cooptordilla.com.ar",
@@ -251,7 +251,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Cooperativa Ltda. Union Villa Ana",
+        "cliente": "Cooperativa Ltda. Union Villa Ana",
         "direccion": "Av. San Martin 193",
         "telefono": "'+54 9 3491 58-0225",
         "email": "coop@unionvillaana.com.ar",
@@ -270,7 +270,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Dipaema SA",
+        "cliente": "Dipaema SA",
         "direccion": "Catamarca 1696",
         "telefono": "'+54 9 353 414-1574",
         "email": "pablodestefanis@hotmail.com",
@@ -289,7 +289,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "El Bepo SAS",
+        "cliente": "El Bepo SAS",
         "direccion": "Malvinas Argentinas 1964",
         "telefono": "'+54 9 353 419-1793",
         "email": "mariojosero@gmail.com",
@@ -308,7 +308,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "ForCeres SRL",
+        "cliente": "ForCeres SRL",
         "direccion": "Mosconi 2274",
         "telefono": "'+54 9 249 435-0861",
         "email": "info@forceres.com.ar",
@@ -327,7 +327,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Los Pinos SRL",
+        "cliente": "Los Pinos SRL",
         "direccion": "Garcia Montaño 234",
         "telefono": "'+54 9 353 657-4004",
         "email": "administración@lospinossrl.com.ar",
@@ -346,7 +346,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Lucas Gahan",
+        "cliente": "Lucas Gahan",
         "direccion": "Poderoso 943",
         "telefono": "'+54 9 249 455-8824",
         "email": "lucasgahan@hotmail.com",
@@ -365,7 +365,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "MEJES MICHEO S.R.L",
+        "cliente": "MEJES MICHEO S.R.L",
         "direccion": "Villegas 777",
         "telefono": "'+54 9 2392 52-1445",
         "email": "escritorioem97@gmail.com",
@@ -384,7 +384,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Silajes La Esperanza",
+        "cliente": "Silajes La Esperanza",
         "direccion": "Pte Perón  253",
         "telefono": "'+54 9 353 411-4448",
         "email": "nasarenobailone@hotmail.com",
@@ -403,7 +403,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Agro Silajes",
+        "cliente": "Agro Silajes",
         "direccion": "Ruta 2, km 122",
         "telefono": "'+54 9 2241 53-0280",
         "email": "agrosilajes@hotmail.com.ar",
@@ -422,7 +422,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Agropecuaria Santa Ines SRL",
+        "cliente": "Agropecuaria Santa Ines SRL",
         "direccion": "Sarmiento 1036",
         "telefono": "'+54 9 3404 51-6215",
         "email": "matias@santaines.com",
@@ -441,7 +441,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Agropecuaria Silvio Pellico SRL",
+        "cliente": "Agropecuaria Silvio Pellico SRL",
         "direccion": "Zona Rural",
         "telefono": "'+54 9 353 569-0666",
         "email": "ensiladoscordero@hotmail.com",
@@ -460,7 +460,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Agroservicios Don Raúl SRL",
+        "cliente": "Agroservicios Don Raúl SRL",
         "direccion": "25 de Mayo 421",
         "telefono": "'+54 9 3404 51-2747",
         "email": "fernandorey@live.com.ar",
@@ -479,7 +479,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Agrotecnica Necochea SA",
+        "cliente": "Agrotecnica Necochea SA",
         "direccion": "Av 79 Nº 237 Piso 2, depto A",
         "telefono": "'+54 9 2262 63-5038",
         "email": "agrotecnicanecochea@gmail.com",
@@ -498,7 +498,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Alejandro Bainotti",
+        "cliente": "Alejandro Bainotti",
         "direccion": "Ruta 7 km 156,5",
         "telefono": "'+54 9 2273 41-7346",
         "email": "a.bainottisilajes@hotmail.com",
@@ -517,7 +517,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Arredug Servicios Agropecuarios SRL",
+        "cliente": "Arredug Servicios Agropecuarios SRL",
         "direccion": "Av. Vieyetes 726",
         "telefono": "'+54 9 2325 65-7085",
         "email": "elceibosilajes@gmail.com",
@@ -536,7 +536,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Brescam Transportes SA",
+        "cliente": "Brescam Transportes SA",
         "direccion": "Rivadavia 580",
         "telefono": "'+54 9 3582 43-1177",
         "email": "emanuelbressan86@gmail.com",
@@ -555,7 +555,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Cappucci Picado de Forrajes",
+        "cliente": "Cappucci Picado de Forrajes",
         "direccion": "Ferroviarios 23",
         "telefono": "'+54 9 2324 58-0698",
         "email": "silajecappucci@hotmail.com",
@@ -574,7 +574,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Cappucci Silajes",
+        "cliente": "Cappucci Silajes",
         "direccion": "H.Yrigoyen 44",
         "telefono": "'+54 9 2324 64-8624",
         "email": "negrocappucci@hotmail.com",
@@ -593,7 +593,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Chapado Silajes SA",
+        "cliente": "Chapado Silajes SA",
         "direccion": "Europa 573",
         "telefono": "'+54 9 3388 45-9851",
         "email": "info@chapadosilajes.com",
@@ -612,7 +612,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Cooperativa Agropecuaria Limitada de Balnearia",
+        "cliente": "Cooperativa Agropecuaria Limitada de Balnearia",
         "direccion": "Tristán Cornejo 200",
         "telefono": "'+54 9 3563 402679",
         "email": "coop052balnearia@redcoop.com.ar",
@@ -631,7 +631,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Cooperativa Limitada Agropecuaria Las dos provincias",
+        "cliente": "Cooperativa Limitada Agropecuaria Las dos provincias",
         "direccion": "Corrientes S/N",
         "telefono": "'+54 9 3562-439756",
         "email": "gerencia@lasdosprovincias.com.ar",
@@ -650,7 +650,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Daniel Adrian Unrein",
+        "cliente": "Daniel Adrian Unrein",
         "direccion": "Urquiza 470",
         "telefono": "'+54 9 3564 62-6992",
         "email": "patitaunrein@hotmail.com",
@@ -669,7 +669,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Del Litoral Forrajes SH",
+        "cliente": "Del Litoral Forrajes SH",
         "direccion": "25 de Mayo 609",
         "telefono": "'+54 9 3401 64-4237",
         "email": "banchios@hotmail.com",
@@ -688,7 +688,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Don Alfredo SRL",
+        "cliente": "Don Alfredo SRL",
         "direccion": "Leandro N. Alem 145",
         "telefono": "'+54 9 353 569-3293",
         "email": "lucaslovay@hotmail.com",
@@ -707,7 +707,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Don Valentin SA",
+        "cliente": "Don Valentin SA",
         "direccion": "Ramón Cuerdo 506",
         "telefono": "'+54 9 3492 58-1289",
         "email": "oficina@toldoagroservicios.com.ar",
@@ -726,7 +726,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "El Jacarandá SA",
+        "cliente": "El Jacarandá SA",
         "direccion": "Alberdi 811",
         "telefono": "'+54 9 3404 59-6395",
         "email": "fedesonego@hotmail.com",
@@ -745,7 +745,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "El Pasto SA",
+        "cliente": "El Pasto SA",
         "direccion": "Monteverde 70",
         "telefono": "'+54 9 2392 40-4476",
         "email": "casantin58@hotmail.com",
@@ -764,7 +764,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "El Prado SA",
+        "cliente": "El Prado SA",
         "direccion": "Constitución S/N",
         "telefono": "'+54 9 3491 43-7631",
         "email": "elprado@vtcc.com.ar",
@@ -783,7 +783,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Enrici Servicios Agropecuarios",
+        "cliente": "Enrici Servicios Agropecuarios",
         "direccion": "Moreno 50",
         "telefono": "'+54 9 3493 66-2066",
         "email": "enriciserviciosagropecuarios@hotmail.com.ar",
@@ -802,7 +802,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Fass Agroservicios",
+        "cliente": "Fass Agroservicios",
         "direccion": "Colonia La Llave",
         "telefono": "'+54 9 3435 61-1363",
         "email": "fassagroservicios@hotmail.com",
@@ -821,7 +821,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Feed Green SA",
+        "cliente": "Feed Green SA",
         "direccion": "L.N.Alem 508 1° \"A\"",
         "telefono": "'+54 9 2396 54-8758",
         "email": "carlosmalaspina@feedgreen.com.ar",
@@ -840,7 +840,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Forrajes del Sur SA",
+        "cliente": "Forrajes del Sur SA",
         "direccion": "Tucuman 596",
         "telefono": "'+54 9 2302 53-7322",
         "email": "eduardolopez@huincacoop.com.ar",
@@ -859,7 +859,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Forrajes SA",
+        "cliente": "Forrajes SA",
         "direccion": "Casilla de correo 32",
         "telefono": "'+54 9 11 5010-7552",
         "email": "facundosauton@forrajessa.com.ar",
@@ -878,7 +878,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Grupo Picadora Progreso SA",
+        "cliente": "Grupo Picadora Progreso SA",
         "direccion": "Calle pública S/N",
         "telefono": "'+54 9 3496 54-7903",
         "email": "grupopicadora@yahoo.com.ar",
@@ -897,7 +897,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Ing. Quiroga SA",
+        "cliente": "Ing. Quiroga SA",
         "direccion": "Parra 351",
         "telefono": "'+54 9 3388 67-2744",
         "email": "ingenieroquirogasa@gmail.com",
@@ -916,7 +916,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "La Baya Silajes SA",
+        "cliente": "La Baya Silajes SA",
         "direccion": "Planta Urbana Bayauca",
         "telefono": "'+54 9 2355 46-3394",
         "email": "info@labayasilajes.com.ar",
@@ -935,7 +935,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Las Colonias",
+        "cliente": "Las Colonias",
         "direccion": "Mingura 657",
         "telefono": "'+54 9 3404 40-9634",
         "email": "valeriacarabelli@hotmail.com",
@@ -954,7 +954,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Lopez Seco SA",
+        "cliente": "Lopez Seco SA",
         "direccion": "Alberti 551",
         "telefono": "'+54 9 2223 46-4583",
         "email": "lopezsecosa@scdplanet.com.ar",
@@ -973,7 +973,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Los Diez SA",
+        "cliente": "Los Diez SA",
         "direccion": "B. Rivadavia 33",
         "telefono": "'+54 9 3491 58-7403",
         "email": "mgflesia@yahoo.com.ar",
@@ -992,7 +992,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Luna Rubén Alejandro",
+        "cliente": "Luna Rubén Alejandro",
         "direccion": "Bv. Bulgheroni 1381",
         "telefono": "'+54 9 352 5644951",
         "email": "rubenluna.adm@hotmail.com",
@@ -1011,7 +1011,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "M3 SRL",
+        "cliente": "M3 SRL",
         "direccion": "Agustin P. Justo 671",
         "telefono": "'+54 9 3777 41-2079",
         "email": "m3srl@hotmail.com",
@@ -1030,7 +1030,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Mediterranea Forrajes SRL",
+        "cliente": "Mediterranea Forrajes SRL",
         "direccion": "Alamos 159",
         "telefono": "'+54 9 3563 49-1949",
         "email": "mediterranea@redcoop.com.ar",
@@ -1049,7 +1049,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Nazareno Taus",
+        "cliente": "Nazareno Taus",
         "direccion": "Independencia 463",
         "telefono": "'+54 9 2241 54-7575",
         "email": "agroserviciosnaza@gmail.com",
@@ -1068,7 +1068,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Nuevas Siembras de Lincoln SA",
+        "cliente": "Nuevas Siembras de Lincoln SA",
         "direccion": "Av. Massey 138",
         "telefono": "'+54 9 2355 64-6187",
         "email": "tesoreria@danosilajes.com",
@@ -1087,7 +1087,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Otac Servicios Agropecuarios SA",
+        "cliente": "Otac Servicios Agropecuarios SA",
         "direccion": "Presidente Arturo Illia 88",
         "telefono": "'+54 9 2395 42-2925",
         "email": "otac@serviciodepicado.com.ar",
@@ -1106,7 +1106,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Piacenza Nelson Danilo",
+        "cliente": "Piacenza Nelson Danilo",
         "direccion": "Mitre 554",
         "telefono": "'+54 9 343 611-2209",
         "email": "nlorecarp@gmail.com",
@@ -1125,7 +1125,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "PIC.AR SA",
+        "cliente": "PIC.AR SA",
         "direccion": "Alvarado 137",
         "telefono": "'+54 9 2395 40-7724",
         "email": "Picotto_3@hotmail.com",
@@ -1144,7 +1144,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Picados La Verde SA",
+        "cliente": "Picados La Verde SA",
         "direccion": "San Lorenzo 371",
         "telefono": "'+54 9 3532 67-9902",
         "email": "ahserangeli@arnet.com.ar",
@@ -1163,7 +1163,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Poncho Verde Noetinger SAS",
+        "cliente": "Poncho Verde Noetinger SAS",
         "direccion": "Julian Araus 158",
         "telefono": "'+54 9 351 620-5137",
         "email": "ponchoverdesilajes@gmail.com",
@@ -1182,7 +1182,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Roberto Lazaro",
+        "cliente": "Roberto Lazaro",
         "direccion": "Sarmiento 622",
         "telefono": "'+54 9 2926 40-0199",
         "email": "silajesbenjamin@yahoo.com.ar",
@@ -1201,7 +1201,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Sergio D. Y Sebastián R. Clausen S.H.",
+        "cliente": "Sergio D. Y Sebastián R. Clausen S.H.",
         "direccion": "Catalina Blatter 450",
         "telefono": "'+54 9 3404 63-5996",
         "email": "agrosilossjn@gmail.com",
@@ -1220,7 +1220,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "ServiAgro",
+        "cliente": "ServiAgro",
         "direccion": "Paraná 100",
         "telefono": "'+54 9 3533 68-6024",
         "email": "administracion@serviagro.com.ar",
@@ -1239,7 +1239,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Silajes Areco SA",
+        "cliente": "Silajes Areco SA",
         "direccion": "Fitte 826",
         "telefono": "'+54 9 2325 65-8102",
         "email": "bouquet.jorge@gmail.com",
@@ -1258,7 +1258,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Silajes La Promesa SA",
+        "cliente": "Silajes La Promesa SA",
         "direccion": "Mozotegui 265",
         "telefono": "'+54 9 2226 52-0660",
         "email": "silajeslapromesa@hotmail.com",
@@ -1277,7 +1277,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Sivori Silajes SRL",
+        "cliente": "Sivori Silajes SRL",
         "direccion": "Entre Acceso Rawson y Bme. Mitre",
         "telefono": "'+54 9 2325 68-8970",
         "email": "sivorisilajes@hotmail.com",
@@ -1296,7 +1296,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Tamesar Silajes SA",
+        "cliente": "Tamesar Silajes SA",
         "direccion": "Acceso Ruta 76",
         "telefono": "'+54 9 2923 50-3470",
         "email": "tamesarsilajes@gmail.com",
@@ -1315,7 +1315,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "The Friendship SA",
+        "cliente": "The Friendship SA",
         "direccion": "Calle 21 Nº 76",
         "telefono": "'+54 9 2272 40-0381",
         "email": "marcos_dosanto@hotmail.com",
@@ -1334,7 +1334,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Valle de Choia SRL",
+        "cliente": "Valle de Choia SRL",
         "direccion": "San Martín 360",
         "telefono": "'+54 9 3533 43-4859",
         "email": "diarsrl2010@gmail.com",
@@ -1353,7 +1353,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Visconti Hermanos SA",
+        "cliente": "Visconti Hermanos SA",
         "direccion": "Bv. Córdoba Esq. Entre Rios",
         "telefono": "'+54 9 3576 47-4247",
         "email": "info@viscontisa.com.ar",
@@ -1372,7 +1372,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Zabalegui Hnos SH",
+        "cliente": "Zabalegui Hnos SH",
         "direccion": "San Martín 153",
         "telefono": "'+54 9 2355 57-0222",
         "email": "mariozabalegui@gmail.com",
@@ -1391,7 +1391,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "ADA Silajes SA",
+        "cliente": "ADA Silajes SA",
         "direccion": "Urquiza 445",
         "telefono": "'+54 9 3562 44-3446",
         "email": "agrounionsrl@hotmail.com",
@@ -1410,7 +1410,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "AGRO 3.0 SA",
+        "cliente": "AGRO 3.0 SA",
         "direccion": "Zona Rural SN Ruta E79 Km 26",
         "telefono": "'+54 9 3572 53-3109",
         "email": "hugo_cofa@hotmail.com; admagro3punto0@gmail.com",
@@ -1429,7 +1429,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Agro Dap SRL",
+        "cliente": "Agro Dap SRL",
         "direccion": "12 de Octubre 1995",
         "telefono": "'+54 9 3462 59-5920",
         "email": "carlos.gutierrez@agrodap.com",
@@ -1448,7 +1448,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Agro Ganadera Anchustegui SA",
+        "cliente": "Agro Ganadera Anchustegui SA",
         "direccion": "España 230",
         "telefono": "'+54 9 3385 44-4604",
         "email": "m-anchustegui@hotmail.com",
@@ -1467,7 +1467,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Agro Gusmerini",
+        "cliente": "Agro Gusmerini",
         "direccion": "Av. Flandes 430",
         "telefono": "'+54 9 2323 61-3688",
         "email": "agrogusmerini@gmail.com",
@@ -1486,7 +1486,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Agro Los Horneros SRL",
+        "cliente": "Agro Los Horneros SRL",
         "direccion": "Avellaneda 147",
         "telefono": "'+54 9 3585 49-5189",
         "email": "mensad@amaria.com.ar",
@@ -1505,7 +1505,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Agrodirecto de Sinsacate SRL",
+        "cliente": "Agrodirecto de Sinsacate SRL",
         "direccion": "Ruta Nacional 9 Km 757",
         "telefono": "'+54 9 3525 52-5252",
         "email": "tazzioli@agrodirectosrl.com.ar",
@@ -1524,7 +1524,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Agropecuaria JB SA",
+        "cliente": "Agropecuaria JB SA",
         "direccion": "Rivadavia 173",
         "telefono": "'+54 9 2923 42-5629",
         "email": "agroserviciosdonernesto@yahoo.es",
@@ -1543,7 +1543,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Agropicado Lobos SRL",
+        "cliente": "Agropicado Lobos SRL",
         "direccion": "Manuel Caminos 185",
         "telefono": "'+54 9 2227 55-2743",
         "email": "agropicadolobos@infovia.com.ar",
@@ -1562,7 +1562,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Agroservicios del Este SRL",
+        "cliente": "Agroservicios del Este SRL",
         "direccion": "Calle 68 N° 1582 - 1900  La Plata  Buenos Aires",
         "telefono": "'+54 9 2241 53-0421",
         "email": "juancfuse@gmail.com",
@@ -1581,7 +1581,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Agrosilos Patalagoity SA",
+        "cliente": "Agrosilos Patalagoity SA",
         "direccion": "Calle Juan XXIII  Nº 109",
         "telefono": "'+54 9 2324 64-3636",
         "email": "martin@silajespatalagoity.com.ar",
@@ -1600,7 +1600,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Agrototal Servicios Agropecuarios SRL",
+        "cliente": "Agrototal Servicios Agropecuarios SRL",
         "direccion": "Av. R. Sáenz Peña 2929",
         "telefono": "'+54 9 3564 67-8100",
         "email": "hmatteucci@hotmail.com",
@@ -1619,7 +1619,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "AICOR",
+        "cliente": "AICOR",
         "direccion": "Saavedra 158",
         "telefono": "'+54 9 2923 64-2435",
         "email": "marcio@aisemberg.com",
@@ -1638,7 +1638,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Angel Genjo SRL",
+        "cliente": "Angel Genjo SRL",
         "direccion": "Rivadavia 157",
         "telefono": "'+54 9 2392 51-4790",
         "email": "angelgenjo@yahoo.com.ar",
@@ -1657,7 +1657,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Arina Santiago",
+        "cliente": "Arina Santiago",
         "direccion": "Silverio Almiro 315",
         "telefono": "'+54 9 3388 46-6340",
         "email": "Santi_arina@yahoo.com.ar",
@@ -1676,7 +1676,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Arneodo Silajes",
+        "cliente": "Arneodo Silajes",
         "direccion": "Cabrera 694",
         "telefono": "'+54 9 3582 64-9081",
         "email": "arneodosilajes@gmail.com",
@@ -1695,7 +1695,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "ATP SA",
+        "cliente": "ATP SA",
         "direccion": "Santa Fe 1417",
         "telefono": "'+54 9 3401 64-6159",
         "email": "atpsa@hotmail.com",
@@ -1714,7 +1714,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "BEEM Silajes SRL",
+        "cliente": "BEEM Silajes SRL",
         "direccion": "Lavalle 77",
         "telefono": "'+54 9 3564 41-4448",
         "email": "silajesbeem@hotmail.com",
@@ -1733,7 +1733,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Berardo Franco",
+        "cliente": "Berardo Franco",
         "direccion": "Moreno 370",
         "telefono": "'+54 9 358 654-1728",
         "email": "francoberardo@hotmail.com.ar",
@@ -1752,7 +1752,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Berpri SAS",
+        "cliente": "Berpri SAS",
         "direccion": "Mendoza 145",
         "telefono": "'+54 9 353 569-6850",
         "email": "ceferinoberti@hotmail.com",
@@ -1771,7 +1771,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Brelis SRL",
+        "cliente": "Brelis SRL",
         "direccion": "Casilla de Correo 12",
         "telefono": "'+54 9 343 621-1754",
         "email": "norbertb@brelis.com.ar",
@@ -1790,7 +1790,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Brunas Hermanos Agroservicios SRL",
+        "cliente": "Brunas Hermanos Agroservicios SRL",
         "direccion": "San José N°1426",
         "telefono": "'+54 9 3496 54-8267",
         "email": "marcelo-brunas@hotmail.com",
@@ -1809,7 +1809,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Coop. \"La Industrial Argentina\"",
+        "cliente": "Coop. \"La Industrial Argentina\"",
         "direccion": "Av. San Martín 1059",
         "telefono": "'+54 9 3401 43-4600",
         "email": "martin.derico@coopcenteno.com.ar",
@@ -1828,7 +1828,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Cooperativa Ltda. \"Colonia Frias\"",
+        "cliente": "Cooperativa Ltda. \"Colonia Frias\"",
         "direccion": "Simon de Iriondo 502",
         "telefono": "'+54 9 3493 40-2697",
         "email": "coopfrias@gmail.com",
@@ -1847,7 +1847,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Don Andrés",
+        "cliente": "Don Andrés",
         "direccion": "Larrea 925",
         "telefono": "'+54 9 3582412964",
         "email": "renzoabressan@hotmail.com",
@@ -1866,7 +1866,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Don Antonio SRL",
+        "cliente": "Don Antonio SRL",
         "direccion": "Mitre 378",
         "telefono": "'+54 9 353 423-7384",
         "email": "donantoniovm@gmail.com",
@@ -1885,7 +1885,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Duggan Silajes SAS",
+        "cliente": "Duggan Silajes SAS",
         "direccion": "Domingo F. Sarmiento 594",
         "telefono": "'+54 9 2326 42-0300",
         "email": "duggansilajes@gmail.com",
@@ -1904,7 +1904,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Duretti Miguel H.",
+        "cliente": "Duretti Miguel H.",
         "direccion": "Independencia 388",
         "telefono": "'+54 9 3533 40-8288",
         "email": "miguelduretti@gmail.com; durettidm@gmail.com",
@@ -1923,7 +1923,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "El Buyico",
+        "cliente": "El Buyico",
         "direccion": "Hipolito Yrigoyen 371",
         "telefono": "'+54 9 343 425-2567",
         "email": "adrianaudisio@gmail.com",
@@ -1942,7 +1942,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "El Eucaliptus",
+        "cliente": "El Eucaliptus",
         "direccion": "Hipolito Irigoyen 371",
         "telefono": "'+54 9 342 548-5143",
         "email": "audisiojp@gmail.com",
@@ -1961,7 +1961,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "El Mate de Ameghino SA",
+        "cliente": "El Mate de Ameghino SA",
         "direccion": "Calle 26 N°355",
         "telefono": "'+54 9 3388 67-8844",
         "email": "elmatedeameghino@gmail.com",
@@ -1980,7 +1980,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Ensilados BIACOT SRL",
+        "cliente": "Ensilados BIACOT SRL",
         "direccion": "Calle 26 N° 105",
         "telefono": "'+54 9 2324 51-0541",
         "email": "guillermoacotto@gmail.com",
@@ -1999,7 +1999,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Fichetti Hnos SRL",
+        "cliente": "Fichetti Hnos SRL",
         "direccion": "Bv Mitre 1141",
         "telefono": "'+54 9 3533 43-4068",
         "email": "hfichetti@hotmail.com",
@@ -2018,7 +2018,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Fortaleza Serrana SRL",
+        "cliente": "Fortaleza Serrana SRL",
         "direccion": "Rosales 1970",
         "telefono": "'+54 9 249 466-0433",
         "email": "serviciosagropecuariosserrano@hotmail.com",
@@ -2037,7 +2037,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Geosilar SA",
+        "cliente": "Geosilar SA",
         "direccion": "Ruta Prov. N° 13, Km 87",
         "telefono": "'+54 9 3533 43-7945",
         "email": "geosilar@hotmail.com",
@@ -2056,7 +2056,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Gorgerino Cesar y Adrian SH",
+        "cliente": "Gorgerino Cesar y Adrian SH",
         "direccion": "L.N. Alem 683",
         "telefono": "'+54 9 3562 50-1413",
         "email": "lucas_gorgerino@hotmail.com",
@@ -2075,7 +2075,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Grupo Proagro San Carlos SRL",
+        "cliente": "Grupo Proagro San Carlos SRL",
         "direccion": "Suipacha 552",
         "telefono": "'+54 9 3404 63-1929",
         "email": "grupoproagrosc@gmail.com",
@@ -2094,7 +2094,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Grusemor SRL",
+        "cliente": "Grusemor SRL",
         "direccion": "Italia 1422",
         "telefono": "'+54 9 3562 55-0332",
         "email": "grusemorsrl@hotmail.com.ar",
@@ -2113,7 +2113,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Gustavo y Horacio Vescovo SH",
+        "cliente": "Gustavo y Horacio Vescovo SH",
         "direccion": "Dardo Rocha 108 y Piedras",
         "telefono": "'+54 9 2396 62-4356",
         "email": "gyhvescovo@hotmail.com",
@@ -2132,7 +2132,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Hecoser SA",
+        "cliente": "Hecoser SA",
         "direccion": "Buenos Aires 379",
         "telefono": "'+54 9 2245 50-5727",
         "email": "hectoracha@hotmail.com",
@@ -2151,7 +2151,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Hugo Culaciati",
+        "cliente": "Hugo Culaciati",
         "direccion": "Carlos Tejedor 22",
         "telefono": "'+54 9 236 459-5543",
         "email": "nitrum24@gmail.com",
@@ -2170,7 +2170,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Jorge Luis Eizmendi",
+        "cliente": "Jorge Luis Eizmendi",
         "direccion": "Zona Rural",
         "telefono": "'+54 9 3537 68-9830",
         "email": "losvasquitosjje@hotmail.com",
@@ -2189,7 +2189,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Juan José Capello",
+        "cliente": "Juan José Capello",
         "direccion": "Sarmiento 807",
         "telefono": "'+54 9 2355 50-0887",
         "email": "juanjocappello@hotmail.com",
@@ -2208,7 +2208,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Kiernan SRL",
+        "cliente": "Kiernan SRL",
         "direccion": "Arellano 499",
         "telefono": "'+54 9 2326 42-0301",
         "email": "kiernansrl@yahoo.com.ar",
@@ -2227,7 +2227,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "La Chacra S.R.L.",
+        "cliente": "La Chacra S.R.L.",
         "direccion": "Rivadavia 445",
         "telefono": "(353) 4198811",
         "email": "rg.lachacra@gmail.com",
@@ -2246,7 +2246,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "LAFLA SAS",
+        "cliente": "LAFLA SAS",
         "direccion": "Buenos Aires 789",
         "telefono": "'+54 9 353-4117267",
         "email": "laflasas@hotmail.com",
@@ -2265,7 +2265,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Las Marías Agronegocios SAS",
+        "cliente": "Las Marías Agronegocios SAS",
         "direccion": "Zona Rural - Campo Las Marías",
         "telefono": "'+54 9 3585 43-5640",
         "email": "josebisotto@gmail.com",
@@ -2284,7 +2284,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Los Algarrobos Grandes SRL",
+        "cliente": "Los Algarrobos Grandes SRL",
         "direccion": "José de Barberis 548",
         "telefono": "'+54 9 3576 658529",
         "email": "vicenteolocco20@hotmail.com",
@@ -2303,7 +2303,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Los Cauquenes Silajes",
+        "cliente": "Los Cauquenes Silajes",
         "direccion": "Av. Massey 673",
         "telefono": "'+54 9 2355 57-5109",
         "email": "loscauquenes@silajes.com.ar",
@@ -2322,7 +2322,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Los Laureles SRL",
+        "cliente": "Los Laureles SRL",
         "direccion": "Pueyrredón 450",
         "telefono": "'+54 9 3388 67-1936",
         "email": "loslaureles.serviciosagro@gmail.com",
@@ -2341,7 +2341,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Los Medanos Pampeanos SA",
+        "cliente": "Los Medanos Pampeanos SA",
         "direccion": "Belgrano 820",
         "telefono": "'+54 9 3388 43-0037",
         "email": "guillermo.tomaselli@gmail.com",
@@ -2360,7 +2360,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Luis Wernli",
+        "cliente": "Luis Wernli",
         "direccion": "RUTA 18, KM 38 DTO. QUEBRACHO",
         "telefono": "'+54 9 343 451-2627",
         "email": "administracion@elconcierto.com.ar",
@@ -2379,7 +2379,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "LyS Agro SA",
+        "cliente": "LyS Agro SA",
         "direccion": "Ricardo Simonini 381",
         "telefono": "'+54 9 353 417-0223",
         "email": "silverianor@hotmail.com",
@@ -2398,7 +2398,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "MA Forrajes SA",
+        "cliente": "MA Forrajes SA",
         "direccion": "Rivadavia 667",
         "telefono": "'+54 9 2325 41-1685",
         "email": "Maforrajes@hotmail.com",
@@ -2417,7 +2417,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Meteo SRL",
+        "cliente": "Meteo SRL",
         "direccion": "Los Caldenes 337",
         "telefono": "'+54 9 3385 59-5394",
         "email": "erikmarian2009@hotmail.com",
@@ -2436,7 +2436,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Nabaes Agrosilajes",
+        "cliente": "Nabaes Agrosilajes",
         "direccion": "Calle 8  N° 563",
         "telefono": "'+54 9 2923 48-5513",
         "email": "ohnabaes@yahoo.com.ar",
@@ -2455,7 +2455,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Norberto Luján Concha",
+        "cliente": "Norberto Luján Concha",
         "direccion": "25 de Mayo 607",
         "telefono": "'+5493388454811",
         "email": "agropilares4@gmail.com",
@@ -2474,7 +2474,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Nuestra Tierra SRL",
+        "cliente": "Nuestra Tierra SRL",
         "direccion": "Calle 4 Lote 39 Parque Industrial",
         "telefono": "'+54 9 3482 50-1481",
         "email": "nuestratierra@playcomla.com.ar",
@@ -2493,7 +2493,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Pagos de Tresar SAS",
+        "cliente": "Pagos de Tresar SAS",
         "direccion": "Moreno 703",
         "telefono": "'+54 9 2325 68-9248",
         "email": "felipejbasanta@hotmail.com",
@@ -2512,7 +2512,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "POR FRE SRL",
+        "cliente": "POR FRE SRL",
         "direccion": "Alberdi 239",
         "telefono": "'+54 9 3564 58-8627",
         "email": "picadoporfre@gmail.com",
@@ -2531,7 +2531,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Priotti Sergio Andres",
+        "cliente": "Priotti Sergio Andres",
         "direccion": "Illia 332",
         "telefono": "'+54 9 3562 45-4497",
         "email": "oficina@camposlamorocha.com.ar",
@@ -2550,7 +2550,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Rasino Fernando Daniel",
+        "cliente": "Rasino Fernando Daniel",
         "direccion": "Arturo Illia 565",
         "telefono": "'+54 9 353 401-1481",
         "email": "cabelarbolito@yahoo.com.ar",
@@ -2569,7 +2569,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Ricordi Gonzalo Alejandro",
+        "cliente": "Ricordi Gonzalo Alejandro",
         "direccion": "Mariano Moreno 243",
         "telefono": "'+54 9 3533 45-9559",
         "email": "ricordigonzalo@gmail.com",
@@ -2588,7 +2588,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Rome Agropecuaria SA",
+        "cliente": "Rome Agropecuaria SA",
         "direccion": "Ing. Dinkeldein 2758",
         "telefono": "'+54 9 358 507-9926",
         "email": "romeagropecuaria@live.com.ar",
@@ -2607,7 +2607,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "S y M servicios de Ensilado y Transporte",
+        "cliente": "S y M servicios de Ensilado y Transporte",
         "direccion": "Valentín Entessano 559",
         "telefono": "'+54 9 2241 50-9183",
         "email": "taus_rural@hotmail.com; sil_lezama@hotmail.com",
@@ -2626,7 +2626,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Saltea SRL",
+        "cliente": "Saltea SRL",
         "direccion": "Las Heras 1312",
         "telefono": "'+54 9 3476 69-2346",
         "email": "tecnosilostotoras@gmail.com; rodolfoaccorsi@yahoo.com.ar",
@@ -2645,7 +2645,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Sapler SRL",
+        "cliente": "Sapler SRL",
         "direccion": "Ruta Prov. Nº 6 Km. 202",
         "telefono": "'+54 9 3467 49-9867",
         "email": "saplersrl@gmail.com",
@@ -2664,7 +2664,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "SB Forrajes",
+        "cliente": "SB Forrajes",
         "direccion": "Ruta 33 y 67",
         "telefono": "'+54 9 2923 65-0890",
         "email": "sbforrajes@gmail.com",
@@ -2683,7 +2683,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Schmidt Nestor y Wisner Emanuel SH",
+        "cliente": "Schmidt Nestor y Wisner Emanuel SH",
         "direccion": "Monseñor D Andrea 590",
         "telefono": "'+54 9 2923 57-0514",
         "email": "schmidtnestor@hotmail.com",
@@ -2702,7 +2702,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Servicios Ganaderos Silajes SA",
+        "cliente": "Servicios Ganaderos Silajes SA",
         "direccion": "San Antonio Norte 949",
         "telefono": "'+54 9 3444-629584",
         "email": "serviciosganaderossa@gmail.com",
@@ -2721,7 +2721,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Servicios Huanguelén",
+        "cliente": "Servicios Huanguelén",
         "direccion": "Calle 7 N° 1538",
         "telefono": "'+54 9 2923 40-9846",
         "email": "servicioshuanguelen@hotmail.com",
@@ -2740,7 +2740,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Silaje Sacanta SA",
+        "cliente": "Silaje Sacanta SA",
         "direccion": "Dr. Carlos Vivenza 181",
         "telefono": "'+54 9 3533 44-0904",
         "email": "silajesacanta@gmail.com",
@@ -2759,7 +2759,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Silajes Jovita",
+        "cliente": "Silajes Jovita",
         "direccion": "Pasaje Dr. Luis Rivero 276",
         "telefono": "'+54 9 3385 52-2523",
         "email": "sergiomontemerlo@hotmail.com",
@@ -2778,7 +2778,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Silajes SAS",
+        "cliente": "Silajes SAS",
         "direccion": "Urquiza 636",
         "telefono": "'+549 3534- 062441",
         "email": "silajessas@hotmail.com",
@@ -2797,7 +2797,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Silosac SA",
+        "cliente": "Silosac SA",
         "direccion": "Bv. Mitre 1141",
         "telefono": "'+54 9 3533 43-4068",
         "email": "silosac@hotmail.com.ar",
@@ -2816,7 +2816,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Supertino Omar Alfredo",
+        "cliente": "Supertino Omar Alfredo",
         "direccion": "Diag. Arturo Illia 547",
         "telefono": "'+54 9 353-6577613",
         "email": "agrosupertino@gmail.com",
@@ -2835,7 +2835,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Tecnosilos Totoras SRL",
+        "cliente": "Tecnosilos Totoras SRL",
         "direccion": "Arenales 1071",
         "telefono": "'+54 9 3476 69-3405",
         "email": "tecnosilostotoras@gmail.com",
@@ -2854,7 +2854,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Trecktor Silajes",
+        "cliente": "Trecktor Silajes",
         "direccion": "Sarmiento 152",
         "telefono": "'+54 9 2392 45-9585",
         "email": "manucereigido@hotmail.com",
@@ -2873,7 +2873,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Vision Agropecuaria SA",
+        "cliente": "Vision Agropecuaria SA",
         "direccion": "Iacianci 187",
         "telefono": "'+54 9 2355 57-2851",
         "email": "lacteosdobles@germania.com.ar",
@@ -2892,7 +2892,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Michelotti, Fernando Daniel",
+        "cliente": "Michelotti, Fernando Daniel",
         "direccion": "Sarmiento 98",
         "telefono": "'+54 9 3537 58-1280",
         "email": "",
@@ -2911,7 +2911,7 @@
     {
       "type": "Feature",
       "properties": {
-        "empresa": "Servetto Juan Carlos",
+        "cliente": "Servetto Juan Carlos",
         "direccion": "Sarmieento 0",
         "telefono": "'+54 9 3572 436444",
         "email": "",
