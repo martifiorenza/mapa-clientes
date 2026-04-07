@@ -1,0 +1,27 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "cliente": "Cliente Santa Fe",
+        "maquinas": 3
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-60.71, -31.65]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cliente": "Cliente Córdoba",
+        "maquinas": 5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-64.18, -31.42]
+      }
+    }
+  ]
+}
