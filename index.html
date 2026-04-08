@@ -170,18 +170,12 @@
         html += `📍 <b>Ubicación:</b><br><small style="color: #555;">${ubicacion}</small><br><br>`;
 
         if (f._baseOrig === 'base3') {
-          html += `🆔 <b>CUIT:</b> ${cuit}<br>
+          html += `🆔 <b>CUIT:</b> ${CUIT}<br>
                    📞 <b>Tel:</b> ${tel}<br>
                    📧 <b>Email:</b> ${email}<br>
                    🚜 <b>Máquinas:</b> ${Maquinas}<br>
-                   🏢 <b>Sucursal:</b> ${sucursal}<br>`;
-        } else if (f._baseOrig === 'base2') {
-          html += `🆔 <b>CUIT:</b> ${cuit}<br>
-                   ✅ <b>Relevado:</b> ${limpiar(buscarProp(p, "relevado"))}<br>`;
-        } else {
-          html += `🚜 <b>Máquinas:</b> ${Maquinas}<br>
-                   🔢 <b>Cantidad:</b> ${limpiar(buscarProp(p, "cantidad"), "0")}<br>`;
-        }
+                   🏢 <b>Sucursal:</b> ${Sucursal}<br>`;
+        } 
 
         html += `<div style="background:#f8f9fa; padding:10px; border-radius:8px; margin-top:12px; border-left:5px solid #2c3e4e; display: flex; justify-content: space-between; align-items: center;">
           <span style="font-weight: bold; font-size: 11px; color: #7f8c8d;">ESTADO CRM</span>
