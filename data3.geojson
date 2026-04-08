@@ -1327,7 +1327,7 @@
         "CUIT": 30693973453,
         "Dirección": "Presidente Perón 451, San Luis ",
         "Localidad": "San Luis",
-        "Provincia": "Santa Fe",
+        "Provincia": "San Luis",
         "Teléfono": "(0266) 154573954 ",
         "Correo": "odelviso@consud.com.ar ",
         "CRM": "NO",
@@ -1386,8 +1386,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -60.2715,
-          -29.8885
+          -61.54985584418031,
+          -30.932244656069532
         ]
       },
       "properties": {
