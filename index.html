@@ -2,42 +2,39 @@
 <html lang="es">
 <head>
   <meta charset="utf-8" />
-  <title>Dashboard Agrícola Interactivos</title>
+  <title>Dashboard Clientes Interactivo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
   <style>
-    body { margin: 0; padding: 0; font-family: 'Segoe UI', Roboto, sans-serif; background: #f0f2f5; }
+    body { margin: 0; padding: 0; font-family: 'Segoe UI', sans-serif; background: #f0f2f5; }
     #map { height: 100vh; width: 100%; }
     #panelCapas {
       position: absolute; top: 20px; right: 20px; z-index: 1000;
       background: #2c3e50; color: white; padding: 20px;
       border-radius: 12px; width: 260px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-      border: 1px solid rgba(255,255,255,0.1);
     }
-    #panelCapas h3 { margin: 0 0 15px 0; font-size: 1.1em; text-align: center; border-bottom: 1px solid #444; padding-bottom: 10px; letter-spacing: 1px; }
-    .control-group { margin-bottom: 20px; }
-    label { display: block; margin-bottom: 8px; font-size: 0.75em; font-weight: bold; color: #bdc3c7; text-transform: uppercase; }
-    select { width: 100%; padding: 12px; border-radius: 8px; border: none; background: #fdfdfd; color: #333; font-weight: 600; cursor: pointer; font-size: 0.9em; }
-    select:focus { outline: 3px solid #3498db; }
+    .control-group { margin-bottom: 15px; }
+    label { display: block; margin-bottom: 5px; font-size: 0.7em; font-weight: bold; color: #bdc3c7; text-transform: uppercase; }
+    select { width: 100%; padding: 10px; border-radius: 6px; border: none; background: #fff; color: #333; font-weight: 600; }
   </style>
 </head>
 <body>
 
 <div id="panelCapas">
-  <h3>CONTROL DE CLIENTES</h3>
+  <h3 style="margin-top:0; text-align:center; font-size: 1em;">FILTROS</h3>
   <div class="control-group">
-    <label>📂 Seleccionar Base:</label>
+    <label>Base de Datos:</label>
     <select id="filtroBase">
       <option value="todas">Todas las Bases</option>
-      <option value="base1">Socios CACF (Forrajeros)</option>
-      <option value="base2">Socios CAPIA (Avicolas)</option>
-      <option value="base3">Socios CAMARCO Santa Fe</option>
+      <option value="base1">CACF (Forrajeros)</option>
+      <option value="base2">CAPIA (Avícolas)</option>
+      <option value="base3">CAMARCO (Construcción)</option>
     </select>
   </div>
   <div class="control-group">
-    <label>📊 Estado CRM:</label>
+    <label>Estado CRM:</label>
     <select id="filtroCRM">
-      <option value="todos">Todos los Clientes</option>
+      <option value="todos">Todos</option>
       <option value="SI">En CRM (SI)</option>
       <option value="NO">Fuera de CRM (NO)</option>
     </select>
@@ -48,17 +45,12 @@
 
 <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 <script>
-  // 1. Configuración del mapa
   var map = L.map('map').setView([-31.63, -60.70], 7);
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { 
-    attribution: '© OpenStreetMap' 
-  }).addTo(map);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
 
   let datosBases = { base1: [], base2: [], base3: [] };
   let geojsonLayer;
-  let capaSucursales;
 
-  // 2. Buscador de propiedades inteligente (ignora tildes y mayúsculas)
   function buscarProp(props, clave) {
     if (!props) return null;
     const claveNorm = clave.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").trim();
@@ -69,29 +61,11 @@
   }
 
   function limpiar(v, reemplazo = "-") {
-    if (v === undefined || v === null || v.toString().trim() === "" || v === "-" || v === 0) return reemplazo;
+    if (v === undefined || v === null || v.toString().trim() === "" || v === "0") return reemplazo;
     return v.toString().trim();
   }
 
-  // 3. Capa de Sucursales (Zonas)
-  function cargarZonasSucursales() {
-    fetch('sucursales.geojson').then(r => r.json()).then(data => {
-      capaSucursales = L.geoJSON(data, {
-        style: { color: "#7f8c8d", weight: 1.5, fillColor: "#bdc3c7", fillOpacity: 0.15 },
-        onEachFeature: function(f, l) {
-          const n = buscarProp(f.properties, "name") || buscarProp(f.properties, "sucursal") || "Zona";
-          l.bindPopup(`<b>Sucursal:</b><br>${n}`);
-          l.on({
-            mouseover: e => e.target.setStyle({ fillOpacity: 0.35 }),
-            mouseout: e => capaSucursales.resetStyle(e.target)
-          });
-        }
-      }).addTo(map);
-      capaSucursales.bringToBack();
-    }).catch(e => console.log("Capa sucursales no cargada"));
-  }
-
-  // 4. Carga de datos con data3.geojson
+  // CARGA DE DATOS
   Promise.all([
     fetch('data.geojson').then(r => r.json()).catch(() => ({features:[]})),
     fetch('data2.geojson').then(r => r.json()).catch(() => ({features:[]})),
@@ -100,11 +74,9 @@
     datosBases.base1 = (d1.features || []).map(f => ({ ...f, _baseID: 'base1' }));
     datosBases.base2 = (d2.features || []).map(f => ({ ...f, _baseID: 'base2' }));
     datosBases.base3 = (d3.features || []).map(f => ({ ...f, _baseID: 'base3' }));
-    cargarZonasSucursales();
     actualizarMapa();
   });
 
-  // 5. Función de renderizado
   function actualizarMapa() {
     const crmFiltro = document.getElementById("filtroCRM").value;
     const baseFiltro = document.getElementById("filtroBase").value;
@@ -128,32 +100,34 @@
         let col = "#3498db"; // Azul CACF
         if (f._baseID === 'base3') col = "#f1c40f"; // Amarillo CAMARCO
         if (f._baseID === 'base2') col = "#e67e22"; // Naranja CAPIA
-        return L.circleMarker(latlng, { 
-          radius: 8, fillColor: col, color: "#fff", weight: 1.5, fillOpacity: 0.9 
-        });
+        return L.circleMarker(latlng, { radius: 8, fillColor: col, color: "#fff", weight: 1.5, fillOpacity: 0.9 });
       },
       onEachFeature: function(f, layer) {
         const p = f.properties;
         const nombre = limpiar(buscarProp(p, "nombre") || buscarProp(p, "cliente"), "Empresa");
         const crm = (buscarProp(p, "crm") || "NO").toString().toUpperCase().trim();
-        const maquinas = limpiar(buscarProp(p, "maquinas"), "-");
-        const sucursal = limpiar(buscarProp(p, "sucursal"), "-");
         
         let colH = (f._baseID === 'base3') ? "#f39c12" : (f._baseID === 'base2' ? "#d35400" : "#2980b9");
 
-        let html = `<div style="min-width: 220px; font-family: sans-serif; line-height: 1.4;">
-          <b style="color: ${colH}; text-transform: uppercase;">${nombre}</b><hr style="border:0; border-top:1px solid #eee; margin:8px 0;">
-          📍 <b>Ubicación:</b><br><small>${limpiar(buscarProp(p, "direccion"))}, ${limpiar(buscarProp(p, "localidad"))}</small><br><br>`;
+        let html = `<div style="min-width: 220px; font-family: sans-serif;">
+          <b style="color: ${colH}; text-transform: uppercase;">${nombre}</b><hr style="border:0; border-top:1px solid #eee; margin:8px 0;">`;
 
+        // UBICACIÓN (común a todos)
+        html += `📍 <b>Ubicación:</b><br><small>${limpiar(buscarProp(p, "direccion"))}, ${limpiar(buscarProp(p, "localidad"))}</small><br><br>`;
+
+        // INFORMACIÓN DISTINGUIDA POR BASE
         if (f._baseID === 'base3') {
           html += `🆔 <b>CUIT:</b> ${limpiar(buscarProp(p, "cuit"))}<br>
                    📞 <b>Tel:</b> ${limpiar(buscarProp(p, "telefono"))}<br>
-                   📧 <b>Email:</b> ${limpiar(buscarProp(p, "correo") || buscarProp(p, "email"))}<br>
-                   🚜 <b>Máquinas:</b> ${maquinas}<br>
-                   🏢 <b>Sucursal:</b> ${sucursal}<br>`;
-        } else {
+                   📧 <b>Email:</b> ${limpiar(buscarProp(p, "correo"))}<br>
+                   🚜 <b>Máquinas:</b> ${limpiar(buscarProp(p, "maquinas"))}<br>
+                   🏢 <b>Sucursal:</b> ${limpiar(buscarProp(p, "sucursal"))}<br>`;
+        } else if (f._baseID === 'base2') {
           html += `🆔 <b>CUIT:</b> ${limpiar(buscarProp(p, "cuit"))}<br>
-                   🚜 <b>Maquinaria:</b> ${maquinas}<br>`;
+                   ✅ <b>Relevado:</b> ${limpiar(buscarProp(p, "relevado"))}<br>`;
+        } else {
+          html += `🚜 <b>Maquinaria:</b> ${limpiar(buscarProp(p, "maquinas"))}<br>
+                   🔢 <b>Cantidad:</b> ${limpiar(buscarProp(p, "cantidad"), "0")}<br>`;
         }
 
         html += `<div style="background:#f8f9fa; padding:8px; border-radius:6px; margin-top:10px; border-left:4px solid #2c3e4e; display: flex; justify-content: space-between;">
@@ -164,8 +138,6 @@
         layer.bindPopup(html);
       }
     }).addTo(map);
-
-    if (capaSucursales) capaSucursales.bringToBack();
   }
 
   document.getElementById("filtroCRM").addEventListener("change", actualizarMapa);
