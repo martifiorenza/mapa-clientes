@@ -4,13 +4,10 @@
   <meta charset="utf-8" />
   <title>Dashboard Agrícola Interactivos</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-
   <style>
     body { margin: 0; padding: 0; font-family: 'Segoe UI', Roboto, sans-serif; background: #f0f2f5; }
     #map { height: 100vh; width: 100%; }
-    
     #panelCapas {
       position: absolute; top: 20px; right: 20px; z-index: 1000;
       background: #2c3e50; color: white; padding: 20px;
@@ -21,14 +18,12 @@
     .control-group { margin-bottom: 20px; }
     label { display: block; margin-bottom: 8px; font-size: 0.75em; font-weight: bold; color: #bdc3c7; text-transform: uppercase; }
     select { width: 100%; padding: 12px; border-radius: 8px; border: none; background: #fdfdfd; color: #333; font-weight: 600; cursor: pointer; font-size: 0.9em; }
-    select:focus { outline: 3px solid #3498db; }
   </style>
 </head>
 <body>
 
 <div id="panelCapas">
   <h3>CONTROL DE CLIENTES</h3>
-  
   <div class="control-group">
     <label>📂 Seleccionar Base:</label>
     <select id="filtroBase">
@@ -38,7 +33,6 @@
       <option value="base3">Socios CAMARCO Santa Fe</option>
     </select>
   </div>
-
   <div class="control-group">
     <label>📊 Estado CRM:</label>
     <select id="filtroCRM">
@@ -52,70 +46,54 @@
 <div id="map"></div>
 
 <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-
 <script>
-  // 1. Configuración del mapa
-  var map = L.map('map').setView([-34.0, -61.0], 6);
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { 
-    attribution: '© OpenStreetMap' 
-  }).addTo(map);
+  var map = L.map('map').setView([-31.63, -60.70], 7);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { attribution: '© OpenStreetMap' }).addTo(map);
 
-  let datosBase1 = { features: [] };
-  let datosBase2 = { features: [] };
-  let datosBase3 = { features: [] };
+  let datosBases = { base1: [], base2: [], base3: [] };
   let geojsonLayer;
   let capaSucursales;
 
-  // 2. Buscador de propiedades (Normalizado)
+  // Buscador de propiedades que ignora tildes y mayúsculas
   function buscarProp(props, clave) {
     if (!props) return null;
     const claveNorm = clave.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").trim();
-    const realKey = Object.keys(props).find(k => {
-      const keyNorm = k.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").trim();
-      return keyNorm === claveNorm;
-    });
+    const realKey = Object.keys(props).find(k => 
+      k.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").trim() === claveNorm
+    );
     return realKey ? props[realKey] : null;
   }
 
-  function limpiar(v, reemplazo = "No disponible") {
-    if (v === undefined || v === null || v.toString().trim() === "" || v === "-" || v === 0) return reemplazo;
-    return v.toString().trim();
+  function limpiar(v, reemplazo = "-") {
+    return (v === undefined || v === null || v.toString().trim() === "" || v === "-") ? reemplazo : v.toString().trim();
   }
 
-  // 3. Capa de Sucursales
   function cargarZonasSucursales() {
-    fetch('sucursales.geojson')
-      .then(r => r.json())
-      .then(data => {
-        capaSucursales = L.geoJSON(data, {
-          style: { color: "#7f8c8d", weight: 1.5, fillColor: "#bdc3c7", fillOpacity: 0.15 },
-          onEachFeature: function(feature, layer) {
-            const nombreSuc = buscarProp(feature.properties, "name") || buscarProp(feature.properties, "sucursal") || "Sucursal";
-            layer.bindPopup(`<b>Sucursal:</b><br>${nombreSuc}`);
-            layer.on({
-              mouseover: e => e.target.setStyle({ fillOpacity: 0.35 }),
-              mouseout: e => capaSucursales.resetStyle(e.target)
-            });
-          }
-        }).addTo(map);
-        capaSucursales.bringToBack();
-      }).catch(e => console.log("Zonas no encontradas"));
+    fetch('sucursales.geojson').then(r => r.json()).then(data => {
+      capaSucursales = L.geoJSON(data, {
+        style: { color: "#7f8c8d", weight: 1.5, fillColor: "#bdc3c7", fillOpacity: 0.15 },
+        onEachFeature: function(f, l) {
+          const n = buscarProp(f.properties, "name") || buscarProp(f.properties, "sucursal") || "Zona";
+          l.bindPopup(`<b>Sucursal:</b> ${n}`);
+        }
+      }).addTo(map);
+      capaSucursales.bringToBack();
+    }).catch(() => console.log("Capa sucursales no disponible"));
   }
 
-  // 4. Carga de datos
+  // Carga de archivos corregida para asegurar filtrado masivo
   Promise.all([
     fetch('data.geojson').then(r => r.json()).catch(() => ({features:[]})),
     fetch('data2.geojson').then(r => r.json()).catch(() => ({features:[]})),
     fetch('data3.geojson').then(r => r.json()).catch(() => ({features:[]}))
   ]).then(([d1, d2, d3]) => {
-    datosBase1 = { features: (d1.features || []).map(f => ({ ...f, _baseOrig: 'base1' })) };
-    datosBase2 = { features: (d2.features || []).map(f => ({ ...f, _baseOrig: 'base2' })) };
-    datosBase3 = { features: (d3.features || []).map(f => ({ ...f, _baseOrig: 'base3' })) };
+    datosBases.base1 = (d1.features || []).map(f => ({ ...f, _baseID: 'base1' }));
+    datosBases.base2 = (d2.features || []).map(f => ({ ...f, _baseID: 'base2' }));
+    datosBases.base3 = (d3.features || []).map(f => ({ ...f, _baseID: 'base3' }));
     cargarZonasSucursales();
     actualizarMapa();
   });
 
-  // 5. Función Actualizar Mapa (Corregida)
   function actualizarMapa() {
     const crmFiltro = document.getElementById("filtroCRM").value;
     const baseFiltro = document.getElementById("filtroBase").value;
@@ -123,76 +101,58 @@
     if (geojsonLayer) map.removeLayer(geojsonLayer);
 
     let combinados = [];
-    if (baseFiltro === "todas" || baseFiltro === "base1") combinados = combinados.concat(datosBase1.features);
-    if (baseFiltro === "todas" || baseFiltro === "base2") combinados = combinados.concat(datosBase2.features);
-    if (baseFiltro === "todas" || baseFiltro === "base3") combinados = combinados.concat(datosBase3.features);
+    if (baseFiltro === "todas") {
+      combinados = [...datosBases.base1, ...datosBases.base2, ...datosBases.base3];
+    } else {
+      combinados = datosBases[baseFiltro] || [];
+    }
 
     geojsonLayer = L.geoJSON(combinados, {
       filter: function(f) {
         if (crmFiltro === "todos") return true;
-        let valorEnData = buscarProp(f.properties, "crm");
-        let crmNormalizado = (valorEnData || "NO").toString().toUpperCase().trim();
-        return crmNormalizado === crmFiltro;
+        const crmVal = (buscarProp(f.properties, "crm") || "NO").toString().toUpperCase().trim();
+        return crmVal === crmFiltro;
       },
       pointToLayer: function(f, latlng) {
-        let color = "#3498db"; 
-        if (f._baseOrig === 'base3') color = "#f1c40f"; 
-        if (f._baseOrig === 'base2') color = "#e67e22"; 
-
-        return L.circleMarker(latlng, {
-          radius: 8, fillColor: color, color: "#fff", weight: 1.5, opacity: 1, fillOpacity: 0.9
-        });
+        let col = "#3498db"; // Azul base1
+        if (f._baseID === 'base3') col = "#f1c40f"; // Amarillo CAMARCO
+        if (f._baseID === 'base2') col = "#e67e22"; // Naranja CAPIA
+        return L.circleMarker(latlng, { radius: 8, fillColor: col, color: "#fff", weight: 1.5, fillOpacity: 0.9 });
       },
       onEachFeature: function(f, layer) {
         const p = f.properties;
         const nombre = limpiar(buscarProp(p, "nombre") || buscarProp(p, "cliente"), "Empresa");
         const crm = (buscarProp(p, "crm") || "NO").toString().toUpperCase().trim();
-        const cuit = limpiar(buscarProp(p, "cuit"), "-");
-        const tel = limpiar(buscarProp(p, "telefono"), "-");
-        const email = limpiar(buscarProp(p, "correo") || buscarProp(p, "email"), "-");
-        const maquinas = limpiar(buscarProp(p, "maquinas"), "-");
-        const sucursal = limpiar(buscarProp(p, "sucursal"), "-");
         
-        let colorH = "#2980b9";
-        if (f._baseOrig === 'base3') colorH = "#f39c12";
-        if (f._baseOrig === 'base2') colorH = "#d35400";
+        let colH = (f._baseID === 'base3') ? "#f39c12" : (f._baseID === 'base2' ? "#d35400" : "#2980b9");
 
-        let html = `<div style="min-width: 220px; font-family: sans-serif; line-height: 1.5;">
-          <b style="color: ${colorH}; text-transform: uppercase; font-size: 13px;">${nombre}</b>
-          <hr style="border:0; border-top:1px solid #eee; margin:8px 0;">`;
+        let html = `<div style="min-width: 220px; font-family: sans-serif; line-height: 1.4;">
+          <b style="color: ${colH}; text-transform: uppercase;">${nombre}</b><hr style="border:0; border-top:1px solid #eee; margin:8px 0;">
+          📍 <b>Ubicación:</b><br><small>${limpiar(buscarProp(p, "direccion"))}, ${limpiar(buscarProp(p, "localidad"))}</small><br><br>`;
 
-        const ubicacion = [buscarProp(p, "direccion"), buscarProp(p, "localidad"), buscarProp(p, "provincia")]
-                          .filter(x => x && x !== "-").join(", ");
-        html += `📍 <b>Ubicación:</b><br><small style="color: #555;">${ubicacion || "No disponible"}</small><br><br>`;
-
-        if (f._baseOrig === 'base3') {
-          html += `🆔 <b>CUIT:</b> ${CUIT}<br>
-                   📞 <b>Tel:</b> ${tel}<br>
-                   📧 <b>Email:</b> ${email}<br>
-                   🚜 <b>Máquinas:</b> ${Maquinas}<br>
-                   🏢 <b>Sucursal:</b> ${Sucursal}<br>`;
-        } else if (f._baseOrig === 'base2') {
-          html += `🆔 <b>CUIT:</b> ${cuit}<br>
-                   ✅ <b>Relevado:</b> ${limpiar(buscarProp(p, "relevado"))}<br>`;
+        if (f._baseID === 'base3') {
+          html += `🆔 <b>CUIT:</b> ${limpiar(buscarProp(p, "cuit"))}<br>
+                   📞 <b>Tel:</b> ${limpiar(buscarProp(p, "telefono"))}<br>
+                   🚜 <b>Máquinas:</b> ${limpiar(buscarProp(p, "maquinas"))}<br>
+                   🏢 <b>Sucursal:</b> ${limpiar(buscarProp(p, "sucursal"))}<br>`;
         } else {
-          html += `🚜 <b>Máquinas:</b> ${maquinas}<br>;
+          html += `🆔 <b>CUIT:</b> ${limpiar(buscarProp(p, "cuit"))}<br>
+                   🚜 <b>Maquinaria:</b> ${limpiar(buscarProp(p, "maquinas"))}<br>`;
         }
 
-        html += `<div style="background:#f8f9fa; padding:10px; border-radius:8px; margin-top:12px; border-left:5px solid #2c3e4e; display: flex; justify-content: space-between; align-items: center;">
-          <span style="font-weight: bold; font-size: 11px; color: #7f8c8d;">ESTADO CRM</span>
+        html += `<div style="background:#f8f9fa; padding:8px; border-radius:6px; margin-top:10px; border-left:4px solid #2c3e4e; display: flex; justify-content: space-between;">
+          <span style="font-weight: bold; font-size: 10px; color: #7f8c8d;">ESTADO CRM</span>
           <span style="color: ${crm === 'SI' ? '#27ae60' : '#e74c3c'}; font-weight: 800;">${crm}</span>
         </div></div>`;
 
         layer.bindPopup(html);
       }
     }).addTo(map);
-
     if (capaSucursales) capaSucursales.bringToBack();
   }
 
   document.getElementById("filtroCRM").addEventListener("change", actualizarMapa);
   document.getElementById("filtroBase").addEventListener("change", actualizarMapa);
 </script>
-
 </body>
 </html>
