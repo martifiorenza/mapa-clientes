@@ -81,7 +81,7 @@
     return v.toString().trim();
   }
 
-  // 4. Carga de la Capa de Sucursales (Zonas Polígonos)
+  // 4. Carga de la Capa de Sucursales (Zonas Polígonos) - ACTUALIZADA
   function cargarZonasSucursales() {
     fetch('sucursales.geojson')
       .then(r => r.json())
@@ -92,16 +92,35 @@
               color: "#7f8c8d",      // Borde gris oscuro
               weight: 1.5,           // Grosor del borde
               fillColor: "#bdc3c7",  // Relleno gris clarito
-              fillOpacity: 0.15,     // Muy clarito para que sea sutil
-              interactive: false     // No interfiere con los clics en los puntos
+              fillOpacity: 0.15      // Muy clarito para que no tape los puntos
             };
+          },
+// ESTA ES LA PARTE NUEVA:
+           onEachFeature: function(feature, layer) {
+// Intentamos buscar el nombre en las etiquetas más comunes (Name, name, sucursal, etc.)
+            const nombreSucursal = buscarProp(feature.properties, "name") || 
+                                   buscarProp(feature.properties, "sucursal") || 
+                                   "Sucursal sin nombre";
+            
+// Creamos un popup simple
+            layer.bindPopup(`<div style="text-align:center;"><b>Sucursal:</b><br>${nombreSucursal}</div>`);
+            
+// Opcional: Resaltar al pasar el mouse (hover)
+            layer.on({
+              mouseover: function(e) {
+                var l = e.target;
+                l.setStyle({ fillOpacity: 0.3, weight: 2 });
+              },
+              mouseout: function(e) {
+                capaSucursales.resetStyle(e.target);
+              }
+            });
           }
         }).addTo(map);
-        capaSucursales.bringToBack(); // Siempre detrás
+        capaSucursales.bringToBack(); // Siempre detrás de los puntos
       })
       .catch(e => console.error("Error cargando sucursales.geojson:", e));
   }
-
   // 5. Carga de bases de clientes
   Promise.all([
     fetch('data.geojson').then(r => r.json()).catch(() => ({features:[]})),
