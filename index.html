@@ -169,12 +169,14 @@
         
         html += `📍 <b>Ubicación:</b><br><small style="color: #555;">${ubicacion || "No disponible"}</small><br><br>`;
 
-        if (f._baseOrig === 'base3') {
-          html += `📞 <b>Tel:</b> ${limpiar(buscarProp(p, "telefono"))}<br>
-                   📧 <b>Email:</b> ${limpiar(buscarProp(p, "correo"))}<br>`;
-        } else if (buscarProp(p, "cuit")) {
-          html += `🆔 <b>CUIT:</b> ${limpiar(buscarProp(p, "cuit"))}<br>`;
-        }
+      // --- DENTRO DE onEachFeature para CAMARCO ---
+      if (f._baseOrig === 'base3') {
+      html += `📞 <b>Tel:</b> ${limpiar(buscarProp(p, "telefono"))}<br>
+            <b>Cuit:</b> ${limpiar(buscarProp(p, "cuit"))}<br>
+           📧 <b>Email:</b> ${limpiar(buscarProp(p, "correo"))}<br>
+           🚜 <b>Máquinas:</b> ${limpiar(buscarProp(p, "maquinas"))}<br>
+           🏢 <b>Sucursal:</b> ${limpiar(buscarProp(p, "sucursal"))}<br>`;
+}
 
         html += `<div style="background:#f8f9fa; padding:10px; border-radius:8px; margin-top:12px; border-left:5px solid #2c3e4e; display: flex; justify-content: space-between; align-items: center;">
           <span style="font-weight: bold; font-size: 11px; color: #7f8c8d;">ESTADO CRM</span>
