@@ -173,13 +173,13 @@
           html += `🆔 <b>CUIT:</b> ${cuit}<br>
                    📞 <b>Tel:</b> ${tel}<br>
                    📧 <b>Email:</b> ${email}<br>
-                   🚜 <b>Máquinas:</b> ${maquinas}<br>
+                   🚜 <b>Máquinas:</b> ${Maquinas}<br>
                    🏢 <b>Sucursal:</b> ${sucursal}<br>`;
         } else if (f._baseOrig === 'base2') {
           html += `🆔 <b>CUIT:</b> ${cuit}<br>
                    ✅ <b>Relevado:</b> ${limpiar(buscarProp(p, "relevado"))}<br>`;
         } else {
-          html += `🚜 <b>Máquinas:</b> ${maquinas}<br>
+          html += `🚜 <b>Máquinas:</b> ${Maquinas}<br>
                    🔢 <b>Cantidad:</b> ${limpiar(buscarProp(p, "cantidad"), "0")}<br>`;
         }
 
