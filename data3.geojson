@@ -1381,14 +1381,13 @@
         "Sucursal": "-"
       }
     },
-    {
+    {, 
       "type": "Feature",
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -61.54982,
-          -30.93228
-
+          -61.558984,
+          -30.941324
         ]
       },
       "properties": {
