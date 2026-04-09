@@ -2,37 +2,27 @@
 <html lang="es">
 <head>
   <meta charset="utf-8" />
-  <title>Dashboard Comercial Interactivos</title>
+  <title>Dashboard Agrícola Interactivos</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
   <style>
-    body { margin: 0; padding: 0; font-family: 'Segoe UI', sans-serif; background: #f0f2f5; }
+    body { margin: 0; padding: 0; font-family: 'Segoe UI', Roboto, sans-serif; background: #f0f2f5; }
     #map { height: 100vh; width: 100%; }
     #panelCapas {
       position: absolute; top: 20px; right: 20px; z-index: 1000;
       background: #2c3e50; color: white; padding: 20px;
       border-radius: 12px; width: 260px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);
     }
-    .control-group { margin-bottom: 15px; }
-    label { display: block; margin-bottom: 5px; font-size: 0.7em; font-weight: bold; color: #bdc3c7; text-transform: uppercase; }
-    select { width: 100%; padding: 10px; border-radius: 8px; border: none; background: #fff; color: #333; font-weight: 600; cursor: pointer; }
+    #panelCapas h3 { margin: 0 0 15px 0; font-size: 1.1em; text-align: center; border-bottom: 1px solid #444; padding-bottom: 10px; }
+    .control-group { margin-bottom: 20px; }
+    label { display: block; margin-bottom: 8px; font-size: 0.75em; font-weight: bold; color: #bdc3c7; text-transform: uppercase; }
+    select { width: 100%; padding: 12px; border-radius: 8px; border: none; background: #fdfdfd; color: #333; font-weight: 600; cursor: pointer; }
   </style>
 </head>
 <body>
 
 <div id="panelCapas">
-  <h3 style="margin-top:0; text-align:center; font-size: 1.1em; letter-spacing: 1px;">CONTROL DE MAPA</h3>
-  
-  <div class="control-group">
-    <label>📂 Seleccionar Base:</label>
-    <select id="filtroBase">
-      <option value="todas">Todas las Bases</option>
-      <option value="base1">Socios CACF (Forrajeros)</option>
-      <option value="base2">Socios CAPIA (Avícolas)</option>
-      <option value="base3">Socios CAMARCO Santa Fe</option>
-      <option value="base4">Comunas y Municipios</option> </select>
-  </div>
-
+  <h3>CONTROL DE CLIENTES</h3>
   <div class="control-group">
     <label>📊 Estado CRM:</label>
     <select id="filtroCRM">
@@ -48,141 +38,64 @@
 <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 
 <script>
-  // 1. Setup del Mapa
-  var map = L.map('map').setView([-31.63, -60.70], 7);
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { 
-    attribution: '© OpenStreetMap' 
-  }).addTo(map);
+  var map = L.map('map').setView([-32.0, -61.0], 6);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { attribution: '© OpenStreetMap' }).addTo(map);
 
-  let datosBases = { base1: [], base2: [], base3: [], base4: [] };
+  let datosGlobal = { features: [] };
   let geojsonLayer;
-  let capaSucursales;
 
-  // 2. Buscador de propiedades "Anti-Error"
   function buscarProp(props, clave) {
     if (!props) return null;
-    const claveNorm = clave.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").trim();
-    const realKey = Object.keys(props).find(k => {
-      const keyNorm = k.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").trim();
-      return keyNorm === claveNorm;
-    });
+    const realKey = Object.keys(props).find(k => k.toLowerCase() === clave.toLowerCase());
     return realKey ? props[realKey] : null;
   }
 
-  function limpiar(v, reemplazo = "-") {
-    if (v === undefined || v === null || v.toString().trim() === "" || v === "0") return reemplazo;
+  function limpiar(v, reemplazo = "N/A") {
+    if (v === undefined || v === null || v.toString().trim() === "" || v === "-" || v === "NaN") return reemplazo;
     return v.toString().trim();
   }
 
-  // 3. Capa de Sucursales
-  function cargarZonasSucursales() {
-    fetch('sucursales.geojson')
-      .then(r => r.json())
-      .then(data => {
-        capaSucursales = L.geoJSON(data, {
-          style: { color: "#7f8c8d", weight: 1.5, fillColor: "#bdc3c7", fillOpacity: 0.15 },
-          onEachFeature: function(f, l) {
-            const n = buscarProp(f.properties, "name") || buscarProp(f.properties, "sucursal") || "Zona";
-            l.bindPopup(`<b>Sucursal:</b><br>${n}`);
-          }
-        }).addTo(map);
-        capaSucursales.bringToBack();
-      }).catch(() => console.log("Capa sucursales no cargada"));
-  }
+  // Carga el archivo que me pasaste
+  fetch('clientes_geo.json') 
+    .then(r => r.json())
+    .then(data => {
+      datosGlobal = data;
+      actualizarMapa();
+    })
+    .catch(err => console.error("Error cargando el archivo JSON:", err));
 
-  // 4. Carga de los 4 archivos GeoJSON
-  Promise.all([
-    fetch('data.geojson').then(r => r.json()).catch(() => ({features:[]})),
-    fetch('data2.geojson').then(r => r.json()).catch(() => ({features:[]})),
-    fetch('data3.geojson').then(r => r.json()).catch(() => ({features:[]})),
-    fetch('clientes_geo (3).json').then(r => r.json()).catch(() => ({features:[]})) // NUEVA CARGA
-  ]).then(([d1, d2, d3, d4]) => {
-    datosBases.base1 = (d1.features || []).map(f => ({ ...f, _baseID: 'base1' }));
-    datosBases.base2 = (d2.features || []).map(f => ({ ...f, _baseID: 'base2' }));
-    datosBases.base3 = (d3.features || []).map(f => ({ ...f, _baseID: 'base3' }));
-    datosBases.base4 = (d4.features || []).map(f => ({ ...f, _baseID: 'base4' }));
-    
-    cargarZonasSucursales();
-    actualizarMapa();
-  });
-
-  // 5. Función de renderizado y filtros
   function actualizarMapa() {
     const crmFiltro = document.getElementById("filtroCRM").value;
-    const baseFiltro = document.getElementById("filtroBase").value;
-
     if (geojsonLayer) map.removeLayer(geojsonLayer);
 
-    let combinados = [];
-    if (baseFiltro === "todas") {
-      combinados = [...datosBases.base1, ...datosBases.base2, ...datosBases.base3, ...datosBases.base4];
-    } else {
-      combinados = datosBases[baseFiltro] || [];
-    }
-
-    geojsonLayer = L.geoJSON(combinados, {
+    geojsonLayer = L.geoJSON(datosGlobal, {
       filter: function(f) {
         if (crmFiltro === "todos") return true;
-        const crmVal = (buscarProp(f.properties, "crm") || "NO").toString().toUpperCase().trim();
-        return crmVal === crmFiltro;
-      },
-      pointToLayer: function(f, latlng) {
-        let col = "#3498db"; // Azul base1
-        if (f._baseID === 'base4') col = "#9b59b6"; // VIOLETA COMUNAS
-        if (f._baseID === 'base3') col = "#f1c40f"; // Amarillo base3
-        if (f._baseID === 'base2') col = "#e67e22"; // Naranja base2
-
-        return L.circleMarker(latlng, {
-          radius: 8, fillColor: col, color: "#fff", weight: 1.5, fillOpacity: 0.9
-        });
+        let valorCRM = buscarProp(f.properties, "crm");
+        return limpiar(valorCRM).toUpperCase() === crmFiltro;
       },
       onEachFeature: function(f, layer) {
         const p = f.properties;
-        const nombre = limpiar(buscarProp(p, "cliente") || buscarProp(p, "nombre"), "Empresa");
-        const crm = (buscarProp(p, "crm") || "NO").toString().toUpperCase().trim();
-        const maq = limpiar(buscarProp(p, "maquinas") || buscarProp(p, "máquinas"), "-");
-        
-        let colH = "#2980b9";
-        if (f._baseID === 'base4') colH = "#8e44ad";
-        if (f._baseID === 'base3') colH = "#f39c12";
-        if (f._baseID === 'base2') colH = "#d35400";
+        const nombre = limpiar(buscarProp(p, "cliente"), "Empresa");
+        const ubicacion = limpiar(buscarProp(p, "geocoding"), "Ubicación no disponible");
+        const crm = limpiar(buscarProp(p, "crm"), "NO").toUpperCase();
 
-        let html = `<div style="min-width: 220px; font-family: sans-serif; line-height: 1.4;">
-          <b style="color: ${colH}; text-transform: uppercase; font-size: 13px;">${nombre}</b>
-          <hr style="border:0; border-top:1px solid #eee; margin:8px 0;">`;
-
-        if (f._baseID === 'base4') {
-          // POPUP ESPECÍFICO COMUNAS
-          html += `🆔 <b>ID Cliente:</b> ${limpiar(buscarProp(p, "idCliente"))}<br>
-                   🚜 <b>Máquinas:</b> ${maq}<br>`;
-        } else if (f._baseID === 'base3') {
-          html += `📍 <b>Ubicación:</b><br><small>${limpiar(buscarProp(p, "direccion"))}, ${limpiar(buscarProp(p, "localidad"))}</small><br><br>
-                   🆔 <b>CUIT:</b> ${limpiar(buscarProp(p, "cuit"))}<br>
-                   📞 <b>Tel:</b> ${limpiar(buscarProp(p, "telefono"))}<br>
-                   🚜 <b>Máquinas:</b> ${maq}<br>
-                   🏢 <b>Sucursal:</b> ${limpiar(buscarProp(p, "sucursal"))}<br>`;
-        } else {
-          // CACF / CAPIA genérico
-          html += `📍 <b>Ubicación:</b><br><small>${limpiar(buscarProp(p, "localidad"))}, ${limpiar(buscarProp(p, "provincia"))}</small><br><br>
-                   🆔 <b>CUIT:</b> ${limpiar(buscarProp(p, "cuit"))}<br>
-                   🚜 <b>Maquinaria:</b> ${maq}<br>`;
-        }
-
-        html += `<div style="background:#f8f9fa; padding:10px; border-radius:8px; margin-top:12px; border-left:5px solid #2c3e4e; display: flex; justify-content: space-between; align-items: center;">
-          <span style="font-weight: bold; font-size: 11px; color: #7f8c8d;">ESTADO CRM</span>
-          <span style="color: ${crm === 'SI' ? '#27ae60' : '#e74c3c'}; font-weight: 800;">${crm}</span>
-        </div></div>`;
-
+        let html = `<div style="min-width: 200px; font-family: Arial, sans-serif;">
+          <b style="color: #d35400; text-transform: uppercase;">${nombre}</b>
+          <hr style="border:0; border-top:1px solid #eee; margin:8px 0;">
+          📍 <b>Ubicación:</b><br>
+          <small style="color: #555;">${ubicacion}</small><br>
+          <div style="background:#f8f9fa; padding:10px; border-radius:8px; margin-top:12px; border-left:5px solid #2c3e4e; display: flex; justify-content: space-between; align-items: center;">
+            <span style="font-weight: bold; font-size: 11px; color: #7f8c8d;">ESTADO CRM</span>
+            <span style="color: ${crm === 'SI' ? '#27ae60' : '#e74c3c'}; font-weight: 800;">${crm}</span>
+          </div>
+        </div>`;
         layer.bindPopup(html);
       }
     }).addTo(map);
-
-    if (capaSucursales) capaSucursales.bringToBack();
   }
 
   document.getElementById("filtroCRM").addEventListener("change", actualizarMapa);
-  document.getElementById("filtroBase").addEventListener("change", actualizarMapa);
 </script>
-
 </body>
 </html>
