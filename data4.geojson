@@ -229,7 +229,7 @@
         "cliente": "Arequito",
         "geocoding": "Arequito,Caseros,Santa Fe,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "RETROEXCAVADORAS-MASSEY FERGUSON-OTRO | MINICARGADORAS-OTRA MARCA-OTRO"
       },
       "geometry": {
         "type": "Point",
@@ -280,7 +280,7 @@
         "cliente": "Arroyo Aguiar",
         "geocoding": "Arroyo Aguiar,La Capital,Santa Fe,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "TRACTORES-JOHN DEERE-5065E "
       },
       "geometry": {
         "type": "Point",
@@ -297,7 +297,7 @@
         "cliente": "Arroyo Ceibal",
         "geocoding": "Arroyo Ceibal,General Obligado,Santa Fe,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "TRACTORES-JOHN DEERE-5705"
       },
       "geometry": {
         "type": "Point",
@@ -382,7 +382,7 @@
         "cliente": "Ataliva",
         "geocoding": "Ataliva,Castellanos,Santa Fe,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "TRACTORES-JOHN DEERE-2530 | RETROEXCAVADORAS-JOHN DEERE-310L"
       },
       "geometry": {
         "type": "Point",
@@ -501,7 +501,7 @@
         "cliente": "Bernardo de Irigoyen",
         "geocoding": "Bernardo de Irigoyen,San Jerónimo,Santa Fe,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "TRACTORES-MASSEY FERGUSON-OTRO | TRACTORES-APACHE-OTRO | TRACTORES-PAUNY-OTRO | TRACTORES-FIAT-OTRO | MOTONIVELADORAS-CATERPILLAR-OTRO | RETROEXCAVADORAS-NEW HOLLAND-OTRO"
       },
       "geometry": {
         "type": "Point",
@@ -552,7 +552,7 @@
         "cliente": "Bustinza",
         "geocoding": "Bustinza,Iriondo,Santa Fe,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "RETROEXCAVADORAS-OTRA MARCA-OTRO "
       },
       "geometry": {
         "type": "Point",
@@ -671,7 +671,7 @@
         "cliente": "Candioti",
         "geocoding": "Candioti,La Capital,Santa Fe,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "TRACTORES-JOHN DEERE-5075E"
       },
       "geometry": {
         "type": "Point",
@@ -858,7 +858,7 @@
         "cliente": "CARRIZALES ESTACION CLARKE",
         "geocoding": "CARRIZALES ESTACION CLARKE,Iriondo,Santa Fe,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "RETROEXCAVADORAS-MASSEY FERGUSON-OTRO"
       },
       "geometry": {
         "type": "Point",
@@ -892,7 +892,7 @@
         "cliente": "Casas",
         "geocoding": "Casas,San Martín,Santa Fe,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "RETROEXCAVADORAS-JOHN DEERE-OTRO"
       },
       "geometry": {
         "type": "Point",
@@ -977,7 +977,7 @@
         "cliente": "Centeno",
         "geocoding": "Centeno,San Jerónimo,Santa Fe,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "RETROEXCAVADORAS-JOHN DEERE-310L | RETROEXCAVADORAS-CASE-Retro | MOTONIVELADORAS-OTRA MARCA-OTRO | TRACTORES-CASE-Farmall JXM75 | TRACTORES-CASE-Farmall JXM75"
       },
       "geometry": {
         "type": "Point",
@@ -1096,7 +1096,7 @@
         "cliente": "Clason",
         "geocoding": "Clason,Iriondo,Santa Fe,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "TRACTORES-FIAT-SOMECA 55"
       },
       "geometry": {
         "type": "Point",
@@ -1249,7 +1249,7 @@
         "cliente": "Colonia Dolores",
         "geocoding": "Colonia Dolores,San Justo,Santa Fe,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "TRACTORES-JOHN DEERE-5065E |"
       },
       "geometry": {
         "type": "Point",
@@ -1708,7 +1708,7 @@
         "cliente": "Elisa",
         "geocoding": "Elisa,Las Colonias,Santa Fe,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "TRACTORES-JOHN DEERE-5075E | TRACTORES-JOHN DEERE-5090E | RETROEXCAVADORAS-OMAR MARTIN-OM 950R | DESMALEZADORAS-SPANGHERO-YAGO - SPANGHERO | CARGADOR FRONTAL-SPACE-PFSPACE | HOJA NIVELADORA-SPANGHERO-HOJANIVSPANG | TANQUE DE COMBUSTIBLE-OTRA MARCA-OTRO |,"
       },
       "geometry": {
         "type": "Point",
@@ -1793,7 +1793,7 @@
         "cliente": "Esmeralda",
         "geocoding": "Esmeralda,Castellanos,Santa Fe,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "TRACTORES-CHERY-Chery RC1404-C | MOTONIVELADORAS-CAT-120H | TRACTORES-JOHN DEERE-5090E "
       },
       "geometry": {
         "type": "Point",
@@ -1810,7 +1810,7 @@
         "cliente": "Estacion Clucellas",
         "geocoding": "Estacion Clucellas,Castellanos,Santa Fe,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "TRACTORES-MASSEY FERGUSON-1175 | TRACTORES-MASSEY FERGUSON-1075"
       },
       "geometry": {
         "type": "Point",
@@ -2252,7 +2252,7 @@
         "cliente": "Hersilia",
         "geocoding": "Hersilia,San Cristóbal,Santa Fe,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "TRACTORES-PAUNY-OTRO | TRACTORES-PAUNY-OTRO | TRACTORES-DEUTZ-OTRO | TRACTORES-DEUTZ-OTRO | PALA DE ARRASTRE-TBEH-PA3000 VT | CARGADOR FRONTAL-OTRA MARCA-OTRO | RETROEXCAVADORAS-OTRA MARCA-OTRO"
       },
       "geometry": {
         "type": "Point",
@@ -2677,7 +2677,7 @@
         "cliente": "La Rubia",
         "geocoding": "La Rubia,San Cristóbal,Santa Fe,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "RETROEXCAVADORAS-CAT-426 "
       },
       "geometry": {
         "type": "Point",
@@ -2966,7 +2966,7 @@
         "cliente": "Loma Alta",
         "geocoding": "Loma Alta,San Jerónimo,Santa Fe,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "TRACTORES-CASE-Farmall JXM75 | TRACTORES-FIAT-800 | TRACTORES-FIAT-780 | DESMALEZADORAS-METALBERT-DHM 3000"
       },
       "geometry": {
         "type": "Point",
@@ -3170,7 +3170,7 @@
         "cliente": "Marcelino Escalada",
         "geocoding": "Marcelino Escalada,San Justo,Santa Fe,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "TRACTORES-JOHN DEERE-5080ES | TRACTORES-FIAT-700 E | MOTONIVELADORAS-OTRA MARCA-OTRO |"
       },
       "geometry": {
         "type": "Point",
@@ -3425,7 +3425,7 @@
         "cliente": "Montefiore",
         "geocoding": "Montefiore,Nueve de Julio,Santa Fe,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "TRACTORES-MASSEY FERGUSON-292 | TRACTORES-MASSEY FERGUSON-1175 | TRACTORES-MASSEY FERGUSON-1175 | MOTONIVELADORAS-LIANGONG-MG 14"
       },
       "geometry": {
         "type": "Point",
@@ -3748,7 +3748,7 @@
         "cliente": "Pozo Borrado",
         "geocoding": "Pozo Borrado,Nueve de Julio,Santa Fe,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "TRACTORES-AGCO ALLIS-240 | TRACTORES-AGCO ALLIS-220 "
       },
       "geometry": {
         "type": "Point",
@@ -3799,7 +3799,7 @@
         "cliente": "Providencia",
         "geocoding": "Providencia,Las Colonias,Santa Fe,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "TRACTORES-JOHN DEERE-5075E | TRACTORES-VALTRA-90HP | TRACTORES-MASSEY FERGUSON-1075 | TRACTORES-FIAT-700 E | TRACTORES-FIAT-SUPERSON 55 | ACOPLADOS-GENTILI-G-3 3/4 TN | CARGADOR FRONTAL-OMAR MARTIN-OM-500-F | CARGADOR FRONTAL-OMAR MARTIN-OM 250-F | DESMALEZADORAS-GROSSPAL-AVF3000 | PALA DE ARRASTRE-GROSSPAL-NOVA 200 | TANQUES DE AGUA-ALBERTI MAQUINARIA-26.000 L Azul | TRACTORES JARDIN-OTRA MARCA-MODELO UNICO | TRACTORES JARDIN-OTRA MARCA-MODELO UNICO |,"
       },
       "geometry": {
         "type": "Point",
@@ -3816,7 +3816,7 @@
         "cliente": "Pueblo Andino",
         "geocoding": "Pueblo Andino,Iriondo,Santa Fe,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "TRACTORES-JOHN DEERE-5403 | TRACTORES-FIAT-880 | TRACTORES-FIAT-800 | RETROEXCAVADORAS-JCB-Modelo unico | MOTONIVELADORAS-OTRA MARCA-OTRO | MOTONIVELADORAS-SDLG-G9190F "
       },
       "geometry": {
         "type": "Point",
@@ -3833,7 +3833,7 @@
         "cliente": "Pueblo Irigoyen",
         "geocoding": "Pueblo Irigoyen,San Jerónimo,Santa Fe,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "TRACTORES-DEUTZ-A 65 | TRACTORES-DEUTZ-A 85 | TRACTORES-FIAT-800 | TRACTORES-FIAT-780 | MOTONIVELADORAS-ASTARSA-OTRO"
       },
       "geometry": {
         "type": "Point",
@@ -4037,7 +4037,7 @@
         "cliente": "Pujato",
         "geocoding": "Pujato,San Lorenzo,Santa Fe,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "TRACTORES-MASSEY FERGUSON-1185 | TRACTORES-MASSEY FERGUSON-165 | TRACTORES-FIAT-800 | TRACTORES-VALTRA-BH180 | RETROEXCAVADORAS-MASSEY FERGUSON-OTRO | MOTONIVELADORAS-CATERPILLAR-140K "
       },
       "geometry": {
         "type": "Point",
@@ -4275,7 +4275,7 @@
         "cliente": "San Bernardo",
         "geocoding": "San Bernardo,Nueve de Julio,Santa Fe,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "TRACTORES-NEW HOLLAND-5070 | TRACTORES-MASSEY FERGUSON-1075"
       },
       "geometry": {
         "type": "Point",
@@ -4428,7 +4428,7 @@
         "cliente": "San Jerónimo Sud",
         "geocoding": "San Jerónimo Sud,San Lorenzo,Santa Fe,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "TRACTORES-CASE-Farmall JXM75 | TRACTORES-CASE-Farmall 120A | TRACTORES-APACHE-OTRO | TRACTORES-FIAT-400 | MOTONIVELADORAS-TIANGONG-PY 160M | RETROEXCAVADORAS-NEW HOLLAND-B90 | RETROEXCAVADORAS-NEW HOLLAND-OTRO | MOTONIVELADORAS-JOHN DEERE-620P "
       },
       "geometry": {
         "type": "Point",
@@ -4836,7 +4836,7 @@
         "cliente": "Soledad",
         "geocoding": "Soledad,San Cristóbal,Santa Fe,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "TRACTORES-JOHN DEERE-5403 | TRACTORES-AGRINAR-OTRO | TRACTORES-FIAT-700 E | TRACTORES-FIAT-SOMECA 55 | TRACTORES-FIAT-900 | ACOPLADOS-PLEGADOS SAN JUSTO-ACOPLADO 4MTS | ACOPLADOS-PLEGADOS SAN JUSTO-ACOPLADO 4MTS | CARGADOR FRONTAL-OMAR MARTIN-OM 260 F | DESMALEZADORAS-YOMEL-1521 | MOTONIVELADORAS-TIANGONG-PY 160M | TRACTORES JARDIN-OTRA MARCA-MODELO UNICO"
       },
       "geometry": {
         "type": "Point",
@@ -4972,7 +4972,7 @@
         "cliente": "Theobald",
         "geocoding": "Theobald,Constitución,Santa Fe,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "RETROEXCAVADORAS-JOHN DEERE-310L"
       },
       "geometry": {
         "type": "Point",
@@ -5040,7 +5040,7 @@
         "cliente": "Traill",
         "geocoding": "Traill,San Martín,Santa Fe,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "TRACTORES-JOHN DEERE-3420 "
       },
       "geometry": {
         "type": "Point",
@@ -5074,7 +5074,7 @@
         "cliente": "Videla",
         "geocoding": "Videla,San Justo,Santa Fe,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "TRACTORES-MASSEY FERGUSON-1075 | TRACTORES-MASSEY FERGUSON-1095 | TRACTORES-MASSEY FERGUSON-1175 | TRACTORES-MASSEY FERGUSON-1195 | TRACTORES-AGRALE-5075,4 | ACOPLADOS-PLEGADOS SAN JUSTO-ACOPLADO 4MTS | ACOPLADOS-PLEGADOS SAN JUSTO-ACOPLADO 4MTS | CORTADORA DE PASTO-OTRA MARCA-OTRO | CORTADORA DE PASTO-OTRA MARCA-OTRO | CORTADORA DE PASTO-OTRA MARCA-OTRO | CARGADOR FRONTAL-KOMATSU-W180 | DESMALEZADORAS-GROSSPAL-AV-150 | DESMALEZADORAS-GROSSPAL-AVF3000 | MOTONIVELADORAS-ARGENTRAK-PY 9130 | PALA DE ARRASTRE-TBEH-PA3000 | TRACTORES JARDIN-OTRA MARCA-MODELO UNICO | TRACTORES JARDIN-OTRA MARCA-MODELO UNICO | TRACTORES JARDIN-OTRA MARCA-MODELO UNICO | RETROEXCAVADORAS-JOHN DEERE-310J |"
       },
       "geometry": {
         "type": "Point",
@@ -5227,7 +5227,7 @@
         "cliente": "Villa Saralegui",
         "geocoding": "Villa Saralegui,San Cristóbal,Santa Fe,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "TRACTORES-JOHN DEERE-5065 | RETROEXCAVADORAS-JOHN DEERE-310L | TRACTORES-PAUNY-220 | TRACTORES-PAUNY-EVO 230A | MOTONIVELADORAS-TIANGONG-PY 160M"
       },
       "geometry": {
         "type": "Point",
@@ -5329,7 +5329,7 @@
         "cliente": "Zenón Pereyra",
         "geocoding": "Zenón Pereyra,Castellanos,Santa Fe,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "TRACTORES-JOHN DEERE-5090E38C | RETROEXCAVADORAS-LIUGONG-Modelo unico | TRACTORES-FIAT-700 E | RETROEXCAVADORAS-JOHN DEERE-310P"
       },
       "geometry": {
         "type": "Point",
@@ -7114,7 +7114,7 @@
         "cliente": "La Francia",
         "geocoding": "La Francia,San Justo,Córdoba,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "RETROEXCAVADORAS-OTRA MARCA-OTRO | CARGADOR FRONTAL-OTRA MARCA-OTRO | CARGADOR FRONTAL-OTRA MARCA-OTRO | TRACTORES-OTRA MARCA-OTRO | TRACTORES-OTRA MARCA-OTRO | DESMALEZADORAS-OTRA MARCA-OTRO"
       },
       "geometry": {
         "type": "Point",
@@ -7454,7 +7454,7 @@
         "cliente": "Las Varas",
         "geocoding": "Las Varas,San Justo,Córdoba,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "TRACTORES-JOHN DEERE-5055D | TRACTORES-JOHN DEERE-5055D | RETROEXCAVADORAS-MASSEY FERGUSON-MF 96 | DESMALEZADORAS-BAIMA-B400 | DESMALEZADORAS-BAIMA-B400 | PALA DE ARRASTRE-CAMAN-VIAL 3,5 m3 Cant. cilindros 3 Potencia tractor 70 -  75 HP Cant. ruedas 2 Ancho de corte 1,84 mts "
       },
       "geometry": {
         "type": "Point",
@@ -12163,7 +12163,7 @@
         "cliente": "Pueblo Libertador",
         "geocoding": "Pueblo Libertador,Esquina,Corrientes,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "TRACTORES-FIAT-900 | PALA DE ARRASTRE-OTRA MARCA-OTRO"
       },
       "geometry": {
         "type": "Point",
@@ -12384,7 +12384,7 @@
         "cliente": "Aldea San Antonio",
         "geocoding": "Aldea San Antonio,Gualeguaychú,Entre Ríos,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "EXCAVADORAS-JOHN DEERE-200D | RETROEXCAVADORAS-OTRA MARCA-OTRO"
       },
       "geometry": {
         "type": "Point",
@@ -13778,7 +13778,7 @@
         "cliente": "Godeken",
         "geocoding": "Godeken,Caseros,Santa Fe,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "RETROEXCAVADORAS-JOHN DEERE-310L | MINICARGADORAS-OTRA"
       },
       "geometry": {
         "type": "Point",
@@ -13795,7 +13795,7 @@
         "cliente": "Esperanza",
         "geocoding": "Esperanza,Las Colonias,Santa Fe,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "MOTONIVELADORAS-JOHN DEERE-620G"
       },
       "geometry": {
         "type": "Point",
@@ -14764,7 +14764,7 @@
         "cliente": "Carcaraña",
         "geocoding": "Carcaraña,San Jerónimo,Santa Fe,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "MOTONIVELADORAS-OTRA MARCA-OTRO | MOTONIVELADORAS-CATERPILLAR-OTRO | RETROEXCAVADORAS-CASE-Retro | RETROEXCAVADORAS-NEW HOLLAND-Modelo unico | MINICARGADORAS-BOBCAT-S70 "
       },
       "geometry": {
         "type": "Point",
@@ -14781,7 +14781,7 @@
         "cliente": "Ceres",
         "geocoding": "Ceres,San Jerónimo,Santa Fe,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "TRACTORES-MASSEY FERGUSON-7140 | TRACTORES-MASSEY FERGUSON-292 | EXCAVADORAS-HITACHI-JD_ZX210LC-2.1.JDL"
       },
       "geometry": {
         "type": "Point",
@@ -14798,7 +14798,7 @@
         "cliente": "Pueblo Esther",
         "geocoding": "Pueblo Esther,San Jerónimo,Santa Fe,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "CARGADOR AUTOPROPULSADO-SDLG-LG956L"
       },
       "geometry": {
         "type": "Point",
@@ -14815,7 +14815,7 @@
         "cliente": "Coronel Domínguez",
         "geocoding": "Coronel Domínguez,San Jerónimo,Santa Fe,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "RETROEXCAVADORAS-JOHN DEERE-310L"
       },
       "geometry": {
         "type": "Point",
@@ -14866,7 +14866,7 @@
         "cliente": "Las Cuevas",
         "geocoding": "Las Cuevas,Uruguay,Entre Ríos,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "TRACTORES-FIAT-500E"
       },
       "geometry": {
         "type": "Point",
@@ -14883,7 +14883,7 @@
         "cliente": "Colonia Baylina",
         "geocoding": "Colonia Baylina,Uruguay,Entre Ríos,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "TRACTORES-MASSEY FERGUSON-4309"
       },
       "geometry": {
         "type": "Point",
@@ -14900,7 +14900,7 @@
         "cliente": "Pueblo General Alvear",
         "geocoding": "Pueblo General Alvear,Uruguay,Entre Ríos,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "MOTONIVELADORAS-SEM-919"
       },
       "geometry": {
         "type": "Point",
@@ -15036,7 +15036,7 @@
         "cliente": "Durazno",
         "geocoding": "Durazno,Tala,Entre Ríos,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "RETROEXCAVADORAS-JOHN DEERE-310J"
       },
       "geometry": {
         "type": "Point",
