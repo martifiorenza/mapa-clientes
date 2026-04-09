@@ -16,14 +16,12 @@
     .control-group { margin-bottom: 15px; }
     label { display: block; margin-bottom: 5px; font-size: 0.7em; font-weight: bold; color: #bdc3c7; text-transform: uppercase; }
     select { width: 100%; padding: 10px; border-radius: 6px; border: none; background: #fff; color: #333; font-weight: 600; cursor: pointer; }
-    select:focus { outline: 3px solid #3498db; }
   </style>
 </head>
 <body>
 
 <div id="panelCapas">
   <h3 style="margin-top:0; text-align:center; font-size: 1.1em; letter-spacing: 1px;">CONTROL DE MAPA</h3>
-  
   <div class="control-group">
     <label>📂 Seleccionar Base:</label>
     <select id="filtroBase">
@@ -34,7 +32,6 @@
       <option value="base4">Comunas y Municipios</option>
     </select>
   </div>
-
   <div class="control-group">
     <label>📊 Estado CRM:</label>
     <select id="filtroCRM">
@@ -50,23 +47,16 @@
 <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 
 <script>
-  // 1. Configuración inicial del mapa
   var map = L.map('map').setView([-31.63, -60.70], 7);
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { 
-    attribution: '© OpenStreetMap' 
-  }).addTo(map);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { attribution: '© OpenStreetMap' }).addTo(map);
 
   let datosBases = { base1: [], base2: [], base3: [], base4: [] };
   let geojsonLayer;
-  let capaSucursales;
 
-  // 2. Buscador de propiedades (normaliza tildes y mayúsculas)
   function buscarProp(props, clave) {
     if (!props) return null;
     const claveNorm = clave.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").trim();
-    const realKey = Object.keys(props).find(k => 
-      k.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").trim() === claveNorm
-    );
+    const realKey = Object.keys(props).find(k => k.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").trim() === claveNorm);
     return realKey ? props[realKey] : null;
   }
 
@@ -75,23 +65,7 @@
     return v.toString().trim();
   }
 
-  // 3. Carga de polígonos de sucursales
-  function cargarZonasSucursales() {
-    fetch('sucursales.geojson')
-      .then(r => r.json())
-      .then(data => {
-        capaSucursales = L.geoJSON(data, {
-          style: { color: "#7f8c8d", weight: 1.5, fillColor: "#bdc3c7", fillOpacity: 0.15 },
-          onEachFeature: function(f, l) {
-            const n = buscarProp(f.properties, "name") || buscarProp(f.properties, "sucursal") || "Zona";
-            l.bindPopup(`<b>Sucursal:</b><br>${n}`);
-          }
-        }).addTo(map);
-        capaSucursales.bringToBack();
-      }).catch(e => console.warn("Capa sucursales no cargada"));
-  }
-
-  // 4. Carga masiva de archivos GeoJSON
+  // Carga de archivos
   Promise.all([
     fetch('data.geojson').then(r => r.json()).catch(() => ({features:[]})),
     fetch('data2.geojson').then(r => r.json()).catch(() => ({features:[]})),
@@ -102,13 +76,9 @@
     datosBases.base2 = (d2.features || []).map(f => ({ ...f, _baseID: 'base2' }));
     datosBases.base3 = (d3.features || []).map(f => ({ ...f, _baseID: 'base3' }));
     datosBases.base4 = (d4.features || []).map(f => ({ ...f, _baseID: 'base4' }));
-    
-    console.log("Comunas (Base 4) cargadas:", datosBases.base4.length);
-    cargarZonasSucursales();
     actualizarMapa();
   });
 
-  // 5. Lógica de Filtrado y Renderizado
   function actualizarMapa() {
     const crmFiltro = document.getElementById("filtroCRM").value;
     const baseFiltro = document.getElementById("filtroBase").value;
@@ -124,55 +94,41 @@
 
     geojsonLayer = L.geoJSON(combinados, {
       filter: function(f) {
-        // Normalización estricta de CRM para que el "NO" funcione siempre
-        const crmBruto = buscarProp(f.properties, "crm");
-        const crmVal = (crmBruto || "NO").toString().toUpperCase().trim();
-        
+        // NORMALIZACIÓN CRÍTICA: Convertimos cualquier valor a "SI" o "NO" en mayúsculas
+        let crmOriginal = buscarProp(f.properties, "crm");
+        let crmNormalizado = (crmOriginal && crmOriginal.toString().toUpperCase().trim() === "SI") ? "SI" : "NO";
+
         if (crmFiltro === "todos") return true;
-        return crmVal === crmFiltro;
+        return crmNormalizado === crmFiltro;
       },
       pointToLayer: function(f, latlng) {
-        let col = "#3498db"; // Azul base1
-        if (f._baseID === 'base4') col = "#9b59b6"; // Violeta COMUNAS
-        if (f._baseID === 'base3') col = "#f1c40f"; // Amarillo CAMARCO
-        if (f._baseID === 'base2') col = "#e67e22"; // Naranja CAPIA
-
-        return L.circleMarker(latlng, {
-          radius: 8, fillColor: col, color: "#fff", weight: 1.5, fillOpacity: 0.9
-        });
+        let col = "#3498db"; 
+        if (f._baseID === 'base4') col = "#9b59b6"; // Violeta
+        if (f._baseID === 'base3') col = "#f1c40f"; 
+        if (f._baseID === 'base2') col = "#e67e22"; 
+        return L.circleMarker(latlng, { radius: 8, fillColor: col, color: "#fff", weight: 1.5, fillOpacity: 0.9 });
       },
       onEachFeature: function(f, layer) {
         const p = f.properties;
         const nombre = limpiar(buscarProp(p, "cliente") || buscarProp(p, "nombre"), "Empresa");
-        const crmVal = (buscarProp(p, "crm") || "NO").toString().toUpperCase().trim();
-        const maq = limpiar(buscarProp(p, "maquinas") || buscarProp(p, "máquinas"), "-");
+        const crmVal = (buscarProp(p, "crm") && buscarProp(p, "crm").toString().toUpperCase().trim() === "SI") ? "SI" : "NO";
         
-        let colH = "#2980b9";
-        if (f._baseID === 'base4') colH = "#8e44ad";
-        if (f._baseID === 'base3') colH = "#f39c12";
-        if (f._baseID === 'base2') colH = "#d35400";
+        let colH = (f._baseID === 'base4') ? "#8e44ad" : (f._baseID === 'base3' ? "#f39c12" : "#2980b9");
 
         let html = `<div style="min-width: 220px; font-family: sans-serif; line-height: 1.4;">
-          <b style="color: ${colH}; text-transform: uppercase; font-size: 13px;">${nombre}</b>
-          <hr style="border:0; border-top:1px solid #eee; margin:8px 0;">`;
+          <b style="color: ${colH}; text-transform: uppercase;">${nombre}</b><hr style="border:0; border-top:1px solid #eee; margin:8px 0;">`;
 
         if (f._baseID === 'base4') {
           html += `🆔 <b>ID Cliente:</b> ${limpiar(buscarProp(p, "idCliente"))}<br>
-                   📍 <b>Ubicación:</b> <br><small style="color:#555;">${limpiar(buscarProp(p, "geocoding"))}</small><br>
-                   🚜 <b>Máquinas:</b> ${maq}<br>`;
-        } else if (f._baseID === 'base3') {
-          html += `📍 <b>Ubicación:</b><br><small style="color:#555;">${limpiar(buscarProp(p, "direccion"))}, ${limpiar(buscarProp(p, "localidad"))}</small><br><br>
-                   🆔 <b>CUIT:</b> ${limpiar(buscarProp(p, "cuit"))}<br>
-                   📞 <b>Tel:</b> ${limpiar(buscarProp(p, "telefono"))}<br>
-                   🚜 <b>Máquinas:</b> ${maq}<br>
-                   🏢 <b>Sucursal:</b> ${limpiar(buscarProp(p, "sucursal"))}<br>`;
+                   📍 <b>Geocodificación:</b> <br><small style="color:#555;">${limpiar(buscarProp(p, "geocoding"))}</small><br>
+                   🚜 <b>Máquinas:</b> ${limpiar(buscarProp(p, "maquinas"))}<br>`;
         } else {
-          html += `📍 <b>Ubicación:</b><br><small style="color:#555;">${limpiar(buscarProp(p, "localidad") || buscarProp(p, "provincia"))}</small><br><br>
-                   🆔 <b>CUIT/ID:</b> ${limpiar(buscarProp(p, "cuit") || buscarProp(p, "idCliente"))}<br>
-                   🚜 <b>Maquinaria:</b> ${maq}<br>`;
+          html += `🆔 <b>CUIT:</b> ${limpiar(buscarProp(p, "cuit"))}<br>
+                   📍 <b>Localidad:</b> ${limpiar(buscarProp(p, "localidad"))}<br>
+                   🚜 <b>Máquinas:</b> ${limpiar(buscarProp(p, "maquinas"))}<br>`;
         }
 
-        html += `<div style="background:#f8f9fa; padding:10px; border-radius:8px; margin-top:12px; border-left:5px solid #2c3e4e; display: flex; justify-content: space-between; align-items: center;">
+        html += `<div style="background:#f8f9fa; padding:10px; border-radius:8px; margin-top:12px; border-left:5px solid #2c3e4e; display: flex; justify-content: space-between;">
           <span style="font-weight: bold; font-size: 11px; color: #7f8c8d;">ESTADO CRM</span>
           <span style="color: ${crmVal === 'SI' ? '#27ae60' : '#e74c3c'}; font-weight: 800;">${crmVal}</span>
         </div></div>`;
@@ -180,14 +136,10 @@
         layer.bindPopup(html);
       }
     }).addTo(map);
-
-    if (capaSucursales) capaSucursales.bringToBack();
   }
 
-  // Eventos de cambio en los selectores
   document.getElementById("filtroCRM").addEventListener("change", actualizarMapa);
   document.getElementById("filtroBase").addEventListener("change", actualizarMapa);
 </script>
-
 </body>
 </html>
