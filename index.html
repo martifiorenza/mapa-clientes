@@ -15,7 +15,7 @@
     }
     .control-group { margin-bottom: 15px; }
     label { display: block; margin-bottom: 5px; font-size: 0.7em; font-weight: bold; color: #bdc3c7; text-transform: uppercase; }
-    select { width: 100%; padding: 10px; border-radius: 6px; border: none; background: #fff; color: #333; font-weight: 600; cursor: pointer; }
+    select { width: 100%; padding: 10px; border-radius: 8px; border: none; background: #fff; color: #333; font-weight: 600; cursor: pointer; }
   </style>
 </head>
 <body>
@@ -30,7 +30,7 @@
       <option value="base1">Socios CACF (Forrajeros)</option>
       <option value="base2">Socios CAPIA (Avícolas)</option>
       <option value="base3">Socios CAMARCO Santa Fe</option>
-    </select>
+      <option value="base4">Comunas y Municipios</option> </select>
   </div>
 
   <div class="control-group">
@@ -54,11 +54,11 @@
     attribution: '© OpenStreetMap' 
   }).addTo(map);
 
-  let datosBases = { base1: [], base2: [], base3: [] };
+  let datosBases = { base1: [], base2: [], base3: [], base4: [] };
   let geojsonLayer;
   let capaSucursales;
 
-  // 2. Buscador de propiedades "Anti-Error" (Ignora tildes, mayúsculas y espacios)
+  // 2. Buscador de propiedades "Anti-Error"
   function buscarProp(props, clave) {
     if (!props) return null;
     const claveNorm = clave.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").trim();
@@ -74,7 +74,7 @@
     return v.toString().trim();
   }
 
-  // 3. Carga de Capa de Sucursales (Polígonos de fondo)
+  // 3. Capa de Sucursales
   function cargarZonasSucursales() {
     fetch('sucursales.geojson')
       .then(r => r.json())
@@ -84,25 +84,23 @@
           onEachFeature: function(f, l) {
             const n = buscarProp(f.properties, "name") || buscarProp(f.properties, "sucursal") || "Zona";
             l.bindPopup(`<b>Sucursal:</b><br>${n}`);
-            l.on({
-              mouseover: e => e.target.setStyle({ fillOpacity: 0.3 }),
-              mouseout: e => capaSucursales.resetStyle(e.target)
-            });
           }
         }).addTo(map);
         capaSucursales.bringToBack();
       }).catch(() => console.log("Capa sucursales no cargada"));
   }
 
-  // 4. Carga de los 3 archivos GeoJSON
+  // 4. Carga de los 4 archivos GeoJSON
   Promise.all([
     fetch('data.geojson').then(r => r.json()).catch(() => ({features:[]})),
     fetch('data2.geojson').then(r => r.json()).catch(() => ({features:[]})),
-    fetch('data3.geojson').then(r => r.json()).catch(() => ({features:[]}))
-  ]).then(([d1, d2, d3]) => {
+    fetch('data3.geojson').then(r => r.json()).catch(() => ({features:[]})),
+    fetch('clientes_geo (3).json').then(r => r.json()).catch(() => ({features:[]})) // NUEVA CARGA
+  ]).then(([d1, d2, d3, d4]) => {
     datosBases.base1 = (d1.features || []).map(f => ({ ...f, _baseID: 'base1' }));
     datosBases.base2 = (d2.features || []).map(f => ({ ...f, _baseID: 'base2' }));
     datosBases.base3 = (d3.features || []).map(f => ({ ...f, _baseID: 'base3' }));
+    datosBases.base4 = (d4.features || []).map(f => ({ ...f, _baseID: 'base4' }));
     
     cargarZonasSucursales();
     actualizarMapa();
@@ -117,7 +115,7 @@
 
     let combinados = [];
     if (baseFiltro === "todas") {
-      combinados = [...datosBases.base1, ...datosBases.base2, ...datosBases.base3];
+      combinados = [...datosBases.base1, ...datosBases.base2, ...datosBases.base3, ...datosBases.base4];
     } else {
       combinados = datosBases[baseFiltro] || [];
     }
@@ -129,9 +127,10 @@
         return crmVal === crmFiltro;
       },
       pointToLayer: function(f, latlng) {
-        let col = "#3498db"; // Azul CACF
-        if (f._baseID === 'base3') col = "#f1c40f"; // Amarillo CAMARCO
-        if (f._baseID === 'base2') col = "#e67e22"; // Naranja CAPIA
+        let col = "#3498db"; // Azul base1
+        if (f._baseID === 'base4') col = "#9b59b6"; // VIOLETA COMUNAS
+        if (f._baseID === 'base3') col = "#f1c40f"; // Amarillo base3
+        if (f._baseID === 'base2') col = "#e67e22"; // Naranja base2
 
         return L.circleMarker(latlng, {
           radius: 8, fillColor: col, color: "#fff", weight: 1.5, fillOpacity: 0.9
@@ -139,40 +138,34 @@
       },
       onEachFeature: function(f, layer) {
         const p = f.properties;
-        
-        // Mapeo de campos dinámico según la base
-        const nombre = limpiar(buscarProp(p, "nombre") || buscarProp(p, "cliente"), "Empresa");
+        const nombre = limpiar(buscarProp(p, "cliente") || buscarProp(p, "nombre"), "Empresa");
         const crm = (buscarProp(p, "crm") || "NO").toString().toUpperCase().trim();
-        const direccion = limpiar(buscarProp(p, "direccion"), "-");
-        const localidad = limpiar(buscarProp(p, "localidad"), "-");
-        const cuit = limpiar(buscarProp(p, "cuit"), "-");
-        const tel = limpiar(buscarProp(p, "telefono"), "-");
-        const mail = limpiar(buscarProp(p, "correo") || buscarProp(p, "email"), "-");
-        const maq = limpiar(buscarProp(p, "maquinas"), "-");
-        const suc = limpiar(buscarProp(p, "Sucursal"), "-");
-
-        let colH = (f._baseID === 'base3') ? "#f39c12" : (f._baseID === 'base2' ? "#d35400" : "#2980b9");
+        const maq = limpiar(buscarProp(p, "maquinas") || buscarProp(p, "máquinas"), "-");
+        
+        let colH = "#2980b9";
+        if (f._baseID === 'base4') colH = "#8e44ad";
+        if (f._baseID === 'base3') colH = "#f39c12";
+        if (f._baseID === 'base2') colH = "#d35400";
 
         let html = `<div style="min-width: 220px; font-family: sans-serif; line-height: 1.4;">
           <b style="color: ${colH}; text-transform: uppercase; font-size: 13px;">${nombre}</b>
-          <hr style="border:0; border-top:1px solid #eee; margin:8px 0;">
-          📍 <b>Ubicación:</b><br><small style="color:#555;">${direccion}, ${localidad}</small><br><br>`;
+          <hr style="border:0; border-top:1px solid #eee; margin:8px 0;">`;
 
-        if (f._baseID === 'base3') {
-          // CAMARCO específico
-          html += `🆔 <b>CUIT:</b> ${cuit}<br>
-                   📞 <b>Tel:</b> ${tel}<br>
-                   📧 <b>Email:</b> ${mail}<br>
+        if (f._baseID === 'base4') {
+          // POPUP ESPECÍFICO COMUNAS
+          html += `🆔 <b>ID Cliente:</b> ${limpiar(buscarProp(p, "idCliente"))}<br>
+                   🚜 <b>Máquinas:</b> ${maq}<br>`;
+        } else if (f._baseID === 'base3') {
+          html += `📍 <b>Ubicación:</b><br><small>${limpiar(buscarProp(p, "direccion"))}, ${limpiar(buscarProp(p, "localidad"))}</small><br><br>
+                   🆔 <b>CUIT:</b> ${limpiar(buscarProp(p, "cuit"))}<br>
+                   📞 <b>Tel:</b> ${limpiar(buscarProp(p, "telefono"))}<br>
                    🚜 <b>Máquinas:</b> ${maq}<br>
-                   🏢 <b>Sucursal:</b> ${suc}<br>`;
-        } else if (f._baseID === 'base2') {
-          // CAPIA específico
-          html += `🆔 <b>CUIT:</b> ${cuit}<br>
-                   ✅ <b>Relevado:</b> ${limpiar(buscarProp(p, "relevado"))}<br>`;
+                   🏢 <b>Sucursal:</b> ${limpiar(buscarProp(p, "sucursal"))}<br>`;
         } else {
-          // CACF específico
-          html += `🚜 <b>Maquinaria:</b> ${maq}<br>
-                   🔢 <b>Cantidad:</b> ${limpiar(buscarProp(p, "cantidad"), "0")}<br>`;
+          // CACF / CAPIA genérico
+          html += `📍 <b>Ubicación:</b><br><small>${limpiar(buscarProp(p, "localidad"))}, ${limpiar(buscarProp(p, "provincia"))}</small><br><br>
+                   🆔 <b>CUIT:</b> ${limpiar(buscarProp(p, "cuit"))}<br>
+                   🚜 <b>Maquinaria:</b> ${maq}<br>`;
         }
 
         html += `<div style="background:#f8f9fa; padding:10px; border-radius:8px; margin-top:12px; border-left:5px solid #2c3e4e; display: flex; justify-content: space-between; align-items: center;">
