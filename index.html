@@ -111,7 +111,7 @@
     actualizarMapa();
   });
 
-  function actualizarMapa() {
+ function actualizarMapa() {
     const crmFiltro = document.getElementById("filtroCRM").value;
     const baseFiltro = document.getElementById("filtroBase").value;
 
@@ -135,31 +135,43 @@
         if (f._baseID === 'base4') col = "#9b59b6"; // VIOLETA
         if (f._baseID === 'base3') col = "#f1c40f"; // AMARILLO
         if (f._baseID === 'base2') col = "#e67e22"; // NARANJA
-        
-        return L.circleMarker(latlng, {
-          radius: 8, fillColor: col, color: "#fff", weight: 1.5, fillOpacity: 0.9
-        });
+        return L.circleMarker(latlng, { radius: 8, fillColor: col, color: "#fff", weight: 1.5, fillOpacity: 0.9 });
       },
       onEachFeature: function(f, layer) {
         const p = f.properties;
-        const nombre = limpiar(buscarProp(p, "cliente") || buscarProp(p, "nombre"), "Empresa");
+        const idBase = f._baseID;
+        const nombre = limpiar(buscarProp(p, "cliente") || buscarProp(p, "nombre"), "Empresa/Ente");
         const crmEstado = p.crm_filtrable;
-        const maq = limpiar(buscarProp(p, "maquinas") || buscarProp(p, "máquinas"), "-");
         
-        let colH = (f._baseID === 'base4') ? "#8e44ad" : (f._baseID === 'base3' ? "#f39c12" : "#2980b9");
+        let colH = (idBase === 'base4') ? "#8e44ad" : (idBase === 'base3' ? "#f39c12" : (idBase === 'base2' ? "#d35400" : "#2980b9"));
 
-        let html = `<div style="min-width: 220px; font-family: sans-serif; line-height: 1.4;">
+        let html = `<div style="min-width: 230px; font-family: sans-serif; line-height: 1.4;">
           <b style="color: ${colH}; text-transform: uppercase; font-size: 13px;">${nombre}</b>
           <hr style="border:0; border-top:1px solid #eee; margin:8px 0;">`;
 
-        if (f._baseID === 'base4') {
-          html += `🆔 <b>ID Cliente:</b> ${limpiar(buscarProp(p, "idCliente"))}<br>
-                   📍 <b>Ubicación:</b> <br><small style="color:#555;">${limpiar(buscarProp(p, "geocoding"))}</small><br>
-                   🚜 <b>Maquinas:</b> ${maq}<br>`;
-        } else {
-          html += `📍 <b>Ubicación:</b><br><small style="color:#555;">${limpiar(buscarProp(p, "direccion") || buscarProp(p, "localidad"))}</small><br><br>
-                   🆔 <b>CUIT/ID:</b> ${limpiar(buscarProp(p, "cuit") || buscarProp(p, "idCliente"))}<br>
-                   🚜 <b>Máquinas:</b> ${maq}<br>`;
+        if (idBase === 'base2') { // CAPIA
+          html += `📍 <b>Ubicación:</b> ${limpiar(buscarProp(p, "localidad"))}, ${limpiar(buscarProp(p, "provincia"))}<br>
+                   🆔 <b>CUIT:</b> ${limpiar(buscarProp(p, "cuit"))}<br>
+                   🔍 <b>Relevado:</b> ${limpiar(buscarProp(p, "relevado"))}<br>`;
+        } 
+        else if (idBase === 'base1') { // CACF
+          html += `📍 <b>Ubicación:</b> ${limpiar(buscarProp(p, "direccion"))}<br>
+                   📞 <b>Teléfono:</b> ${limpiar(buscarProp(p, "telefono"))}<br>
+                   📧 <b>Email:</b> ${limpiar(buscarProp(p, "correo"))}<br>
+                   🚜 <b>Máquinas (Cant):</b> ${limpiar(buscarProp(p, "maquinas"))}<br>`;
+        }
+        else if (idBase === 'base3') { // CAMARCO
+          html += `🆔 <b>CUIT:</b> ${limpiar(buscarProp(p, "cuit"))}<br>
+                   📍 <b>Dirección:</b> ${limpiar(buscarProp(p, "direccion"))}, ${limpiar(buscarProp(p, "localidad"))}<br>
+                   📞 <b>Teléfono:</b> ${limpiar(buscarProp(p, "telefono"))}<br>
+                   📧 <b>Email:</b> ${limpiar(buscarProp(p, "correo"))}<br>
+                   🚜 <b>Máquinas:</b> ${limpiar(buscarProp(p, "maquinas"))}<br>
+                   🏢 <b>Sucursal:</b> ${limpiar(buscarProp(p, "sucursal"))}<br>`;
+        }
+        else if (idBase === 'base4') { // COMUNAS
+          html += `🆔 <b>CUIT:</b> ${limpiar(buscarProp(p, "cuit"))}<br>
+                   🆔 <b>ID Cliente:</b> ${limpiar(buscarProp(p, "idCliente"))}<br>
+                   🚜 <b>Máquinas:</b> ${limpiar(buscarProp(p, "maquinas"))}<br>`;
         }
 
         html += `<div style="background:#f8f9fa; padding:10px; border-radius:8px; margin-top:12px; border-left:5px solid #2c3e4e; display: flex; justify-content: space-between; align-items: center;">
@@ -170,8 +182,7 @@
         layer.bindPopup(html);
       }
     }).addTo(map);
-  }
-
+}
   document.getElementById("filtroCRM").addEventListener("change", actualizarMapa);
   document.getElementById("filtroBase").addEventListener("change", actualizarMapa);
 </script>
