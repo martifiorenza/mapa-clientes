@@ -1470,7 +1470,7 @@
         "cliente": "Coronel Bogado",
         "geocoding": "Coronel Bogado,Rosario,Santa Fe,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "RETROEXCAVADORAS-JOHN DEERE-310L"
       },
       "geometry": {
         "type": "Point",
@@ -3289,7 +3289,7 @@
         "cliente": "Maximo Paz",
         "geocoding": "Maximo Paz,Constitución,Santa Fe,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "RETROEXCAVADORAS-JOHN DEERE-310L"
       },
       "geometry": {
         "type": "Point",
@@ -3952,7 +3952,7 @@
         "cliente": "San Genaro",
         "geocoding": "San Genaro,San Jerónimo,Santa Fe,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "RETROEXCAVADORAS-JOHN DEERE-310P"
       },
       "geometry": {
         "type": "Point",
@@ -3986,7 +3986,7 @@
         "cliente": "Villa Cañas",
         "geocoding": "Villa Cañas,General López,Santa Fe,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "RETROEXCAVADORAS-JOHN DEERE-310L"
       },
       "geometry": {
         "type": "Point",
@@ -4513,7 +4513,7 @@
         "cliente": "San Vicente",
         "geocoding": "San Vicente,Castellanos,Santa Fe,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "MOTONIVELADORAS-OTRA MARCA-OTRO | TRACTORES-PAUNY-EVO 250A"
       },
       "geometry": {
         "type": "Point",
@@ -5397,7 +5397,7 @@
         "cliente": "Alcira",
         "geocoding": "Alcira,Río Cuarto,Córdoba,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "CARGADOR FRONTAL-XCMG-LW180K | CARGADOR FRONTAL-OTRA MARCA-OTRO"
       },
       "geometry": {
         "type": "Point",
@@ -5533,7 +5533,7 @@
         "cliente": "Altos de Chipión",
         "geocoding": "Altos de Chipión,San Justo,Córdoba,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "TRACTORES-DEUTZ-65"
       },
       "geometry": {
         "type": "Point",
@@ -5669,7 +5669,7 @@
         "cliente": "Balnearia",
         "geocoding": "Balnearia,San Justo,Córdoba,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "MINICARGADORAS-OTRA MARCA-OTRO | MOTONIVELADORAS-KOMATSU-GD655 5 | TRACTORES-NEW HOLLAND-7030 | TRACTORES-ZANELLO-220"
       },
       "geometry": {
         "type": "Point",
@@ -5992,7 +5992,7 @@
         "cliente": "Carrilobo",
         "geocoding": "Carrilobo,Río Segundo,Córdoba,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "TRACTORES-JOHN DEERE-2420 | MOTONIVELADORAS-OTRA MARCA-OTRO | CARGADOR FRONTAL-OTRA MARCA-OTRO"
       },
       "geometry": {
         "type": "Point",
@@ -6451,7 +6451,7 @@
         "cliente": "Dean Funes",
         "geocoding": "Dean Funes,Ischilín,Córdoba,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "MOTONIVELADORAS-SINOMACH-717H | MOTONIVELADORAS-OTRA MARCA-OTRO | MOTONIVELADORAS-LIUGONG-CLG4165D-HD | CARGADOR FRONTAL-OTRA MARCA-OTRO | MINICARGADORAS-OTRA MARCA-OTRO | MINICARGADORAS-LIUGONG-CLG365B | RETROEXCAVADORAS-LIANGONG-M44"
       },
       "geometry": {
         "type": "Point",
@@ -6485,7 +6485,7 @@
         "cliente": "Despeñaderos",
         "geocoding": "Despeñaderos,Santa María,Córdoba,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "CARGADOR FRONTAL-OTRA MARCA-OTRO | MOTONIVELADORAS-OTRA MARCA-OTRO"
       },
       "geometry": {
         "type": "Point",
@@ -6553,7 +6553,7 @@
         "cliente": "El Fortin",
         "geocoding": "El Fortin,San Justo,Córdoba,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "ARGADOR FRONTAL-OTRA MARCA-OTRO | EXCAVADORAS-DOOSAN-DX225LC | TRACTORES-ZANELLO-220 | TRACTORES-ZANELLO-220 | TRACTORES-ZANELLO-4125 | DESMALEZADORAS-AGROAR-TC 3215"
       },
       "geometry": {
         "type": "Point",
@@ -6706,7 +6706,7 @@
         "cliente": "General Cabrera",
         "geocoding": "General Cabrera,Juárez Celman,Córdoba,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "MINICARGADORAS-JOHN DEERE-OTRO | MINICARGADORAS-JOHN DEERE-317D"
       },
       "geometry": {
         "type": "Point",
@@ -6723,7 +6723,7 @@
         "cliente": "General Deheza",
         "geocoding": "General Deheza,Juárez Celman,Córdoba,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "CARGADOR FRONTAL-OTRA MARCA-OTRO | RETROEXCAVADORAS-OTRA MARCA-OTRO "
       },
       "geometry": {
         "type": "Point",
@@ -6757,7 +6757,7 @@
         "cliente": "General Roca",
         "geocoding": "General Roca,Marcos Juárez,Córdoba,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "TRACTORES-PAUNY-180C | TRACTORES-PAUNY-180C | TRACTORES-PAUNY-EVO 250A | TRACTORES-PAUNY-EVO 250A | MOTONIVELADORAS-CASE-885B | PALAS CARGADORAS-NEW HOLLAND-W190B"
       },
       "geometry": {
         "type": "Point",
@@ -7471,7 +7471,7 @@
         "cliente": "Las Varillas",
         "geocoding": "Las Varillas,San Justo,Córdoba,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "CARGADOR FRONTAL-OTRA MARCA-OTRO | MOTONIVELADORAS-OTRA MARCA-OTRO | TRACTORES-PAUNY-230C | TRACTORES-PAUNY-210A"
       },
       "geometry": {
         "type": "Point",
@@ -7743,7 +7743,7 @@
         "cliente": "Marcos Juarez",
         "geocoding": "Marcos Juarez,Marcos Juárez,Córdoba,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "TRACTORES-PAUNY-EVO 230A | TRACTORES-PAUNY-EVO 230A | TRACTORES-JOHN DEERE-5090E | TRACTORES-JOHN DEERE-5090E | EXCAVADORAS-NEW HOLLAND-E215C | MOTONIVELADORAS-NEW HOLLAND-RG170 | MOTONIVELADORAS-NEW HOLLAND-RG170"
       },
       "geometry": {
         "type": "Point",
@@ -8338,7 +8338,7 @@
         "cliente": "Rio Ceballos",
         "geocoding": "Rio Ceballos,Colón,Córdoba,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "MOTONIVELADORAS-JOHN DEERE-570A | MOTONIVELADORAS-JOHN DEERE-OTRO | TRACTORES-MASSEY FERGUSON-35HP"
       },
       "geometry": {
         "type": "Point",
@@ -8406,7 +8406,7 @@
         "cliente": "Rio Segundo",
         "geocoding": "Rio Segundo,Río Segundo,Córdoba,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "TRACTORES-JOHN DEERE-3036 | CARGADOR FRONTAL-OTRA MARCA-OTRO | MOTONIVELADORAS-LIANGONG-OTRO | TRACTORES-PAUNY-OTRO | TRACTORES-MASSEY FERGUSON-OTRO"
       },
       "geometry": {
         "type": "Point",
@@ -8423,7 +8423,7 @@
         "cliente": "Río Tercero",
         "geocoding": "Río Tercero,Tercero Arriba,Córdoba,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "MOTONIVELADORAS-PAUNY-MA160 "
       },
       "geometry": {
         "type": "Point",
@@ -8882,7 +8882,7 @@
         "cliente": "Santa Rosa de Calamuchita",
         "geocoding": "Santa Rosa de Calamuchita,Calamuchita,Córdoba,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "CARGADOR FRONTAL-OTRA MARCA-OTRO | CARGADOR FRONTAL-OTRA MARCA-OTRO | CARGADOR FRONTAL-OTRA MARCA-OTRO | MOTONIVELADORAS-OTRA MARCA-OTRO"
       },
       "geometry": {
         "type": "Point",
@@ -8899,7 +8899,7 @@
         "cliente": "Santiago Temple",
         "geocoding": "Santiago Temple,Río Segundo,Córdoba,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "RETROEXCAVADORAS-JOHN DEERE-310P"
       },
       "geometry": {
         "type": "Point",
@@ -8916,7 +8916,7 @@
         "cliente": "Sarmiento",
         "geocoding": "Sarmiento,Totoral,Córdoba,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "CARGADOR FRONTAL-XCMG-LW180K"
       },
       "geometry": {
         "type": "Point",
@@ -9154,7 +9154,7 @@
         "cliente": "Transito",
         "geocoding": "Transito,San Justo,Córdoba,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "TRACTORES-OTRA MARCA-OTRO | TRACTORES-OTRA MARCA-OTRO | MINICARGADORAS-JMV-WS50 | DESMALEZADORAS-AGROMEC-HILERADORA"
       },
       "geometry": {
         "type": "Point",
@@ -10973,7 +10973,7 @@
         "cliente": "San José",
         "geocoding": "San José,Apóstoles,Misiones,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "TRACTORES-JOHN DEERE-4005TD"
       },
       "geometry": {
         "type": "Point",
@@ -12350,7 +12350,7 @@
         "cliente": "Aldea Brasilera",
         "geocoding": "Aldea Brasilera,Diamante,Entre Ríos,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "TRACTORES-CHERY-Chery RC1104-C"
       },
       "geometry": {
         "type": "Point",
@@ -12435,7 +12435,7 @@
         "cliente": "Basavilbaso",
         "geocoding": "Basavilbaso,Uruguay,Entre Ríos,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "PALAS CARGADORAS-JOHN DEERE-563 | MOTONIVELADORAS-LIUGONG-CLG4165D-HD | RETROEXCAVADORAS-CASE-580 | PALAS CARGADORAS-LIUGONG-CLG8128H "
       },
       "geometry": {
         "type": "Point",
@@ -12979,7 +12979,7 @@
         "cliente": "Larroque",
         "geocoding": "Larroque,Gualeguaychú,Entre Ríos,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "TRACTORES-JOHN DEERE-5045D"
       },
       "geometry": {
         "type": "Point",
@@ -14475,7 +14475,7 @@
         "cliente": "Laguna Paiva",
         "geocoding": "Laguna Paiva,La Capital,Santa Fe,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "RETROEXCAVADORAS-JOHN DEERE-310L"
       },
       "geometry": {
         "type": "Point",
@@ -14730,7 +14730,7 @@
         "cliente": "Estación Camps",
         "geocoding": "Estación Camps,Uruguay,Entre Ríos,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "TRACTORES-MASSEY FERGUSON-283 Adv | MOTONIVELADORAS-GROSSPAL-MV 14000"
       },
       "geometry": {
         "type": "Point",
