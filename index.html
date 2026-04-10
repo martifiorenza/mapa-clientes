@@ -55,8 +55,8 @@
 
   let datosBases = { base1: [], base2: [], base3: [], base4: [] };
   let geojsonLayer;
+  let capaSucursales;
 
-  // Función para buscar propiedades sin importar mayúsculas/minúsculas/tildes
   function buscarProp(props, clave) {
     if (!props) return null;
     const claveNorm = clave.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").trim();
@@ -71,27 +71,40 @@
     return v.toString().trim();
   }
 
-  // Carga y Normalización de Datos
+  // --- NUEVA FUNCIÓN: CARGA CONSTANTE DE SUCURSALES ---
+  function cargarZonasSucursales() {
+    fetch('sucursales.geojson')
+      .then(r => r.json())
+      .then(data => {
+        capaSucursales = L.geoJSON(data, {
+          style: { 
+            color: "#000000",   // Línea negra bien clarita
+            weight: 2,          // Grosor de línea
+            fillColor: "#34495e", 
+            fillOpacity: 0.05   // Fondo casi transparente para no tapar los puntos
+          },
+          onEachFeature: function(f, l) {
+            const n = buscarProp(f.properties, "name") || buscarProp(f.properties, "sucursal") || "Zona";
+            l.bindPopup(`<b>Sucursal:</b><br>${n}`);
+          }
+        }).addTo(map);
+        capaSucursales.bringToBack(); // Envía los polígonos al fondo
+      }).catch(() => console.log("Archivo sucursales.geojson no encontrado"));
+  }
+
   function procesarFeatures(features, idBase) {
     return (features || []).map(f => {
       let p = f.properties || {};
       let rawCRM = buscarProp(p, "crm");
       let idCli = buscarProp(p, "idCliente");
-      
-      // Lógica de CRM: Por defecto es NO
       let estadoFinal = "NO";
-      
-      // Si el campo CRM dice "SI" (en cualquier formato), es SI.
       if (rawCRM && rawCRM.toString().toUpperCase().trim() === "SI") {
         estadoFinal = "SI";
       }
-      
-      // REGLA ESPECIAL: Si es Base 4 y no tiene idCliente, forzamos NO aunque diga SI.
       if (idBase === 'base4' && (!idCli || idCli === "-" || idCli === 0 || idCli === "0")) {
         estadoFinal = "NO";
       }
-
-      p.crm_filtrable = estadoFinal; // Propiedad oculta para el filtro
+      p.crm_filtrable = estadoFinal;
       return { ...f, properties: p, _baseID: idBase };
     });
   }
@@ -107,11 +120,11 @@
     datosBases.base3 = procesarFeatures(d3.features, 'base3');
     datosBases.base4 = procesarFeatures(d4.features, 'base4');
     
-    console.log("Datos cargados. Base 4 total:", datosBases.base4.length);
+    cargarZonasSucursales(); // Carga las sucursales al inicio
     actualizarMapa();
   });
 
- function actualizarMapa() {
+  function actualizarMapa() {
     const crmFiltro = document.getElementById("filtroCRM").value;
     const baseFiltro = document.getElementById("filtroBase").value;
 
@@ -132,9 +145,9 @@
       },
       pointToLayer: function(f, latlng) {
         let col = "#3498db"; 
-        if (f._baseID === 'base4') col = "#9b59b6"; // VIOLETA
-        if (f._baseID === 'base3') col = "#f1c40f"; // AMARILLO
-        if (f._baseID === 'base2') col = "#e67e22"; // NARANJA
+        if (f._baseID === 'base4') col = "#9b59b6";
+        if (f._baseID === 'base3') col = "#f1c40f"; 
+        if (f._baseID === 'base2') col = "#e67e22"; 
         return L.circleMarker(latlng, { radius: 8, fillColor: col, color: "#fff", weight: 1.5, fillOpacity: 0.9 });
       },
       onEachFeature: function(f, layer) {
@@ -142,36 +155,20 @@
         const idBase = f._baseID;
         const nombre = limpiar(buscarProp(p, "cliente") || buscarProp(p, "nombre"), "Empresa/Ente");
         const crmEstado = p.crm_filtrable;
-        
         let colH = (idBase === 'base4') ? "#8e44ad" : (idBase === 'base3' ? "#f39c12" : (idBase === 'base2' ? "#d35400" : "#2980b9"));
 
         let html = `<div style="min-width: 230px; font-family: sans-serif; line-height: 1.4;">
           <b style="color: ${colH}; text-transform: uppercase; font-size: 13px;">${nombre}</b>
           <hr style="border:0; border-top:1px solid #eee; margin:8px 0;">`;
 
-        if (idBase === 'base2') { // CAPIA
-          html += `📍 <b>Ubicación:</b> ${limpiar(buscarProp(p, "localidad"))}, ${limpiar(buscarProp(p, "provincia"))}<br>
-                   🆔 <b>CUIT:</b> ${limpiar(buscarProp(p, "cuit"))}<br>
-                   🔍 <b>Relevado:</b> ${limpiar(buscarProp(p, "relevado"))}<br>`;
-        } 
-        else if (idBase === 'base1') { // CACF
-          html += `📍 <b>Ubicación:</b> ${limpiar(buscarProp(p, "direccion"))}<br>
-                   📞 <b>Teléfono:</b> ${limpiar(buscarProp(p, "telefono"))}<br>
-                   📧 <b>Email:</b> ${limpiar(buscarProp(p, "correo"))}<br>
-                   🚜 <b>Máquinas (Cant):</b> ${limpiar(buscarProp(p, "maquinas"))}<br>`;
-        }
-        else if (idBase === 'base3') { // CAMARCO
-          html += `🆔 <b>CUIT:</b> ${limpiar(buscarProp(p, "cuit"))}<br>
-                   📍 <b>Dirección:</b> ${limpiar(buscarProp(p, "direccion"))}, ${limpiar(buscarProp(p, "localidad"))}<br>
-                   📞 <b>Teléfono:</b> ${limpiar(buscarProp(p, "telefono"))}<br>
-                   📧 <b>Email:</b> ${limpiar(buscarProp(p, "correo"))}<br>
-                   🚜 <b>Máquinas:</b> ${limpiar(buscarProp(p, "maquinas"))}<br>
-                   🏢 <b>Sucursal:</b> ${limpiar(buscarProp(p, "sucursal"))}<br>`;
-        }
-        else if (idBase === 'base4') { // COMUNAS
-          html += `🆔 <b>ID Cliente:</b> ${limpiar(buscarProp(p, "idCliente"))}<br>
-                   📍 <b>Ubicación:</b> ${limpiar(buscarProp(p, "geocoding"))}<br>
-                   🚜 <b>Máquinas:</b> ${limpiar(buscarProp(p, "maquinas"))}<br>`;
+        if (idBase === 'base2') {
+          html += `📍 <b>Ubicación:</b> ${limpiar(buscarProp(p, "localidad"))}, ${limpiar(buscarProp(p, "provincia"))}<br>🆔 <b>CUIT:</b> ${limpiar(buscarProp(p, "cuit"))}<br>🔍 <b>Relevado:</b> ${limpiar(buscarProp(p, "relevado"))}<br>`;
+        } else if (idBase === 'base1') {
+          html += `📍 <b>Ubicación:</b> ${limpiar(buscarProp(p, "direccion"))}<br>📞 <b>Teléfono:</b> ${limpiar(buscarProp(p, "telefono"))}<br>📧 <b>Email:</b> ${limpiar(buscarProp(p, "correo"))}<br>🚜 <b>Máquinas (Cant):</b> ${limpiar(buscarProp(p, "maquinas"))}<br>`;
+        } else if (idBase === 'base3') {
+          html += `🆔 <b>CUIT:</b> ${limpiar(buscarProp(p, "cuit"))}<br>📍 <b>Dirección:</b> ${limpiar(buscarProp(p, "direccion"))}, ${limpiar(buscarProp(p, "localidad"))}<br>📞 <b>Teléfono:</b> ${limpiar(buscarProp(p, "telefono"))}<br>📧 <b>Email:</b> ${limpiar(buscarProp(p, "correo"))}<br>🚜 <b>Máquinas:</b> ${limpiar(buscarProp(p, "maquinas"))}<br>🏢 <b>Sucursal:</b> ${limpiar(buscarProp(p, "sucursal"))}<br>`;
+        } else if (idBase === 'base4') {
+          html += `🆔 <b>ID Cliente:</b> ${limpiar(buscarProp(p, "idCliente"))}<br>📍 <b>Ubicación:</b> ${limpiar(buscarProp(p, "geocoding"))}<br>🚜 <b>Máquinas:</b> ${limpiar(buscarProp(p, "maquinas"))}<br>`;
         }
 
         html += `<div style="background:#f8f9fa; padding:10px; border-radius:8px; margin-top:12px; border-left:5px solid #2c3e4e; display: flex; justify-content: space-between; align-items: center;">
@@ -182,7 +179,8 @@
         layer.bindPopup(html);
       }
     }).addTo(map);
-}
+  } // Aquí corregí el cierre de la función
+
   document.getElementById("filtroCRM").addEventListener("change", actualizarMapa);
   document.getElementById("filtroBase").addEventListener("change", actualizarMapa);
 </script>
