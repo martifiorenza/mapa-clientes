@@ -212,7 +212,7 @@
         "cliente": "Angeloni",
         "geocoding": "Angeloni,San Justo,Santa Fe,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "MOTONIVELADORAS-VOLVO-G940 | MOTONIVELADORAS-OTRA MARCA-OTRO | RETROEXCAVADORAS-CAT-416 | EXCAVADORAS-VOLVO-EC200D | DESENCONTRADA-OTRA MARCA-OTRO | TRACTORES-PAUNY-210A "
       },
       "geometry": {
         "type": "Point",
@@ -1334,7 +1334,7 @@
         "cliente": "Colonia Mascias",
         "geocoding": "Colonia Mascias,Garay,Santa Fe,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "TRACTORES-JOHN DEERE-5082E | TRACTORES JARDIN-JOHN DEERE-Z355 | TRACTORES-FIAT-700 E | TRACTORES-FIAT-U 25 | ACOPLADOS-PLEGADOS SAN JUSTO-ACOPLADO 4MTS"
       },
       "geometry": {
         "type": "Point",
@@ -1521,7 +1521,7 @@
         "cliente": "Correa",
         "geocoding": "Correa,Iriondo,Santa Fe,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "MOTONIVELADORAS-OTRA MARCA-OTRO | RETROEXCAVADORAS-NEW HOLLAND-OTRO "
       },
       "geometry": {
         "type": "Point",
@@ -1674,7 +1674,7 @@
         "cliente": "El Rabon",
         "geocoding": "El Rabon,General Obligado,Santa Fe,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "TRACTORES-JOHN DEERE-5065E "
       },
       "geometry": {
         "type": "Point",
@@ -1742,7 +1742,7 @@
         "cliente": "Emilia",
         "geocoding": "Emilia,La Capital,Santa Fe,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "RACTORES JARDIN-JOHN DEERE-JARDIN D130 | TRACTORES-NEW HOLLAND-70HP | TRACTORES-VALTRA-BM100 | TRACTORES-FIAT-700 E"
       },
       "geometry": {
         "type": "Point",
@@ -1878,7 +1878,7 @@
         "cliente": "Felicia",
         "geocoding": "Felicia,Las Colonias,Santa Fe,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "RETROEXCAVADORAS-JOHN DEERE-310L"
       },
       "geometry": {
         "type": "Point",
@@ -1929,7 +1929,7 @@
         "cliente": "Fortin Olmos",
         "geocoding": "Fortin Olmos,Vera,Santa Fe,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "TRACTORES JARDIN-JOHN DEERE-JARDIN D130 | DESMALEZADORAS-SPANGHERO-YAGO - SPANGHERO"
       },
       "geometry": {
         "type": "Point",
@@ -2099,7 +2099,7 @@
         "cliente": "Gessler",
         "geocoding": "Gessler,San Jerónimo,Santa Fe,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "RETROEXCAVADORAS-JOHN DEERE-310L "
       },
       "geometry": {
         "type": "Point",
@@ -2150,7 +2150,7 @@
         "cliente": "Godoy",
         "geocoding": "Godoy,Constitución,Santa Fe,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "RETROEXCAVADORAS-JOHN DEERE-310G"
       },
       "geometry": {
         "type": "Point",
@@ -2201,7 +2201,7 @@
         "cliente": "Grutly",
         "geocoding": "Grutly,Las Colonias,Santa Fe,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "RETROEXCAVADORAS-JOHN DEERE-310L"
       },
       "geometry": {
         "type": "Point",
@@ -2218,7 +2218,7 @@
         "cliente": "Guadalupe Norte",
         "geocoding": "Guadalupe Norte,General Obligado,Santa Fe,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "TRACTORES-NEW HOLLAND-OTRO | TRACTORES-JOHN DEERE-5080ED"
       },
       "geometry": {
         "type": "Point",
@@ -2235,7 +2235,7 @@
         "cliente": "Helvecia",
         "geocoding": "Helvecia,Garay,Santa Fe,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "TRACTORES-FIAT-115-90 | TRACTORES-JOHN DEERE-5080ED | TRACTORES-JOHN DEERE-6120E "
       },
       "geometry": {
         "type": "Point",
@@ -2354,7 +2354,7 @@
         "cliente": "Humboldt",
         "geocoding": "Humboldt,Las Colonias,Santa Fe,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "TRACTORES-JOHN DEERE-5065E "
       },
       "geometry": {
         "type": "Point",
@@ -2507,7 +2507,7 @@
         "cliente": "Juncal",
         "geocoding": "Juncal,Constitución,Santa Fe,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "RETROEXCAVADORAS-JOHN DEERE-310L "
       },
       "geometry": {
         "type": "Point",
@@ -2694,7 +2694,7 @@
         "cliente": "La Sarita",
         "geocoding": "La Sarita,General Obligado,Santa Fe,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "TRACTORES-JOHN DEERE-5403 | TRACTORES JARDIN-JOHN DEERE-JARDIN D130 | TRACTORES-JOHN DEERE-5082E "
       },
       "geometry": {
         "type": "Point",
@@ -2932,7 +2932,7 @@
         "cliente": "Llambi Campbell",
         "geocoding": "Llambi Campbell,La Capital,Santa Fe,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "TRACTORES JARDIN-JOHN DEERE-JARDIN D130 | TRACTORES JARDIN-JOHN DEERE-JARDIN D130 | RETROEXCAVADORAS-JOHN DEERE-310L | TRACTORES-JOHN DEERE-5075E | TRACTORES-JOHN DEERE-5082E | TRACTORES-JOHN DEERE-5060"
       },
       "geometry": {
         "type": "Point",
@@ -2949,7 +2949,7 @@
         "cliente": "Logroño",
         "geocoding": "Logroño,Nueve de Julio,Santa Fe,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "RETROEXCAVADORAS-NEW HOLLAND-OTRO | TRACTORES-JOHN DEERE-5705 | TRACTORES-CASE-QL | MOTONIVELADORAS-CAT-120H"
       },
       "geometry": {
         "type": "Point",
@@ -3578,7 +3578,7 @@
         "cliente": "Palacios",
         "geocoding": "Palacios,San Cristóbal,Santa Fe,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "TRACTORES-JOHN DEERE-5065E | RETROEXCAVADORAS-JOHN DEERE-310J | MINICARGADORAS-JOHN DEERE-316GR iT4"
       },
       "geometry": {
         "type": "Point",
@@ -3663,7 +3663,7 @@
         "cliente": "Piamonte",
         "geocoding": "Piamonte,San Martín,Santa Fe,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "RETROEXCAVADORAS-MASSEY FERGUSON-OTRO | TRACTORES-NEW HOLLAND-TT45"
       },
       "geometry": {
         "type": "Point",
@@ -4105,7 +4105,7 @@
         "cliente": "Ricardone",
         "geocoding": "Ricardone,San Lorenzo,Santa Fe,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "TRACTORES-JOHN DEERE-2530 | RETROEXCAVADORAS-OTRA MARCA-OTRO | RETROEXCAVADORAS-LIUGONG-OTRO"
       },
       "geometry": {
         "type": "Point",
@@ -4224,7 +4224,7 @@
         "cliente": "San Agustin",
         "geocoding": "San Agustin,Las Colonias,Santa Fe,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "RETROEXCAVADORAS-JOHN DEERE-310L "
       },
       "geometry": {
         "type": "Point",
@@ -4615,7 +4615,7 @@
         "cliente": "Santa Margarita",
         "geocoding": "Santa Margarita,Nueve de Julio,Santa Fe,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "RETROEXCAVADORAS-JOHN DEERE-310L "
       },
       "geometry": {
         "type": "Point",
@@ -4666,7 +4666,7 @@
         "cliente": "Santa Rosa de Calchines",
         "geocoding": "Santa Rosa de Calchines,Garay,Santa Fe,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "TRACTORES-JOHN DEERE-5075 | TRACTORES-JOHN DEERE-5075 | TRACTORES-JOHN DEERE-5090E"
       },
       "geometry": {
         "type": "Point",
@@ -4683,7 +4683,7 @@
         "cliente": "Santa Teresa",
         "geocoding": "Santa Teresa,Constitución,Santa Fe,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "RETROEXCAVADORAS-JOHN DEERE-310L | RETROEXCAVADORAS-JOHN DEERE-310L"
       },
       "geometry": {
         "type": "Point",
@@ -4887,7 +4887,7 @@
         "cliente": "Tacuarendi",
         "geocoding": "Tacuarendi,General Obligado,Santa Fe,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "TRACTORES-JOHN DEERE-5403"
       },
       "geometry": {
         "type": "Point",
@@ -4904,7 +4904,7 @@
         "cliente": "Tacural",
         "geocoding": "Tacural,Castellanos,Santa Fe,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "RETROEXCAVADORAS-JOHN DEERE-310L | RETROEXCAVADORAS-JOHN DEERE-310L "
       },
       "geometry": {
         "type": "Point",
@@ -4921,7 +4921,7 @@
         "cliente": "Tacurales",
         "geocoding": "Tacurales,Castellanos,Santa Fe,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "TRACTORES-DEUTZ-Ax 100 | TRACTORES-DEUTZ-Ax 100"
       },
       "geometry": {
         "type": "Point",
@@ -5125,7 +5125,7 @@
         "cliente": "Villa Ana",
         "geocoding": "Villa Ana,General Obligado,Santa Fe,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "TRACTORES-JOHN DEERE-5065E"
       },
       "geometry": {
         "type": "Point",
@@ -5142,7 +5142,7 @@
         "cliente": "Villa Eloisa",
         "geocoding": "Villa Eloisa,Iriondo,Santa Fe,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "RETROEXCAVADORAS-JOHN DEERE-310L | TRACTORES-MASSEY FERGUSON-296 | TRACTORES-MASSEY FERGUSON-297 | TRACTORES-MASSEY FERGUSON-299 | MOTONIVELADORAS-OTRA MARCA-OTRO"
       },
       "geometry": {
         "type": "Point",
@@ -5159,7 +5159,7 @@
         "cliente": "Villa Guillermina",
         "geocoding": "Villa Guillermina,General Obligado,Santa Fe,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "TRACTORES-JOHN DEERE-5403 | TRACTORES-JOHN DEERE-5403"
       },
       "geometry": {
         "type": "Point",
@@ -13812,7 +13812,7 @@
         "cliente": "Colonia Esther",
         "geocoding": "Colonia Esther,Rosario,Santa Fe,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "TRACTORES-JOHN DEERE-5075E | TRACTORES-PAUNY-180A | DESMALEZADORAS-GROSSPAL-AV-150 | TANQUES DE AGUA-ALBERTI MAQUINARIA-26.000 L Azul | ACOPLADOS-PLEGADOS SAN JUSTO-ACOPLADO 4MTS"
       },
       "geometry": {
         "type": "Point",
@@ -13829,7 +13829,7 @@
         "cliente": "Colonia Silva",
         "geocoding": "Colonia Silva,San Martín,Santa Fe,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "TRACTORES-JOHN DEERE-5075E "
       },
       "geometry": {
         "type": "Point",
@@ -13846,7 +13846,7 @@
         "cliente": "Los Chañaritos",
         "geocoding": "Los Chañaritos,Río Primero,Córdoba,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "TRACTORES-JOHN DEERE-5075 | CARGADOR FRONTAL-JOHN DEERE-553"
       },
       "geometry": {
         "type": "Point",
@@ -13863,7 +13863,7 @@
         "cliente": "Sagrada Familia",
         "geocoding": "Sagrada Familia,Colón,Córdoba,Argentina",
         "crm": "SI",
-        "maquinas": ""
+        "maquinas": "TRACTORES-JOHN DEERE-5425"
       },
       "geometry": {
         "type": "Point",
