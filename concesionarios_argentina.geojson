@@ -1,0 +1,5301 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Garino Cereales SRL",
+        "geolocalizacion": "-31.7090507, -63.5165422"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -63.5165422,
+          -31.7090507
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Salón de ventas",
+        "geolocalizacion": "-35.1334404, -58.8760628"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.8760628,
+          -35.1334404
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Fertilia",
+        "geolocalizacion": "-31.0230908, -64.0387501"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -64.0387501,
+          -31.0230908
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Viva! El Pollo",
+        "geolocalizacion": "-33.6773495, -59.6657537"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -59.6657537,
+          -33.6773495
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Bodega Domingo Molina",
+        "geolocalizacion": "-26.0371981, -66.0185386"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -66.0185386,
+          -26.0371981
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Estación de Piscicura Aroyo Bagillt",
+        "geolocalizacion": "-43.1986392, -71.586206"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.586206,
+          -43.1986392
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Tres Quijotes.",
+        "geolocalizacion": "-36.7972231, -59.8457768"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -59.8457768,
+          -36.7972231
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Azul Agro Maquinarias",
+        "geolocalizacion": "-36.7973519, -59.8460651"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -59.8460651,
+          -36.7973519
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "H.J. Navas y Cía",
+        "geolocalizacion": "-36.8032243, -59.8544982"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -59.8544982,
+          -36.8032243
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Spitale Maquinarias",
+        "geolocalizacion": "-36.8074431, -59.8596668"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -59.8596668,
+          -36.8074431
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Dos Casiques",
+        "geolocalizacion": "-36.8058007, -59.8576825"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -59.8576825,
+          -36.8058007
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Agricola Azul",
+        "geolocalizacion": "-36.8020703, -59.8530369"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -59.8530369,
+          -36.8020703
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Sin Nombre",
+        "geolocalizacion": "-36.8017643, -59.8527419"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -59.8527419,
+          -36.8017643
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Agricola Mutti",
+        "geolocalizacion": "-36.8011309, -59.8519777"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -59.8519777,
+          -36.8011309
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Cerealera Jauregui",
+        "geolocalizacion": "-36.798003, -59.8481608"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -59.8481608,
+          -36.798003
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Campo Activo",
+        "geolocalizacion": "-36.7944854, -59.8440137"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -59.8440137,
+          -36.7944854
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Chegen Agronomía",
+        "geolocalizacion": "-36.7930628, -59.8422775"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -59.8422775,
+          -36.7930628
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Cerealera Dietrich Hnos.",
+        "geolocalizacion": "-36.8777328, -60.3013036"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.3013036,
+          -36.8777328
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Santa Silvina",
+        "geolocalizacion": "-36.8734601, -60.3090723"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.3090723,
+          -36.8734601
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Cooperativa Agropecuaria de Olavarría",
+        "geolocalizacion": "-36.8717088, -60.3185045"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.3185045,
+          -36.8717088
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Forrajeria",
+        "geolocalizacion": "-31.099217, -64.4840212"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -64.4840212,
+          -31.099217
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Rindes y Cultivos DAS",
+        "geolocalizacion": "-36.9105013, -60.3121218"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.3121218,
+          -36.9105013
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "El Quebracho",
+        "geolocalizacion": "-36.9057536, -60.3067939"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.3067939,
+          -36.9057536
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Forrajeria",
+        "geolocalizacion": "-32.5344948, -60.0359719"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.0359719,
+          -32.5344948
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Agropecuaría El Salto",
+        "geolocalizacion": "-26.9266091, -55.0639533"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -55.0639533,
+          -26.9266091
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Daniel y Sandra Olivera",
+        "nombre": "SABOR A GRANJA",
+        "geolocalizacion": "-34.0964431, -59.0226504"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -59.0226504,
+          -34.0964431
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Noravic, pollos. La esquina de la milanesa",
+        "geolocalizacion": "-34.1080524, -59.0183707"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -59.0183707,
+          -34.1080524
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "La Finca Verduleria",
+        "geolocalizacion": "-31.429831, -64.1897809"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -64.1897809,
+          -31.429831
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Tienda de Huevos",
+        "geolocalizacion": "-34.5575833, -58.44887"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.44887,
+          -34.5575833
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Sin Nombre",
+        "geolocalizacion": "-27.0447267, -55.2350348"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -55.2350348,
+          -27.0447267
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Sin Nombre",
+        "geolocalizacion": "-27.4986219, -58.8338095"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.8338095,
+          -27.4986219
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Sin Nombre",
+        "geolocalizacion": "-34.6531187, -58.5593724"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.5593724,
+          -34.6531187
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Apana",
+        "geolocalizacion": "-31.9451228, -65.0487345"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -65.0487345,
+          -31.9451228
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Smiguel Hermanos",
+        "geolocalizacion": "-27.6344747, -55.4939729"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -55.4939729,
+          -27.6344747
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "granja avicola",
+        "geolocalizacion": "-34.8019721, -58.4124157"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.4124157,
+          -34.8019721
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Agro Azul",
+        "geolocalizacion": "-27.63439, -55.4939334"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -55.4939334,
+          -27.63439
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "El jilguero",
+        "geolocalizacion": "-33.0906028, -64.2900514"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -64.2900514,
+          -33.0906028
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Cultivarte",
+        "geolocalizacion": "-34.5957086, -60.9451823"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.9451823,
+          -34.5957086
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Cultivarte",
+        "geolocalizacion": "-34.6447516, -58.5646987"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.5646987,
+          -34.6447516
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Ananda Almacén Natural",
+        "geolocalizacion": "-34.7735495, -58.3975977"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.3975977,
+          -34.7735495
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Orgánico y Natural",
+        "geolocalizacion": "-31.6417309, -60.7017178"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7017178,
+          -31.6417309
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "La Escondida",
+        "geolocalizacion": "-37.9835291, -57.5891755"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -57.5891755,
+          -37.9835291
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Full Huevos",
+        "geolocalizacion": "-34.559591, -58.4599026"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.4599026,
+          -34.559591
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Tierra Hermosa",
+        "geolocalizacion": "-34.4140021, -58.6935902"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.6935902,
+          -34.4140021
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Quintas Narlú",
+        "geolocalizacion": "-43.309638, -65.5040342"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -65.5040342,
+          -43.309638
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "C&F",
+        "marca": "Multimarca",
+        "nombre": "palmera del barrio constitucion",
+        "geolocalizacion": "-24.7993953, -65.3759166"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -65.3759166,
+          -24.7993953
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "La Florentina",
+        "geolocalizacion": "-42.0302158, -71.5246428"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.5246428,
+          -42.0302158
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "San Felipe",
+        "geolocalizacion": "-42.0103617, -71.528406"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.528406,
+          -42.0103617
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Chacra El Nido",
+        "geolocalizacion": "-42.0185446, -71.5412617"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.5412617,
+          -42.0185446
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Cieza",
+        "geolocalizacion": "-42.024039, -71.5387227"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.5387227,
+          -42.024039
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "El Pescado",
+        "nombre": "Finca El Pez",
+        "geolocalizacion": "-30.8682877, -57.865403"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -57.865403,
+          -30.8682877
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Nutriher Balanceados",
+        "geolocalizacion": "-32.4099808, -63.2615776"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -63.2615776,
+          -32.4099808
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "VM Tambos",
+        "geolocalizacion": "-32.4043191, -63.2327244"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -63.2327244,
+          -32.4043191
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Caon Concesionaria John Deere",
+        "geolocalizacion": "-32.3958397, -63.2363319"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -63.2363319,
+          -32.3958397
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Agroalimentos Córdoba - Bodereau",
+        "geolocalizacion": "-31.3360132, -64.2883658"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -64.2883658,
+          -31.3360132
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "El Viejo Algarrobo mylufer",
+        "geolocalizacion": "-30.8649886, -64.5346876"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -64.5346876,
+          -30.8649886
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Sin Nombre",
+        "geolocalizacion": "-34.5732326, -58.4484868"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.4484868,
+          -34.5732326
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Albura Agroinsumos",
+        "geolocalizacion": "-26.4054713, -54.6142508"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -54.6142508,
+          -26.4054713
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Integral agropecuaria",
+        "geolocalizacion": "-34.135306, -63.3917499"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -63.3917499,
+          -34.135306
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Agro Semillera Villa Nueva SRL",
+        "geolocalizacion": "-32.4454047, -63.2427028"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -63.2427028,
+          -32.4454047
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Logistica Opserv SRL",
+        "geolocalizacion": "-27.8575795, -55.1452558"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -55.1452558,
+          -27.8575795
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Finca Rubio",
+        "geolocalizacion": "-34.7078816, -68.3916472"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -68.3916472,
+          -34.7078816
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Establecimiento Rural El Tala Familia Loza (Dulce De Leche Artesanal) Loica",
+        "geolocalizacion": "-31.0285982, -64.4762585"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -64.4762585,
+          -31.0285982
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Dr. Walter Chihan",
+        "nombre": "Finca Villa María del Valle",
+        "geolocalizacion": "-25.2492255, -66.2020935"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -66.2020935,
+          -25.2492255
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Avícola Perea",
+        "geolocalizacion": "-31.4127405, -64.1145058"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -64.1145058,
+          -31.4127405
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Pasagro SRL",
+        "geolocalizacion": "-33.1169476, -63.0497524"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -63.0497524,
+          -33.1169476
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Regionales Luca",
+        "geolocalizacion": "-32.5423382, -63.4808779"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -63.4808779,
+          -32.5423382
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Nestor1107",
+        "geolocalizacion": "-34.707118, -58.4961368"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.4961368,
+          -34.707118
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Agricola il Giardino",
+        "geolocalizacion": "-34.7083894, -58.4974554"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.4974554,
+          -34.7083894
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "La brusquita",
+        "geolocalizacion": "-34.7085148, -58.4975971"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.4975971,
+          -34.7085148
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Gayel 333",
+        "geolocalizacion": "-34.712809, -58.4971339"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.4971339,
+          -34.712809
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Gayel 333",
+        "geolocalizacion": "-34.7121081, -58.4970276"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.4970276,
+          -34.7121081
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Super Campo",
+        "geolocalizacion": "-43.0815895, -71.4638999"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.4638999,
+          -43.0815895
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Las Vertientes",
+        "nombre": "Las Vertientes",
+        "geolocalizacion": "-39.9273569, -71.0178468"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.0178468,
+          -39.9273569
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "La Ración",
+        "geolocalizacion": "-33.4830888, -60.9581203"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.9581203,
+          -33.4830888
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Granja Boedo",
+        "geolocalizacion": "-34.622384, -58.4153373"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.4153373,
+          -34.622384
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Granja La Familia",
+        "geolocalizacion": "-34.626495, -58.4222835"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.4222835,
+          -34.626495
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Tienda de Pollos",
+        "geolocalizacion": "-34.586107, -58.4153648"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.4153648,
+          -34.586107
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Hue Vo",
+        "geolocalizacion": "-34.5534904, -58.4621442"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.4621442,
+          -34.5534904
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Estación Este",
+        "geolocalizacion": "-41.1308224, -71.2575535"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.2575535,
+          -41.1308224
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Agropecuaria Manos Criollas",
+        "geolocalizacion": "-41.128944, -71.2764434"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.2764434,
+          -41.128944
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Verdulería Directo del Mercado",
+        "geolocalizacion": "-32.9564104, -60.6719956"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.6719956,
+          -32.9564104
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "IpesaSilo",
+        "geolocalizacion": "-33.7352903, -61.9637963"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.9637963,
+          -33.7352903
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Frutería",
+        "geolocalizacion": "-32.8929158, -68.6892107"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -68.6892107,
+          -32.8929158
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Frutería",
+        "geolocalizacion": "-32.9295001, -68.7330615"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -68.7330615,
+          -32.9295001
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Terneritos",
+        "geolocalizacion": "-34.4171628, -58.5718997"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.5718997,
+          -34.4171628
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Flor de Jardín",
+        "geolocalizacion": "-27.0501931, -55.2469342"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -55.2469342,
+          -27.0501931
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "El Medanosa",
+        "geolocalizacion": "-39.5849291, -69.3228829"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -69.3228829,
+          -39.5849291
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Sin Nombre",
+        "geolocalizacion": "-26.8109515, -54.9300137"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -54.9300137,
+          -26.8109515
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Casona Rural Km 1469",
+        "geolocalizacion": "-26.848258, -55.0435395"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -55.0435395,
+          -26.848258
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Sofia granos",
+        "geolocalizacion": "-24.6998351, -65.0378239"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -65.0378239,
+          -24.6998351
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Huerma",
+        "geolocalizacion": "-41.6015347, -71.5161521"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.5161521,
+          -41.6015347
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Huevos",
+        "geolocalizacion": "-34.6304101, -58.7812765"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.7812765,
+          -34.6304101
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Forrajera El Turf",
+        "geolocalizacion": "-27.5981359, -56.7033765"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -56.7033765,
+          -27.5981359
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "La Gallina Erótica",
+        "geolocalizacion": "-34.563383, -59.1145863"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -59.1145863,
+          -34.563383
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Huevo",
+        "geolocalizacion": "-34.6118799, -58.5286387"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.5286387,
+          -34.6118799
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "John Deere",
+        "nombre": "John Deere Argentina",
+        "geolocalizacion": "-32.8677406, -60.712412"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.712412,
+          -32.8677406
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Mercado de Productores Rosario",
+        "geolocalizacion": "-32.9624714, -60.6793414"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.6793414,
+          -32.9624714
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "C&F",
+        "marca": "Multimarca",
+        "nombre": "La Misionera",
+        "geolocalizacion": "-26.6208347, -54.1078172"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -54.1078172,
+          -26.6208347
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Dulces del Jardín",
+        "geolocalizacion": "-32.8926381, -60.8308778"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.8308778,
+          -32.8926381
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "A La Mesa",
+        "geolocalizacion": "-32.9227098, -60.8054026"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.8054026,
+          -32.9227098
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Deposito Rural",
+        "geolocalizacion": "-45.8848724, -67.5192565"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -67.5192565,
+          -45.8848724
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Luis Franciscovich",
+        "geolocalizacion": "-36.8845772, -60.2792223"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.2792223,
+          -36.8845772
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Sin Nombre",
+        "geolocalizacion": "-36.8853807, -60.2781831"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.2781831,
+          -36.8853807
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "FCC y EPM",
+        "nombre": "Deposito N°18 \"EL NIKO\" SRL. PUESTO Nº 99",
+        "geolocalizacion": "-31.5596702, -60.7488965"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7488965,
+          -31.5596702
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Deposito N°19 GENARO D'AGOSTINO",
+        "geolocalizacion": "-31.5595808, -60.7488709"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7488709,
+          -31.5595808
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Deposito N°20 SAN JOSE",
+        "geolocalizacion": "-31.5594936, -60.7488449"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7488449,
+          -31.5594936
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Deposito N°21 CABALLERO SAVINO S R L",
+        "geolocalizacion": "-31.5594025, -60.7488186"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7488186,
+          -31.5594025
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Deposito N°22 VILLA",
+        "geolocalizacion": "-31.5593144, -60.7487924"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7487924,
+          -31.5593144
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Deposito N°23 ROQUE BRACCIA",
+        "geolocalizacion": "-31.5592275, -60.7487673"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7487673,
+          -31.5592275
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Deposito N°24 TONY CANCIANI PUETO 94",
+        "geolocalizacion": "-31.5591432, -60.748742"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.748742,
+          -31.5591432
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Deposito N°25 GIORGIO PUESTO 61",
+        "geolocalizacion": "-31.5590544, -60.7487167"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7487167,
+          -31.5590544
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Deposito N°26",
+        "geolocalizacion": "-31.5588756, -60.7486577"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7486577,
+          -31.5588756
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Deposito N°27 EL PATO",
+        "geolocalizacion": "-31.5587855, -60.7486312"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7486312,
+          -31.5587855
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Deposito N°28",
+        "geolocalizacion": "-31.5586955, -60.7486052"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7486052,
+          -31.5586955
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Deposito N°29",
+        "geolocalizacion": "-31.558607, -60.7485791"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7485791,
+          -31.558607
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Deposito N°30",
+        "geolocalizacion": "-31.5585189, -60.748553"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.748553,
+          -31.5585189
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Deposito N°31",
+        "geolocalizacion": "-31.5584304, -60.7485272"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7485272,
+          -31.5584304
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Deposito N°32",
+        "geolocalizacion": "-31.5583428, -60.7485013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7485013,
+          -31.5583428
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Deposito N°33",
+        "geolocalizacion": "-31.5582554, -60.7484756"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7484756,
+          -31.5582554
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Deposito N°34",
+        "geolocalizacion": "-31.5581683, -60.74845"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.74845,
+          -31.5581683
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°20 D´agostino, José",
+        "geolocalizacion": "-31.5597646, -60.7482393"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7482393,
+          -31.5597646
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°19 Siempre Adelante SRL",
+        "geolocalizacion": "-31.5598182, -60.7482548"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7482548,
+          -31.5598182
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°18 Luis Novello",
+        "geolocalizacion": "-31.5598721, -60.7482708"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7482708,
+          -31.5598721
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°17 J y D",
+        "geolocalizacion": "-31.559926, -60.7482866"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7482866,
+          -31.559926
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°16 Zito, Vanesa",
+        "geolocalizacion": "-31.55998, -60.7483029"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7483029,
+          -31.55998
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°15 De Frutos, Juan Carlos",
+        "geolocalizacion": "-31.5600343, -60.7483194"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7483194,
+          -31.5600343
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°14 Carboni, Martín",
+        "geolocalizacion": "-31.5600879, -60.7483357"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7483357,
+          -31.5600879
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°13 Rader, Marcelo",
+        "geolocalizacion": "-31.5601413, -60.7483517"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7483517,
+          -31.5601413
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°12 El Pato SRL",
+        "geolocalizacion": "-31.5601953, -60.7483675"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7483675,
+          -31.5601953
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°11 Caballero, Savino SRL",
+        "geolocalizacion": "-31.5602492, -60.7483837"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7483837,
+          -31.5602492
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°10 Prieto, Mónica",
+        "geolocalizacion": "-31.5603031, -60.7483995"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7483995,
+          -31.5603031
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°9 Urba, Vicente Suc.",
+        "geolocalizacion": "-31.560357, -60.7484157"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7484157,
+          -31.560357
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°8 Urba, Vicente Suc.",
+        "geolocalizacion": "-31.5604107, -60.7484318"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7484318,
+          -31.5604107
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°7 Ruta, Salvador Miguel",
+        "geolocalizacion": "-31.5606069, -60.7484892"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7484892,
+          -31.5606069
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°6 Los Juanes SRL",
+        "geolocalizacion": "-31.5606608, -60.7485056"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7485056,
+          -31.5606608
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°5 Tagliatori, Aldo Hugo",
+        "geolocalizacion": "-31.5607147, -60.7485217"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7485217,
+          -31.5607147
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°4 Cornalo Mario",
+        "geolocalizacion": "-31.5607686, -60.7485375"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7485375,
+          -31.5607686
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°3 Negrete, Manuel Fernando",
+        "geolocalizacion": "-31.5608223, -60.7485535"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7485535,
+          -31.5608223
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°2 Rodas, Meldania",
+        "geolocalizacion": "-31.560876, -60.7485693"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7485693,
+          -31.560876
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°1 Stamatti, Denis Suc",
+        "geolocalizacion": "-31.5609307, -60.7485853"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7485853,
+          -31.5609307
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°37 Géminis SRL",
+        "geolocalizacion": "-31.5599911, -60.7471729"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7471729,
+          -31.5599911
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°38 Consignataria Santa Fe de la Vera Cruz",
+        "geolocalizacion": "-31.5600457, -60.7471874"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7471874,
+          -31.5600457
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°39 Escher SRL",
+        "geolocalizacion": "-31.5601005, -60.7472026"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7472026,
+          -31.5601005
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°40 Canastrelli, Jorge Ricardo",
+        "geolocalizacion": "-31.5601546, -60.7472185"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7472185,
+          -31.5601546
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°41 Monjo, Sergio A.",
+        "geolocalizacion": "-31.5602086, -60.747234"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.747234,
+          -31.5602086
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°42 Silva, Miriam",
+        "geolocalizacion": "-31.5602623, -60.7472489"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7472489,
+          -31.5602623
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°43 Castro Calizaya, Sandra",
+        "geolocalizacion": "-31.5603169, -60.747264"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.747264,
+          -31.5603169
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°44 Ulla, Alejandro",
+        "geolocalizacion": "-31.5603702, -60.7472795"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7472795,
+          -31.5603702
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°45 Ruiz José Claudio",
+        "geolocalizacion": "-31.5604232, -60.7472947"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7472947,
+          -31.5604232
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°46 Melgarejo, Fabián",
+        "geolocalizacion": "-31.5604764, -60.7473099"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7473099,
+          -31.5604764
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°47 Chamorro, Germán",
+        "geolocalizacion": "-31.5605295, -60.7473253"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7473253,
+          -31.5605295
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°48 Dalmazzo, Claudio",
+        "geolocalizacion": "-31.560583, -60.7473404"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7473404,
+          -31.560583
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°49 Calizaya, Pedro",
+        "geolocalizacion": "-31.5606368, -60.7473563"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7473563,
+          -31.5606368
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°50 Frutas Mu Mu – de Hugo Sanessi",
+        "geolocalizacion": "-31.5608362, -60.747411"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.747411,
+          -31.5608362
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°51 Lallana, Yamila",
+        "geolocalizacion": "-31.5608901, -60.747427"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.747427,
+          -31.5608901
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°52 González, Roberto",
+        "geolocalizacion": "-31.5609446, -60.7474414"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7474414,
+          -31.5609446
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°53 Mazzuca, Vicente",
+        "geolocalizacion": "-31.5609998, -60.7474565"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7474565,
+          -31.5609998
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°54 Acosta, Graciela",
+        "geolocalizacion": "-31.5610545, -60.747472"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.747472,
+          -31.5610545
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°55 Favaro, Hugo",
+        "geolocalizacion": "-31.5611084, -60.7474876"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7474876,
+          -31.5611084
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°56 Ojeda, Fabio",
+        "geolocalizacion": "-31.5611625, -60.747503"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.747503,
+          -31.5611625
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°69 Mendoza, Rubén",
+        "geolocalizacion": "-31.5605977, -60.7478079"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7478079,
+          -31.5605977
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°21 DANIEL MARTINO",
+        "geolocalizacion": "-31.559526, -60.7482132"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7482132,
+          -31.559526
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°22 CHIAPELLO",
+        "geolocalizacion": "-31.559543, -60.7481376"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7481376,
+          -31.559543
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°23 EDUARDO",
+        "geolocalizacion": "-31.5595598, -60.7480628"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7480628,
+          -31.5595598
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°24 J y D",
+        "geolocalizacion": "-31.5595767, -60.7479886"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7479886,
+          -31.5595767
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°25 HADAD",
+        "geolocalizacion": "-31.5595935, -60.7479127"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7479127,
+          -31.5595935
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°26 Aguilera, Bandiviezo Armin",
+        "geolocalizacion": "-31.5596103, -60.7478362"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7478362,
+          -31.5596103
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°27 Pespani, Mariano",
+        "geolocalizacion": "-31.5596276, -60.7477596"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7477596,
+          -31.5596276
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°28 Enriquez, Miguel Ángel",
+        "geolocalizacion": "-31.5596446, -60.747683"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.747683,
+          -31.5596446
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°29 Leguizamón, Marino Hermanos SRL",
+        "geolocalizacion": "-31.5596613, -60.7476064"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7476064,
+          -31.5596613
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°30 Distriver S.A.",
+        "geolocalizacion": "-31.5596779, -60.7475293"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7475293,
+          -31.5596779
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°31 Distriver S.A.",
+        "geolocalizacion": "-31.5596944, -60.7474521"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7474521,
+          -31.5596944
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°32 Ypora",
+        "geolocalizacion": "-31.5597109, -60.7473749"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7473749,
+          -31.5597109
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°33 Verdú, Alejandro",
+        "geolocalizacion": "-31.5597278, -60.7472978"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7472978,
+          -31.5597278
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°34 Mastrángelo, Rodolfo",
+        "geolocalizacion": "-31.5597446, -60.7472212"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7472212,
+          -31.5597446
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°35 Applehans, Carlos",
+        "geolocalizacion": "-31.5597611, -60.7471447"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7471447,
+          -31.5597611
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°36 Hadad, Jorge",
+        "geolocalizacion": "-31.5597786, -60.747068"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.747068,
+          -31.5597786
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°70 Stavole, Estela",
+        "geolocalizacion": "-31.5605628, -60.7477976"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7477976,
+          -31.5605628
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°71",
+        "geolocalizacion": "-31.5605274, -60.7477869"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7477869,
+          -31.5605274
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°72 Colavini, Sergio",
+        "geolocalizacion": "-31.5604915, -60.7477765"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7477765,
+          -31.5604915
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°73 Back, Walter",
+        "geolocalizacion": "-31.560456, -60.7477663"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7477663,
+          -31.560456
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°74 Pimpinella, Antonio E.",
+        "geolocalizacion": "-31.5604202, -60.747756"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.747756,
+          -31.5604202
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°75 Felice, Juan Ángel",
+        "geolocalizacion": "-31.560385, -60.7477452"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7477452,
+          -31.560385
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°76 Canciani, Juan Alberto",
+        "geolocalizacion": "-31.5603499, -60.7477349"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7477349,
+          -31.5603499
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°77 Canciani, Juan Alberto",
+        "geolocalizacion": "-31.5603149, -60.7477248"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7477248,
+          -31.5603149
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°78 Canciani, Juan Alberto",
+        "geolocalizacion": "-31.560279, -60.7477143"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7477143,
+          -31.560279
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°95 Cimaono, Rubens",
+        "geolocalizacion": "-31.5602254, -60.7479539"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7479539,
+          -31.5602254
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Braccia Roque",
+        "nombre": "PUESTO N°104 Braccia Roque e Hijos",
+        "geolocalizacion": "-31.560544, -60.7480475"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7480475,
+          -31.560544
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Braccia Roque",
+        "nombre": "PUESTO N°103 Braccia Roque e Hijos",
+        "geolocalizacion": "-31.5605091, -60.7480372"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7480372,
+          -31.5605091
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°102 Míguez, Hugo y Serafín",
+        "geolocalizacion": "-31.5604738, -60.7480265"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7480265,
+          -31.5604738
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°101 Mastrángelo, Gabriela",
+        "geolocalizacion": "-31.5604379, -60.7480161"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7480161,
+          -31.5604379
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Consignataria Santa Fe de la Vera Cruz",
+        "nombre": "PUESTO N°100",
+        "geolocalizacion": "-31.5604024, -60.7480059"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7480059,
+          -31.5604024
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "YANI D\"AGOSTINO",
+        "nombre": "PUESTO N°99 \"EL NIKO\" SRL",
+        "geolocalizacion": "-31.5603666, -60.7479957"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7479957,
+          -31.5603666
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°98 Lissa, Heber",
+        "geolocalizacion": "-31.5603314, -60.7479848"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7479848,
+          -31.5603314
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°97 Aiello, Antonio",
+        "geolocalizacion": "-31.5602961, -60.7479743"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7479743,
+          -31.5602961
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°96 Palau, Leonardo",
+        "geolocalizacion": "-31.5602612, -60.7479642"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7479642,
+          -31.5602612
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°113 Novello, Sebastián",
+        "geolocalizacion": "-31.5609151, -60.7481554"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7481554,
+          -31.5609151
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°112 Sozio, Alfonzo",
+        "geolocalizacion": "-31.56088, -60.7481447"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7481447,
+          -31.56088
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°111 Sozio, Alfonzo",
+        "geolocalizacion": "-31.5608441, -60.7481343"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7481343,
+          -31.5608441
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°110 Cerliani, Sonia",
+        "geolocalizacion": "-31.5608086, -60.7481241"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7481241,
+          -31.5608086
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°109 Virzi, Ceferino",
+        "geolocalizacion": "-31.5607728, -60.7481139"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7481139,
+          -31.5607728
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°108 Giupponi, Juan Carlos",
+        "geolocalizacion": "-31.5607376, -60.748103"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.748103,
+          -31.5607376
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°107 CAPUA, Virzi, Ceferino",
+        "geolocalizacion": "-31.5607023, -60.7480925"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7480925,
+          -31.5607023
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°106 CAPUA ,Neder, Gustavo",
+        "geolocalizacion": "-31.5606674, -60.7480824"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7480824,
+          -31.5606674
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°105 Capua SRL",
+        "geolocalizacion": "-31.5606316, -60.748072"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.748072,
+          -31.5606316
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°114 Novello, Sebastián",
+        "geolocalizacion": "-31.5609499, -60.7481661"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7481661,
+          -31.5609499
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°115 EL EDEN",
+        "geolocalizacion": "-31.5609847, -60.7481765"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7481765,
+          -31.5609847
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°116",
+        "geolocalizacion": "-31.5610206, -60.7481869"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7481869,
+          -31.5610206
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°68 El Coyote S. de H.",
+        "geolocalizacion": "-31.560685, -60.7478342"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7478342,
+          -31.560685
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N° 57 Fornes, Rodrigo",
+        "geolocalizacion": "-31.5610739, -60.7479491"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7479491,
+          -31.5610739
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N° 58 Fornes, Rodrigo",
+        "geolocalizacion": "-31.5610384, -60.7479385"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7479385,
+          -31.5610384
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°59 Lugo, Germán",
+        "geolocalizacion": "-31.5610036, -60.747928"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.747928,
+          -31.5610036
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°60 Lugo, Germán",
+        "geolocalizacion": "-31.5609687, -60.7479175"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7479175,
+          -31.5609687
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°61 Fruticultores Giorgio SRL",
+        "geolocalizacion": "-31.5609333, -60.7479068"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7479068,
+          -31.5609333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°62 Villa, Oscar",
+        "geolocalizacion": "-31.5608974, -60.7478964"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7478964,
+          -31.5608974
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°63 Choque, Oscar",
+        "geolocalizacion": "-31.5608619, -60.7478862"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7478862,
+          -31.5608619
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N° 64 Choque, Oscar",
+        "geolocalizacion": "-31.5608261, -60.747876"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.747876,
+          -31.5608261
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°65 De Biase, Juan Carlos",
+        "geolocalizacion": "-31.5607909, -60.7478651"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7478651,
+          -31.5607909
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N° 66 Scurato, Luis",
+        "geolocalizacion": "-31.5607556, -60.7478546"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7478546,
+          -31.5607556
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N° 67 El Coyote S. de H.",
+        "geolocalizacion": "-31.5607207, -60.7478445"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7478445,
+          -31.5607207
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°80",
+        "geolocalizacion": "-31.5601738, -60.7476871"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7476871,
+          -31.5601738
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°79 Fernández, Mario",
+        "geolocalizacion": "-31.5602097, -60.7476976"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7476976,
+          -31.5602097
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°81 Mendieta, Manuel",
+        "geolocalizacion": "-31.5601392, -60.7476767"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7476767,
+          -31.5601392
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°82 Uasuf, Roberto",
+        "geolocalizacion": "-31.5601045, -60.7476661"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7476661,
+          -31.5601045
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°83 Don Rafael SRL",
+        "geolocalizacion": "-31.5600691, -60.7476554"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7476554,
+          -31.5600691
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°84 Don Rafael SRL",
+        "geolocalizacion": "-31.5600332, -60.747645"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.747645,
+          -31.5600332
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°85 Don Rafael SRL",
+        "geolocalizacion": "-31.5599977, -60.7476348"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7476348,
+          -31.5599977
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°86 Deboli, José Luis",
+        "geolocalizacion": "-31.5599619, -60.7476245"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7476245,
+          -31.5599619
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°87 Don Genaro SRL",
+        "geolocalizacion": "-31.5599101, -60.7478665"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7478665,
+          -31.5599101
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Pto. 88 SRL",
+        "nombre": "PUESTO N°88",
+        "geolocalizacion": "-31.5599453, -60.7478774"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7478774,
+          -31.5599453
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°89",
+        "geolocalizacion": "-31.5599811, -60.7478876"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7478876,
+          -31.5599811
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°90 Brussa, Cristian",
+        "geolocalizacion": "-31.5600166, -60.7478978"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7478978,
+          -31.5600166
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°91 Ojeda Hnos.",
+        "geolocalizacion": "-31.5600525, -60.7479082"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7479082,
+          -31.5600525
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°92 Matar Hnos.",
+        "geolocalizacion": "-31.5600879, -60.7479189"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7479189,
+          -31.5600879
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°93 Gareis, Mario V.",
+        "geolocalizacion": "-31.5601225, -60.7479295"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7479295,
+          -31.5601225
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "PUESTO N°94 Canciani, Marcelo",
+        "geolocalizacion": "-31.5601572, -60.74794"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.74794,
+          -31.5601572
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Deposito N°17 LOS JUANES",
+        "geolocalizacion": "-31.559757, -60.7489223"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7489223,
+          -31.559757
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Deposito N°16 MARTINA",
+        "geolocalizacion": "-31.5598419, -60.7489468"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7489468,
+          -31.5598419
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Deposito N°15 EMILIANO FRANCISCO BALSAMO",
+        "geolocalizacion": "-31.5599282, -60.7489714"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7489714,
+          -31.5599282
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Deposito N°14 DE FRUTOS",
+        "geolocalizacion": "-31.5600149, -60.7489975"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7489975,
+          -31.5600149
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Deposito N°13 CIMAOMO",
+        "geolocalizacion": "-31.5601023, -60.7490237"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7490237,
+          -31.5601023
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Deposito N°12 CABALLERO SAVINO",
+        "geolocalizacion": "-31.5601901, -60.7490488"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7490488,
+          -31.5601901
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Deposito N°11 COYOTE",
+        "geolocalizacion": "-31.5602778, -60.7490744"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7490744,
+          -31.5602778
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Deposito N°10 FAMILY",
+        "geolocalizacion": "-31.5603657, -60.7491003"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7491003,
+          -31.5603657
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Deposito N°9 URBA",
+        "geolocalizacion": "-31.5604534, -60.7491263"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7491263,
+          -31.5604534
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Deposito N°8 URBA",
+        "geolocalizacion": "-31.5605411, -60.7491508"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7491508,
+          -31.5605411
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Deposito N°7 LOS JUANES",
+        "geolocalizacion": "-31.5606284, -60.7491773"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7491773,
+          -31.5606284
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Deposito N°6 LOS JUANES",
+        "geolocalizacion": "-31.5607162, -60.7492024"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7492024,
+          -31.5607162
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Deposito N°5",
+        "geolocalizacion": "-31.5608037, -60.7492268"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7492268,
+          -31.5608037
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Deposito N°4 URBA",
+        "geolocalizacion": "-31.5608913, -60.7492534"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7492534,
+          -31.5608913
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Deposito N°3 URBA",
+        "geolocalizacion": "-31.560979, -60.7492788"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7492788,
+          -31.560979
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Deposito N°2 RUTA",
+        "geolocalizacion": "-31.5610667, -60.7493043"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7493043,
+          -31.5610667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Deposito N°1 AR-TA",
+        "geolocalizacion": "-31.5611542, -60.7493303"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7493303,
+          -31.5611542
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Deposito N°1",
+        "geolocalizacion": "-31.5612418, -60.7493558"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7493558,
+          -31.5612418
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Deposito N°1",
+        "geolocalizacion": "-31.5613304, -60.7493813"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7493813,
+          -31.5613304
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Deposito N°68",
+        "geolocalizacion": "-31.5618342, -60.7470237"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7470237,
+          -31.5618342
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Deposito N°67",
+        "geolocalizacion": "-31.5617468, -60.7469988"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7469988,
+          -31.5617468
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Deposito N°66",
+        "geolocalizacion": "-31.5616644, -60.7469469"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7469469,
+          -31.5616644
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Deposito N°65",
+        "geolocalizacion": "-31.5615681, -60.7469481"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7469481,
+          -31.5615681
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Deposito N°64",
+        "geolocalizacion": "-31.5614819, -60.7469221"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7469221,
+          -31.5614819
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Deposito N°63",
+        "geolocalizacion": "-31.5613967, -60.746897"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.746897,
+          -31.5613967
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Deposito N°62",
+        "geolocalizacion": "-31.5613097, -60.7468717"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7468717,
+          -31.5613097
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Deposito N°61",
+        "geolocalizacion": "-31.5612213, -60.7468446"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7468446,
+          -31.5612213
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Deposito N°60",
+        "geolocalizacion": "-31.5611337, -60.7468188"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7468188,
+          -31.5611337
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Deposito N°59",
+        "geolocalizacion": "-31.561046, -60.7467934"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7467934,
+          -31.561046
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Deposito N°58",
+        "geolocalizacion": "-31.5609583, -60.7467678"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7467678,
+          -31.5609583
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Deposito N°57",
+        "geolocalizacion": "-31.5608725, -60.7467424"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7467424,
+          -31.5608725
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Deposito N°56",
+        "geolocalizacion": "-31.5607612, -60.7468219"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7468219,
+          -31.5607612
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Deposito N°55",
+        "geolocalizacion": "-31.5606735, -60.7467977"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7467977,
+          -31.5606735
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Deposito N°54",
+        "geolocalizacion": "-31.5606085, -60.7466676"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7466676,
+          -31.5606085
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Deposito N°53",
+        "geolocalizacion": "-31.5605223, -60.7466433"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7466433,
+          -31.5605223
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Deposito N°52",
+        "geolocalizacion": "-31.5604352, -60.7466191"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7466191,
+          -31.5604352
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Deposito N°51",
+        "geolocalizacion": "-31.5603472, -60.7465931"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7465931,
+          -31.5603472
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Deposito N°50 VIENTOS DEL SUR",
+        "geolocalizacion": "-31.5602588, -60.7465671"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7465671,
+          -31.5602588
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Deposito N°49 MIGUEL A. ABBATE Puesto 46",
+        "geolocalizacion": "-31.5601708, -60.7465414"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7465414,
+          -31.5601708
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Deposito N°48 MUGAVERO Puesto 44",
+        "geolocalizacion": "-31.5600834, -60.746514"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.746514,
+          -31.5600834
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Deposito N°47 ROSSI ALBERTO Puesto 40",
+        "geolocalizacion": "-31.5599957, -60.7464868"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7464868,
+          -31.5599957
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Deposito N°46 ESCHER Puesto 39",
+        "geolocalizacion": "-31.5599076, -60.7464612"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7464612,
+          -31.5599076
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Deposito N°45 EMILIO BERTOLINO Puesto 38",
+        "geolocalizacion": "-31.55982, -60.746436"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.746436,
+          -31.55982
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Deposito N°44",
+        "geolocalizacion": "-31.5597322, -60.7464102"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7464102,
+          -31.5597322
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Deposito N°43",
+        "geolocalizacion": "-31.5596442, -60.7463854"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7463854,
+          -31.5596442
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Deposito N°42 Productos Eduardo Puesto 23",
+        "geolocalizacion": "-31.5595565, -60.7463597"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7463597,
+          -31.5595565
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Deposito N°41 JUAN ALBERTO CANCIANI",
+        "geolocalizacion": "-31.5593811, -60.7463082"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7463082,
+          -31.5593811
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Deposito N°40 ARMIN Pueso 26",
+        "geolocalizacion": "-31.5592955, -60.7462828"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7462828,
+          -31.5592955
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Deposito N°39 DE BIASE Puesto 65",
+        "geolocalizacion": "-31.5592078, -60.7462571"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7462571,
+          -31.5592078
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Deposito N°38",
+        "geolocalizacion": "-31.5591197, -60.7462311"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7462311,
+          -31.5591197
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Deposito N°37 SAM Sergio A. Monjo Puesto 41",
+        "geolocalizacion": "-31.5590318, -60.7462052"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7462052,
+          -31.5590318
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Deposito N°36 EMILIO BERTOLNO Puesto 38",
+        "geolocalizacion": "-31.5589434, -60.7461768"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7461768,
+          -31.5589434
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Deposito N°35 DON RAFAEL",
+        "geolocalizacion": "-31.5588552, -60.7461492"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7461492,
+          -31.5588552
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Deposito N°34 DON RAFAEL",
+        "geolocalizacion": "-31.5587678, -60.7461225"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7461225,
+          -31.5587678
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Deposito N°33",
+        "geolocalizacion": "-31.5586815, -60.7460963"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7460963,
+          -31.5586815
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Deposito N°32 DEBOLI Puesto 86",
+        "geolocalizacion": "-31.5585947, -60.7460702"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7460702,
+          -31.5585947
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Tienda La Choza",
+        "geolocalizacion": "-34.4841177, -58.5122581"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.5122581,
+          -34.4841177
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "C&F",
+        "marca": "Multimarca",
+        "nombre": "Antartida",
+        "geolocalizacion": "-34.7336866, -58.4194063"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.4194063,
+          -34.7336866
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "C&F",
+        "marca": "Multimarca",
+        "nombre": "Materiales Rossi Chico",
+        "geolocalizacion": "-34.4658276, -58.5828528"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.5828528,
+          -34.4658276
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "C&F",
+        "marca": "Multimarca",
+        "nombre": "Venta al Gremio",
+        "geolocalizacion": "-34.4639732, -58.6447076"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.6447076,
+          -34.4639732
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "C&F",
+        "marca": "Multimarca",
+        "nombre": "Induplack",
+        "geolocalizacion": "-34.6338918, -58.4711409"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.4711409,
+          -34.6338918
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "C&F",
+        "marca": "Multimarca",
+        "nombre": "Azul",
+        "geolocalizacion": "-34.6358291, -58.4762476"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.4762476,
+          -34.6358291
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "C&F",
+        "marca": "Multimarca",
+        "nombre": "Ceramicos",
+        "geolocalizacion": "-34.6364433, -58.4778433"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.4778433,
+          -34.6364433
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "C&F",
+        "marca": "Multimarca",
+        "nombre": "Electricidad Casanova",
+        "geolocalizacion": "-34.703769, -58.5820327"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.5820327,
+          -34.703769
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Mercado Popular Rosario",
+        "geolocalizacion": "-32.9415824, -60.6405843"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.6405843,
+          -32.9415824
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Sin Nombre",
+        "geolocalizacion": "-34.6535935, -58.5596549"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.5596549,
+          -34.6535935
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Agronomía San Julián",
+        "geolocalizacion": "-31.4251557, -63.0557067"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -63.0557067,
+          -31.4251557
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Máxima Plus Agropecuaria",
+        "geolocalizacion": "-31.4222606, -63.0465909"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -63.0465909,
+          -31.4222606
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Sin Nombre",
+        "geolocalizacion": "-42.040342, -71.6080008"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.6080008,
+          -42.040342
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Sin Nombre",
+        "geolocalizacion": "-27.1204935, -55.5091725"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -55.5091725,
+          -27.1204935
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Verdulería Marina",
+        "geolocalizacion": "-34.7444427, -58.2195435"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.2195435,
+          -34.7444427
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Vegetales Frescos Frutas Y Hortalizas X Mayor",
+        "nombre": "Mercado de Chile",
+        "geolocalizacion": "-37.9828618, -57.5738003"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -57.5738003,
+          -37.9828618
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "C&F",
+        "marca": "Multimarca",
+        "nombre": "Corralón de Materiales",
+        "geolocalizacion": "-31.5273817, -58.4081546"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.4081546,
+          -31.5273817
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "C&F",
+        "marca": "Multimarca",
+        "nombre": "Gastaldi",
+        "geolocalizacion": "-34.4620826, -59.401827"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -59.401827,
+          -34.4620826
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Industria del Huevo SRL",
+        "geolocalizacion": "-32.9902437, -60.7740214"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7740214,
+          -32.9902437
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Sin Nombre",
+        "geolocalizacion": "-42.0347511, -71.5260028"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.5260028,
+          -42.0347511
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Sin Nombre",
+        "geolocalizacion": "-27.7660571, -64.2827707"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -64.2827707,
+          -27.7660571
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Sin Nombre",
+        "geolocalizacion": "-32.442194, -63.1878191"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -63.1878191,
+          -32.442194
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "C&F",
+        "marca": "Multimarca",
+        "nombre": "Mirasal S.A.",
+        "geolocalizacion": "-39.0077787, -67.8710042"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -67.8710042,
+          -39.0077787
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "C&F",
+        "marca": "Multimarca",
+        "nombre": "Mijovi S.R.L.",
+        "geolocalizacion": "-27.7156607, -64.2091427"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -64.2091427,
+          -27.7156607
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "C&F",
+        "marca": "Multimarca",
+        "nombre": "Zille S.R.L.",
+        "geolocalizacion": "-38.9090506, -68.0756041"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -68.0756041,
+          -38.9090506
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "C&F",
+        "marca": "Multimarca",
+        "nombre": "Contenedores y Obradores Tierra Firme",
+        "geolocalizacion": "-38.9547077, -68.0804682"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -68.0804682,
+          -38.9547077
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Sin Nombre",
+        "geolocalizacion": "-32.5423478, -63.4809058"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -63.4809058,
+          -32.5423478
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Terra Más",
+        "geolocalizacion": "-33.8961374, -60.552726"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.552726,
+          -33.8961374
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "C&F",
+        "marca": "Multimarca",
+        "nombre": "Sola Hnos S.R.L",
+        "geolocalizacion": "-34.2620036, -62.6941797"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.6941797,
+          -34.2620036
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "C&F",
+        "marca": "Multimarca",
+        "nombre": "Sin Nombre",
+        "geolocalizacion": "-34.273704, -62.6847348"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.6847348,
+          -34.273704
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "C&F",
+        "marca": "Multimarca",
+        "nombre": "Obrador Distrito II-V",
+        "geolocalizacion": "-38.9293388, -68.0977956"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -68.0977956,
+          -38.9293388
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Regionales El Tala",
+        "geolocalizacion": "-32.6921826, -64.7200205"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -64.7200205,
+          -32.6921826
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "C&F",
+        "marca": "Constructora Cipolletti S.R.L.",
+        "nombre": "Obrador Constructora Cipolletti",
+        "geolocalizacion": "-38.9404899, -67.9971566"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -67.9971566,
+          -38.9404899
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Sin Nombre",
+        "geolocalizacion": "-36.7192105, -62.9101875"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.9101875,
+          -36.7192105
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Sin Nombre",
+        "geolocalizacion": "-36.7197017, -62.9095803"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.9095803,
+          -36.7197017
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "C&F",
+        "marca": "Multimarca",
+        "nombre": "Basaco Construcción & Equipamiento",
+        "geolocalizacion": "-38.9207871, -67.9646371"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -67.9646371,
+          -38.9207871
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Alma Rural",
+        "geolocalizacion": "-32.9399027, -60.6688131"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.6688131,
+          -32.9399027
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "negocio": "A&G",
+        "marca": "Multimarca",
+        "nombre": "Agrisur",
+        "geolocalizacion": "-40.8166457, -63.038478"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -63.038478,
+          -40.8166457
+        ]
+      }
+    }
+  ]
+}
