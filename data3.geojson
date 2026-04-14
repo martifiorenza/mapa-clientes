@@ -2232,6 +2232,2620 @@
         "Sucursal": "-",
         "delegacion": "Santa Fe"
       }
+    },
+{
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -55.89926,
+        -27.36539
+      ]
+    },
+    "properties": {
+      "delegacion": "Misiones",
+      "Nombre": "AL-VISERV S.R.L.  ",
+      "Dirección": "Ramón García N° 189 4°B, Posadas",
+      "Localidad": "Posadas",
+      "Correo": "Quarksoluciones@gmail.com",
+      "CUIT": "30708854294 ",
+      "CRM": "NO",
+      "idCliente": "-",
+      "Maquinas": "-",
+      "Sucursal": "-"
     }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -55.932675,
+        -27.380753
+      ]
+    },
+    "properties": {
+      "delegacion": "Misiones",
+      "Nombre": "CAMINOS S.R.L   ",
+      "Teléfono": 4460154,
+      "Dirección": "Calle 113 Nº 2225 Bº San Miguel",
+      "Localidad": "Posadas",
+      "Correo": "Dilgerjuanm@yahoo.com.ar",
+      "CUIT": "30629486700 ",
+      "CRM": "NO",
+      "idCliente": "-",
+      "Maquinas": "-",
+      "Sucursal": "-"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -55.886967,
+        -27.381874
+      ]
+    },
+    "properties": {
+      "delegacion": "Misiones",
+      "Nombre": "CARLOS E. ENRIQUEZ S.A.",
+      "Teléfono": 4440838,
+      "Dirección": "Chacra 210  -  ",
+      "Localidad": "Posadas",
+      
+      "Correo": "roberto@ceenriquez.com",
+      "CUIT": "30507171814 ",
+      "CRM": "NO",
+      "idCliente": "-",
+      "Maquinas": "-",
+      "Sucursal": "-"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -55.916155,
+        -27.372264
+      ]
+    },
+    "properties": {
+      "delegacion": "Misiones",
+      "Nombre": "CARLOS R. NOSIGLIA CNES. SRL",
+      "Teléfono": 4465000,
+      "Dirección": "Av.López y Planes Nº 4006",
+      "Localidad": "Posadas",
+      
+      "Correo": "nosigliaconstruccion@gmail.com",
+      "CUIT": 30503399837,
+      "CRM": "NO",
+      "idCliente": "-",
+      "Maquinas": "-",
+      "Sucursal": "-"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -55.909139,
+        -27.363031
+      ]
+    },
+    "properties": {
+      "delegacion": "Misiones",
+      "Nombre": "ECON  S.R.L.",
+      "Teléfono": 4420729,
+      "Dirección": "Av. L.N.Alem Nº 3360  ",
+      "Localidad": "Posadas",
+      
+      "Correo": "Econ@econstructora.com.ar",
+      "CUIT": 30687846962,
+      "CRM": "NO",
+      "idCliente": "-",
+      "Maquinas": "-",
+      "Sucursal": "-"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -55.909112,
+        -27.360375
+      ]
+    },
+    "properties": {
+      "delegacion": "Misiones",
+      "Nombre": "FB S.R.L.  ",
+      "Teléfono": 4456825,
+      "Dirección": "Brasil 3408",
+      "Localidad": "Posadas",
+      
+      "Correo": "Fbsrlconstruciones@gmail.com",
+      "CUIT": "33710666259 ",
+      "CRM": "NO",
+      "idCliente": "-",
+      "Maquinas": "-",
+      "Sucursal": "-"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -55.900512,
+        -27.359756
+      ]
+    },
+    "properties": {
+      "delegacion": "Misiones",
+      "Nombre": "GIOVINAZZO S.A. ",
+      "Teléfono": 4434117,
+      "Dirección": "Av.Gdor.Roca Nº1122      ",
+      "Localidad": "Posadas",
+      
+      "Correo": "giovisa@gruporio.com.ar",
+      "CUIT": "30687836797 ",
+      "CRM": "NO",
+      "idCliente": "-",
+      "Maquinas": "-",
+      "Sucursal": "-"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -55.91954,
+        -27.39493
+      ]
+    },
+    "properties": {
+      "delegacion": "Misiones",
+      "Nombre": "COMANSA  ",
+      "Teléfono": 4454327,
+      "Dirección": "Av.Cmte.Andresito Nº 3976",
+      "Localidad": "-",
+      
+      "Correo": "Comansadm@gmail.com",
+      "CUIT": "-",
+      "CRM": "NO",
+      "idCliente": "-",
+      "Maquinas": "-",
+      "Sucursal": "-"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -55.89195,
+        -27.35556
+      ]
+    },
+    "properties": {
+      "delegacion": "Misiones",
+      "Nombre": "GOROSTIAGA S.A  ",
+      "Teléfono": 4435993,
+      "Dirección": "Av. Costanera n° 1791",
+      "Localidad": "Posadas",
+      
+      "Correo": "Victorgorostiaga07@gmail.com",
+      "CUIT": "30653144721 ",
+      "CRM": "NO",
+      "idCliente": "-",
+      "Maquinas": "-",
+      "Sucursal": "-"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -55.891662,
+        -27.377945
+      ]
+    },
+    "properties": {
+      "delegacion": "Misiones",
+      "Nombre": "HECTOR TORRES CNES. ",
+      "Teléfono": 4421516,
+      "Dirección": "Av.López Torres Nº 2946",
+      "Localidad": "Posadas",
+      
+      "Correo": "Sheba77@gmail.com",
+      "CUIT": 20045446922,
+      "CRM": "NO",
+      "idCliente": "-",
+      "Maquinas": "-",
+      "Sucursal": "-"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -55.923836,
+        -27.361284
+      ]
+    },
+    "properties": {
+      "delegacion": "Misiones",
+      "Nombre": "HIDRELCO S.R.L. ",
+      "Teléfono": "4460350-4469067",
+      "Dirección": "Av.Leandro N. ALem N° 4948 ",
+      "Localidad": "Posadas",
+      
+      "Correo": "nicodeica@hotmail.com",
+      "CUIT": 30572634651,
+      "CRM": "SI",
+      "idCliente": 31800,
+      "Maquinas": "-",
+      "Sucursal": "-"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -55.910131,
+        -27.374841
+      ]
+    },
+    "properties": {
+      "delegacion": "Misiones",
+      "Nombre": "HORMICON S.R.L. ",
+      "Teléfono": 4441113,
+      "Dirección": "Av.Santa Catalina Nº 2805",
+      "Localidad": "Posadas",
+      
+      "Correo": "administracion@hormiconsrl.com.ar",
+      "CUIT": "30708086726 ",
+      "CRM": "NO",
+      "idCliente": "-",
+      "Maquinas": "-",
+      "Sucursal": "-"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -55.897827,
+        -27.423761
+      ]
+    },
+    "properties": {
+      "delegacion": "Misiones",
+      "Nombre": "HORMIGONERA EL NOCHERO SA ",
+      "Teléfono": 4453858,
+      "Dirección": "Ruta 12 Km. 1 ½",
+      "Localidad": "Posadas",
+      
+      "Correo": "elnochero.constructora@gmail.com",
+      "CUIT": "30615429038 ",
+      "CRM": "NO",
+      "idCliente": "-",
+      "Maquinas": "-",
+      "Sucursal": "-"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -55.90003,
+        -27.36853
+      ]
+    },
+    "properties": {
+      "delegacion": "Misiones",
+      "Nombre": "INGAR S.A. ",
+      "Teléfono": 4427308,
+      "Dirección": "JUJUY N° 2031      ",
+      "Localidad": "Posadas",
+      
+      "Correo": "compras@ingarsa.com.ar",
+      "CUIT": "30570851868 ",
+      "CRM": "NO",
+      "idCliente": "-",
+      "Maquinas": "-",
+      "Sucursal": "-"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -55.90227,
+        -27.39558
+      ]
+    },
+    "properties": {
+      "delegacion": "Misiones",
+      "Nombre": "INGELECT S.R.L.",
+      "Teléfono": 4457303,
+      "Dirección": "Calle Alemania 2299",
+      "Localidad": "Posadas",
+      
+      "Correo": "Ingelect.adm@gmail.com",
+      "CUIT": "33715857869 ",
+      "CRM": "NO",
+      "idCliente": "-",
+      "Maquinas": "-",
+      "Sucursal": "-"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -54.76606,
+        -27.56555
+      ]
+    },
+    "properties": {
+      "delegacion": "Misiones",
+      "Nombre": "KURTEN CARCHANO CNES.SRL",
+      "Teléfono": "03751-481241",
+      "Dirección": "Horacio Quiroga 1551",
+      "Localidad": "Montecarlo",
+      
+      "Correo": "kurtencarchano@gmail.com",
+      "CUIT": "33641692269 ",
+      "CRM": "NO",
+      "idCliente": "-",
+      "Maquinas": "-",
+      "Sucursal": "-"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -55.91494,
+        -27.36224
+      ]
+    },
+    "properties": {
+      "delegacion": "Misiones",
+      "Nombre": "MACEVA S.A.  ",
+      "Teléfono": 4460864,
+      "Dirección": "Av. L.N.ALem Nº 3948     ",
+      "Localidad": "Posadas",
+      
+      "Correo": "Oscar.marelli.macevasa@gmail.com",
+      "CUIT": "30502556106 ",
+      "CRM": "NO",
+      "idCliente": "-",
+      "Maquinas": "-",
+      "Sucursal": "-"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -54.89219,
+        -27.06433
+      ]
+    },
+    "properties": {
+      "delegacion": "Misiones",
+      "Nombre": "METALURGICA FINKE ",
+      "Teléfono": "3755 470864",
+      "Dirección": "Ruta Nac. 14 Km.930,5",
+      "Localidad": "Aristóbulo del Valle",
+      
+      "Correo": "metalurgicafinke@hotmail.com",
+      "CUIT": "-",
+      "CRM": "NO",
+      "idCliente": "-",
+      "Maquinas": "-",
+      "Sucursal": "-"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -55.89418,
+        -27.36861
+      ]
+    },
+    "properties": {
+      "delegacion": "Misiones",
+      "Nombre": "NABLA SA ",
+      "Teléfono": 4460050,
+      "Dirección": "Calle 103 Nº 2671",
+      "Localidad": "Posadas",
+      
+      "Correo": "dme@nablasa.com.ar",
+      "CUIT": "30708447575 ",
+      "CRM": "NO",
+      "idCliente": "-",
+      "Maquinas": "-",
+      "Sucursal": "-"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -55.88959,
+        -27.35945
+      ]
+    },
+    "properties": {
+      "delegacion": "Misiones",
+      "Nombre": "PRAT  S.R.L.",
+      "Teléfono": 4425940,
+      "Dirección": "Moritán Nº 1511  - ",
+      "Localidad": "Posadas",
+      
+      "Correo": "hra@prat.com.ar",
+      "CUIT": "30638257250 ",
+      "CRM": "NO",
+      "idCliente": "-",
+      "Maquinas": "-",
+      "Sucursal": "-"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -55.89807,
+        -27.36148
+      ]
+    },
+    "properties": {
+      "delegacion": "Misiones",
+      "Nombre": "PROOBRA S.A.",
+      "Teléfono": "4438845/4424999",
+      "Dirección": "San Luis  N° 1345 5° B",
+      "Localidad": "Posadas",
+      
+      "Correo": "recepción@proobrasa.com.ar",
+      "CUIT": "30631029163 ",
+      "CRM": "NO",
+      "idCliente": "-",
+      "Maquinas": "-",
+      "Sucursal": "-"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -55.88611,
+        -27.37076
+      ]
+    },
+    "properties": {
+      "delegacion": "Misiones",
+      "Nombre": "RATTI  CONSTRUCCIONES S.A. ",
+      "Teléfono": 4441450,
+      "Dirección": "Coronel López N°2138 5to.Piso",
+      "Localidad": "Posadas",
+      
+      "Correo": "pablo@ratticonstrucciones.com.ar",
+      "CUIT": "30646666283 ",
+      "CRM": "NO",
+      "idCliente": "-",
+      "Maquinas": "-",
+      "Sucursal": "-"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -55.93279,
+        -27.35754
+      ]
+    },
+    "properties": {
+      "delegacion": "Misiones",
+      "Nombre": "R.B.M. S.R.L. ",
+      "Teléfono": 4463002,
+      "Dirección": "Chile Nº 6001",
+      "Localidad": "Posadas",
+      
+      "Correo": "rbmsrl@gmail.com",
+      "CUIT": 30646103351,
+      "CRM": "NO",
+      "idCliente": "-",
+      "Maquinas": "-",
+      "Sucursal": "-"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -55.88972,
+        -27.36718
+      ]
+    },
+    "properties": {
+      "delegacion": "Misiones",
+      "Nombre": "SIGMA SA ",
+      "Teléfono": 4435656,
+      "Dirección": "Bolívar Nº 1430 7ºA",
+      "Localidad": "Posadas",
+      
+      "Correo": "alejandro@sigmaconst.com",
+      "CUIT": 30654752016,
+      "CRM": "NO",
+      "idCliente": "-",
+      "Maquinas": "-",
+      "Sucursal": "-"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -55.89301,
+        -27.37831
+      ]
+    },
+    "properties": {
+      "delegacion": "Misiones",
+      "Nombre": "SILVANA RATTI S.A. ",
+      "Teléfono": "4438951 - 4241477",
+      "Dirección": "Av.Trincheras de San José N° 1589",
+      "Localidad": "Posadas",
+      
+      "Correo": "silvana@silvanaratti.com",
+      "CUIT": 30714005584,
+      "CRM": "NO",
+      "idCliente": "-",
+      "Maquinas": "-",
+      "Sucursal": "-"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -55.92283,
+        -27.37565
+      ]
+    },
+    "properties": {
+      "delegacion": "Misiones",
+      "Nombre": "TEICON  S.R.L. ",
+      "Teléfono": 4461332,
+      "Dirección": "Calle 93 Nº 2533",
+      "Localidad": "Posadas",
+      
+      "Correo": "teicon_srl@hotmail.com",
+      "CUIT": "30710979185 ",
+      "CRM": "NO",
+      "idCliente": "-",
+      "Maquinas": "-",
+      "Sucursal": "-"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -55.90127,
+        -27.39789
+      ]
+    },
+    "properties": {
+      "delegacion": "Misiones",
+      "Nombre": "TEMBIAPÓ S.A.",
+      "Teléfono": "376 4596266",
+      "Dirección": "Av. Buchardo N° 2383",
+      "Localidad": "Posadas",
+      
+      "Correo": "tembiaposa@gmail.com",
+      "CUIT": "30709933619 ",
+      "CRM": "NO",
+      "idCliente": "-",
+      "Maquinas": "-",
+      "Sucursal": "-"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -55.88859,
+        -27.374
+      ]
+    },
+    "properties": {
+      "delegacion": "Misiones",
+      "Nombre": "WEMCON S.A. ",
+      "Teléfono": 4434256,
+      "Dirección": "Santiago del Estero N° 1236",
+      "Localidad": "Posadas",
+      
+      "Correo": "wemcon@hotmail.com",
+      "CUIT": 30708680709,
+      "CRM": "NO",
+      "idCliente": "-",
+      "Maquinas": "-",
+      "Sucursal": "-"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -58.2289808,
+        -32.4786633
+      ]
+    },
+    "properties": {
+      "delegacion": "Entre Rios",
+      "Nombre": "ADER S.A.",
+      
+      "Dirección": "Larroque 334",
+      "Localidad": "CONCEPCION DEL URUGUAY",
+      "Teléfono": "11-6449-3877",
+      "Correo": "gerenciadeventas@adersa.com.ar",
+      "CUIT": 30714427764,
+      "CRM": "NO",
+      "idCliente": "-",
+      "Maquinas": "-",
+      "Sucursal": "-"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -60.5175,
+        -31.744
+      ]
+    },
+    "properties": {
+      "delegacion": "Entre Rios",
+      "Nombre": "AE INSUMOS",
+      
+      "Dirección": "Las Lechiguanas 924, Av. Freyre 2949 - Sta Fe",
+      "Localidad": "Paraná",
+      "Teléfono": "343 424-3924 FIJO PARANA / 3434658668 VENTAS PARANA",
+      "Correo": "agusaeinsumos@gmail.com",
+      "CUIT": "-",
+      "CRM": "NO",
+      "idCliente": "-",
+      "Maquinas": "-",
+      "Sucursal": "-"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -58.2262256,
+        -32.1983289
+      ]
+    },
+    "properties": {
+      "delegacion": "Entre Rios",
+      "Nombre": "AGUARÁ CONSTRUCCIONES S.A.",
+      
+      "Dirección": "Urquiza 411",
+      "Localidad": "COLÓN",
+      "Teléfono": "03447-15413219",
+      "Correo": "info@aguaraingenieria.com",
+      "CUIT": 30715514148,
+      "CRM": "SI",
+      "idCliente": 49906,
+      "Maquinas": "MINICARGADORAS-BOBCAT-S510, RETROEXCAVADORAS-OTRA MARCA-OTRO",
+      "Sucursal": "CONCORDIA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -60.4496039,
+        -31.7633474
+      ]
+    },
+    "properties": {
+      "delegacion": "Entre Rios",
+      "Nombre": "AIRE TOTAL S.R.L.",
+      
+      "Dirección": "Av. Almafuerte 198",
+      "Localidad": "PARANÁ",
+      "Teléfono": "0343-4348962/4348974",
+      "Correo": "carlos@airetotalsrl.com.ar",
+      "CUIT": 30714448443,
+      "CRM": "NO",
+      "idCliente": "-",
+      "Maquinas": "-",
+      "Sucursal": "-"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -60.4812933,
+        -31.7563282
+      ]
+    },
+    "properties": {
+      "delegacion": "Entre Rios",
+      "Nombre": "ANDAN S.R.L.",
+      
+      "Dirección": "Gualeguaychú 848",
+      "Localidad": "PARANÁ",
+      "Teléfono": "0343-156227413",
+      "Correo": "gerencia.andansrl@gmail.com",
+      "CUIT": 30715436767,
+      "CRM": "NO",
+      "idCliente": "-",
+      "Maquinas": "-",
+      "Sucursal": "-"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -60.5400868,
+        -31.7165055
+      ]
+    },
+    "properties": {
+      "delegacion": "Entre Rios",
+      "Nombre": "ANTOLIN FERNADEZ SA",
+      
+      "Dirección": "Av. Estrada 1748",
+      "Localidad": "PARANÁ",
+      "Teléfono": "0343-4223305/4235722",
+      "Correo": "antolinfer@arnet.com.ar",
+      "CUIT": 30506740513,
+      "CRM": "SI",
+      "idCliente": 14233,
+      "Maquinas": "-",
+      "Sucursal": "-"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -60.4950356,
+        -31.7183993
+      ]
+    },
+    "properties": {
+      "delegacion": "Entre Rios",
+      "Nombre": "ARENERA TOMA NUEVA S.R.L.",
+      
+      "Dirección": "Rondeau al final s/n*-B* Toma Nueva",
+      "Localidad": "PARANÁ",
+      "Teléfono": "0343-4331233",
+      "Correo": "areneratomanuevasrl@hotmail.com",
+      "CUIT": 30710156766,
+      "CRM": "SI",
+      "idCliente": 14260,
+      "Maquinas": "CARGADOR FRONTAL-KOMATSU-WA320, CARGADOR FRONTAL-KOMATSU-WA320, CARGADOR FRONTAL-KOMATSU-WA320, CARGADOR FRONTAL-KOMATSU-WA320",
+      "Sucursal": "PARANA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -60.5175,
+        -31.744
+      ]
+    },
+    "properties": {
+      "delegacion": "Entre Rios",
+      "Nombre": "BARBAGELATA INGENIERIA S.A.",
+      
+      "Dirección": "San Lorenzo 63",
+      "Localidad": "PARANÁ",
+      "Teléfono": "0343-4220201",
+      "Correo": "secretaria@barbagelataingenieria.com",
+      "CUIT": 30714444510,
+      "CRM": "NO",
+      "idCliente": "-",
+      "Maquinas": "-",
+      "Sucursal": "-"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -58.5122,
+        -33.0078
+      ]
+    },
+    "properties": {
+      "delegacion": "Entre Rios",
+      "Nombre": "BARRIOLA CONSTRUCTORA",
+      
+      "Dirección": "Cerrito 90 Gualeguay",
+      "Localidad": "Gualeguay",
+      "Teléfono": "(3444) 4468203",
+      "Correo": "of.barriola@gmail.com",
+      "CUIT": 20333186536,
+      "CRM": "NO",
+      "idCliente": "-",
+      "Maquinas": "-",
+      "Sucursal": "-"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -60.499896,
+        -31.7141594
+      ]
+    },
+    "properties": {
+      "delegacion": "Entre Rios",
+      "Nombre": "BEST S.A.",
+      
+      "Dirección": "Ayacucho 912",
+      "Localidad": "PARANÁ",
+      "Teléfono": "0343-4346191",
+      "Correo": "administracion@bestsa.com.ar",
+      "CUIT": 30710012365,
+      "CRM": "SI",
+      "idCliente": 30598,
+      "Maquinas": "-",
+      "Sucursal": "PARANA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -60.0613232,
+        -31.8513515
+      ]
+    },
+    "properties": {
+      "delegacion": "Entre Rios",
+      "Nombre": "BH MADERAS S.A.",
+      
+      "Dirección": "Ruta 18 - Km. 14,5",
+      "Localidad": "PARANÁ",
+      "Teléfono": "0343-4979001",
+      "Correo": "bhmaderas@gmail.com",
+      "CUIT": 30709833401,
+      "CRM": "NO",
+      "idCliente": "-",
+      "Maquinas": "-",
+      "Sucursal": "-"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -58.2277674,
+        -32.4822501
+      ]
+    },
+    "properties": {
+      "delegacion": "Entre Rios",
+      "Nombre": "C.O.P.U.L.",
+      
+      "Dirección": "Rocamora 420",
+      "Localidad": "CONCEPCIÓN DEL URUGUAY",
+      "Teléfono": "03442-425839/427599",
+      "Correo": "copul@arnet.com.ar",
+      "CUIT": 30504089777,
+      "CRM": "NO",
+      "idCliente": "-",
+      "Maquinas": "-",
+      "Sucursal": "-"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -60.4909699,
+        -31.7551285
+      ]
+    },
+    "properties": {
+      "delegacion": "Entre Rios",
+      "Nombre": "CABALLI S.A.",
+      
+      "Dirección": "Gdor. Crespo 1471",
+      "Localidad": "PARANÁ",
+      "Teléfono": "0343-4330736/4330581",
+      "Correo": "administracion@constructoracaballi.com.ar",
+      "CUIT": 30556515294,
+      "CRM": "SI",
+      "idCliente": 14617,
+      "Maquinas": "-",
+      "Sucursal": "PARANA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -59.79136,
+        -32.3954179
+      ]
+    },
+    "properties": {
+      "delegacion": "Entre Rios",
+      "Nombre": "CALACO CONSTRUCCIONES S.R.L.",
+      
+      "Dirección": "San Lorenzo 1300",
+      "Localidad": "NOGOYÁ",
+      "Teléfono": "03435-156-15900",
+      "Correo": "calaco_construcciones@hotmail.com",
+      "CUIT": 30711586195,
+      "CRM": "SI",
+      "idCliente": 34072,
+      "Maquinas": "-",
+      "Sucursal": "VICTORIA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -58.0189141,
+        -31.3457948
+      ]
+    },
+    "properties": {
+      "delegacion": "Entre Rios",
+      "Nombre": "CARLOS HAURE CONSTRUCCIONES",
+      
+      "Dirección": "Chile 1073",
+      "Localidad": "CONCORDIA",
+      "Teléfono": "0345-4219903",
+      "Correo": "haureconstrucciones@hotmail.com.ar",
+      "CUIT": 20206687097,
+      "CRM": "SI",
+      "idCliente": 22694,
+      "Maquinas": "RETROEXCAVADORAS-JOHN DEERE-310G",
+      "Sucursal": "CONCORDIA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -60.4835069,
+        -31.7474683
+      ]
+    },
+    "properties": {
+      "delegacion": "Entre Rios",
+      "Nombre": "CATENARIA INGENIERIA SRL",
+      
+      "Dirección": "LOPEZ JORDAN Nº1532",
+      "Localidad": "PARANÁ",
+      "Teléfono": "3434636105 / 3435111168",
+      "Correo": "grupocatenaria@gmail.com",
+      "CUIT": 30717181987,
+      "CRM": "NO",
+      "idCliente": "-",
+      "Maquinas": "-",
+      "Sucursal": "-"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -60.5175,
+        -31.744
+      ]
+    },
+    "properties": {
+      "delegacion": "Entre Rios",
+      "Nombre": "CAVALLINI S.R.L.",
+      
+      "Dirección": "Av. Larramendi 1931",
+      "Localidad": "PARANÁ",
+      "Teléfono": "0343-4222966",
+      "Correo": "agustincavallini@yahoo.com.ar",
+      "CUIT": 30716345935,
+      "CRM": "NO",
+      "idCliente": "-",
+      "Maquinas": "-",
+      "Sucursal": "-"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -60.5333,
+        -31.8233
+      ]
+    },
+    "properties": {
+      "delegacion": "Entre Rios",
+      "Nombre": "CAySI S.A.",
+      
+      "Dirección": "LOS CANARIOS 445 - ORO VERDE",
+      "Localidad": "ORO VERDE",
+      "Teléfono": "343-4052478",
+      "Correo": "j.aimone@caysi.com.ar",
+      "CUIT": 33715941479,
+      "CRM": "NO",
+      "idCliente": "-",
+      "Maquinas": "-",
+      "Sucursal": "-"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -60.5175,
+        -31.744
+      ]
+    },
+    "properties": {
+      "delegacion": "Entre Rios",
+      "Nombre": "CEMYC S.R.L.",
+      
+      "Dirección": "San Juan 371",
+      "Localidad": "PARANÁ",
+      "Teléfono": "0343-4311133-4217444",
+      "Correo": "cemycadministracion@arnet.com.ar",
+      "CUIT": 30555985033,
+      "CRM": "SI",
+      "idCliente": 14770,
+      "Maquinas": "-",
+      "Sucursal": "-"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -60.5168056,
+        -31.7477856
+      ]
+    },
+    "properties": {
+      "delegacion": "Entre Rios",
+      "Nombre": "CENTRO DE LA CONSTRUCCION EN SECO S.A.S.",
+      
+      "Dirección": "Maciá 161",
+      "Localidad": "PARANÁ",
+      "Teléfono": "0343-4342757/4343560",
+      "Correo": "administracion@construseco.com.ar",
+      "CUIT": 30716690322,
+      "CRM": "NO",
+      "idCliente": "-",
+      "Maquinas": "-",
+      "Sucursal": "-"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -60.5333872,
+        -31.7212629
+      ]
+    },
+    "properties": {
+      "delegacion": "Entre Rios",
+      "Nombre": "CHIAVE S.R.L.",
+      
+      "Dirección": "Santiago del Estero 163 - 7º A",
+      "Localidad": "PARANÁ",
+      "Teléfono": "0343-4232500",
+      "Correo": "chiavesrl@gmail.com",
+      "CUIT": 30714792454,
+      "CRM": "NO",
+      "idCliente": "-",
+      "Maquinas": "-",
+      "Sucursal": "-"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -60.4565806,
+        -31.7872694
+      ]
+    },
+    "properties": {
+      "delegacion": "Entre Rios",
+      "Nombre": "CIMBRA CONSTRUCTORA S.A.",
+      
+      "Dirección": "Ruta 12 km. 10,5",
+      "Localidad": "COLONIA AVELLANEDA",
+      "Teléfono": "0343-155102652",
+      "Correo": "cimbraconstructora@yahoo.com.ar",
+      "CUIT": 30711282986,
+      "CRM": "SI",
+      "idCliente": 16571,
+      "Maquinas": "-",
+      "Sucursal": "-"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -60.4565806,
+        -31.7872694
+      ]
+    },
+    "properties": {
+      "delegacion": "Entre Rios",
+      "Nombre": "CIMPRO S.R.L.",
+      
+      "Dirección": "Ruta Nacional 12 - Nº 9017",
+      "Localidad": "PARANÁ",
+      "Teléfono": "0343-4227772",
+      "Correo": "administracion@cimprosrl.com",
+      "CUIT": 30710428030,
+      "CRM": "SI",
+      "idCliente": 14844,
+      "Maquinas": "-",
+      "Sucursal": "-"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -60.5175,
+        -31.744
+      ]
+    },
+    "properties": {
+      "delegacion": "Entre Rios",
+      "Nombre": "CONFORT S.A.",
+      
+      "Dirección": "Av. Ejército 1366",
+      "Localidad": "PARANÁ",
+      "Teléfono": "0343-4270765",
+      "Correo": "info@confortingenieria.com",
+      "CUIT": 30710908121,
+      "CRM": "NO",
+      "idCliente": "-",
+      "Maquinas": "-",
+      "Sucursal": "-"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -58.2265542,
+        -32.4866314
+      ]
+    },
+    "properties": {
+      "delegacion": "Entre Rios",
+      "Nombre": "CONSTRUCTORA CARDENAL",
+      
+      "Dirección": "Mariano Lopez N°179 - PB",
+      "Localidad": "Concepcion del Uruguay",
+      "Teléfono": "03442-15554092",
+      "Correo": "constructoracardenalsas@gmail.com",
+      "CUIT": 30715942794,
+      "CRM": "SI",
+      "idCliente": 23920,
+      "Maquinas": "-",
+      "Sucursal": "VICTORIA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -59.0233158,
+        -31.867838
+      ]
+    },
+    "properties": {
+      "delegacion": "Entre Rios",
+      "Nombre": "COVI S.A.S.",
+      
+      "Dirección": "Belgrano 233",
+      "Localidad": "Villaguay",
+      "Teléfono": "03455 - 15552452",
+      "Correo": "covisaedificaciones@gmail.com",
+      "CUIT": 33716041129,
+      "CRM": "NO",
+      "idCliente": "-",
+      "Maquinas": "-",
+      "Sucursal": "-"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -60.4596038,
+        -31.7819149
+      ]
+    },
+    "properties": {
+      "delegacion": "Entre Rios",
+      "Nombre": "DEL LITORAL OBRAS, SERVICIOS Y MONTAJES S.A.",
+      
+      "Dirección": "Av. Newbery 2411",
+      "Localidad": "PARANÁ",
+      "Teléfono": "0343-4364956",
+      "Correo": "info@dellitoralsa.com.ar",
+      "CUIT": 30691559382,
+      "CRM": "SI",
+      "idCliente": 15166,
+      "Maquinas": "RETROEXCAVADORAS-CASE-580N, EXCAVADORAS-NEW HOLLAND-E145C",
+      "Sucursal": "PARANA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -60.5083571,
+        -31.7535627
+      ]
+    },
+    "properties": {
+      "delegacion": "Entre Rios",
+      "Nombre": "DEYVEL INDUSTRIA METALURGICA",
+      
+      "Dirección": "Artigas 745",
+      "Localidad": "PARANÁ",
+      "Teléfono": "0343-4349378",
+      "Correo": "deyvel@arnetbiz.com.ar",
+      "CUIT": 30709238422,
+      "CRM": "NO",
+      "idCliente": "-",
+      "Maquinas": "-",
+      "Sucursal": "-"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -60.4822873,
+        -31.7452235
+      ]
+    },
+    "properties": {
+      "delegacion": "Entre Rios",
+      "Nombre": "DIMACO S.A.",
+      
+      "Dirección": "Av. Hernández 1031",
+      "Localidad": "PARANÁ",
+      "Teléfono": "0343-4332266/4332277",
+      "Correo": "administracion@dimaco.com.ar",
+      "CUIT": 30709788325,
+      "CRM": "SI",
+      "idCliente": 30582,
+      "Maquinas": "-",
+      "Sucursal": "PARANA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -60.5359337,
+        -31.7203689
+      ]
+    },
+    "properties": {
+      "delegacion": "Entre Rios",
+      "Nombre": "DOPH CONSTRUCTORA de Pablo Dominguez",
+      
+      "Dirección": "Alameda de la Federación 645",
+      "Localidad": "PARANÁ",
+      "Teléfono": "0343-4057945",
+      "Correo": "dophconstructora@gmail.com",
+      "CUIT": 20180717154,
+      "CRM": "SI",
+      "idCliente": 4372,
+      "Maquinas": "-",
+      "Sucursal": "-"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -60.5113302,
+        -31.749868
+      ]
+    },
+    "properties": {
+      "delegacion": "Entre Rios",
+      "Nombre": "ECO INGENIERIA S.R.L.",
+      
+      "Dirección": "Cnel. Uzín 1306",
+      "Localidad": "PARANÁ",
+      "Teléfono": "0343-4349598",
+      "Correo": "servicios@ecoingenieriasrl.com.ar",
+      "CUIT": 30690491474,
+      "CRM": "SI",
+      "idCliente": 15335,
+      "Maquinas": "-",
+      "Sucursal": "-"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -60.4970308,
+        -31.7556592
+      ]
+    },
+    "properties": {
+      "delegacion": "Entre Rios",
+      "Nombre": "EL SUPER DE LA CONSTRUCCION S.R.L.",
+      
+      "Dirección": "Av. Zanni 2315",
+      "Localidad": "PARANÁ",
+      "Teléfono": "0343-4262123",
+      "Correo": "elsuperdelaconstruccion@gmail.com",
+      "CUIT": 30699900563,
+      "CRM": "SI",
+      "idCliente": 30338,
+      "Maquinas": "-",
+      "Sucursal": "PARANA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -60.4812933,
+        -31.7563282
+      ]
+    },
+    "properties": {
+      "delegacion": "Entre Rios",
+      "Nombre": "ELECTRICIDAD PARANA S.A.",
+      
+      "Dirección": "Gualeguaychú 384",
+      "Localidad": "PARANÁ",
+      "Teléfono": "0343-4235342",
+      "Correo": "electricidadparana@gmail.com",
+      "CUIT": 30714403997,
+      "CRM": "NO",
+      "idCliente": "-",
+      "Maquinas": "-",
+      "Sucursal": "-"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -60.5175,
+        -31.744
+      ]
+    },
+    "properties": {
+      "delegacion": "Entre Rios",
+      "Nombre": "EMPRESA CONSTRUCTORA DEL PARANA S.A.",
+      
+      "Dirección": "Bavio 97 - PA",
+      "Localidad": "PARANÁ",
+      "Teléfono": "0343-4230375 - int.4",
+      "Correo": "constructoradelparana@hotmail.com",
+      "CUIT": 30713376600,
+      "CRM": "SI",
+      "idCliente": 49971,
+      "Maquinas": "MINICARGADORAS-OTRA MARCA-OTRO, MINICARGADORAS-OTRA MARCA-OTRO",
+      "Sucursal": "PARANA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -58.5249615,
+        -32.9994607
+      ]
+    },
+    "properties": {
+      "delegacion": "Entre Rios",
+      "Nombre": "ERNESTO RICARDO HORNUS S.A.",
+      
+      "Dirección": "Blvd. Montana 950",
+      "Localidad": "GUALEGUAYCHÚ",
+      "Teléfono": "03446-427849",
+      "Correo": "obras@hornus.com.ar",
+      "CUIT": 30568681041,
+      "CRM": "SI",
+      "idCliente": 22599,
+      "Maquinas": "-",
+      "Sucursal": "VICTORIA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -60.5175,
+        -31.744
+      ]
+    },
+    "properties": {
+      "delegacion": "Entre Rios",
+      "Nombre": "GC INGENIERIA S.A.S.",
+      
+      "Dirección": "Manuel Verceli S/N",
+      "Localidad": "PARANÁ",
+      
+      "Correo": "grupociningenieria@gmail.com",
+      "CUIT": 30716781697,
+      "CRM": "NO",
+      "idCliente": "-",
+      "Maquinas": "-",
+      "Sucursal": "-"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -60.4970308,
+        -31.7556592
+      ]
+    },
+    "properties": {
+      "delegacion": "Entre Rios",
+      "Nombre": "GEOCIMENTA S.R.L.",
+      
+      "Dirección": "Av. Zanni 1100 Casa 25A",
+      "Localidad": "Paraná",
+      "Teléfono": "0343-4073578",
+      "Correo": "info@geocimenta.com",
+      "CUIT": 30712413111,
+      "CRM": "SI",
+      "idCliente": 30752,
+      "Maquinas": "-",
+      "Sucursal": "PARANA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -60.0882639,
+        -31.3870741
+      ]
+    },
+    "properties": {
+      "delegacion": "Entre Rios",
+      "Nombre": "GRAND S.A.S.",
+      
+      "Dirección": "La Paz 236 Piso 11°",
+      "Localidad": "Paraná",
+      "Teléfono": "343-4234708",
+      "Correo": "info@grandemprendimientos.com.ar",
+      "CUIT": 30716833395,
+      "CRM": "NO",
+      "idCliente": "-",
+      "Maquinas": "-",
+      "Sucursal": "-"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -60.5175,
+        -31.744
+      ]
+    },
+    "properties": {
+      "delegacion": "Entre Rios",
+      "Nombre": "GRAVAFILT SA",
+      
+      "Dirección": "Camino de Santiago Esq Gordillo",
+      "Localidad": "Paraná",
+      "Teléfono": "0343-4310190",
+      "Correo": "info@gravafilt.com.ar",
+      "CUIT": 30506746627,
+      "CRM": "SI",
+      "idCliente": 16470,
+      "Maquinas": "CARGADOR AUTOPROPULSADO-OTRA MARCA-OTRO",
+      "Sucursal": "PARANA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -60.5175,
+        -31.744
+      ]
+    },
+    "properties": {
+      "delegacion": "Entre Rios",
+      "Nombre": "GRECA MATERIALES PARA LA CONSTRUCCION",
+      
+      "Dirección": "Pedro Balcar 52",
+      "Localidad": "Paraná",
+      "Teléfono": "0343-4353300",
+      "Correo": "danielgreca@yahoo.com.ar",
+      "CUIT": 30717165647,
+      "CRM": "NO",
+      "idCliente": "-",
+      "Maquinas": "-",
+      "Sucursal": "-"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -58.0264,
+        -31.3402
+      ]
+    },
+    "properties": {
+      "delegacion": "Entre Rios",
+      "Nombre": "GRINAC MOVIMIENTOS DE SUELO S.R.L.",
+      
+      "Dirección": "J.J. Valle 909",
+      "Localidad": "Concordia",
+      "Teléfono": "0345-4274201",
+      "Correo": "grinacsrl@movsuelos.arnetbiz.com.ar",
+      "CUIT": 30710789246,
+      "CRM": "SI",
+      "idCliente": 34376,
+      "Maquinas": "CARGADOR FRONTAL-JOHN DEERE-OTRO, RETROEXCAVADORAS-JOHN DEERE-310L, EXCAVADORAS-JOHN DEERE-210G, RETROEXCAVADORAS-JOHN DEERE-310L, CARGADOR FRONTAL-OTRA MARCA-OTRO, CARGADOR FRONTAL-OTRA MARCA-OTRO, RETROEXCAVADORAS-CAT-416",
+      "Sucursal": "CONCORDIA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -58.15,
+        -32.2167
+      ]
+    },
+    "properties": {
+      "delegacion": "Entre Rios",
+      "Nombre": "GRUPO BOUVIER",
+      
+      "Dirección": "RN14 km 158",
+      "Localidad": "San José",
+      "Teléfono": "+54 9 3447 503640",
+      "Correo": "martinbouvier@grupobouvier.com.ar",
+      "CUIT": 33717732079,
+      "CRM": "SI",
+      "idCliente": 35244,
+      "Maquinas": "MOTONIVELADORAS-SANY-SMG200, EXCAVADORAS-SANY-SY215C, CARGADOR FRONTAL-SANY-SYL956, MINICARGADORAS-BOBCAT-S530, RETROEXCAVADORAS-HYDROMAC-Modelo unico",
+      "Sucursal": "CONCORDIA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -57.9889736,
+        -30.7577864
+      ]
+    },
+    "properties": {
+      "delegacion": "Entre Rios",
+      "Nombre": "HORMIGONES CONCEPCIÓN S.R.L.",
+      
+      "Dirección": "Mitre 1755",
+      "Localidad": "Chajarí",
+      
+      "Correo": "-",
+      "CUIT": 30708823046,
+      "CRM": "NO",
+      "idCliente": "-",
+      "Maquinas": "-",
+      "Sucursal": "-"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -58.8833,
+        -32.35
+      ]
+    },
+    "properties": {
+      "delegacion": "Entre Rios",
+      "Nombre": "HORNUS Y CIA. S.A.",
+      
+      "Dirección": "Ramírez 478",
+      "Localidad": "Basavilbaso",
+      "Teléfono": "03445-482511",
+      "Correo": "gerencia@hornusycia.com.ar",
+      "CUIT": 30568664813,
+      "CRM": "SI",
+      "idCliente": 16118,
+      "Maquinas": "-",
+      "Sucursal": "-"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -58.0176791,
+        -31.388529
+      ]
+    },
+    "properties": {
+      "delegacion": "Entre Rios",
+      "Nombre": "HUGO R. GOÑE CONSTRUCCIONES",
+      
+      "Dirección": "San Luis 727",
+      "Localidad": "Concordia",
+      "Teléfono": "0345-4217609",
+      "Correo": "goneconstrucciones@gmail.com",
+      "CUIT": 30709193925,
+      "CRM": "NO",
+      "idCliente": "-",
+      "Maquinas": "-",
+      "Sucursal": "-"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -58.0146629,
+        -31.3742077
+      ]
+    },
+    "properties": {
+      "delegacion": "Entre Rios",
+      "Nombre": "INCAR S.A.",
+      
+      "Dirección": "Gdor. Cresto 1758",
+      "Localidad": "Concordia",
+      "Teléfono": "0345-4229676",
+      "Correo": "incarsa@incarsa.com.ar",
+      "CUIT": 30711427054,
+      "CRM": "NO",
+      "idCliente": "-",
+      "Maquinas": "-",
+      "Sucursal": "-"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -60.5114653,
+        -31.7626606
+      ]
+    },
+    "properties": {
+      "delegacion": "Entre Rios",
+      "Nombre": "INDAG CONSTRUCTORA",
+      
+      "Dirección": "Liga de los Pueblos Libres 1524",
+      "Localidad": "Paraná",
+      "Teléfono": "0343-4343931",
+      "Correo": "indag100@hotmail.com",
+      "CUIT": 20169814067,
+      "CRM": "SI",
+      "idCliente": 4370,
+      "Maquinas": "-",
+      "Sucursal": "-"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -60.5175,
+        -31.744
+      ]
+    },
+    "properties": {
+      "delegacion": "Entre Rios",
+      "Nombre": "INDAL S.R.L.",
+      
+      "Dirección": "Padre Pascual Uva 1024",
+      "Localidad": "Paraná",
+      "Teléfono": "0343 4216572 / 3434158578",
+      "Correo": "indal_srl@yahoo.com.ar",
+      "CUIT": 30714183997,
+      "CRM": "SI",
+      "idCliente": 41684,
+      "Maquinas": "-",
+      "Sucursal": "PARANA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -60.5175,
+        -31.744
+      ]
+    },
+    "properties": {
+      "delegacion": "Entre Rios",
+      "Nombre": "ING. QUARANTA S.R.L.",
+      
+      "Dirección": "Pasaje Falucho 344",
+      "Localidad": "Paraná",
+      "Teléfono": "0343-4222206-4234002",
+      "Correo": "gerencia@ingquaranta.com.ar",
+      "CUIT": 30518414034,
+      "CRM": "SI",
+      "idCliente": 15458,
+      "Maquinas": "-",
+      "Sucursal": "-"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -58.2257121,
+        -32.4823982
+      ]
+    },
+    "properties": {
+      "delegacion": "Entre Rios",
+      "Nombre": "JCB CONSTRUCCIONES",
+      
+      "Dirección": "Perú 71",
+      "Localidad": "Concepción del Uruguay",
+      "Teléfono": "03442-433757",
+      "Correo": "jcbconstrucciones.jcb@gmail.com",
+      "CUIT": 30716182122,
+      "CRM": "SI",
+      "idCliente": 34891,
+      "Maquinas": "RETROEXCAVADORAS-JOHN DEERE-310K, MOTONIVELADORAS-KOMATSU-GD655 5, MINICARGADORAS-BOBCAT-S570, MINICARGADORAS-OTRA MARCA-OTRO",
+      "Sucursal": "CONCORDIA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -58.5122,
+        -33.0078
+      ]
+    },
+    "properties": {
+      "delegacion": "Entre Rios",
+      "Nombre": "JOSÉ E. PITÓN S.A.",
+      
+      "Dirección": "Rivadavia 50",
+      "Localidad": "Gualeguay",
+      "Teléfono": "03444-422252/424819",
+      "Correo": "administracion@jepitonsa.com.ar",
+      "CUIT": 30709722235,
+      "CRM": "NO",
+      "idCliente": "-",
+      "Maquinas": "-",
+      "Sucursal": "-"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -60.5347299,
+        -31.7405685
+      ]
+    },
+    "properties": {
+      "delegacion": "Entre Rios",
+      "Nombre": "KEES, EDUARDO GÜNTHER",
+      
+      "Dirección": "San Martín 329-3º Piso A",
+      "Localidad": "Paraná",
+      "Teléfono": "02966-15322797",
+      "Correo": "g.kees@ingapl.com",
+      "CUIT": 23281258109,
+      "CRM": "NO",
+      "idCliente": "-",
+      "Maquinas": "-",
+      "Sucursal": "-"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -60.5175,
+        -31.744
+      ]
+    },
+    "properties": {
+      "delegacion": "Entre Rios",
+      "Nombre": "L&C CONTRUCCIONES S.A.",
+      
+      "Dirección": "Manuela Pedraza 556",
+      "Localidad": "Paraná",
+      "Teléfono": "0343-4343787",
+      "Correo": "lycconstruccionessa@gmail.com",
+      "CUIT": 33700135999,
+      "CRM": "SI",
+      "idCliente": 16326,
+      "Maquinas": "-",
+      "Sucursal": "PARANA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -58.0204824,
+        -31.371877
+      ]
+    },
+    "properties": {
+      "delegacion": "Entre Rios",
+      "Nombre": "LA HORMIGONERA DE COINAR S.R.L.",
+      
+      "Dirección": "Av. Tavella 2201",
+      "Localidad": "Concordia",
+      "Teléfono": "0345-4251212/4251407",
+      "Correo": "coinarsrl@gmail.com",
+      "CUIT": 30649630336,
+      "CRM": "SI",
+      "idCliente": 14903,
+      "Maquinas": "RETROEXCAVADORAS-JOHN DEERE-310J, RETROEXCAVADORAS-JOHN DEERE-310J, EXCAVADORAS-SANY-SY135C, RETROEXCAVADORAS-CASE-OTRO, RETROEXCAVADORAS-CASE-OTRO, MOTONIVELADORAS-OTRA MARCA-OTRO, TRACTORES-NEW HOLLAND-OTRO, COMPACTADORES-DYNAPAC-OTRO, COMPACTADORES-DYNAPAC-OTRO, EXCAVADORAS-KOMATSU-OTRO, CARGADOR FRONTAL-OTRA MARCA-OTRO",
+      "Sucursal": "CONCORDIA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -60.2011074,
+        -32.1718483
+      ]
+    },
+    "properties": {
+      "delegacion": "Entre Rios",
+      "Nombre": "LEFFLER DIETZ",
+      
+      "Dirección": "Colón 222",
+      "Localidad": "Gral. Ramirez",
+      "Teléfono": "0343-4901500",
+      "Correo": "administracion@leffler-dietz.com.ar",
+      "CUIT": 30716083388,
+      "CRM": "NO",
+      "idCliente": "-",
+      "Maquinas": "-",
+      "Sucursal": "-"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -58.2761324,
+        -32.4875945
+      ]
+    },
+    "properties": {
+      "delegacion": "Entre Rios",
+      "Nombre": "LEMIRO P. PIETROBONI S.A.",
+      
+      "Dirección": "Av. Juan José Bruno 2725",
+      "Localidad": "Concepción del Uruguay",
+      "Teléfono": "03442-442525/443628",
+      "Correo": "recepcion@lemiropietroboni.com.ar",
+      "CUIT": 30533004160,
+      "CRM": "SI",
+      "idCliente": 16462,
+      "Maquinas": "EXCAVADORAS-JOHN DEERE-350G, EXCAVADORAS-HYUNDAI-ROBEX 300 LC, PALAS CARGADORAS-OTRA MARCA-OTRO, MOTONIVELADORAS-VOLVO-G940, EXCAVADORAS-HYUNDAI-OTRO, RETROEXCAVADORAS-CAT-416, MOTONIVELADORAS-JOHN DEERE-670G, MINICARGADORAS-BOBCAT-S630, PALAS CARGADORAS-OTRA MARCA-OTRO, MOTONIVELADORAS-VOLVO-G940, EXCAVADORAS-HYUNDAI-OTRO, RETROEXCAVADORAS-CAT-416, RETROEXCAVADORAS-CAT-416, MOTONIVELADORAS-JOHN DEERE-770G/GP, MINICARGADORAS-BOBCAT-S630, PALAS CARGADORAS-OTRA MARCA-OTRO, MOTONIVELADORAS-VOLVO-G940, EXCAVADORAS-HYUNDAI-OTRO, RETROEXCAVADORAS-CAT-416, MOTONIVELADORAS-JOHN DEERE-770G/GP, MINICARGADORAS-BOBCAT-S630, PALAS CARGADORAS-OTRA MARCA-OTRO, MOTONIVELADORAS-VOLVO-G940, EXCAVADORAS-HYUNDAI-ROBEX 300 LC, RETROEXCAVADORAS-CAT-416, PALAS CARGADORAS-JOHN DEERE-544, MOTONIVELADORAS-CAT-140M, PALAS CARGADORAS-OTRA MARCA-OTRO, MOTONIVELADORAS-VOLVO-G930, EXCAVADORAS-HYUNDAI-ROBEX 300 LC, EXCAVADORAS-HYUNDAI-ROBEX 300 LC, RETROEXCAVADORAS-CAT-416, PALAS CARGADORAS-JOHN DEERE-644, MOTONIVELADORAS-CAT-140M, PALAS CARGADORAS-OTRA MARCA-OTRO, MOTONIVELADORAS-VOLVO-G930, EXCAVADORAS-HYUNDAI-ROBEX 300 LC, RETROEXCAVADORAS-CAT-416, PALAS CARGADORAS-JOHN DEERE-644, MOTONIVELADORAS-CAT-140M, PALAS CARGADORAS-OTRA MARCA-OTRO, MOTONIVELADORAS-OTRA MARCA-OTRO, EXCAVADORAS-HYUNDAI-ROBEX 300 LC, RETROEXCAVADORAS-OTRA MARCA-OTRO, CARGADOR FRONTAL-CAT-938K, MOTONIVELADORAS-CAT-140M, PALAS CARGADORAS-OTRA MARCA-OTRO, MOTONIVELADORAS-OTRA MARCA-OTRO, EXCAVADORAS-HYUNDAI-ROBEX 300 LC, RETROEXCAVADORAS-OTRA MARCA-OTRO, CARGADOR FRONTAL-CAT-938K, MOTONIVELADORAS-CAT-140M, EXCAVADORAS-CATERPILLAR-OTRO, EXCAVADORAS-OTRA MARCA-OTRO, EXCAVADORAS-HYUNDAI-ROBEX 220 LC, RETROEXCAVADORAS-OTRA MARCA-OTRO, PALAS CARGADORAS-OTRA MARCA-OTRO, MOTONIVELADORAS-CAT-140M, EXCAVADORAS-CATERPILLAR-OTRO, EXCAVADORAS-OTRA MARCA-OTRO, EXCAVADORAS-HYUNDAI-ROBEX 220 LC, TOPADORAS-CAT-D6R, PALAS CARGADORAS-OTRA MARCA-OTRO, MOTONIVELADORAS-CAT-140M, EXCAVADORAS-CATERPILLAR-OTRO, EXCAVADORAS-OTRA MARCA-OTRO, EXCAVADORAS-HYUNDAI-ROBEX 220 LC, TOPADORAS-CAT-D6T, PALAS CARGADORAS-OTRA MARCA-OTRO, MOTONIVELADORAS-CAT-140M, EXCAVADORAS-CATERPILLAR-OTRO, EXCAVADORAS-OTRA MARCA-OTRO, EXCAVADORAS-HYUNDAI-ROBEX 220 LC, TOPADORAS-OTRA MARCA-OTRO, PALAS CARGADORAS-OTRA MARCA-OTRO, MOTONIVELADORAS-CAT-140M, EXCAVADORAS-CATERPILLAR-OTRO, EXCAVADORAS-OTRA MARCA-OTRO, EXCAVADORAS-HYUNDAI-250 LC-7, TOPADORAS-OTRA MARCA-OTRO, PALAS CARGADORAS-LONKING-CDM856D, MOTONIVELADORAS-CAT-140M, EXCAVADORAS-CATERPILLAR-OTRO, EXCAVADORAS-OTRA MARCA-OTRO, EXCAVADORAS-JOHN DEERE-350G, EXCAVADORAS-HYUNDAI-OTRO, CARGADOR FRONTAL-OTRA MARCA-OTRO, MOTONIVELADORAS-VOLVO-G940, EXCAVADORAS-HYUNDAI-OTRO, EXCAVADORAS-JOHN DEERE-350G, EXCAVADORAS-HYUNDAI-OTRO, PALAS CARGADORAS-OTRA MARCA-OTRO, MOTONIVELADORAS-VOLVO-G940, EXCAVADORAS-HYUNDAI-OTRO",
+      "Sucursal": "CONCORDIA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -60.5200741,
+        -31.7770076
+      ]
+    },
+    "properties": {
+      "delegacion": "Entre Rios",
+      "Nombre": "LUIS LOSI S.A.",
+      
+      "Dirección": "Av. de las Américas 2604",
+      "Localidad": "Paraná",
+      "Teléfono": "0343-4351753/4352014",
+      "Correo": "luislosi@luislosisa.com.ar",
+      "CUIT": 30690504797,
+      "CRM": "SI",
+      "idCliente": 16556,
+      "Maquinas": "COMPACTADORES-CATERPILLAR-CS533E, EXCAVADORAS-CATERPILLAR-320D2L, COMPACTADORES-HAMM-3520 HT, CARGADOR FRONTAL-CATERPILLAR-938H, MOTONIVELADORAS-CATERPILLAR-16G, FRESADORAS-CATERPILLAR-PR450, CARGADOR FRONTAL-CATERPILLAR-950L, COMPACTADORES-CATERPILLAR-CP533, EXCAVADORAS-CATERPILLAR-336D2L, COMPACTADORES-HAMM-3520 HT, RETROEXCAVADORAS-CATERPILLAR-416E, MOTONIVELADORAS-CATERPILLAR-16G, FRESADORAS-WIRTGEN-W130CF, MINICARGADORAS-BOBCAT-S630H, MINICARGADORAS-CATERPILLAR-246D, COMPACTADORES-CATERPILLAR-CS54B, MINICARGADORAS-BOBCAT-S630, EXCAVADORAS-CATERPILLAR-336D2L, COMPACTADORES-HAMM-3520 HT, CARGADOR FRONTAL-CATERPILLAR-938H, MOTONIVELADORAS-CATERPILLAR-16G, ESTABILIZADORAS DE ASFALTO-WIRTGEN-WR240, CARGADOR FRONTAL-CATERPILLAR-924K, COMPACTADORES-CATERPILLAR-CS54B, MINICARGADORAS-BOBCAT-S630, EXCAVADORAS-CATERPILLAR-320D2L, COMPACTADORES-HAMM-3520 HT, MINICARGADORAS-BOBCAT-S630H, MOTONIVELADORAS-CATERPILLAR-16G, FRESADORAS-WIRTGEN-W130CF, MINICARGADORAS-BOBCAT-S630H, COMPACTADORES-HAMM-GRW18, MINICARGADORAS-BOBCAT-S630, EXCAVADORAS-CATERPILLAR-320D2L, COMPACTADORES-HAMM-3520 HT, RETROEXCAVADORAS-CATERPILLAR-416E, MOTONIVELADORAS-CATERPILLAR-16G, FREZADORAS-WIRTGEN-W100, RETROEXCAVADORAS-CATERPILLAR-416F2, COMPACTADORES-HAMM-DV10, MINICARGADORAS-BOBCAT-S630, EXCAVADORAS-CATERPILLAR-336D2L, COMPACTADORES-HAMM-3520 HT, MINICARGADORAS-BOBCAT-S630H, MOTONIVELADORAS-CATERPILLAR-16G, RETROEXCAVADORAS-CATERPILLAR-416F2, COMPACTADORES-HAMM-GRW18, MINICARGADORAS-BOBCAT-S630, EXCAVADORAS-CATERPILLAR-336D2L, COMPACTADORES-HAMM-GRW 280-16, MINICARGADORAS-BOBCAT-S630H, CARGADOR FRONTAL-CATERPILLAR-950L, COMPACTADORES-HAMM-DV10, MINICARGADORAS-BOBCAT-S630, EXCAVADORAS-CATERPILLAR-336D2L, COMPACTADORES-HAMM-GRW 280-16, MINICARGADORAS-BOBCAT-S630H, EXCAVADORAS-CATERPILLAR-323D, COMPACTADORES-HAMM-GRW18, MINICARGADORAS-BOBCAT-S630, EXCAVADORAS-CATERPILLAR-336D2L, COMPACTADORES-HAMM-HD+ 90 VO, RETROEXCAVADORAS-CATERPILLAR-416E, MOTONIVELADORAS-CATERPILLAR-16G, EXCAVADORAS-CATERPILLAR-323D, COMPACTADORES-HAMM-DV10, CARGADOR FRONTAL-CATERPILLAR-980F, EXCAVADORAS-CATERPILLAR-320D2L, COMPACTADORES-HAMM-HD+ 90 VO, CARGADOR FRONTAL-CATERPILLAR-938K, MOTONIVELADORAS-CATERPILLAR-16G, EXCAVADORAS-CATERPILLAR-320DL, COMPACTADORES-HAMM-HD110, CARGADOR FRONTAL-CATERPILLAR-980F, EXCAVADORAS-CATERPILLAR-320D2L, COMPACTADORES-HAMM-GRW 280-16, CARGADOR FRONTAL-CATERPILLAR-938K, MOTONIVELADORAS-CATERPILLAR-12M, EXCAVADORAS-CATERPILLAR-336DL, COMPACTADORES-HAMM-GRW18, CARGADOR FRONTAL-CATERPILLAR-938F, MOTONIVELADORAS-CATERPILLAR-16G, EXTENDEDORES ASFÁLTICOS-VOGELE-1600, MINICARGADORAS-BOBCAT-S630H, MOTONIVELADORAS-CATERPILLAR-12M, EXCAVADORAS-CATERPILLAR-336DL, COMPACTADORES-CATERPILLAR-CB534 XW, CARGADOR FRONTAL-CATERPILLAR-938F, MOTONIVELADORAS-CATERPILLAR-16G, RETROEXCAVADORAS-CATERPILLAR-416F2, MOTONIVELADORAS-CATERPILLAR-160M, EXCAVADORAS-CATERPILLAR-320D, COMPACTADORES-CATERPILLAR-CB534 D, CARGADOR FRONTAL-CATERPILLAR-938F, MOTONIVELADORAS-CATERPILLAR-16G, EXTENDEDORES ASFÁLTICOS-VOGELE-1600-3, RETROEXCAVADORAS-CATERPILLAR-416F2, COMPACTADORES-CATERPILLAR-825C, EXCAVADORAS-CATERPILLAR-320DL, COMPACTADORES-HAMM-HD+90VO, RETROEXCAVADORAS-CATERPILLAR-416E, MOTONIVELADORAS-CATERPILLAR-16G, EXTENDEDORES ASFÁLTICOS-VOGELE-2100-3, CARGADOR FRONTAL-CATERPILLAR-924K, COMPACTADORES-CATERPILLAR-825C, COMPACTADORES-CATERPILLAR-825C, EXCAVADORAS-CATERPILLAR-320D2L, COMPACTADORES-HAMM-HD+90VO, CARGADOR FRONTAL-CATERPILLAR-938H, MOTONIVELADORAS-CATERPILLAR-16G, FRESADORAS-CATERPILLAR-PM-102, CARGADOR FRONTAL-CATERPILLAR-938K",
+      "Sucursal": "PARANA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -59.9881438,
+        -31.8798884
+      ]
+    },
+    "properties": {
+      "delegacion": "Entre Rios",
+      "Nombre": "MATERIALES Y ACEROS KUDOS",
+      
+      "Dirección": "Av. San Martín 429",
+      "Localidad": "Viale",
+      "Teléfono": "0343-4921724",
+      "Correo": "corralon@lablanquitasrl.com",
+      "CUIT": 33717165859,
+      "CRM": "NO",
+      "idCliente": "-",
+      "Maquinas": "-",
+      "Sucursal": "-"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -60.4916564,
+        -31.7301586
+      ]
+    },
+    "properties": {
+      "delegacion": "Entre Rios",
+      "Nombre": "MC CONSTRUCCIONES S.R.L.",
+      
+      "Dirección": "Blas Parera 651",
+      "Localidad": "Paraná",
+      "Teléfono": "0343-4244980",
+      "Correo": "chauvetricardo@hotmail.com.ar",
+      "CUIT": 30710290748,
+      "CRM": "SI",
+      "idCliente": 16711,
+      "Maquinas": "-",
+      "Sucursal": "PARANA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -60.0763436,
+        -31.5775116
+      ]
+    },
+    "properties": {
+      "delegacion": "Entre Rios",
+      "Nombre": "MEGA DESARROLLOS INMOBILIARIOS",
+      
+      "Dirección": "Santa Fe 174",
+      "Localidad": "Paraná",
+      "Teléfono": "0343-4317296",
+      "Correo": "info@inmobiliariamega.com.ar",
+      "CUIT": 30709420336,
+      "CRM": "NO",
+      "idCliente": "-",
+      "Maquinas": "-",
+      "Sucursal": "-"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -60.4596038,
+        -31.7819149
+      ]
+    },
+    "properties": {
+      "delegacion": "Entre Rios",
+      "Nombre": "MLD CONSTRUCCIONES S.R.L.",
+      
+      "Dirección": "Av. Newbery 2086",
+      "Localidad": "Paraná",
+      "Teléfono": "0343-4300817",
+      "Correo": "mldconstrucciones@hotmail.com",
+      "CUIT": 30716077027,
+      "CRM": "NO",
+      "idCliente": "-",
+      "Maquinas": "-",
+      "Sucursal": "-"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -60.3062,
+        -32.0308
+      ]
+    },
+    "properties": {
+      "delegacion": "Entre Rios",
+      "Nombre": "NEOSTONE SA",
+      
+      "Dirección": "Santiago Eichhorn 419",
+      "Localidad": "Crespo",
+      "Teléfono": "3434051651",
+      "Correo": "administracion1@neostone.com.ar",
+      "CUIT": 30715211102,
+      "CRM": "SI",
+      "idCliente": 30820,
+      "Maquinas": "-",
+      "Sucursal": "PARANA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -60.4355484,
+        -31.8272593
+      ]
+    },
+    "properties": {
+      "delegacion": "Entre Rios",
+      "Nombre": "NORVIAL SERVICIOS S.A.",
+      
+      "Dirección": "Chacra N°3-Ruta 12 e/Tucumán y Chaco",
+      "Localidad": "San Benito",
+      "Teléfono": "343-6100081",
+      "Correo": "norvialservicios@yahoo.com.ar",
+      "CUIT": 30710610343,
+      "CRM": "SI",
+      "idCliente": 16968,
+      "Maquinas": "TRACTORES-CASE-8930, TRACTORES-JOHN DEERE-4760, RETROEXCAVADORAS-JOHN DEERE-310P, RETROEXCAVADORAS-JOHN DEERE-310L, RETROEXCAVADORAS-JOHN DEERE-310L, RETROEXCAVADORAS-JOHN DEERE-310P, RETROEXCAVADORAS-JOHN DEERE-310L, MOTONIVELADORAS-JOHN DEERE-770P, RETROEXCAVADORAS-JOHN DEERE-310L, MOTONIVELADORAS-JOHN DEERE-670P, RETROEXCAVADORAS-JOHN DEERE-310L, MOTONIVELADORAS-JOHN DEERE-OTRO, EXCAVADORAS-JOHN DEERE-210 GLC, EXCAVADORAS-JOHN DEERE-210 GLC, RETROEXCAVADORAS-JOHN DEERE-310J, CARGADOR AUTOPROPULSADO-JOHN DEERE-624K-II, MOTONIVELADORAS-JOHN DEERE-620G, MOTONIVELADORAS-JOHN DEERE-620G, RETROEXCAVADORAS-JOHN DEERE-310P, TRACTORES-JOHN DEERE-7215J",
+      "Sucursal": "PARANA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -60.4375463,
+        -31.7815004
+      ]
+    },
+    "properties": {
+      "delegacion": "Entre Rios",
+      "Nombre": "O.I.C. S.A.",
+      
+      "Dirección": "Ruta 12 y Guido Marizza",
+      "Localidad": "San Benito",
+      "Teléfono": "0343-4979950/954",
+      "Correo": "administracionoicsa@gmail.com",
+      "CUIT": 30717500055,
+      "CRM": "NO",
+      "idCliente": "-",
+      "Maquinas": "-",
+      "Sucursal": "-"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -60.4165851,
+        -31.7710111
+      ]
+    },
+    "properties": {
+      "delegacion": "Entre Rios",
+      "Nombre": "ORLANDO J. M. PETERSON",
+      
+      "Dirección": "Córdoba 538 – 6º Piso B",
+      "Localidad": "Paraná",
+      "Teléfono": "0343-4323984",
+      "Correo": "petersoncop@yahoo.com.ar",
+      "CUIT": 20100697441,
+      "CRM": "SI",
+      "idCliente": 26100,
+      "Maquinas": "-",
+      "Sucursal": "MERCEDES"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -60.5175,
+        -31.744
+      ]
+    },
+    "properties": {
+      "delegacion": "Entre Rios",
+      "Nombre": "PAULINA C. DE MARTIN E HIJOS S.R.L.",
+      
+      "Dirección": "Alejandro Izaguirre 4991",
+      "Localidad": "Paraná",
+      "Teléfono": "0343-4362292/4362512",
+      "Correo": "demartinsrl@hotmail.com",
+      "CUIT": 30712114963,
+      "CRM": "SI",
+      "idCliente": 17104,
+      "Maquinas": "-",
+      "Sucursal": "PARANA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -58.0264,
+        -31.3402
+      ]
+    },
+    "properties": {
+      "delegacion": "Entre Rios",
+      "Nombre": "Perillo, Héctor Guillermo",
+      
+      "Dirección": "Boulevard Ayuí 1181",
+      "Localidad": "Concordia",
+      "Teléfono": "0345-4254131",
+      "Correo": "wuiper1@gmail.com",
+      "CUIT": 20165346182,
+      "CRM": "NO",
+      "idCliente": "-",
+      "Maquinas": "-",
+      "Sucursal": "-"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -60.5175,
+        -31.744
+      ]
+    },
+    "properties": {
+      "delegacion": "Entre Rios",
+      "Nombre": "PROMETEO S.R.L.",
+      
+      "Dirección": "Rosario del Tala 625",
+      "Localidad": "Paraná",
+      "Teléfono": "3434065053",
+      "Correo": "info@oleinizak.com.ar",
+      "CUIT": 30711833354,
+      "CRM": "NO",
+      "idCliente": "-",
+      "Maquinas": "-",
+      "Sucursal": "-"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -60.5175,
+        -31.744
+      ]
+    },
+    "properties": {
+      "delegacion": "Entre Rios",
+      "Nombre": "Puig Construcciones S.R.L.",
+      
+      "Dirección": "Arturo Guastavino 2344",
+      "Localidad": "Paraná",
+      "Teléfono": "0343-4194377",
+      "Correo": "constructorapuig@hotmail.com",
+      "CUIT": 30712309241,
+      "CRM": "NO",
+      "idCliente": "-",
+      "Maquinas": "-",
+      "Sucursal": "-"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -60.5175,
+        -31.744
+      ]
+    },
+    "properties": {
+      "delegacion": "Entre Rios",
+      "Nombre": "REDENGAS S.A.",
+      
+      "Dirección": "P. Grella 1045",
+      "Localidad": "Paraná",
+      "Teléfono": "0343-4343434",
+      "Correo": "redengas@redengas.com.ar",
+      "CUIT": 30677750266,
+      "CRM": "SI",
+      "idCliente": 17352,
+      "Maquinas": "-",
+      "Sucursal": "-"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -60.4887222,
+        -31.7574493
+      ]
+    },
+    "properties": {
+      "delegacion": "Entre Rios",
+      "Nombre": "SAN SOLAR ENERGIAS RENOVABLES",
+      
+      "Dirección": "Almafuerte 2300",
+      "Localidad": "Paraná",
+      "Teléfono": "0343-155001614",
+      "Correo": "-",
+      "CUIT": "-",
+      "CRM": "NO",
+      "idCliente": "-",
+      "Maquinas": "-",
+      "Sucursal": "-"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -60.4812933,
+        -31.7563282
+      ]
+    },
+    "properties": {
+      "delegacion": "Entre Rios",
+      "Nombre": "SERVICIO INTEGRAL GENERAL",
+      
+      "Dirección": "Gualeguaychú 854 - Piso 2 - Of 2",
+      "Localidad": "Paraná",
+      "Teléfono": "343-15236543",
+      "Correo": "gerenciasigargentina@gmail.com",
+      "CUIT": 30714581356,
+      "CRM": "NO",
+      "idCliente": "-",
+      "Maquinas": "-",
+      "Sucursal": "-"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -60.521433,
+        -31.7582036
+      ]
+    },
+    "properties": {
+      "delegacion": "Entre Rios",
+      "Nombre": "SERVICIOS PEDRIN S.A.",
+      
+      "Dirección": "Av. Ramírez 4050",
+      "Localidad": "Paraná",
+      "Teléfono": "0343-4350561",
+      "Correo": "serviciospedrin@yahoo.com.ar",
+      "CUIT": 30709177733,
+      "CRM": "SI",
+      "idCliente": 17701,
+      "Maquinas": "MINICARGADORAS-BOBCAT-S530, MINICARGADORAS-BOBCAT-S530, EXCAVADORAS-NEW HOLLAND-E145C, RETROEXCAVADORAS-CASE-580N, RETROEXCAVADORAS-CASE-580N, RETROEXCAVADORAS-CASE-580N, RETROEXCAVADORAS-CASE-580N",
+      "Sucursal": "PARANA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -60.4845105,
+        -31.7521564
+      ]
+    },
+    "properties": {
+      "delegacion": "Entre Rios",
+      "Nombre": "STEEL HOLDING",
+      
+      "Dirección": "López Jordan 2742 - Unidad Uno (Acceso Norte)",
+      "Localidad": "Paraná",
+      "Teléfono": "+54 9 3434695711",
+      "Correo": "info@steelholding.com.ar",
+      "CUIT": 30717171663,
+      "CRM": "NO",
+      "idCliente": "-",
+      "Maquinas": "-",
+      "Sucursal": "-"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -60.5175,
+        -31.744
+      ]
+    },
+    "properties": {
+      "delegacion": "Entre Rios",
+      "Nombre": "SUSTENTA S.R.L.",
+      
+      "Dirección": "Perú 281",
+      "Localidad": "Paraná",
+      "Teléfono": "343-6214818",
+      "Correo": "info.sustenta@gmail.com",
+      "CUIT": 30715193066,
+      "CRM": "NO",
+      "idCliente": "-",
+      "Maquinas": "-",
+      "Sucursal": "-"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -60.5175,
+        -31.744
+      ]
+    },
+    "properties": {
+      "delegacion": "Entre Rios",
+      "Nombre": "SZCZECH S.A.",
+      
+      "Dirección": "Manuela Pedraza 580",
+      "Localidad": "Paraná",
+      "Teléfono": "0343-4245918/4343787",
+      "Correo": "contacto@szczech.com.ar",
+      "CUIT": 30715385151,
+      "CRM": "NO",
+      "idCliente": "-",
+      "Maquinas": "-",
+      "Sucursal": "-"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -60.5268913,
+        -31.7460202
+      ]
+    },
+    "properties": {
+      "delegacion": "Entre Rios",
+      "Nombre": "TODO MATERIAL",
+      
+      "Dirección": "Racedo 599",
+      "Localidad": "Paraná",
+      "Teléfono": "4230007 / 3436 11-8750",
+      "Correo": "-",
+      "CUIT": 30658943762,
+      "CRM": "NO",
+      "idCliente": "-",
+      "Maquinas": "-",
+      "Sucursal": "-"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -58.2292,
+        -32.4847
+      ]
+    },
+    "properties": {
+      "delegacion": "Entre Rios",
+      "Nombre": "TRAZA S.A.",
+      
+      "Dirección": "Blvd. Hipolito Irigoyen 1522",
+      "Localidad": "Concepción del Uruguay",
+      "Teléfono": "03442-430079",
+      "Correo": "mpietroboni@trazasa.com",
+      "CUIT": 30708409886,
+      "CRM": "SI",
+      "idCliente": 18070,
+      "Maquinas": "-",
+      "Sucursal": "CONCORDIA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -59.0233,
+        -31.8678
+      ]
+    },
+    "properties": {
+      "delegacion": "Entre Rios",
+      "Nombre": "VERCO S.A.",
+      
+      "Dirección": "RN18 KM 149,70",
+      "Localidad": "Villaguay",
+      "Teléfono": "03455-484773",
+      "Correo": "hormigonesverco@gmail.com",
+      "CUIT": 30707504192,
+      "CRM": "SI",
+      "idCliente": 49180,
+      "Maquinas": "EXCAVADORAS-SANY-SY215C, EXCAVADORAS-SANY-SY135C, MOTONIVELADORAS-LIANGONG-MG 14, RETROEXCAVADORAS-JCB-3CX, CARGADOR FRONTAL-OTRA MARCA-OTRO, MINICARGADORAS-OTRA MARCA-OTRO, RETROEXCAVADORAS-OTRA MARCA-OTRO, CARGADOR FRONTAL-OTRA MARCA-OTRO, TRACTORES-PAUNY-230A",
+      "Sucursal": "PARANA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -60.4496039,
+        -31.7633474
+      ]
+    },
+    "properties": {
+      "delegacion": "Entre Rios",
+      "Nombre": "VIANO CONSTRUCCIONES S.R.L.",
+      
+      "Dirección": "Av. Almafuerte 4778",
+      "Localidad": "Paraná",
+      "Teléfono": "0343-4362744",
+      "Correo": "vianoconstruccionessrl@gmail.com",
+      "CUIT": 30709891894,
+      "CRM": "SI",
+      "idCliente": 18178,
+      "Maquinas": "RETROEXCAVADORAS-JOHN DEERE-310P",
+      "Sucursal": "PARANA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -58.6368722,
+        -31.7320832
+      ]
+    },
+    "properties": {
+      "delegacion": "Entre Rios",
+      "Nombre": "VIOBRAS SRL",
+      
+      "Dirección": "Atahualpa Yupanqui esq. Alfredo Citarrosa",
+      "Localidad": "Jubileo",
+      "Teléfono": "+54 9 3456 25-6306",
+      "Correo": "ernestovidone@yahoo.com.ar",
+      "CUIT": 30714897507,
+      "CRM": "NO",
+      "idCliente": "-",
+      "Maquinas": "-",
+      "Sucursal": "-"
+    }
+  }
   ]
 }
