@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="utf-8" />
-  <title>Dashboard Comercial</title>
+  <title>Dashboard Comercial Pro - Filtros Dinámicos</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
   <style>
@@ -13,19 +13,21 @@
       background: #2c3e50; color: white; padding: 20px;
       border-radius: 12px; width: 280px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);
     }
-    .control-group { margin-bottom: 15px; }
+    .control-group { margin-bottom: 12px; }
     label { display: block; margin-bottom: 5px; font-size: 0.7em; font-weight: bold; color: #bdc3c7; text-transform: uppercase; }
-    select { width: 100%; padding: 10px; border-radius: 8px; border: none; background: #fff; color: #333; font-weight: 600; cursor: pointer; margin-bottom: 10px; }
+    select { width: 100%; padding: 10px; border-radius: 8px; border: none; background: #fff; color: #333; font-weight: 600; cursor: pointer; }
     h3 { margin-top:0; text-align:center; font-size: 1.1em; letter-spacing: 1px; color: #fff; }
     
+    /* Estilos botones */
     .btn-action { width: 100%; padding: 10px; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; transition: 0.3s; margin-top: 5px; color: white; display: flex; align-items: center; justify-content: center; gap: 5px; }
-    .btn-download { background: #27ae60; }
-    .btn-download:hover { background: #2ecc71; }
+    .btn-download { background: #27ae60; margin-top: 15px; }
     .btn-selection { background: #34495e; border: 1px solid #7f8c8d; }
     .btn-selection.active { background: #9b59b6; border-color: #fff; }
-    .btn-clear { background: #e74c3c; font-size: 0.75em; opacity: 0.8; }
     
     .info-count { font-size: 0.8em; color: #ecf0f1; text-align: center; margin: 10px 0; background: rgba(0,0,0,0.2); padding: 5px; border-radius: 4px; }
+    
+    /* Ocultar filtro de delegación por defecto */
+    #contenedorDelegacion { display: none; background: rgba(255,255,255,0.05); padding: 10px; border-radius: 8px; border: 1px dashed #7f8c8d; margin-top: 10px; }
   </style>
 </head>
 <body>
@@ -35,15 +37,24 @@
   
   <div class="control-group">
     <label>📂 Seleccionar Base:</label>
-    <select id="filtroBase">
+    <select id="filtroBase" onchange="gestionarFiltrosEspeciales()">
       <option value="todas">Todas las Bases</option>
       <option value="base1">Socios CACF (Forrajeros)</option>
       <option value="base2">Socios CAPIA (Avícolas)</option>
-      <option value="base3">Socios CAMARCO</option>
+      <option value="base3">Socios CAMARCO Santa Fe</option>
       <option value="base4">Comunas y Municipios</option>
       <option value="base5">Cooperativas Agropecuarias</option>
     </select>
-    
+  </div>
+
+  <div id="contenedorDelegacion" class="control-group">
+    <label>🏛️ Filtrar por Delegación:</label>
+    <select id="filtroDelegacion">
+      <option value="todas">Todas las Delegaciones</option>
+    </select>
+  </div>
+
+  <div class="control-group">
     <label>📊 Estado CRM:</label>
     <select id="filtroCRM">
       <option value="todos">Todos los Clientes</option>
@@ -58,7 +69,6 @@
     🖱️ Modo Selección: OFF
   </button>
   <button class="btn-action btn-download" onclick="exportarListado()">📥 Descargar Listado (CSV)</button>
-  <button id="btnClear" class="btn-action btn-clear" style="display:none;" onclick="limpiarSeleccionManual()">🧹 Limpiar Selección</button>
 </div>
 
 <div id="map"></div>
@@ -77,10 +87,8 @@
   let modoSeleccionActivo = false;
 
   const nombresDeBases = {
-    'base1': 'Socios CACF (Forrajeros)',
-    'base2': 'Socios CAPIA (Avícolas)',
-    'base3': 'Socios CAMARCO Santa Fe',
-    'base4': 'Comunas y Municipios',
+    'base1': 'Socios CACF (Forrajeros)', 'base2': 'Socios CAPIA (Avícolas)',
+    'base3': 'Socios CAMARCO Santa Fe', 'base4': 'Comunas y Municipios',
     'base5': 'Cooperativas Agropecuarias'
   };
 
@@ -96,18 +104,24 @@
     return v.toString().trim();
   }
 
-  function cargarZonasSucursales() {
-    fetch('sucursales.geojson').then(r => r.json()).then(data => {
-      capaSucursales = L.geoJSON(data, {
-        style: { color: "#000", weight: 1.5, fillColor: "#34495e", fillOpacity: 0.05 },
-        onEachFeature: (f, l) => {
-          const n = buscarProp(f.properties, "name") || buscarProp(f.properties, "sucursal") || "Zona";
-          l.bindPopup(`<b>Sucursal:</b><br>${n}`);
-        }
-      }).addTo(map);
-      capaSucursales.bringToBack();
-    });
-  }
+  // --- CARGA DE DATOS ---
+  Promise.all([
+    fetch('data.geojson').then(r => r.json()).catch(() => ({features:[]})),
+    fetch('data2.geojson').then(r => r.json()).catch(() => ({features:[]})),
+    fetch('data3.geojson').then(r => r.json()).catch(() => ({features:[]})),
+    fetch('data4.geojson').then(r => r.json()).catch(() => ({features:[]})),
+    fetch('data5.geojson').then(r => r.json()).catch(() => ({features:[]}))
+  ]).then(([d1, d2, d3, d4, d5]) => {
+    datosBases.base1 = procesarFeatures(d1.features, 'base1');
+    datosBases.base2 = procesarFeatures(d2.features, 'base2');
+    datosBases.base3 = procesarFeatures(d3.features, 'base3');
+    datosBases.base4 = procesarFeatures(d4.features, 'base4');
+    datosBases.base5 = procesarFeatures(d5.features, 'base5');
+    
+    llenarSelectorDelegaciones();
+    cargarZonasSucursales();
+    actualizarMapa();
+  });
 
   function procesarFeatures(features, idBase) {
     return (features || []).map((f, index) => {
@@ -123,21 +137,22 @@
     });
   }
 
-  Promise.all([
-    fetch('data.geojson').then(r => r.json()).catch(() => ({features:[]})),
-    fetch('data2.geojson').then(r => r.json()).catch(() => ({features:[]})),
-    fetch('data3.geojson').then(r => r.json()).catch(() => ({features:[]})),
-    fetch('data4.geojson').then(r => r.json()).catch(() => ({features:[]})),
-    fetch('data5.geojson').then(r => r.json()).catch(() => ({features:[]}))
-  ]).then(([d1, d2, d3, d4, d5]) => {
-    datosBases.base1 = procesarFeatures(d1.features, 'base1');
-    datosBases.base2 = procesarFeatures(d2.features, 'base2');
-    datosBases.base3 = procesarFeatures(d3.features, 'base3');
-    datosBases.base4 = procesarFeatures(d4.features, 'base4');
-    datosBases.base5 = procesarFeatures(d5.features, 'base5');
-    cargarZonasSucursales();
+  function llenarSelectorDelegaciones() {
+    const selector = document.getElementById("filtroDelegacion");
+    const delegaciones = [...new Set(datosBases.base3.map(f => buscarProp(f.properties, "delegacion")).filter(d => d))];
+    delegaciones.sort().forEach(d => {
+      let opt = document.createElement("option");
+      opt.value = d;
+      opt.innerText = d;
+      selector.appendChild(opt);
+    });
+  }
+
+  function gestionarFiltrosEspeciales() {
+    const base = document.getElementById("filtroBase").value;
+    document.getElementById("contenedorDelegacion").style.display = (base === "base3" || base === "todas") ? "block" : "none";
     actualizarMapa();
-  });
+  }
 
   function toggleModoSeleccion() {
     modoSeleccionActivo = !modoSeleccionActivo;
@@ -149,17 +164,32 @@
   function actualizarMapa() {
     const crmFiltro = document.getElementById("filtroCRM").value;
     const baseFiltro = document.getElementById("filtroBase").value;
+    const delFiltro = document.getElementById("filtroDelegacion").value;
+
     if (geojsonLayer) map.removeLayer(geojsonLayer);
 
-    let combinados = [];
-    if (baseFiltro === "todas") {
-      combinados = [...datosBases.base1, ...datosBases.base2, ...datosBases.base3, ...datosBases.base4, ...datosBases.base5];
-    } else {
-      combinados = datosBases[baseFiltro] || [];
-    }
+    let combinados = (baseFiltro === "todas") 
+      ? [...datosBases.base1, ...datosBases.base2, ...datosBases.base3, ...datosBases.base4, ...datosBases.base5]
+      : (datosBases[baseFiltro] || []);
 
     geojsonLayer = L.geoJSON(combinados, {
-      filter: (f) => (crmFiltro === "todos" || f.properties.crm_filtrable === crmFiltro),
+      filter: (f) => {
+        // Filtro CRM
+        const pasaCRM = (crmFiltro === "todos" || f.properties.crm_filtrable === crmFiltro);
+        
+        // Filtro Delegación (Solo afecta a Base 3)
+        let pasaDelegacion = true;
+        if (f._baseID === 'base3' && delFiltro !== "todas") {
+          const d = buscarProp(f.properties, "delegacion");
+          pasaDelegacion = (d === delFiltro);
+        } else if (baseFiltro === "base3" && delFiltro !== "todas") {
+           // Si solo estamos viendo CAMARCO, ocultar los que no coincidan
+           const d = buscarProp(f.properties, "delegacion");
+           pasaDelegacion = (d === delFiltro);
+        }
+
+        return pasaCRM && pasaDelegacion;
+      },
       pointToLayer: (f, latlng) => {
         let col = "#3498db"; 
         if (f._baseID === 'base5') col = "#27ae60";
@@ -169,11 +199,8 @@
         
         let isSelected = seleccionManual.has(f.properties._uniqueID);
         return L.circleMarker(latlng, { 
-          radius: isSelected ? 10 : 8, 
-          fillColor: col, 
-          color: isSelected ? "#000" : "#fff", 
-          weight: isSelected ? 4 : 1.5, 
-          fillOpacity: 0.9 
+          radius: isSelected ? 10 : 8, fillColor: col, color: isSelected ? "#000" : "#fff", 
+          weight: isSelected ? 4 : 1.5, fillOpacity: 0.9 
         });
       },
       onEachFeature: (f, layer) => {
@@ -188,31 +215,21 @@
             if (seleccionManual.has(uid)) seleccionManual.delete(uid);
             else seleccionManual.add(uid);
             actualizarMapa();
-            document.getElementById("btnClear").style.display = seleccionManual.size > 0 ? "block" : "none";
           }
         });
 
         let colH = (idBase === 'base4') ? "#8e44ad" : (idBase === 'base3' ? "#f39c12" : (idBase === 'base2' ? "#d35400" : "#2980b9"));
         let html = `<div style="min-width: 200px;"><b style="color:${colH}; text-transform:uppercase;">${nombre}</b><hr style="margin:5px 0; border:0; border-top:1px solid #eee;">`;
         
-        if (idBase === 'base2') {
-          html += `📍 <b>Ubicación:</b> ${limpiar(buscarProp(p, "localidad"))}<br>🆔 <b>CUIT:</b> ${limpiar(buscarProp(p, "cuit"))}<br>🔍 <b>Relevado:</b> ${limpiar(buscarProp(p, "relevado"))}`;
-        } else if (idBase === 'base1') {
-          html += `📍 <b>Dir:</b> ${limpiar(buscarProp(p, "direccion"))}<br>📞 <b>Tel:</b> ${limpiar(buscarProp(p, "telefono"))}<br>📧 <b>Mail:</b> ${limpiar(buscarProp(p, "correo"))}<br>🚜 <b>Máq:</b> ${limpiar(buscarProp(p, "maquinas"))}`;
-        } else if (idBase === 'base3') { // CAMARCO ACTUALIZADO
-          html += `🆔 <b>CUIT:</b> ${limpiar(buscarProp(p, "cuit"))}<br>
-                   📍 <b>Dir:</b> ${limpiar(buscarProp(p, "direccion"))}, ${limpiar(buscarProp(p, "localidad"))}<br>
+        if (idBase === 'base3') {
+          html += `🏛️ <b>Delegación:</b> ${limpiar(buscarProp(p, "delegacion"))}<br>
+                   🆔 <b>CUIT:</b> ${limpiar(buscarProp(p, "cuit"))}<br>
                    📞 <b>Tel:</b> ${limpiar(buscarProp(p, "telefono"))}<br>
-                   📧 <b>Mail:</b> ${limpiar(buscarProp(p, "correo"))}<br>
-                   🏢 <b>Sucursal:</b> ${limpiar(buscarProp(p, "sucursal"))}<br>
-                   🏛️ <b>Delegación:</b> ${limpiar(buscarProp(p, "delegacion"))}<br>
-                   🚜 <b>Máquinas:</b> ${limpiar(buscarProp(p, "maquinas"))}`;
-        } else if (idBase === 'base4') {
-          html += `🆔 <b>CUIT:</b> ${limpiar(buscarProp(p, "cuit"))}<br>🆔 <b>ID:</b> ${limpiar(buscarProp(p, "idCliente"))}<br>🚜 <b>Máq:</b> ${limpiar(buscarProp(p, "maquinas"))}`;
-        } else if (idBase === 'base5') {
-          html += `🏢 <b>Tipo:</b> ${limpiar(buscarProp(p, "tipo de espacio"))}<br>📍 <b>Dir:</b> ${limpiar(buscarProp(p, "direccion"))}`;
+                   📧 <b>Mail:</b> ${limpiar(buscarProp(p, "correo"))}`;
+        } else {
+          html += `📍 <b>Ubicación:</b> ${limpiar(buscarProp(p, "localidad") || buscarProp(p, "direccion"))}`;
         }
-        html += `<div style="margin-top:8px; border-top:1px solid #eee; padding-top:5px; font-weight:bold; color:${p.crm_filtrable==='SI'?'#27ae60':'#e74c3c'}">CRM: ${p.crm_filtrable}</div></div>`;
+        html += `<div style="margin-top:8px; font-weight:bold; color:${p.crm_filtrable==='SI'?'#27ae60':'#e74c3c'}">CRM: ${p.crm_filtrable}</div></div>`;
         layer.bindPopup(html);
       }
     }).addTo(map);
@@ -229,49 +246,30 @@
       geojsonLayer.eachLayer(l => seleccionados.push(l.feature));
     }
 
-    if (seleccionados.length === 0) { alert("No hay datos."); return; }
-
-    let csv = "\uFEFFBase,Nombre,CRM,Zona_Sucursal,CUIT,ID_Cliente,Direccion,Localidad,Provincia,Telefono,Email,Maquinas,Relevado,Delegacion,Tipo_Espacio\n";
-    
+    let csv = "\uFEFFBase,Nombre,CRM,Delegacion,CUIT,ID_Cliente,Direccion,Email,Maquinas\n";
     seleccionados.forEach(f => {
       const p = f.properties;
-      let zona = "Fuera de ADR";
-      if (capaSucursales) {
-        const pt = turf.point(f.geometry.coordinates);
-        capaSucursales.eachLayer(z => { if(turf.booleanPointInPolygon(pt, z.feature)) zona = buscarProp(z.feature.properties, "name") || "ADR"; });
-      }
-
-      const row = [
-        nombresDeBases[f._baseID] || f._baseID,
-        limpiar(buscarProp(p, "cliente") || buscarProp(p, "nombre")).replace(/,/g, ""),
-        p.crm_filtrable,
-        zona,
-        limpiar(buscarProp(p, "cuit")),
-        limpiar(buscarProp(p, "idCliente")),
-        limpiar(buscarProp(p, "direccion") || buscarProp(p, "geocoding")).replace(/,/g, " "),
-        limpiar(buscarProp(p, "localidad")),
-        limpiar(buscarProp(p, "provincia")),
-        limpiar(buscarProp(p, "telefono")),
-        limpiar(buscarProp(p, "correo") || buscarProp(p, "email")),
-        limpiar(buscarProp(p, "maquinas")).replace(/,/g, " "),
-        limpiar(buscarProp(p, "relevado")),
-        limpiar(buscarProp(p, "delegacion")),
-        limpiar(buscarProp(p, "tipo de espacio"))
-      ];
-      csv += row.join(",") + "\n";
+      csv += `${nombresDeBases[f._baseID]},${limpiar(p.nombre || p.cliente).replace(/,/g,"")},${p.crm_filtrable},${limpiar(buscarProp(p, "delegacion"))},${limpiar(buscarProp(p, "cuit"))},${limpiar(buscarProp(p, "idCliente"))},${limpiar(buscarProp(p, "direccion")).replace(/,/g," ")},${limpiar(buscarProp(p, "correo"))},${limpiar(buscarProp(p, "maquinas"))}\n`;
     });
 
     const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
     const link = document.createElement("a");
     link.href = URL.createObjectURL(blob);
-    link.download = `exportacion_comercial_${new Date().toISOString().slice(0,10)}.csv`;
+    link.download = `reporte_comercial.csv`;
     link.click();
   }
 
-  function limpiarSeleccionManual() { seleccionManual.clear(); actualizarMapa(); document.getElementById("btnClear").style.display = "none"; }
+  function cargarZonasSucursales() {
+    fetch('sucursales.geojson').then(r => r.json()).then(data => {
+      capaSucursales = L.geoJSON(data, {
+        style: { color: "#000", weight: 1.5, fillColor: "#34495e", fillOpacity: 0.05 }
+      }).addTo(map);
+      capaSucursales.bringToBack();
+    }).catch(e => console.log("Sucursales no cargadas"));
+  }
 
   document.getElementById("filtroCRM").addEventListener("change", actualizarMapa);
-  document.getElementById("filtroBase").addEventListener("change", actualizarMapa);
+  document.getElementById("filtroDelegacion").addEventListener("change", actualizarMapa);
 </script>
 </body>
 </html>
