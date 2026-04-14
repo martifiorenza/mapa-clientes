@@ -1,0 +1,4853 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7135,
+          -31.6214
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios Plenarios",
+        "Delegacion": "Santa Fe",
+        "Nombre": "ALAM-CO S.A.",
+        "CUIT": 30708922214,
+        "Dirección": "Av. López y Planes 3801, Santa Fe",
+        "Localidad": "Santa Fe",
+        "Provincia": "Santa Fe",
+        "Teléfono": "(0342) 452-2820",
+        "Correo": "adm@alamco.com.ar",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.6923,
+          -31.6068
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios Plenarios",
+        "Delegacion": "Santa Fe",
+        "Nombre": "ANGEL BOSCARINO CNES. S.A.",
+        "CUIT": 30709848298,
+        "Dirección": "Marcial Candioti 5180, Santa Fe",
+        "Localidad": "Santa Fe",
+        "Provincia": "Santa Fe",
+        "Teléfono": "(0342) 453-8585",
+        "Correo": "adm@angelboscarino.com.ar",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7042,
+          -31.6441
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios Plenarios",
+        "Delegacion": "Santa Fe",
+        "Nombre": "CAM S.A.",
+        "CUIT": 30644347555,
+        "Dirección": "Rivadavia 2671, Santa Fe",
+        "Localidad": "Santa Fe",
+        "Provincia": "Santa Fe",
+        "Teléfono": "(0342) 455-0969",
+        "Correo": "recepción@camconstrucciones.com.ar",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7118,
+          -31.6521
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios Plenarios",
+        "Delegacion": "Santa Fe",
+        "Nombre": "CAPITEL S.A.",
+        "CUIT": 30627871348,
+        "Dirección": "San Martín 1945, Santa Fe",
+        "Localidad": "Santa Fe",
+        "Provincia": "Santa Fe",
+        "Teléfono": "(0342) 459-3693",
+        "Correo": "recepcion@capitelsa.com.ar",
+        "CRM": "SI",
+        "Maquinas": "",
+        "Sucursal": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.6865,
+          -31.6012
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios Plenarios",
+        "Delegacion": "Santa Fe",
+        "Nombre": "COEMYC S.A.",
+        "CUIT": 30523468460,
+        "Dirección": "Padre Genesio 888, Santa Fe",
+        "Localidad": "Santa Fe",
+        "Provincia": "Santa Fe",
+        "Teléfono": "(0342) 469-1265",
+        "Correo": "coemyc@coemyc.com",
+        "CRM": "SI",
+        "Maquinas": "MINICARGADORAS-OTRA MARCA-OTRO, MOTONIVELADORAS-XCMG-OTRO, MINICARGADORAS-OTRA MARCA-OTRO, MINICARGADORAS-OTRA MARCA-OTRO, MOTONIVELADORAS-CASE-OTRO, MOTONIVELADORAS-CATERPILLAR-OTRO, MOTONIVELADORAS-OTRA MARCA-OTRO, EXCAVADORAS-HYUNDAI-ROBEX 220 LC, EXCAVADORAS-HYUNDAI-ROBEX 220 LC, EXCAVADORAS-HYUNDAI-ROBEX 220 LC, RETROEXCAVADORAS-CASE-Retro, RETROEXCAVADORAS-CASE-Retro, RETROEXCAVADORAS-OTRA MARCA-OTRO, RETROEXCAVADORAS-OTRA MARCA-OTRO, CARGADOR FRONTAL-OTRA MARCA-OTRO, RETROEXCAVADORAS-JOHN DEERE-310J, CARGADOR FRONTAL-OTRA MARCA-OTRO, MINICARGADORAS-OTRA MARCA-OTRO, MINICARGADORAS-OTRA MARCA-OTRO, MOTONIVELADORAS-OTRA MARCA-OTRO",
+        "Sucursal": "SAN JUSTO"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.6841,
+          -31.5954
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios Plenarios",
+        "Delegacion": "Santa Fe",
+        "Nombre": "COCYAR S.A.",
+        "CUIT": 30686971011,
+        "Dirección": "Mitre 5960, Santa Fe",
+        "Localidad": "Santa Fe",
+        "Provincia": "Santa Fe",
+        "Teléfono": "(0342) 460-1515",
+        "Correo": "info@cocyar.com",
+        "CRM": "SI",
+        "Maquinas": "EXCAVADORAS-HYUNDAI-ROBEX 220 LC, EXCAVADORAS-HYUNDAI-ROBEX 220 LC, RETROEXCAVADORAS-JOHN DEERE-310L, RETROEXCAVADORAS-JOHN DEERE-310P",
+        "Sucursal": "SAN JUSTO"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.6722,
+          -31.5165
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios Plenarios",
+        "Delegacion": "Santa Fe",
+        "Nombre": "COIVALSA S.A.",
+        "CUIT": 30708737328,
+        "Dirección": "Ruta Provincial 2 KM CP 3014, Monte Vera",
+        "Localidad": "Monte Vera",
+        "Provincia": "Santa Fe",
+        "Teléfono": "(0342) 4292389",
+        "Correo": "efarioli@coivalsa.com.ar",
+        "CRM": "SI",
+        "Maquinas": "",
+        "Sucursal": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7018,
+          -31.6432
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios Plenarios",
+        "Delegacion": "Santa Fe",
+        "Nombre": "CIA. CONST. CONFORT S.A.",
+        "CUIT": 30500842101,
+        "Dirección": "Suipacha 2479, Santa Fe",
+        "Localidad": "Santa Fe",
+        "Provincia": "Santa Fe",
+        "Teléfono": "(0342) 453-0611",
+        "Correo": "administracion@confortsa.com",
+        "CRM": "SI",
+        "Maquinas": "MINICARGADORAS-JOHN DEERE-326E, MINICARGADORAS-JOHN DEERE-318D, RETROEXCAVADORAS-JOHN DEERE-310J",
+        "Sucursal": "SAN JUSTO"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.6845,
+          -31.6375
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios Plenarios",
+        "Delegacion": "Santa Fe",
+        "Nombre": "ING. LUIS DUBNER Y ASOC. S.R.L.",
+        "CUIT": 30638586289,
+        "Dirección": "Bv. Gálvez 984, Santa Fe",
+        "Localidad": "Santa Fe",
+        "Provincia": "Santa Fe",
+        "Teléfono": "(0342) 452-8780",
+        "Correo": "administración@dubner.com.ar",
+        "CRM": "SI",
+        "Maquinas": "",
+        "Sucursal": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.6985,
+          -31.6378
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios Plenarios",
+        "Delegacion": "Santa Fe",
+        "Nombre": "NESTOR J. GUERECHET S.A.",
+        "CUIT": 30687010880,
+        "Dirección": "Bv. Galvez 2088, Santa Fe",
+        "Localidad": "Santa Fe",
+        "Provincia": "Santa Fe",
+        "Teléfono": "(0342) 455-5000",
+        "Correo": "gerencia@guerechet.com.ar",
+        "CRM": "SI",
+        "Maquinas": "CARGADOR AUTOPROPULSADO-OTRA MARCA-OTRO, CARGADOR AUTOPROPULSADO-OTRA MARCA-OTRO, MINICARGADORAS-OTRA MARCA-OTRO, RETROEXCAVADORAS-OTRA MARCA-OTRO, RETROEXCAVADORAS-OTRA MARCA-OTRO, RETROEXCAVADORAS-JOHN DEERE-310G, MOTONIVELADORAS-OTRA MARCA-OTRO, MOTONIVELADORAS-OTRA MARCA-OTRO, MOTONIVELADORAS-OTRA MARCA-OTRO",
+        "Sucursal": "SAN JUSTO"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.6991,
+          -31.6505
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios Plenarios",
+        "Delegacion": "Santa Fe",
+        "Nombre": "INAR VIAL S.A.",
+        "CUIT": 30674562620,
+        "Dirección": "Dique II Puerto de Santa Fe, Santa Fe",
+        "Localidad": "Santa Fe",
+        "Provincia": "Santa Fe",
+        "Teléfono": "(0342) 482-7670",
+        "Correo": "inarvialsa@inarvial.com.ar",
+        "CRM": "SI",
+        "Maquinas": "RETROEXCAVADORAS-JOHN DEERE-310G",
+        "Sucursal": "ROSARIO CONSTRUCCION"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.6882,
+          -31.5458
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios Plenarios",
+        "Delegacion": "Santa Fe",
+        "Nombre": "MEM INGENIERIA S.A.",
+        "CUIT": 30711090211,
+        "Dirección": "Aristóbulo del Valle 11500, Monte Vera",
+        "Localidad": "Monte Vera",
+        "Provincia": "Santa Fe",
+        "Teléfono": "(0342) 5769429",
+        "Correo": "administracion@memingenieria.com.ar",
+        "CRM": "SI",
+        "Maquinas": "",
+        "Sucursal": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.4782,
+          -31.2587
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios Plenarios",
+        "Delegacion": "Santa Fe",
+        "Nombre": "MENARA CONSTRUCCIONES S.A.",
+        "CUIT": 30503826425,
+        "Dirección": "Av. Italia 1320, Rafaela",
+        "Localidad": "Rafaela",
+        "Provincia": "Santa Fe",
+        "Teléfono": "(03492) 431-110",
+        "Correo": "menara@menara.com.ar",
+        "CRM": "SI",
+        "Maquinas": "",
+        "Sucursal": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7115,
+          -31.6525
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios Plenarios",
+        "Delegacion": "Santa Fe",
+        "Nombre": "MUNDO CONSTRUCCIONES S.A.",
+        "CUIT": 30549554624,
+        "Dirección": "San Martín 1919-1 Piso, Santa Fe",
+        "Localidad": "Santa Fe",
+        "Provincia": "Santa Fe",
+        "Teléfono": "(0342) 459-5941",
+        "Correo": "secretaria@mundo-sa.com.ar",
+        "CRM": "SI",
+        "Maquinas": "RETROEXCAVADORAS-JOHN DEERE-310J, TRACTORES-MASSEY FERGUSON-1185, RETROEXCAVADORAS-HYUNDAI-OTRO, MOTONIVELADORAS-CATERPILLAR-140K, RETROEXCAVADORAS-JOHN DEERE-310J, TRACTORES-FIAT-780, RETROEXCAVADORAS-HYUNDAI-OTRO, MOTONIVELADORAS-CATERPILLAR-140K, RETROEXCAVADORAS-JOHN DEERE-310L, TRACTORES-FIAT-800, MINICARGADORAS-OTRA MARCA-OTRO, MOTONIVELADORAS-CATERPILLAR-OTRO, RETROEXCAVADORAS-JOHN DEERE-310K, CARGADOR AUTOPROPULSADO-OTRA MARCA-OTRO, MINICARGADORAS-OTRA MARCA-OTRO, MOTONIVELADORAS-CATERPILLAR-OTRO, RETROEXCAVADORAS-JOHN DEERE-310K, EXCAVADORAS-JOHN DEERE-210P, MINICARGADORAS-OTRA MARCA-OTRO, MOTONIVELADORAS-CATERPILLAR-OTRO, MOTONIVELADORAS-JOHN DEERE-670D, RETROEXCAVADORAS-JOHN DEERE-310P, EXCAVADORAS-CATERPILLAR-320, MOTONIVELADORAS-CATERPILLAR-OTRO, CARGADOR AUTOPROPULSADO-CATERPILLAR-924F, MINICARGADORAS-JOHN DEERE-326D, EXCAVADORAS-HYUNDAI-ROBEX 220 LC, CARGADOR AUTOPROPULSADO-CATERPILLAR-924F, MINICARGADORAS-JOHN DEERE-326D, EXCAVADORAS-HYUNDAI-ROBEX 220 LC, CARGADOR AUTOPROPULSADO-CATERPILLAR-924F, RETROEXCAVADORAS-HYUNDAI-OTRO, EXCAVADORAS-HYUNDAI-ROBEX 220 LC, TRACTORES-PAUNY-230C, RETROEXCAVADORAS-HYUNDAI-OTRO, EXCAVADORAS-HYUNDAI-ROBEX 220 LC, EXCAVADORAS-HITACHI-ZX250LC-5G, TRACTORES-PAUNY-EVO 250A, RETROEXCAVADORAS-HYUNDAI-OTRO, EXCAVADORAS-HYUNDAI-ROBEX 220 LC, MINICARGADORAS-JOHN DEERE-OTRO, TRACTORES-PAUNY-EVO 250A, RETROEXCAVADORAS-HYUNDAI-OTRO, EXCAVADORAS-HYUNDAI-160 LC, MINICARGADORAS-JOHN DEERE-326E, TRACTORES-PAUNY-EVO 250A, RETROEXCAVADORAS-HYUNDAI-OTRO, EXCAVADORAS-HYUNDAI-ROBEX 220 LC, RETROEXCAVADORAS-JOHN DEERE-310, TRACTORES-PAUNY-EVO 250A, RETROEXCAVADORAS-HYUNDAI-OTRO, EXCAVADORAS-HYUNDAI-ROBEX 220 LC, RETROEXCAVADORAS-JOHN DEERE-310G, TRACTORES-PAUNY-EVO 250A, EXCAVADORAS-HYUNDAI-ROBEX 220 LC, RETROEXCAVADORAS-JOHN DEERE-310G, TRACTORES-MASSEY FERGUSON-1175, EXCAVADORAS-HYUNDAI-ROBEX 220 LC",
+        "Sucursal": "ROSARIO CONSTRUCCION"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.9254,
+          -31.4428
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios Plenarios",
+        "Delegacion": "Santa Fe",
+        "Nombre": "EMP. CONST. PILATTI S.A.",
+        "CUIT": 33501855559,
+        "Dirección": "Mariano Moreno 2501, Esperanza",
+        "Localidad": "Esperanza",
+        "Provincia": "Santa Fe",
+        "Teléfono": "(03496) 420-657",
+        "Correo": "info@ecp.com.ar",
+        "CRM": "SI",
+        "Maquinas": "",
+        "Sucursal": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7062,
+          -31.6251
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios Plenarios",
+        "Delegacion": "Santa Fe",
+        "Nombre": "PONCE CONSTRUCCIONES S.R.L.",
+        "CUIT": 30707427414,
+        "Dirección": "Pasaje Drago 3658, Santa Fe",
+        "Localidad": "Santa Fe",
+        "Provincia": "Santa Fe",
+        "Teléfono": "(0342) 453-5895",
+        "Correo": "administracion@grupoponce.com.ar",
+        "CRM": "SI",
+        "Maquinas": "",
+        "Sucursal": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -59.6435,
+          -29.1444
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios Plenarios",
+        "Delegacion": "Santa Fe",
+        "Nombre": "PROYECCION ELECTROLUZ S.R.L.",
+        "CUIT": 30601271903,
+        "Dirección": "Patricio Diez 175, Reconquista",
+        "Localidad": "Reconquista",
+        "Provincia": "Santa Fe",
+        "Teléfono": "(03482) 421-940",
+        "Correo": "gracielafaccioli@electroluz.com.ar",
+        "CRM": "SI",
+        "Maquinas": "",
+        "Sucursal": "AVELLANEDA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7582,
+          -31.6668
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios Plenarios",
+        "Delegacion": "Santa Fe",
+        "Nombre": "PREMOLDEADOS BERTONE S.R.L.",
+        "CUIT": 30707623043,
+        "Dirección": "Salta 2661, Santo Tomé",
+        "Localidad": "Santo Tomé",
+        "Provincia": "Santa Fe",
+        "Teléfono": "(0342) 4128080",
+        "Correo": "info@premoldeadosbertone.com",
+        "CRM": "SI",
+        "Maquinas": "CARGADOR AUTOPROPULSADO-JOHN DEERE-644 G, CARGADOR AUTOPROPULSADO-JOHN DEERE-444G",
+        "Sucursal": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.9321,
+          -31.4512
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios Plenarios",
+        "Delegacion": "Santa Fe",
+        "Nombre": "RIO SALADO S.R.L.",
+        "CUIT": 30707382720,
+        "Dirección": "E. Zeballos 451, Esperanza",
+        "Localidad": "Esperanza",
+        "Provincia": "Santa Fe",
+        "Teléfono": "(03496) 422-291",
+        "Correo": "info@riosaladosrl.com.ar",
+        "CRM": "SI",
+        "Maquinas": "MINIEXCAVADORAS-OTRA MARCA-OTRO, CARGADOR AUTOPROPULSADO-OTRA MARCA-OTRO, MOTONIVELADORAS-KOMATSU-OTRO, MOTONIVELADORAS-OTRA MARCA-OTRO, RETROEXCAVADORAS-JOHN DEERE-310P, RETROEXCAVADORAS-JOHN DEERE-310K, RETROEXCAVADORAS-OTRA MARCA-OTRO, RETROEXCAVADORAS-HYUNDAI-OTRO, EXCAVADORAS-KOMATSU-PC210 LC, EXCAVADORAS-KOMATSU-PC210 LC, EXCAVADORAS-KOMATSU-PC210 LC, EXCAVADORAS-KOMATSU-PC200 LC",
+        "Sucursal": "SAN JUSTO"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7045,
+          -31.6492
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios Plenarios",
+        "Delegacion": "Santa Fe",
+        "Nombre": "TECSA S.A.",
+        "CUIT": 30505552918,
+        "Dirección": "1º Junta 2507, 10 Piso, Santa Fe",
+        "Localidad": "Santa Fe",
+        "Provincia": "Santa Fe",
+        "Teléfono": "(0342) 456-2562",
+        "Correo": "tecsa@tecsa-sa.com",
+        "CRM": "SI",
+        "Maquinas": "",
+        "Sucursal": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.6978,
+          -31.6445
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios Plenarios",
+        "Delegacion": "Santa Fe",
+        "Nombre": "WINKELMANN S.R.L.",
+        "CUIT": 30708497335,
+        "Dirección": "Sarmiento 2730, Santa Fe",
+        "Localidad": "Santa Fe",
+        "Provincia": "Santa Fe",
+        "Teléfono": "(0342) 452-8840",
+        "Correo": "admiwinkelmannsrl@gmail.com",
+        "CRM": "SI",
+        "Maquinas": "",
+        "Sucursal": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7101,
+          -31.6495
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios Plenarios",
+        "Delegacion": "Santa Fe",
+        "Nombre": "PIRAMIDE CONSTRUCCIONES S.A.",
+        "CUIT": 30653732151,
+        "Dirección": "1º de Mayo 2523, Santa Fe",
+        "Localidad": "Santa Fe",
+        "Provincia": "Santa Fe",
+        "Teléfono": "(0342) 4532321",
+        "Correo": "info@piramidesa.com.ar",
+        "CRM": "SI",
+        "Maquinas": "RETROEXCAVADORAS-JOHN DEERE-310L, RETROEXCAVADORAS-JOHN DEERE-310L, MINICARGADORAS-OTRA MARCA-OTRO, MINICARGADORAS-OTRA MARCA-OTRO, RETROEXCAVADORAS-JOHN DEERE-310P, RETROEXCAVADORAS-JOHN DEERE-310L",
+        "Sucursal": "SAN JUSTO"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7852,
+          -31.7241
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios Plenarios",
+        "Delegacion": "Santa Fe",
+        "Nombre": "CINTER SRL",
+        "CUIT": 30563061452,
+        "Dirección": "Ruta 11 Km 455, Sauce Viejo",
+        "Localidad": "Sauce Viejo",
+        "Provincia": "Santa Fe",
+        "Teléfono": "(0342) 4503000",
+        "Correo": "info@cinter.com.ar",
+        "CRM": "SI",
+        "Maquinas": "",
+        "Sucursal": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.6984,
+          -31.6212
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios Plenarios",
+        "Delegacion": "Santa Fe",
+        "Nombre": "CYMCA S.R.L.",
+        "CUIT": 30716443856,
+        "Dirección": "Pedro Centeno 1219 PB, Santa Fe",
+        "Localidad": "Santa Fe",
+        "Provincia": "Santa Fe",
+        "Teléfono": "(0342) 455-3807",
+        "Correo": "jmcampanaarq@gmail.com",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7512,
+          -31.6585
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios Plenarios",
+        "Delegacion": "Santa Fe",
+        "Nombre": "INSTEC S.R.L.",
+        "CUIT": 30712041648,
+        "Dirección": "Aristóbulo del Valle 2480, Santo Tomé",
+        "Localidad": "Santo Tomé",
+        "Provincia": "Santa Fe",
+        "Teléfono": "(0342) 480-1054",
+        "Correo": "instecsrl@gmail.com",
+        "CRM": "SI",
+        "Maquinas": "",
+        "Sucursal": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7061,
+          -31.6366
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios Plenarios",
+        "Delegacion": "Santa Fe",
+        "Nombre": "J. B CONSTRUCCIONES S.R.L.",
+        "CUIT": 30709738751,
+        "Dirección": "San Jerónimo 3441, Santa Fe",
+        "Localidad": "Santa Fe",
+        "Provincia": "Santa Fe",
+        "Teléfono": "(0342) 457-0002",
+        "Correo": "contacto@jbconstrucciones.com",
+        "CRM": "SI",
+        "Maquinas": "TRACTORES-DEUTZ-D66, TRACTORES-DEUTZ-D66, RETROEXCAVADORAS-CASE-580",
+        "Sucursal": "SAN JUSTO"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7138,
+          -31.6588
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios Plenarios",
+        "Delegacion": "Santa Fe",
+        "Nombre": "BENUZZI INMOBILIARIA S.A.",
+        "CUIT": 33606181669,
+        "Dirección": "Gral. López 2754, Santa Fe",
+        "Localidad": "Santa Fe",
+        "Provincia": "Santa Fe",
+        "Teléfono": "(0342) 459-6333",
+        "Correo": "inmobiliaria@benuzzi.com",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7068,
+          -31.6372
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios Plenarios",
+        "Delegacion": "Santa Fe",
+        "Nombre": "PARQUESUR S.R.L.",
+        "CUIT": 30709414352,
+        "Dirección": "San Martín 3430, Santa Fe",
+        "Localidad": "Santa Fe",
+        "Provincia": "Santa Fe",
+        "Teléfono": "(0342) 455-3340",
+        "Correo": "administracion@parquesursrl.com.ar",
+        "CRM": "SI",
+        "Maquinas": "",
+        "Sucursal": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7188,
+          -31.5975
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios Plenarios",
+        "Delegacion": "Santa Fe",
+        "Nombre": "SANTA FE MATERIALES S.A.",
+        "CUIT": 30707214577,
+        "Dirección": "Blas Parera 7730, Santa Fe",
+        "Localidad": "Santa Fe",
+        "Provincia": "Santa Fe",
+        "Teléfono": "(0342) 488-4353",
+        "Correo": "santafemateriales@santafemateriales.com.ar",
+        "CRM": "SI",
+        "Maquinas": "",
+        "Sucursal": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7112,
+          -31.6529
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios Plenarios",
+        "Delegacion": "Santa Fe",
+        "Nombre": "PILAY S.A.",
+        "CUIT": 30573819256,
+        "Dirección": "San Martín 1862, Santa Fe",
+        "Localidad": "Santa Fe",
+        "Provincia": "Santa Fe",
+        "Teléfono": "(0342) 4593015",
+        "Correo": "pilaysantafe@pilay.com.ar",
+        "CRM": "SI",
+        "Maquinas": "",
+        "Sucursal": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7115,
+          -31.6525
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios Plenarios",
+        "Delegacion": "Santa Fe",
+        "Nombre": "MUNDO DESARROLLOS S.A.",
+        "CUIT": 30711870403,
+        "Dirección": "San Martín 1919 1° P., Santa Fe",
+        "Localidad": "Santa Fe",
+        "Provincia": "Santa Fe",
+        "Teléfono": "(0342) 4595941",
+        "Correo": "secretaria@mundo-sa.com.ar",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.6905,
+          -31.6435
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios Plenarios",
+        "Delegacion": "Santa Fe",
+        "Nombre": "BR CONSTRUCCIONES S.R.L.",
+        "CUIT": 30714436348,
+        "Dirección": "Calchines 1188, Santa Fe",
+        "Localidad": "Santa Fe",
+        "Provincia": "Santa Fe",
+        "Teléfono": "(0342) 4550711",
+        "Correo": "administracion@brconstrucciones.com.ar",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -59.6453,
+          -29.1471
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios Plenarios",
+        "Delegacion": "Santa Fe",
+        "Nombre": "EDIFICAR S.R.L.",
+        "CUIT": 30710764103,
+        "Dirección": "Pueyrredón 661, Reconquista",
+        "Localidad": "Reconquista",
+        "Provincia": "Santa Fe",
+        "Teléfono": "(03482) 487-749",
+        "Correo": "edificarsrl@hotmail.com",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.6853,
+          -31.6376
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios Plenarios",
+        "Delegacion": "Santa Fe",
+        "Nombre": "NEO INVERSIONES INM. S.R.L.",
+        "CUIT": 30711352860,
+        "Dirección": "Bv. Galvez 1035, Santa Fe",
+        "Localidad": "Santa Fe",
+        "Provincia": "Santa Fe",
+        "Teléfono": "(0342) 455-9638",
+        "Correo": "info@neo-inversiones.com",
+        "CRM": "SI",
+        "Maquinas": "",
+        "Sucursal": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7112,
+          -31.6534
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios Plenarios",
+        "Delegacion": "Santa Fe",
+        "Nombre": "SAUX WERNLY S.A.",
+        "CUIT": 30595784774,
+        "Dirección": "San Martín 1824, Santa Fe",
+        "Localidad": "Santa Fe",
+        "Provincia": "Santa Fe",
+        "Teléfono": "(0342) 459-5808",
+        "Correo": "admin@sauxwernly.com.ar",
+        "CRM": "SI",
+        "Maquinas": "",
+        "Sucursal": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -59.6642,
+          -29.2131
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios Plenarios",
+        "Delegacion": "Santa Fe",
+        "Nombre": "IDEA SA",
+        "CUIT": 30707656707,
+        "Dirección": "Parque Industrial, Reconquista",
+        "Localidad": "Reconquista",
+        "Provincia": "Santa Fe",
+        "Teléfono": "03482-427816",
+        "Correo": "recepcion@ideasa.com.ar",
+        "CRM": "SI",
+        "Maquinas": "",
+        "Sucursal": "AVELLANEDA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.9255,
+          -31.4503
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios Plenarios",
+        "Delegacion": "Santa Fe",
+        "Nombre": "PREMIN S.R.L.",
+        "CUIT": 33627437019,
+        "Dirección": "Rivadavia 2282, Esperanza",
+        "Localidad": "Esperanza",
+        "Provincia": "Santa Fe",
+        "Teléfono": "(03496) 421528",
+        "Correo": "info@grupo-bs.com.ar",
+        "CRM": "SI",
+        "Maquinas": "",
+        "Sucursal": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.6973,
+          -31.6475
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios Plenarios",
+        "Delegacion": "Santa Fe",
+        "Nombre": "TORRE PUERTO S.A.",
+        "CUIT": 30717077683,
+        "Dirección": "Francisco Miguens 180, Santa Fe",
+        "Localidad": "Santa Fe",
+        "Provincia": "Santa Fe",
+        "Teléfono": "(0342) 4547966",
+        "Correo": "administracion.tp@torrepuerto.com.ar",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7042,
+          -31.6582
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios Plenarios",
+        "Delegacion": "Santa Fe",
+        "Nombre": "ORION INGENIERÍA S.R.L.",
+        "CUIT": 33709572259,
+        "Dirección": "Sara Faisal 1705, 3°A, Santa Fe",
+        "Localidad": "Santa Fe",
+        "Provincia": "Santa Fe",
+        "Teléfono": "(0342) 4435030",
+        "Correo": "orioningenieriasrl@gmail.com",
+        "CRM": "SI",
+        "Maquinas": "",
+        "Sucursal": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7205,
+          -31.6511
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios Plenarios",
+        "Delegacion": "Santa Fe",
+        "Nombre": "MT S.R.L.",
+        "CUIT": 30678417072,
+        "Dirección": "Santiago de Chile 2068, Santa Fe",
+        "Localidad": "Santa Fe",
+        "Provincia": "Santa Fe",
+        "Teléfono": "(0342) 4585262",
+        "Correo": "mt srl@hotmail.com",
+        "CRM": "SI",
+        "Maquinas": "",
+        "Sucursal": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.1518,
+          -32.8542
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios Plenarios",
+        "Delegacion": "Santa Fe",
+        "Nombre": "ROBERTO PIERANTONI S.R.L.",
+        "CUIT": 30709333948,
+        "Dirección": "9 de Julio 665, Carcarañá",
+        "Localidad": "Carcarañá",
+        "Provincia": "Santa Fe",
+        "Teléfono": "(0341) 494-1026",
+        "Correo": "adm@robertopierantoni.com.ar",
+        "CRM": "SI",
+        "Maquinas": "EXCAVADORAS-HITACHI-OTRO",
+        "Sucursal": "ROSARIO CONSTRUCCION"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7095,
+          -31.6591
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios Plenarios",
+        "Delegacion": "Santa Fe",
+        "Nombre": "FERRO S.R.L.",
+        "CUIT": 30714137251,
+        "Dirección": "1º de Mayo 1200, Santa Fe",
+        "Localidad": "Santa Fe",
+        "Provincia": "Santa Fe",
+        "Teléfono": "(0342) 5808009",
+        "Correo": "administracion@ferroingenieria.com.ar",
+        "CRM": "SI",
+        "Maquinas": "",
+        "Sucursal": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7095,
+          -31.6371
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios Plenarios",
+        "Delegacion": "Santa Fe",
+        "Nombre": "TECNOLOGÍA APLICADA S.R.L.",
+        "CUIT": 30709104779,
+        "Dirección": "Obispo Gelabert 3058, Santa Fe",
+        "Localidad": "Santa Fe",
+        "Provincia": "Santa Fe",
+        "Teléfono": "(0342) 4552593",
+        "Correo": "administracion@tecnologiaaplicada.com.ar",
+        "CRM": "SI",
+        "Maquinas": "",
+        "Sucursal": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.6931,
+          -31.6215
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios Plenarios",
+        "Delegacion": "Santa Fe",
+        "Nombre": "SOFÍA S.R.L.",
+        "CUIT": 30717002993,
+        "Dirección": "Gran Bourg 3569, Santa Fe",
+        "Localidad": "Santa Fe",
+        "Provincia": "Santa Fe",
+        "Teléfono": "(0342) 155046638",
+        "Correo": "info@sofiadesarrollos.com.ar",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7048,
+          -31.6092
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios Plenarios",
+        "Delegacion": "Santa Fe",
+        "Nombre": "PANETTO MARIANO",
+        "CUIT": 20289471732,
+        "Dirección": "4 de Enero 6250, Santa Fe",
+        "Localidad": "Santa Fe",
+        "Provincia": "Santa Fe",
+        "Teléfono": "(342) 4791001",
+        "Correo": "marianopanetto@hotmail.com",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7032,
+          -31.6375
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios Plenarios",
+        "Delegacion": "Santa Fe",
+        "Nombre": "AIMAR LUIS JOSÉ",
+        "CUIT": 20112106716,
+        "Dirección": "Obispo Gelabert 2455, Santa Fe +1",
+        "Localidad": "Santa Fe",
+        "Provincia": "Santa Fe",
+        "Teléfono": "(0342) 155144082",
+        "Correo": "aimarconstruye@hotmail.com",
+        "CRM": "SI",
+        "Maquinas": "",
+        "Sucursal": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7045,
+          -31.6492
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios Plenarios",
+        "Delegacion": "Santa Fe",
+        "Nombre": "AUGE S.R.L.",
+        "CUIT": 30714205141,
+        "Dirección": "Primera Junta 2507, 5° Piso, Santa Fe",
+        "Localidad": "Santa Fe",
+        "Provincia": "Santa Fe",
+        "Teléfono": "(0342) 6317938",
+        "Correo": "augeconstruye.obras@gmail.com",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7612,
+          -31.6781
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios Plenarios",
+        "Delegacion": "Santa Fe",
+        "Nombre": "MONTAÑO CONSTRUC. S.R.L.",
+        "CUIT": 30717458121,
+        "Dirección": "Av del Trabajo 1511, Santo Tomé",
+        "Localidad": "Santo Tomé",
+        "Provincia": "Santa Fe",
+        "Teléfono": "(0342) 4363484",
+        "Correo": "adm.montano@hotmail.com",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7138,
+          -31.6052
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios Subcontratistas",
+        "Delegacion": "Santa Fe",
+        "Nombre": "PRONO INGENIERIA S.A.",
+        "CUIT": 30584866299,
+        "Dirección": "Av. Peñaloza 5201, Santa Fe ",
+        "Localidad": "Santa Fe",
+        "Provincia": "Santa Fe",
+        "Teléfono": "(0342) 450-3400 ",
+        "Correo": "pronoingenieria@pronoing.com.ar ",
+        "CRM": "SI",
+        "Maquinas": "",
+        "Sucursal": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.6912,
+          -31.6358
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios Subcontratistas",
+        "Delegacion": "Santa Fe",
+        "Nombre": "SERVITEC S.R.L.",
+        "CUIT": 30709201162,
+        "Dirección": "Alberdi 2800, Santa Fe ",
+        "Localidad": "Santa Fe",
+        "Provincia": "Santa Fe",
+        "Teléfono": "(0342) 4560698 ",
+        "Correo": "servitecsrl@gmail.com ",
+        "CRM": "SI",
+        "Maquinas": "",
+        "Sucursal": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.6885,
+          -31.6135
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios Subcontratistas",
+        "Delegacion": "Santa Fe",
+        "Nombre": "ELECTRICIDAD DER S.R.L.",
+        "CUIT": 33686938889,
+        "Dirección": "Avda. Gral Paz 4904, Santa Fe ",
+        "Localidad": "Santa Fe",
+        "Provincia": "Santa Fe",
+        "Teléfono": "(0342) 4559203 ",
+        "Correo": "administracion@dersrl.ar ",
+        "CRM": "SI",
+        "Maquinas": "",
+        "Sucursal": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.6982,
+          -31.6415
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios Subcontratistas",
+        "Delegacion": "Santa Fe",
+        "Nombre": "IGLESIA FLAVIA G. (Rossi)",
+        "CUIT": 27238148850,
+        "Dirección": "Chacabuco 2121, Santa Fe ",
+        "Localidad": "Santa Fe",
+        "Provincia": "Santa Fe",
+        "Teléfono": "(0342) 4558384 ",
+        "Correo": "info@distribuidorarossi.com.ar ",
+        "CRM": "SI",
+        "Maquinas": "",
+        "Sucursal": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7061,
+          -31.6425
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios Subcontratistas",
+        "Delegacion": "Santa Fe",
+        "Nombre": "DOM S.R.L.",
+        "CUIT": 30710915225,
+        "Dirección": "San Martín 3111, Santa Fe ",
+        "Localidad": "Santa Fe",
+        "Provincia": "Santa Fe",
+        "Teléfono": "(0342) 4582993 ",
+        "Correo": "info@domconstrucciones.com.ar ",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -59.6385,
+          -29.1431
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios Subcontratistas",
+        "Delegacion": "Santa Fe",
+        "Nombre": "LAN CONSTRUCTORA S.R.L.",
+        "CUIT": 30715043676,
+        "Dirección": "Bolivar 1502, Reconquista ",
+        "Localidad": "Reconquista",
+        "Provincia": "Santa Fe",
+        "Teléfono": "(03482) 420078 ",
+        "Correo": "arqluisnardelli@gmail.com ",
+        "CRM": "SI",
+        "Maquinas": "MINICARGADORAS-JOHN DEERE-316GR iT4, RETROEXCAVADORAS-JOHN DEERE-310P",
+        "Sucursal": "SAN JUSTO"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.6812,
+          -31.5785
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios Subcontratistas",
+        "Delegacion": "Santa Fe",
+        "Nombre": "ARCAM S.A.",
+        "CUIT": 30717766543,
+        "Dirección": "Riobamba 8101, Santa Fe ",
+        "Localidad": "Santa Fe",
+        "Provincia": "Santa Fe",
+        "Teléfono": "(0342) 6118313 ",
+        "Correo": "gerencia@arcamconstructora.com ",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7085,
+          -31.5752
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios Subcontratistas",
+        "Delegacion": "Santa Fe",
+        "Nombre": "QUEBRACHO BLANCO SRL",
+        "CUIT": 30714549673,
+        "Dirección": "1º de Mayo 8578, Santa Fe ",
+        "Localidad": "Santa Fe",
+        "Provincia": "Santa Fe",
+        "Teléfono": "(0342) 4696900 ",
+        "Correo": "tesoreria@grupobca.com.ar ",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.6124,
+          -31.6218
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios Subcontratistas",
+        "Delegacion": "Santa Fe",
+        "Nombre": "ILLEPPAC SA",
+        "CUIT": 30712469486,
+        "Dirección": "Los Eucaliptos 1700, Rincón ",
+        "Localidad": "Rincón",
+        "Provincia": "Santa Fe",
+        "Teléfono": "(011) 55843203 ",
+        "Correo": "info@illeppac.com ",
+        "CRM": "SI",
+        "Maquinas": "MOTONIVELADORAS-JOHN DEERE-620P, RETROEXCAVADORAS-JOHN DEERE-310P, RETROEXCAVADORAS-JOHN DEERE-310P, RETROEXCAVADORAS-JOHN DEERE-310P",
+        "Sucursal": "SAN JUSTO"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -66.3351,
+          -33.2982
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios Subcontratistas",
+        "Delegacion": "Santa Fe",
+        "Nombre": "REDES Y SERVICIOS S.A.",
+        "CUIT": 30693973453,
+        "Dirección": "Presidente Perón 451, San Luis ",
+        "Localidad": "San Luis",
+        "Provincia": "Santa Fe",
+        "Teléfono": "(0266) 154573954 ",
+        "Correo": "odelviso@consud.com.ar ",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7102,
+          -31.6565
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios Subcontratistas",
+        "Delegacion": "Santa Fe",
+        "Nombre": "ALCA INGENIERÍA S.R.L.",
+        "CUIT": 30717107442,
+        "Dirección": "1ro de Mayo 1654, Santa Fe ",
+        "Localidad": "Santa Fe",
+        "Provincia": "Santa Fe",
+        "Teléfono": "(342) 5816847 ",
+        "Correo": "acabrera@alcasrl.com.ar ",
+        "CRM": "SI",
+        "Maquinas": "",
+        "Sucursal": "SAN JUSTO"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.5582,
+          -34.9391
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios Subcontratistas",
+        "Delegacion": "Santa Fe",
+        "Nombre": "ROMANO CESAR ATILIO",
+        "CUIT": 20248501740,
+        "Dirección": "Pilar Monserrat 110, Sunchales ",
+        "Localidad": "Sunchales",
+        "Provincia": "Santa Fe",
+        "Teléfono": "(3493) 403177 ",
+        "Correo": "administracion@romanoobras.com ",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.2715,
+          -29.8885
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios Subcontratistas",
+        "Delegacion": "Santa Fe",
+        "Nombre": "FERRER S.A.",
+        "CUIT": 30699238437,
+        "Dirección": "Juan de Garay 1072, Calchaquí ",
+        "Localidad": "Calchaquí",
+        "Provincia": "Santa Fe",
+        "Teléfono": "(03483) 470235 ",
+        "Correo": "administracion@ferrersaobrasviales.com ",
+        "CRM": "SI",
+        "Maquinas": "EXCAVADORAS-DOOSAN-DX225LC, EXCAVADORAS-DOOSAN-DX225LC, EXCAVADORAS-CATERPILLAR-320, EXCAVADORAS-HYUNDAI-OTRO, EXCAVADORAS-HYUNDAI-OTRO, RETROEXCAVADORAS-CAT-416, MOTONIVELADORAS-SEM-919, CARGADOR FRONTAL-OTRA MARCA-OTRO, RETROEXCAVADORAS-JOHN DEERE-310L",
+        "Sucursal": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7105,
+          -31.6361
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios Subcontratistas",
+        "Delegacion": "Santa Fe",
+        "Nombre": "ATILIO SALAS INM. S.R.L.",
+        "CUIT": 30681965854,
+        "Dirección": "Tucumán 3108, Santa Fe ",
+        "Localidad": "Santa Fe",
+        "Provincia": "Santa Fe",
+        "Teléfono": "(0342) 4521702 ",
+        "Correo": "contable@salasinmobiliaria.com.ar ",
+        "CRM": "SI",
+        "Maquinas": "",
+        "Sucursal": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7058,
+          -31.6491
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios Subcontratistas",
+        "Delegacion": "Santa Fe",
+        "Nombre": "STEELMAT S.A.",
+        "CUIT": 30717689751,
+        "Dirección": "1º Junta 2644, Santa Fe ",
+        "Localidad": "Santa Fe",
+        "Provincia": "Santa Fe",
+        "Teléfono": "(0342) 5082162 ",
+        "Correo": "administracion@stellmat.com.ar ",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7081,
+          -31.6395
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios Subcontratistas",
+        "Delegacion": "Santa Fe",
+        "Nombre": "BORGEM S.A.",
+        "CUIT": 30717022579,
+        "Dirección": "Saavedra 3177, Santa Fe ",
+        "Localidad": "Santa Fe",
+        "Provincia": "Santa Fe",
+        "Teléfono": "(0342) 6128777 ",
+        "Correo": "admborgem@gmail.com ",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -59.6642,
+          -29.2131
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios Subcontratistas",
+        "Delegacion": "Santa Fe",
+        "Nombre": "ICA S.R.L.",
+        "CUIT": 30708520337,
+        "Dirección": "Parque Industrial Lote 16, Reconquista ",
+        "Localidad": "Reconquista",
+        "Provincia": "Santa Fe",
+        "Teléfono": "(03482) 428922 ",
+        "Correo": "icasrl@trcnet.com.ar ",
+        "CRM": "SI",
+        "Maquinas": "",
+        "Sucursal": "AVELLANEDA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.6998,
+          -31.6391
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios Subcontratistas",
+        "Delegacion": "Santa Fe",
+        "Nombre": "INGEAP S.A.S.",
+        "CUIT": 30716084988,
+        "Dirección": "Ituzaingó 2277, Santa Fe ",
+        "Localidad": "Santa Fe",
+        "Provincia": "Santa Fe",
+        "Teléfono": "(0342) 4811476 ",
+        "Correo": "of.administración@ingeap.com ",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7092,
+          -31.6342
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios Subcontratistas",
+        "Delegacion": "Santa Fe",
+        "Nombre": "BILDTEC S.A.",
+        "CUIT": 30715385038,
+        "Dirección": "9 de Julio 3638, Santa Fe ",
+        "Localidad": "Santa Fe",
+        "Provincia": "Santa Fe",
+        "Teléfono": "(0342) 5814001 ",
+        "Correo": "hmonsalvo@bildtecingenieria.com.ar ",
+        "CRM": "SI",
+        "Maquinas": "",
+        "Sucursal": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.6982,
+          -31.6258
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios Subcontratistas",
+        "Delegacion": "Santa Fe",
+        "Nombre": "S&D OBRAS Y SERVICIOS S.A.",
+        "CUIT": 30715996630,
+        "Dirección": "Pedro Vittori 4173, Santa Fe ",
+        "Localidad": "Santa Fe",
+        "Provincia": "Santa Fe",
+        "Teléfono": "(0342) 4562732 ",
+        "Correo": "administracion@sdingenieria.com.ar ",
+        "CRM": "SI",
+        "Maquinas": "TRACTORES-JOHN DEERE-7515",
+        "Sucursal": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.6982,
+          -31.6258
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios Subcontratistas",
+        "Delegacion": "Santa Fe",
+        "Nombre": "CALIDAD ASEGURADA AGUAS S.A.",
+        "CUIT": 30716000327,
+        "Dirección": "Pedro Vittori 4173, Santa Fe ",
+        "Localidad": "Santa Fe",
+        "Provincia": "Santa Fe",
+        "Teléfono": "(0342) 4562732 ",
+        "Correo": "administracion@sdingenieria.com.ar ",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7055,
+          -31.6362
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios Subcontratistas",
+        "Delegacion": "Santa Fe",
+        "Nombre": "BLS CONSTRUCCIONES S.A.",
+        "CUIT": 30717387704,
+        "Dirección": "Tucumán 2692 of.10, Santa Fe ",
+        "Localidad": "Santa Fe",
+        "Provincia": "Santa Fe",
+        "Teléfono": "(342) 6262015 ",
+        "Correo": "info@blsconstrucciones.com ",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7512,
+          -31.6685
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios Subcontratistas",
+        "Delegacion": "Santa Fe",
+        "Nombre": "APL S.R.L.",
+        "CUIT": 30712249125,
+        "Dirección": "Iriondo 2087, Santo Tomé ",
+        "Localidad": "Santo Tomé",
+        "Provincia": "Santa Fe",
+        "Teléfono": "(0342) 4801155 ",
+        "Correo": "contacto@aplinmobiliaria.com ",
+        "CRM": "SI",
+        "Maquinas": "",
+        "Sucursal": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.6925,
+          -31.6398
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios Subcontratistas",
+        "Delegacion": "Santa Fe",
+        "Nombre": "BG INGENIERÍA",
+        "CUIT": 30718830709,
+        "Dirección": "Vélez Sarsfield 3256, Santa Fe ",
+        "Localidad": "Santa Fe",
+        "Provincia": "Santa Fe",
+        "Teléfono": "(0342) 4061382 ",
+        "Correo": "contacto@bgingenieria.com ",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.1518,
+          -32.8542
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios Subcontratistas",
+        "Delegacion": "Santa Fe",
+        "Nombre": "JUAN CARLOS PIERANTONI SRL",
+        "CUIT": 30711539804,
+        "Dirección": "9 de Julio 657, Carcarañá ",
+        "Localidad": "Carcarañá",
+        "Provincia": "Santa Fe",
+        "Teléfono": "(0341) 6915823 ",
+        "Correo": "administracion@pilotesytuneles.com.ar ",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7654,
+          -31.6612
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios Subcontratistas",
+        "Delegacion": "Santa Fe",
+        "Nombre": "LA LILY S.A.",
+        "CUIT": 30710443889,
+        "Dirección": "Calle 859V+HC7, Santo Tomé ",
+        "Localidad": "Santo Tomé",
+        "Provincia": "Santa Fe",
+        "Teléfono": "(342) 6269454 ",
+        "Correo": "a.bonvin@lalilysa.com.ar ",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.6755,
+          -31.5162
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios Subcontratistas",
+        "Delegacion": "Santa Fe",
+        "Nombre": "SOINT S.R.L.",
+        "CUIT": 30716115514,
+        "Dirección": "Santiago de Chile 2235, Monte Vera ",
+        "Localidad": "Monte Vera",
+        "Provincia": "Santa Fe",
+        "Teléfono": "(0342) 5238389 ",
+        "Correo": "administracion@soint.com.ar ",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7101,
+          -31.6495
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios Subcontratistas",
+        "Delegacion": "Santa Fe",
+        "Nombre": "SUR S.A.",
+        "CUIT": 30710796331,
+        "Dirección": "1º de Mayo 2523, Santa Fe ",
+        "Localidad": "Santa Fe",
+        "Provincia": "Santa Fe",
+        "Teléfono": "(0342) 5487687 ",
+        "Correo": "info@sur-sa.com.ar ",
+        "CRM": "SI",
+        "Maquinas": "",
+        "Sucursal": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7842,
+          -31.7255
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios Subcontratistas",
+        "Delegacion": "Santa Fe",
+        "Nombre": "SIE INGENIERIA SRL",
+        "CUIT": 30714150738,
+        "Dirección": "Ruta 11 4107, Sauce Viejo ",
+        "Localidad": "Sauce Viejo",
+        "Provincia": "Santa Fe",
+        "Teléfono": "(342) 4494624 ",
+        "Correo": "info@ingenieriasie.com ",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.6952,
+          -31.6015
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios Subcontratistas",
+        "Delegacion": "Santa Fe",
+        "Nombre": "FERNANDEZ RAÚL LUIS",
+        "CUIT": 20172055371,
+        "Dirección": "Rep. Dominicana 5601, Santa Fe ",
+        "Localidad": "Santa Fe",
+        "Provincia": "Santa Fe",
+        "Teléfono": "(342) 5120037 ",
+        "Correo": "nueva.rlf.particular@gmail.com ",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.4912,
+          -31.2512
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios Subcontratistas",
+        "Delegacion": "Santa Fe",
+        "Nombre": "CAP HORMIGONES S.A.",
+        "CUIT": 30717820807,
+        "Dirección": "Av. Santa Fe 302, Rafaela ",
+        "Localidad": "Rafaela",
+        "Provincia": "Santa Fe",
+        "Teléfono": "(3492) 571986 ",
+        "Correo": "administracion@caphormigones.com ",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.6922,
+          -31.6558
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios Proveedores",
+        "Delegacion": "Santa Fe",
+        "Nombre": "AREMAT PUERTO S.R.L.",
+        "CUIT": 30708187441,
+        "Dirección": "Canal Derivación Norte, Puerto Sta Fe ",
+        "Localidad": "Puerto Sta Fe",
+        "Provincia": "Santa Fe",
+        "Teléfono": "(0342) 452-1743 ",
+        "Correo": "info@arematpuerto.com.ar ",
+        "CRM": "SI",
+        "Maquinas": "",
+        "Sucursal": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -59.6418,
+          -29.1469
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios Proveedores",
+        "Delegacion": "Santa Fe",
+        "Nombre": "ELIAS YAPUR S.A.",
+        "CUIT": 30526925129,
+        "Dirección": "Alvear 1075, Reconquista ",
+        "Localidad": "Reconquista",
+        "Provincia": "Santa Fe",
+        "Teléfono": "(03482) 420-469 ",
+        "Correo": "gyapur@eliasyapur.com.ar ",
+        "CRM": "SI",
+        "Maquinas": "",
+        "Sucursal": "AVELLANEDA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7132,
+          -31.6111
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios Proveedores",
+        "Delegacion": "Santa Fe",
+        "Nombre": "EL EMPORIO DE LA CONST. S.R.L.",
+        "CUIT": 30708056282,
+        "Dirección": "Estanislao Zeballos 3833, Santa Fe ",
+        "Localidad": "Santa Fe",
+        "Provincia": "Santa Fe",
+        "Teléfono": "(0342) 488-2208 ",
+        "Correo": "info@elemporiosrl.com.ar ",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7058,
+          -31.6148
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios Proveedores",
+        "Delegacion": "Santa Fe",
+        "Nombre": "FISA METAL S.R.L.",
+        "CUIT": 30612306539,
+        "Dirección": "Ruperto Godoy 3270, Santa Fe ",
+        "Localidad": "Santa Fe",
+        "Provincia": "Santa Fe",
+        "Teléfono": "(0342) 489-3415 ",
+        "Correo": "fisametal@fisametal.com.ar ",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7078,
+          -31.6575
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios Proveedores",
+        "Delegacion": "Santa Fe",
+        "Nombre": "INECO S.R.L.",
+        "CUIT": 30613552991,
+        "Dirección": "Cruz Roja Argentina 1740, Santa Fe ",
+        "Localidad": "Santa Fe",
+        "Provincia": "Santa Fe",
+        "Teléfono": "(0342) 459-4973 ",
+        "Correo": "recepcion@inecosrl.com ",
+        "CRM": "SI",
+        "Maquinas": "",
+        "Sucursal": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7001,
+          -31.6412
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios Proveedores",
+        "Delegacion": "Santa Fe",
+        "Nombre": "MURILLO S.A.",
+        "CUIT": 30613410127,
+        "Dirección": "Junín 2260, Santa Fe ",
+        "Localidad": "Santa Fe",
+        "Provincia": "Santa Fe",
+        "Teléfono": "(0342) 455-0221 ",
+        "Correo": "info@vicentemurilloehijos.com ",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7022,
+          -31.6245
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios Proveedores",
+        "Delegacion": "Santa Fe",
+        "Nombre": "LÓPEZ ENRIQUE JESÚS",
+        "CUIT": 20117906087,
+        "Dirección": "Córdoba 2714, Santa Fe ",
+        "Localidad": "Santa Fe",
+        "Provincia": "Santa Fe",
+        "Teléfono": "(0342) 4553276 ",
+        "Correo": "intecomsistemas@gmail.com ",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.6945,
+          -31.6508
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios Proveedores",
+        "Delegacion": "Santa Fe",
+        "Nombre": "CULZONI S.A.",
+        "CUIT": 30692346021,
+        "Dirección": "F. Schultz de Mantovani 1515, Santa Fe ",
+        "Localidad": "Santa Fe",
+        "Provincia": "Santa Fe",
+        "Teléfono": "(0342) 4552511 ",
+        "Correo": "nerina@culzoni.com ",
+        "CRM": "SI",
+        "Maquinas": "CARGADOR FRONTAL-JOHN DEERE-318D",
+        "Sucursal": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7028,
+          -31.6438
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios Proveedores",
+        "Delegacion": "Santa Fe",
+        "Nombre": "SUMIAGRO SANTA FE S.A.",
+        "CUIT": 33677752489,
+        "Dirección": "San Luis 2700, Santa Fe ",
+        "Localidad": "Santa Fe",
+        "Provincia": "Santa Fe",
+        "Teléfono": "(0342) 4550398 ",
+        "Correo": "administracion@sumiagro.com.ar ",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7135,
+          -31.6402
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios Proveedores",
+        "Delegacion": "Santa Fe",
+        "Nombre": "GRUPO PILAR SA",
+        "CUIT": 30707713484,
+        "Dirección": "Av. Freyre 3169, Santa Fe ",
+        "Localidad": "Santa Fe",
+        "Provincia": "Santa Fe",
+        "Teléfono": "(342) 4951718 ",
+        "Correo": "ventas@tecnomateriales.com.ar ",
+        "CRM": "SI",
+        "Maquinas": "",
+        "Sucursal": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.6912,
+          -31.6105
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios Proveedores",
+        "Delegacion": "Santa Fe",
+        "Nombre": "DISSER SRL",
+        "CUIT": 30710589743,
+        "Dirección": "Av. Galicia 1360, Santa Fe ",
+        "Localidad": "Santa Fe",
+        "Provincia": "Santa Fe",
+        "Teléfono": "(342) 4191919 ",
+        "Correo": "info@dissersrl.com.ar ",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.7558,
+          -31.6552
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios Proveedores",
+        "Delegacion": "Santa Fe",
+        "Nombre": "DANIEL A. BASGALL SRL",
+        "CUIT": 30708922079,
+        "Dirección": "Azcuénaga 2830, Santo Tomé ",
+        "Localidad": "Santo Tomé",
+        "Provincia": "Santa Fe",
+        "Teléfono": "(342) 5196109 ",
+        "Correo": "palonso@miuniverso.ar ",
+        "CRM": "SI",
+        "Maquinas": "",
+        "Sucursal": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.4722,
+          -31.2655
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios Proveedores",
+        "Delegacion": "Santa Fe",
+        "Nombre": "ACERMA S.A.",
+        "CUIT": 30710816502,
+        "Dirección": "Cedran 330, Rafaela ",
+        "Localidad": "Rafaela",
+        "Provincia": "Santa Fe",
+        "Teléfono": "(03492) 441234 ",
+        "Correo": "jose.sanchez@acerma.com.ar ",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -59.6585,
+          -29.1172
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios Proveedores",
+        "Delegacion": "Santa Fe",
+        "Nombre": "L.I.A. S.A.",
+        "CUIT": 30712299572,
+        "Dirección": "Legal Calle 18 N°785, Avellaneda ",
+        "Localidad": "Avellaneda",
+        "Provincia": "Santa Fe",
+        "Teléfono": "(3482) 480690 ",
+        "Correo": "info@raicesdelnorte.com.ar ",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -55.89926,
+          -27.36539
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Misiones",
+        "Nombre": "AL-VISERV S.R.L.  ",
+        "CUIT": 30708854294,
+        "Dirección": "Ramón García N° 189 4°B, Posadas",
+        "Localidad": "Posadas",
+        "Provincia": "Misiones",
+        "Teléfono": null,
+        "Correo": "Quarksoluciones@gmail.com",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -55.932675,
+          -27.380753
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Misiones",
+        "Nombre": "CAMINOS S.R.L   ",
+        "CUIT": 30629486700,
+        "Dirección": "Calle 113 Nº 2225 Bº San Miguel",
+        "Localidad": null,
+        "Provincia": "Misiones",
+        "Teléfono": null,
+        "Correo": "Dilgerjuanm@yahoo.com.ar",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -55.886967,
+          -27.381874
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Misiones",
+        "Nombre": "CARLOS E. ENRIQUEZ S.A.",
+        "CUIT": 30507171814,
+        "Dirección": "Chacra 210  -  ",
+        "Localidad": "Posadas",
+        "Provincia": "Misiones",
+        "Teléfono": null,
+        "Correo": "roberto@ceenriquez.com",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -55.916155,
+          -27.372264
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Misiones",
+        "Nombre": "CARLOS R. NOSIGLIA CNES. SRL",
+        "CUIT": 30503399837,
+        "Dirección": "Av.López y Planes Nº 4006",
+        "Localidad": "Posadas",
+        "Provincia": "Misiones",
+        "Teléfono": null,
+        "Correo": "nosigliaconstruccion@gmail.com",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -55.909139,
+          -27.363031
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Misiones",
+        "Nombre": "ECON  S.R.L.",
+        "CUIT": 30687846962,
+        "Dirección": "Av. L.N.Alem Nº 3360  ",
+        "Localidad": "Posadas",
+        "Provincia": "Misiones",
+        "Teléfono": null,
+        "Correo": "Econ@econstructora.com.ar",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -55.909112,
+          -27.360375
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Misiones",
+        "Nombre": "FB S.R.L.  ",
+        "CUIT": 33710666259,
+        "Dirección": "Brasil 3408",
+        "Localidad": "Posadas",
+        "Provincia": "Misiones",
+        "Teléfono": null,
+        "Correo": "Fbsrlconstruciones@gmail.com",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -55.900512,
+          -27.359756
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Misiones",
+        "Nombre": "GIOVINAZZO S.A. ",
+        "CUIT": 30687836797,
+        "Dirección": "Av.Gdor.Roca Nº1122      ",
+        "Localidad": "Posadas",
+        "Provincia": "Misiones",
+        "Teléfono": null,
+        "Correo": "giovisa@gruporio.com.ar",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -55.91954,
+          -27.39493
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Misiones",
+        "Nombre": "COMANSA  ",
+        "CUIT": "-",
+        "Dirección": "Av.Cmte.Andresito Nº 3976",
+        "Localidad": null,
+        "Provincia": "Misiones",
+        "Teléfono": null,
+        "Correo": "Comansadm@gmail.com",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -55.89195,
+          -27.35556
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Misiones",
+        "Nombre": "GOROSTIAGA S.A  ",
+        "CUIT": 30653144721,
+        "Dirección": "Av. Costanera n° 1791",
+        "Localidad": "Posadas",
+        "Provincia": "Misiones",
+        "Teléfono": null,
+        "Correo": "Victorgorostiaga07@gmail.com",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -55.891662,
+          -27.377945
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Misiones",
+        "Nombre": "HECTOR TORRES CNES. ",
+        "CUIT": 20045446922,
+        "Dirección": "Av.López Torres Nº 2946",
+        "Localidad": "Posadas",
+        "Provincia": "Misiones",
+        "Teléfono": null,
+        "Correo": "Sheba77@gmail.com",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -55.923836,
+          -27.361284
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Misiones",
+        "Nombre": "HIDRELCO S.R.L. ",
+        "CUIT": 30572634651,
+        "Dirección": "Av.Leandro N. ALem N° 4948 ",
+        "Localidad": "Posadas",
+        "Provincia": "Misiones",
+        "Teléfono": null,
+        "Correo": "nicodeica@hotmail.com",
+        "CRM": "SI",
+        "Maquinas": "",
+        "Sucursal": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -55.910131,
+          -27.374841
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Misiones",
+        "Nombre": "HORMICON S.R.L. ",
+        "CUIT": "30708086726 ",
+        "Dirección": "Av.Santa Catalina Nº 2805",
+        "Localidad": "Posadas",
+        "Provincia": "Misiones",
+        "Teléfono": null,
+        "Correo": "administracion@hormiconsrl.com.ar",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -55.897827,
+          -27.423761
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Misiones",
+        "Nombre": "HORMIGONERA EL NOCHERO SA ",
+        "CUIT": "30615429038 ",
+        "Dirección": "Ruta 12 Km. 1 ½",
+        "Localidad": "Posadas",
+        "Provincia": "Misiones",
+        "Teléfono": null,
+        "Correo": "elnochero.constructora@gmail.com",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -55.90003,
+          -27.36853
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Misiones",
+        "Nombre": "INGAR S.A. ",
+        "CUIT": "30570851868 ",
+        "Dirección": "JUJUY N° 2031      ",
+        "Localidad": "Posadas",
+        "Provincia": "Misiones",
+        "Teléfono": null,
+        "Correo": "compras@ingarsa.com.ar",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -55.90227,
+          -27.39558
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Misiones",
+        "Nombre": "INGELECT S.R.L.",
+        "CUIT": "33715857869 ",
+        "Dirección": "Calle Alemania 2299",
+        "Localidad": "Posadas",
+        "Provincia": "Misiones",
+        "Teléfono": null,
+        "Correo": "Ingelect.adm@gmail.com",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -54.76606,
+          -27.56555
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Misiones",
+        "Nombre": "KURTEN CARCHANO CNES.SRL",
+        "CUIT": "33641692269 ",
+        "Dirección": "Horacio Quiroga 1551",
+        "Localidad": "Montecarlo",
+        "Provincia": "Misiones",
+        "Teléfono": null,
+        "Correo": "kurtencarchano@gmail.com",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -55.91494,
+          -27.36224
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Misiones",
+        "Nombre": "MACEVA S.A.  ",
+        "CUIT": "30502556106 ",
+        "Dirección": "Av. L.N.ALem Nº 3948     ",
+        "Localidad": "Posadas",
+        "Provincia": "Misiones",
+        "Teléfono": null,
+        "Correo": "Oscar.marelli.macevasa@gmail.com",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -54.89219,
+          -27.06433
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Misiones",
+        "Nombre": "METALURGICA FINKE ",
+        "CUIT": "-",
+        "Dirección": "Ruta Nac. 14 Km.930,5",
+        "Localidad": "Aristóbulo del Valle",
+        "Provincia": "Misiones",
+        "Teléfono": null,
+        "Correo": "metalurgicafinke@hotmail.com",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -55.89418,
+          -27.36861
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Misiones",
+        "Nombre": "NABLA SA ",
+        "CUIT": 30708447575,
+        "Dirección": "Calle 103 Nº 2671",
+        "Localidad": "Posadas",
+        "Provincia": "Misiones",
+        "Teléfono": null,
+        "Correo": "dme@nablasa.com.ar",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -55.88959,
+          -27.35945
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Misiones",
+        "Nombre": "PRAT  S.R.L.",
+        "CUIT": 30638257250,
+        "Dirección": "Moritán Nº 1511  - ",
+        "Localidad": "Posadas",
+        "Provincia": "Misiones",
+        "Teléfono": null,
+        "Correo": "hra@prat.com.ar",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -55.89807,
+          -27.36148
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Misiones",
+        "Nombre": "PROOBRA S.A.",
+        "CUIT": 30631029163,
+        "Dirección": "San Luis  N° 1345 5° B",
+        "Localidad": "Posadas",
+        "Provincia": "Misiones",
+        "Teléfono": null,
+        "Correo": "recepción@proobrasa.com.ar",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -55.88611,
+          -27.37076
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Misiones",
+        "Nombre": "RATTI  CONSTRUCCIONES S.A. ",
+        "CUIT": 30646666283,
+        "Dirección": "Coronel López N°2138 5to.Piso",
+        "Localidad": "Posadas",
+        "Provincia": "Misiones",
+        "Teléfono": null,
+        "Correo": "pablo@ratticonstrucciones.com.ar",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -55.93279,
+          -27.35754
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Misiones",
+        "Nombre": "R.B.M. S.R.L. ",
+        "CUIT": 30646103351,
+        "Dirección": "Chile Nº 6001",
+        "Localidad": "Posadas",
+        "Provincia": "Misiones",
+        "Teléfono": null,
+        "Correo": "rbmsrl@gmail.com",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -55.88972,
+          -27.36718
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Misiones",
+        "Nombre": "SIGMA SA ",
+        "CUIT": 30654752016,
+        "Dirección": "Bolívar Nº 1430 7ºA",
+        "Localidad": "Posadas",
+        "Provincia": "Misiones",
+        "Teléfono": null,
+        "Correo": "alejandro@sigmaconst.com",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -55.89301,
+          -27.37831
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Misiones",
+        "Nombre": "SILVANA RATTI S.A. ",
+        "CUIT": 30714005584,
+        "Dirección": "Av.Trincheras de San José N° 1589",
+        "Localidad": "Posadas",
+        "Provincia": "Misiones",
+        "Teléfono": null,
+        "Correo": "silvana@silvanaratti.com",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -55.92283,
+          -27.37565
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Misiones",
+        "Nombre": "TEICON  S.R.L. ",
+        "CUIT": 30710979185,
+        "Dirección": "Calle 93 Nº 2533",
+        "Localidad": "Posadas",
+        "Provincia": "Misiones",
+        "Teléfono": null,
+        "Correo": "teicon_srl@hotmail.com",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -55.90127,
+          -27.39789
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Misiones",
+        "Nombre": "TEMBIAPÓ S.A.",
+        "CUIT": 30709933619,
+        "Dirección": "Av. Buchardo N° 2383",
+        "Localidad": "Posadas",
+        "Provincia": "Misiones",
+        "Teléfono": null,
+        "Correo": "tembiaposa@gmail.com",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -55.88859,
+          -27.374
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Misiones",
+        "Nombre": "WEMCON S.A. ",
+        "CUIT": 30708680709,
+        "Dirección": "Santiago del Estero N° 1236",
+        "Localidad": "Posadas",
+        "Provincia": "Misiones",
+        "Teléfono": null,
+        "Correo": "wemcon@hotmail.com",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "-58,2289808",
+          "-32,4786633"
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Entre Rios",
+        "Nombre": "ADER S.A.",
+        "CUIT": 30714427764,
+        "Dirección": "Larroque 334",
+        "Localidad": "Concepción del Uruguay",
+        "Provincia": "Entre Rios",
+        "Teléfono": "11-6449-3877",
+        "Correo": "gerenciadeventas@adersa.com.ar",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "-60,5175",
+          "-31,7440"
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Entre Rios",
+        "Nombre": "AE INSUMOS",
+        "CUIT": "-",
+        "Dirección": "Las Lechiguanas 924, Av. Freyre 2949 - Sta Fe",
+        "Localidad": "Paraná",
+        "Provincia": "Entre Rios",
+        "Teléfono": "343 424-3924 FIJO PARANA / 3434658668 VENTAS PARANA",
+        "Correo": "agusaeinsumos@gmail.com",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "-58,2262256",
+          "-32,1983289"
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Entre Rios",
+        "Nombre": "AGUARÁ CONSTRUCCIONES S.A.",
+        "CUIT": 30715514148,
+        "Dirección": "Urquiza 411",
+        "Localidad": "COLÓN",
+        "Provincia": "Entre Rios",
+        "Teléfono": "03447-15413219",
+        "Correo": "info@aguaraingenieria.com",
+        "CRM": "SI",
+        "Maquinas": "MINICARGADORAS-BOBCAT-S510, RETROEXCAVADORAS-OTRA MARCA-OTRO",
+        "Sucursal": "CONCORDIA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "-60,4496039",
+          "-31,7633474"
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Entre Rios",
+        "Nombre": "AIRE TOTAL S.R.L.",
+        "CUIT": 30714448443,
+        "Dirección": "Av. Almafuerte 198",
+        "Localidad": "Paraná",
+        "Provincia": "Entre Rios",
+        "Teléfono": "0343-4348962/4348974",
+        "Correo": "carlos@airetotalsrl.com.ar",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "-60,4812933",
+          "-31,7563282"
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Entre Rios",
+        "Nombre": "ANDAN S.R.L.",
+        "CUIT": 30715436767,
+        "Dirección": "Gualeguaychú 848",
+        "Localidad": "Paraná",
+        "Provincia": "Entre Rios",
+        "Teléfono": "0343-156227413",
+        "Correo": "gerencia.andansrl@gmail.com",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "-60,5400868",
+          "-31,7165055"
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Entre Rios",
+        "Nombre": "ANTOLIN FERNADEZ SA",
+        "CUIT": 30506740513,
+        "Dirección": "Av. Estrada 1748",
+        "Localidad": "Paraná",
+        "Provincia": "Entre Rios",
+        "Teléfono": "0343-4223305/4235722",
+        "Correo": "antolinfer@arnet.com.ar",
+        "CRM": "SI",
+        "Maquinas": "",
+        "Sucursal": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "-60,4950356",
+          "-31,7183993"
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Entre Rios",
+        "Nombre": "ARENERA TOMA NUEVA S.R.L.",
+        "CUIT": 30710156766,
+        "Dirección": "Rondeau al final s/n*-B* Toma Nueva",
+        "Localidad": "Paraná",
+        "Provincia": "Entre Rios",
+        "Teléfono": "0343-4331233",
+        "Correo": "areneratomanuevasrl@hotmail.com",
+        "CRM": "SI",
+        "Maquinas": "CARGADOR FRONTAL-KOMATSU-WA320, CARGADOR FRONTAL-KOMATSU-WA320",
+        "Sucursal": "PARANA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "-60,5175",
+          "-31,7440"
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Entre Rios",
+        "Nombre": "BARBAGELATA INGENIERIA S.A.",
+        "CUIT": 30714444510,
+        "Dirección": "San Lorenzo 63",
+        "Localidad": "Paraná",
+        "Provincia": "Entre Rios",
+        "Teléfono": "0343-4220201",
+        "Correo": "secretaria@barbagelataingenieria.com",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "-58,5122",
+          "-33,0078"
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Entre Rios",
+        "Nombre": "BARRIOLA CONSTRUCTORA",
+        "CUIT": 20333186536,
+        "Dirección": "Cerrito 90 Gualeguay",
+        "Localidad": "Gualeguay",
+        "Provincia": "Entre Rios",
+        "Teléfono": "(3444) 4468203",
+        "Correo": "of.barriola@gmail.com",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "-60,4998960",
+          "-31,7141594"
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Entre Rios",
+        "Nombre": "BEST S.A.",
+        "CUIT": 30710012365,
+        "Dirección": "Ayacucho 912",
+        "Localidad": "Paraná",
+        "Provincia": "Entre Rios",
+        "Teléfono": "0343-4346191",
+        "Correo": "administracion@bestsa.com.ar",
+        "CRM": "SI",
+        "Maquinas": "",
+        "Sucursal": "PARANA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "-60,0613232",
+          "-31,8513515"
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Entre Rios",
+        "Nombre": "BH MADERAS S.A.",
+        "CUIT": 30709833401,
+        "Dirección": "Ruta 18 - Km. 14,5",
+        "Localidad": "Paraná",
+        "Provincia": "Entre Rios",
+        "Teléfono": "0343-4979001",
+        "Correo": "bhmaderas@gmail.com",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "-58,2277674",
+          "-32,4822501"
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Entre Rios",
+        "Nombre": "C.O.P.U.L.",
+        "CUIT": 30504089777,
+        "Dirección": "Rocamora 420",
+        "Localidad": "Concepción del Uruguay",
+        "Provincia": "Entre Rios",
+        "Teléfono": "03442-425839/427599",
+        "Correo": "copul@arnet.com.ar",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "-60,4909699",
+          "-31,7551285"
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Entre Rios",
+        "Nombre": "CABALLI S.A.",
+        "CUIT": 30556515294,
+        "Dirección": "Gdor. Crespo 1471",
+        "Localidad": "Paraná",
+        "Provincia": "Entre Rios",
+        "Teléfono": "0343-4330736/4330581",
+        "Correo": "administracion@constructoracaballi.com.ar",
+        "CRM": "SI",
+        "Maquinas": "",
+        "Sucursal": "PARANA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "-59,7913600",
+          "-32,3954179"
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Entre Rios",
+        "Nombre": "CALACO CONSTRUCCIONES S.R.L.",
+        "CUIT": 30711586195,
+        "Dirección": "San Lorenzo 1300",
+        "Localidad": "NOGOYÁ",
+        "Provincia": "Entre Rios",
+        "Teléfono": "03435-156-15900",
+        "Correo": "calaco_construcciones@hotmail.com",
+        "CRM": "SI",
+        "Maquinas": "",
+        "Sucursal": "VICTORIA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "-58,0189141",
+          "-31,3457948"
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Entre Rios",
+        "Nombre": "CARLOS HAURE CONSTRUCCIONES",
+        "CUIT": 20206687097,
+        "Dirección": "Chile 1073",
+        "Localidad": "CONCORDIA",
+        "Provincia": "Entre Rios",
+        "Teléfono": "0345-4219903",
+        "Correo": "haureconstrucciones@hotmail.com.ar",
+        "CRM": "SI",
+        "Maquinas": "RETROEXCAVADORAS-JOHN DEERE-310G",
+        "Sucursal": "CONCORDIA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "-60,4835069",
+          "-31,7474683"
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Entre Rios",
+        "Nombre": "CATENARIA INGENIERIA SRL",
+        "CUIT": 30717181987,
+        "Dirección": "LOPEZ JORDAN Nº1532",
+        "Localidad": "Paraná",
+        "Provincia": "Entre Rios",
+        "Teléfono": "3434636105 / 3435111168",
+        "Correo": "grupocatenaria@gmail.com",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "-60,5175",
+          "-31,7440"
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Entre Rios",
+        "Nombre": "CAVALLINI S.R.L.",
+        "CUIT": 30716345935,
+        "Dirección": "Av. Larramendi 1931",
+        "Localidad": "Paraná",
+        "Provincia": "Entre Rios",
+        "Teléfono": "0343-4222966",
+        "Correo": "agustincavallini@yahoo.com.ar",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "-60,5333",
+          "-31,8233"
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Entre Rios",
+        "Nombre": "CAySI S.A.",
+        "CUIT": 33715941479,
+        "Dirección": "LOS CANARIOS 445 - ORO VERDE",
+        "Localidad": "ORO VERDE",
+        "Provincia": "Entre Rios",
+        "Teléfono": "343-4052478",
+        "Correo": "j.aimone@caysi.com.ar",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "-60,5175",
+          "-31,7440"
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Entre Rios",
+        "Nombre": "CEMYC S.R.L.",
+        "CUIT": 30555985033,
+        "Dirección": "San Juan 371",
+        "Localidad": "Paraná",
+        "Provincia": "Entre Rios",
+        "Teléfono": "0343-4311133-4217444",
+        "Correo": "cemycadministracion@arnet.com.ar",
+        "CRM": "SI",
+        "Maquinas": "",
+        "Sucursal": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "-60,5168056",
+          "-31,7477856"
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Entre Rios",
+        "Nombre": "CENTRO DE LA CONSTRUCCION EN SECO S.A.S.",
+        "CUIT": 30716690322,
+        "Dirección": "Maciá 161",
+        "Localidad": "Paraná",
+        "Provincia": "Entre Rios",
+        "Teléfono": "0343-4342757/4343560",
+        "Correo": "administracion@construseco.com.ar",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "-60,5333872",
+          "-31,7212629"
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Entre Rios",
+        "Nombre": "CHIAVE S.R.L.",
+        "CUIT": 30714792454,
+        "Dirección": "Santiago del Estero 163 - 7º A",
+        "Localidad": "Paraná",
+        "Provincia": "Entre Rios",
+        "Teléfono": "0343-4232500",
+        "Correo": "chiavesrl@gmail.com",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "-60,4565806",
+          "-31,7872694"
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Entre Rios",
+        "Nombre": "CIMBRA CONSTRUCTORA S.A.",
+        "CUIT": 30711282986,
+        "Dirección": "Ruta 12 km. 10,5",
+        "Localidad": "COLONIA AVELLANEDA",
+        "Provincia": "Entre Rios",
+        "Teléfono": "0343-155102652",
+        "Correo": "cimbraconstructora@yahoo.com.ar",
+        "CRM": "SI",
+        "Maquinas": "",
+        "Sucursal": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "-60,4565806",
+          "-31,7872694"
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Entre Rios",
+        "Nombre": "CIMPRO S.R.L.",
+        "CUIT": 30710428030,
+        "Dirección": "Ruta Nacional 12 - Nº 9017",
+        "Localidad": "Paraná",
+        "Provincia": "Entre Rios",
+        "Teléfono": "0343-4227772",
+        "Correo": "administracion@cimprosrl.com",
+        "CRM": "SI",
+        "Maquinas": "",
+        "Sucursal": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "-60,5175",
+          "-31,7440"
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Entre Rios",
+        "Nombre": "CONFORT S.A.",
+        "CUIT": 30710908121,
+        "Dirección": "Av. Ejército 1366",
+        "Localidad": "Paraná",
+        "Provincia": "Entre Rios",
+        "Teléfono": "0343-4270765",
+        "Correo": "info@confortingenieria.com",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "-58,2265542",
+          "-32,4866314"
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Entre Rios",
+        "Nombre": "CONSTRUCTORA CARDENAL",
+        "CUIT": 30715942794,
+        "Dirección": "Mariano Lopez N°179 - PB",
+        "Localidad": "Concepcion del Uruguay",
+        "Provincia": "Entre Rios",
+        "Teléfono": "03442-15554092",
+        "Correo": "constructoracardenalsas@gmail.com",
+        "CRM": "SI",
+        "Maquinas": "",
+        "Sucursal": "VICTORIA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "-59,0233158",
+          "-31,8678380"
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Entre Rios",
+        "Nombre": "COVI S.A.S.",
+        "CUIT": 33716041129,
+        "Dirección": "Belgrano 233",
+        "Localidad": "Villaguay",
+        "Provincia": "Entre Rios",
+        "Teléfono": "03455 - 15552452",
+        "Correo": "covisaedificaciones@gmail.com",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "-60,4596038",
+          "-31,7819149"
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Entre Rios",
+        "Nombre": "DEL LITORAL OBRAS, SERVICIOS Y MONTAJES S.A.",
+        "CUIT": 30691559382,
+        "Dirección": "Av. Newbery 2411",
+        "Localidad": "Paraná",
+        "Provincia": "Entre Rios",
+        "Teléfono": "0343-4364956",
+        "Correo": "info@dellitoralsa.com.ar",
+        "CRM": "SI",
+        "Maquinas": "RETROEXCAVADORAS-CASE-580N, EXCAVADORAS-NEW HOLLAND-E145C",
+        "Sucursal": "PARANA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "-60,5083571",
+          "-31,7535627"
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Entre Rios",
+        "Nombre": "DEYVEL INDUSTRIA METALURGICA",
+        "CUIT": 30709238422,
+        "Dirección": "Artigas 745",
+        "Localidad": "Paraná",
+        "Provincia": "Entre Rios",
+        "Teléfono": "0343-4349378",
+        "Correo": "deyvel@arnetbiz.com.ar",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "-60,4822873",
+          "-31,7452235"
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Entre Rios",
+        "Nombre": "DIMACO S.A.",
+        "CUIT": 30709788325,
+        "Dirección": "Av. Hernández 1031",
+        "Localidad": "Paraná",
+        "Provincia": "Entre Rios",
+        "Teléfono": "0343-4332266/4332277",
+        "Correo": "administracion@dimaco.com.ar",
+        "CRM": "SI",
+        "Maquinas": "",
+        "Sucursal": "PARANA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "-60,5359337",
+          "-31,7203689"
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Entre Rios",
+        "Nombre": "DOPH CONSTRUCTORA de Pablo Dominguez",
+        "CUIT": 20180717154,
+        "Dirección": "Alameda de la Federación 645",
+        "Localidad": "Paraná",
+        "Provincia": "Entre Rios",
+        "Teléfono": "0343-4057945",
+        "Correo": "dophconstructora@gmail.com",
+        "CRM": "SI",
+        "Maquinas": "",
+        "Sucursal": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "-60,5113302",
+          "-31,7498680"
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Entre Rios",
+        "Nombre": "ECO INGENIERIA S.R.L.",
+        "CUIT": 30690491474,
+        "Dirección": "Cnel. Uzín 1306",
+        "Localidad": "Paraná",
+        "Provincia": "Entre Rios",
+        "Teléfono": "0343-4349598",
+        "Correo": "servicios@ecoingenieriasrl.com.ar",
+        "CRM": "SI",
+        "Maquinas": "",
+        "Sucursal": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "-60,4970308",
+          "-31,7556592"
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Entre Rios",
+        "Nombre": "EL SUPER DE LA CONSTRUCCION S.R.L.",
+        "CUIT": 30699900563,
+        "Dirección": "Av. Zanni 2315",
+        "Localidad": "Paraná",
+        "Provincia": "Entre Rios",
+        "Teléfono": "0343-4262123",
+        "Correo": "elsuperdelaconstruccion@gmail.com",
+        "CRM": "SI",
+        "Maquinas": "",
+        "Sucursal": "PARANA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "-60,4812933",
+          "-31,7563282"
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Entre Rios",
+        "Nombre": "ELECTRICIDAD PARANA S.A.",
+        "CUIT": 30714403997,
+        "Dirección": "Gualeguaychú 384",
+        "Localidad": "Paraná",
+        "Provincia": "Entre Rios",
+        "Teléfono": "0343-4235342",
+        "Correo": "electricidadparana@gmail.com",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "-60,5175",
+          "-31,7440"
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Entre Rios",
+        "Nombre": "EMPRESA CONSTRUCTORA DEL PARANA S.A.",
+        "CUIT": 30713376600,
+        "Dirección": "Bavio 97 - PA",
+        "Localidad": "Paraná",
+        "Provincia": "Entre Rios",
+        "Teléfono": "0343-4230375 - int.4",
+        "Correo": "constructoradelparana@hotmail.com",
+        "CRM": "SI",
+        "Maquinas": "MINICARGADORAS-OTRA MARCA-OTRO, MINICARGADORAS-OTRA MARCA-OTRO",
+        "Sucursal": "PARANA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "-58,5249615",
+          "-32,9994607"
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Entre Rios",
+        "Nombre": "ERNESTO RICARDO HORNUS S.A.",
+        "CUIT": 30568681041,
+        "Dirección": "Blvd. Montana 950",
+        "Localidad": "GUALEGUAYCHÚ",
+        "Provincia": "Entre Rios",
+        "Teléfono": "03446-427849",
+        "Correo": "obras@hornus.com.ar",
+        "CRM": "SI",
+        "Maquinas": "",
+        "Sucursal": "VICTORIA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "-60,5175",
+          "-31,7440"
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Entre Rios",
+        "Nombre": "GC INGENIERIA S.A.S.",
+        "CUIT": 30716781697,
+        "Dirección": "Manuel Verceli S/N",
+        "Localidad": "Paraná",
+        "Provincia": "Entre Rios",
+        "Teléfono": "",
+        "Correo": "grupociningenieria@gmail.com",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "-60,4970308",
+          "-31,7556592"
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Entre Rios",
+        "Nombre": "GEOCIMENTA S.R.L.",
+        "CUIT": 30712413111,
+        "Dirección": "Av. Zanni 1100 Casa 25A",
+        "Localidad": "Paraná",
+        "Provincia": "Entre Rios",
+        "Teléfono": "0343-4073578",
+        "Correo": "info@geocimenta.com",
+        "CRM": "SI",
+        "Maquinas": "",
+        "Sucursal": "PARANA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "-60,0882639",
+          "-31,3870741"
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Entre Rios",
+        "Nombre": "GRAND S.A.S.",
+        "CUIT": 30716833395,
+        "Dirección": "La Paz 236 Piso 11°",
+        "Localidad": "Paraná",
+        "Provincia": "Entre Rios",
+        "Teléfono": "343-4234708",
+        "Correo": "info@grandemprendimientos.com.ar",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "-60,5175",
+          "-31,7440"
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Entre Rios",
+        "Nombre": "GRAVAFILT SA",
+        "CUIT": 30506746627,
+        "Dirección": "Camino de Santiago Esq Gordillo",
+        "Localidad": "Paraná",
+        "Provincia": "Entre Rios",
+        "Teléfono": "0343-4310190",
+        "Correo": "info@gravafilt.com.ar",
+        "CRM": "SI",
+        "Maquinas": "CARGADOR AUTOPROPULSADO-OTRA MARCA-OTRO",
+        "Sucursal": "PARANA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "-60,5175",
+          "-31,7440"
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Entre Rios",
+        "Nombre": "GRECA MATERIALES PARA LA CONSTRUCCION",
+        "CUIT": 30717165647,
+        "Dirección": "Pedro Balcar 52",
+        "Localidad": "Paraná",
+        "Provincia": "Entre Rios",
+        "Teléfono": "0343-4353300",
+        "Correo": "danielgreca@yahoo.com.ar",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "-58,0264",
+          "-31,3402"
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Entre Rios",
+        "Nombre": "GRINAC MOVIMIENTOS DE SUELO S.R.L.",
+        "CUIT": 30710789246,
+        "Dirección": "J.J. Valle 909",
+        "Localidad": "Concordia",
+        "Provincia": "Entre Rios",
+        "Teléfono": "0345-4274201",
+        "Correo": "grinacsrl@movsuelos.arnetbiz.com.ar",
+        "CRM": "SI",
+        "Maquinas": "CARGADOR FRONTAL-JOHN DEERE-OTRO, RETROEXCAVADORAS-JOHN DEERE-310L, EXCAVADORAS-JOHN DEERE-210G, RETROEXCAVADORAS-JOHN DEERE-310L, CARGADOR FRONTAL-OTRA MARCA-OTRO, RETROEXCAVADORAS-CAT-416",
+        "Sucursal": "CONCORDIA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "-58,1500",
+          "-32,2167"
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Entre Rios",
+        "Nombre": "GRUPO BOUVIER",
+        "CUIT": 33717732079,
+        "Dirección": "RN14 km 158",
+        "Localidad": "San José",
+        "Provincia": "Entre Rios",
+        "Teléfono": "+54 9 3447 503640",
+        "Correo": "martinbouvier@grupobouvier.com.ar",
+        "CRM": "SI",
+        "Maquinas": "MOTONIVELADORAS-SANY-SMG200, EXCAVADORAS-SANY-SY215C, CARGADOR FRONTAL-SANY-SYL956, MINICARGADORAS-BOBCAT-S530, RETROEXCAVADORAS-HYDROMAC-Modelo unico",
+        "Sucursal": "CONCORDIA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "-57,9889736",
+          "-30,7577864"
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Entre Rios",
+        "Nombre": "HORMIGONES CONCEPCIÓN S.R.L.",
+        "CUIT": 30708823046,
+        "Dirección": "Mitre 1755",
+        "Localidad": "Chajarí",
+        "Provincia": "Entre Rios",
+        "Teléfono": "",
+        "Correo": "",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "-58,8833",
+          "-32,3500"
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Entre Rios",
+        "Nombre": "HORNUS Y CIA. S.A.",
+        "CUIT": 30568664813,
+        "Dirección": "Ramírez 478",
+        "Localidad": "Basavilbaso",
+        "Provincia": "Entre Rios",
+        "Teléfono": "03445-482511",
+        "Correo": "gerencia@hornusycia.com.ar",
+        "CRM": "SI",
+        "Maquinas": "",
+        "Sucursal": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "-58,0176791",
+          "-31,3885290"
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Entre Rios",
+        "Nombre": "HUGO R. GOÑE CONSTRUCCIONES",
+        "CUIT": 30709193925,
+        "Dirección": "San Luis 727",
+        "Localidad": "Concordia",
+        "Provincia": "Entre Rios",
+        "Teléfono": "0345-4217609",
+        "Correo": "goneconstrucciones@gmail.com",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "-58,0146629",
+          "-31,3742077"
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Entre Rios",
+        "Nombre": "INCAR S.A.",
+        "CUIT": 30711427054,
+        "Dirección": "Gdor. Cresto 1758",
+        "Localidad": "Concordia",
+        "Provincia": "Entre Rios",
+        "Teléfono": "0345-4229676",
+        "Correo": "incarsa@incarsa.com.ar",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "-60,5114653",
+          "-31,7626606"
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Entre Rios",
+        "Nombre": "INDAG CONSTRUCTORA",
+        "CUIT": 20169814067,
+        "Dirección": "Liga de los Pueblos Libres 1524",
+        "Localidad": "Paraná",
+        "Provincia": "Entre Rios",
+        "Teléfono": "0343-4343931",
+        "Correo": "indag100@hotmail.com",
+        "CRM": "SI",
+        "Maquinas": "",
+        "Sucursal": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "-60,5175",
+          "-31,7440"
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Entre Rios",
+        "Nombre": "INDAL S.R.L.",
+        "CUIT": 30714183997,
+        "Dirección": "Padre Pascual Uva 1024",
+        "Localidad": "Paraná",
+        "Provincia": "Entre Rios",
+        "Teléfono": "0343 4216572 / 3434158578",
+        "Correo": "indal_srl@yahoo.com.ar",
+        "CRM": "SI",
+        "Maquinas": "",
+        "Sucursal": "PARANA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "-60,5175",
+          "-31,7440"
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Entre Rios",
+        "Nombre": "ING. QUARANTA S.R.L.",
+        "CUIT": 30518414034,
+        "Dirección": "Pasaje Falucho 344",
+        "Localidad": "Paraná",
+        "Provincia": "Entre Rios",
+        "Teléfono": "0343-4222206-4234002",
+        "Correo": "gerencia@ingquaranta.com.ar",
+        "CRM": "SI",
+        "Maquinas": "",
+        "Sucursal": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "-58,2257121",
+          "-32,4823982"
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Entre Rios",
+        "Nombre": "JCB CONSTRUCCIONES",
+        "CUIT": 30716182122,
+        "Dirección": "Perú 71",
+        "Localidad": "Concepción del Uruguay",
+        "Provincia": "Entre Rios",
+        "Teléfono": "03442-433757",
+        "Correo": "jcbconstrucciones.jcb@gmail.com",
+        "CRM": "SI",
+        "Maquinas": "RETROEXCAVADORAS-JOHN DEERE-310K, MOTONIVELADORAS-KOMATSU-GD655 5, MINICARGADORAS-BOBCAT-S570, MINICARGADORAS-OTRA MARCA-OTRO",
+        "Sucursal": "CONCORDIA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "-58,5122",
+          "-33,0078"
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Entre Rios",
+        "Nombre": "JOSÉ E. PITÓN S.A.",
+        "CUIT": 30709722235,
+        "Dirección": "Rivadavia 50",
+        "Localidad": "Gualeguay",
+        "Provincia": "Entre Rios",
+        "Teléfono": "03444-422252/424819",
+        "Correo": "administracion@jepitonsa.com.ar",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "-60,5347299",
+          "-31,7405685"
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Entre Rios",
+        "Nombre": "KEES, EDUARDO GÜNTHER",
+        "CUIT": 23281258109,
+        "Dirección": "San Martín 329-3º Piso A",
+        "Localidad": "Paraná",
+        "Provincia": "Entre Rios",
+        "Teléfono": "02966-15322797",
+        "Correo": "g.kees@ingapl.com",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "-60,5175",
+          "-31,7440"
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Entre Rios",
+        "Nombre": "L&C CONTRUCCIONES S.A.",
+        "CUIT": 33700135999,
+        "Dirección": "Manuela Pedraza 556",
+        "Localidad": "Paraná",
+        "Provincia": "Entre Rios",
+        "Teléfono": "0343-4343787",
+        "Correo": "lycconstruccionessa@gmail.com",
+        "CRM": "SI",
+        "Maquinas": "",
+        "Sucursal": "PARANA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "-58,0204824",
+          "-31,3718770"
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Entre Rios",
+        "Nombre": "LA HORMIGONERA DE COINAR S.R.L.",
+        "CUIT": 30649630336,
+        "Dirección": "Av. Tavella 2201",
+        "Localidad": "Concordia",
+        "Provincia": "Entre Rios",
+        "Teléfono": "0345-4251212/4251407",
+        "Correo": "coinarsrl@gmail.com",
+        "CRM": "SI",
+        "Maquinas": "RETROEXCAVADORAS-JOHN DEERE-310J, RETROEXCAVADORAS-JOHN DEERE-310J, EXCAVADORAS-SANY-SY135C, RETROEXCAVADORAS-CASE-OTRO, RETROEXCAVADORAS-CASE-OTRO, MOTONIVELADORAS-OTRA MARCA-OTRO, TRACTORES-NEW HOLLAND-OTRO, COMPACTADORES-DYNAPAC-OTRO, COMPACTADORES-DYNAPAC-OTRO, EXCAVADORAS-KOMATSU-OTRO, CARGADOR FRONTAL-OTRA MARCA-OTRO",
+        "Sucursal": "CONCORDIA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "-60,2011074",
+          "-32,1718483"
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Entre Rios",
+        "Nombre": "LEFFLER DIETZ",
+        "CUIT": 30716083388,
+        "Dirección": "Colón 222",
+        "Localidad": "Gral. Ramirez",
+        "Provincia": "Entre Rios",
+        "Teléfono": "0343-4901500",
+        "Correo": "administracion@leffler-dietz.com.ar",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "-58,2761324",
+          "-32,4875945"
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Entre Rios",
+        "Nombre": "LEMIRO P. PIETROBONI S.A.",
+        "CUIT": 30533004160,
+        "Dirección": "Av. Juan José Bruno 2725",
+        "Localidad": "Concepción del Uruguay",
+        "Provincia": "Entre Rios",
+        "Teléfono": "03442-442525/443628",
+        "Correo": "recepcion@lemiropietroboni.com.ar",
+        "CRM": "SI",
+        "Maquinas": "EXCAVADORAS-JOHN DEERE-350G, EXCAVADORAS-HYUNDAI-ROBEX 300 LC, PALAS CARGADORAS-OTRA MARCA-OTRO, MOTONIVELADORAS-VOLVO-G940, EXCAVADORAS-HYUNDAI-OTRO, RETROEXCAVADORAS-CAT-416, MOTONIVELADORAS-JOHN DEERE-670G, MINICARGADORAS-BOBCAT-S630, PALAS CARGADORAS-OTRA MARCA-OTRO, RETROEXCAVADORAS-CAT-416, MOTONIVELADORAS-JOHN DEERE-770G/GP, MINICARGADORAS-BOBCAT-S630, PALAS CARGADORAS-OTRA MARCA-OTRO, MOTONIVELADORAS-VOLVO-G940, EXCAVADORAS-HYUNDAI-OTRO, RETROEXCAVADORAS-CAT-416, MOTONIVELADORAS-JOHN DEERE-770G/GP, MINICARGADORAS-BOBCAT-S630, PALAS CARGADORAS-OTRA MARCA-OTRO, EXCAVADORAS-HYUNDAI-ROBEX 300 LC, PALAS CARGADORAS-JOHN DEERE-544, MOTONIVELADORAS-CAT-140M, MOTONIVELADORAS-VOLVO-G930, RETROEXCAVADORAS-CAT-416, PALAS CARGADORAS-JOHN DEERE-644, PALAS CARGADORAS-OTRA MARCA-OTRO, PALAS CARGADORAS-JOHN DEERE-644, PALAS CARGADORAS-OTRA MARCA-OTRO, MOTONIVELADORAS-OTRA MARCA-OTRO, RETROEXCAVADORAS-OTRA MARCA-OTRO, CARGADOR FRONTAL-CAT-938K, MOTONIVELADORAS-OTRA MARCA-OTRO, EXCAVADORAS-HYUNDAI-ROBEX 300 LC, RETROEXCAVADORAS-OTRA MARCA-OTRO, CARGADOR FRONTAL-CAT-938K, MOTONIVELADORAS-CAT-140M, EXCAVADORAS-CATERPILLAR-OTRO, EXCAVADORAS-OTRA MARCA-OTRO, EXCAVADORAS-HYUNDAI-ROBEX 220 LC, EXCAVADORAS-OTRA MARCA-OTRO, TOPADORAS-CAT-D6R, PALAS CARGADORAS-OTRA MARCA-OTRO, EXCAVADORAS-CATERPILLAR-OTRO, TOPADORAS-CAT-D6T, MOTONIVELADORAS-CAT-140M, EXCAVADORAS-HYUNDAI-ROBEX 220 LC, TOPADORAS-OTRA MARCA-OTRO, PALAS CARGADORAS-OTRA MARCA-OTRO, EXCAVADORAS-CATERPILLAR-OTRO, EXCAVADORAS-HYUNDAI-250 LC-7, TOPADORAS-OTRA MARCA-OTRO, PALAS CARGADORAS-LONKING-CDM856D, EXCAVADORAS-JOHN DEERE-350G, EXCAVADORAS-HYUNDAI-OTRO, CARGADOR FRONTAL-OTRA MARCA-OTRO, EXCAVADORAS-HYUNDAI-OTRO, EXCAVADORAS-JOHN DEERE-350G, EXCAVADORAS-HYUNDAI-OTRO, PALAS CARGADORAS-OTRA MARCA-OTRO",
+        "Sucursal": "CONCORDIA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "-60,5200741",
+          "-31,7770076"
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Entre Rios",
+        "Nombre": "LUIS LOSI S.A.",
+        "CUIT": 30690504797,
+        "Dirección": "Av. de las Américas 2604",
+        "Localidad": "Paraná",
+        "Provincia": "Entre Rios",
+        "Teléfono": "0343-4351753/4352014",
+        "Correo": "luislosi@luislosisa.com.ar",
+        "CRM": "SI",
+        "Maquinas": "COMPACTADORES-CATERPILLAR-CS533E, EXCAVADORAS-CATERPILLAR-320D2L, COMPACTADORES-HAMM-3520 HT, CARGADOR FRONTAL-CATERPILLAR-938H, MOTONIVELADORAS-CATERPILLAR-16G, FRESADORAS-CATERPILLAR-PR450, CARGADOR FRONTAL-CATERPILLAR-950L, COMPACTADORES-CATERPILLAR-CP533, EXCAVADORAS-CATERPILLAR-336D2L, RETROEXCAVADORAS-CATERPILLAR-416E, FRESADORAS-WIRTGEN-W130CF, MINICARGADORAS-BOBCAT-S630H, MINICARGADORAS-CATERPILLAR-246D, COMPACTADORES-CATERPILLAR-CS54B, MINICARGADORAS-BOBCAT-S630, ESTABILIZADORAS DE ASFALTO-WIRTGEN-WR240, CARGADOR FRONTAL-CATERPILLAR-924K, MINICARGADORAS-BOBCAT-S630, COMPACTADORES-HAMM-GRW18, MINICARGADORAS-BOBCAT-S630, FREZADORAS-WIRTGEN-W100, RETROEXCAVADORAS-CATERPILLAR-416F2, COMPACTADORES-HAMM-DV10, MINICARGADORAS-BOBCAT-S630, MINICARGADORAS-BOBCAT-S630, COMPACTADORES-HAMM-GRW 280-16, MINICARGADORAS-BOBCAT-S630, EXCAVADORAS-CATERPILLAR-323D, MINICARGADORAS-BOBCAT-S630, COMPACTADORES-HAMM-HD+ 90 VO, CARGADOR FRONTAL-CATERPILLAR-980F, CARGADOR FRONTAL-CATERPILLAR-938K, EXCAVADORAS-CATERPILLAR-320DL, COMPACTADORES-HAMM-HD110, MOTONIVELADORAS-CATERPILLAR-12M, EXCAVADORAS-CATERPILLAR-336DL, CARGADOR FRONTAL-CATERPILLAR-938F, EXTENDEDORES ASFÁLTICOS-VOGELE-1600, COMPACTADORES-CATERPILLAR-CB534 XW, MOTONIVELADORAS-CATERPILLAR-160M, EXCAVADORAS-CATERPILLAR-320D, COMPACTADORES-CATERPILLAR-CB534 D, EXTENDEDORES ASFÁLTICOS-VOGELE-1600-3, COMPACTADORES-CATERPILLAR-825C, COMPACTADORES-HAMM-HD+90VO, EXTENDEDORES ASFÁLTICOS-VOGELE-2100-3, FRESADORAS-CATERPILLAR-PM-102",
+        "Sucursal": "PARANA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "-59,9881438",
+          "-31,8798884"
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Entre Rios",
+        "Nombre": "MATERIALES Y ACEROS KUDOS",
+        "CUIT": 33717165859,
+        "Dirección": "Av. San Martín 429",
+        "Localidad": "Viale",
+        "Provincia": "Entre Rios",
+        "Teléfono": "0343-4921724",
+        "Correo": "corralon@lablanquitasrl.com",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "-60,4916564",
+          "-31,7301586"
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Entre Rios",
+        "Nombre": "MC CONSTRUCCIONES S.R.L.",
+        "CUIT": 30710290748,
+        "Dirección": "Blas Parera 651",
+        "Localidad": "Paraná",
+        "Provincia": "Entre Rios",
+        "Teléfono": "0343-4244980",
+        "Correo": "chauvetricardo@hotmail.com.ar",
+        "CRM": "SI",
+        "Maquinas": "",
+        "Sucursal": "PARANA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "-60,0763436",
+          "-31,5775116"
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Entre Rios",
+        "Nombre": "MEGA DESARROLLOS INMOBILIARIOS",
+        "CUIT": 30709420336,
+        "Dirección": "Santa Fe 174",
+        "Localidad": "Paraná",
+        "Provincia": "Entre Rios",
+        "Teléfono": "0343-4317296",
+        "Correo": "info@inmobiliariamega.com.ar",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "-60,4596038",
+          "-31,7819149"
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Entre Rios",
+        "Nombre": "MLD CONSTRUCCIONES S.R.L.",
+        "CUIT": 30716077027,
+        "Dirección": "Av. Newbery 2086",
+        "Localidad": "Paraná",
+        "Provincia": "Entre Rios",
+        "Teléfono": "0343-4300817",
+        "Correo": "mldconstrucciones@hotmail.com",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "-60,3062",
+          "-32,0308"
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Entre Rios",
+        "Nombre": "NEOSTONE SA",
+        "CUIT": 30715211102,
+        "Dirección": "Santiago Eichhorn 419",
+        "Localidad": "Crespo",
+        "Provincia": "Entre Rios",
+        "Teléfono": "3434051651",
+        "Correo": "administracion1@neostone.com.ar",
+        "CRM": "SI",
+        "Maquinas": "",
+        "Sucursal": "PARANA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "-60,4355484",
+          "-31,8272593"
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Entre Rios",
+        "Nombre": "NORVIAL SERVICIOS S.A.",
+        "CUIT": 30710610343,
+        "Dirección": "Chacra N°3-Ruta 12 e/Tucumán y Chaco",
+        "Localidad": "San Benito",
+        "Provincia": "Entre Rios",
+        "Teléfono": "343-6100081",
+        "Correo": "norvialservicios@yahoo.com.ar",
+        "CRM": "SI",
+        "Maquinas": "TRACTORES-CASE-8930, TRACTORES-JOHN DEERE-4760, RETROEXCAVADORAS-JOHN DEERE-310P, RETROEXCAVADORAS-JOHN DEERE-310L, RETROEXCAVADORAS-JOHN DEERE-310L, RETROEXCAVADORAS-JOHN DEERE-310P, RETROEXCAVADORAS-JOHN DEERE-310L, MOTONIVELADORAS-JOHN DEERE-770P, RETROEXCAVADORAS-JOHN DEERE-310L, MOTONIVELADORAS-JOHN DEERE-670P, RETROEXCAVADORAS-JOHN DEERE-310L, MOTONIVELADORAS-JOHN DEERE-OTRO, EXCAVADORAS-JOHN DEERE-210 GLC, EXCAVADORAS-JOHN DEERE-210 GLC, RETROEXCAVADORAS-JOHN DEERE-310J, CARGADOR AUTOPROPULSADO-JOHN DEERE-624K-II, MOTONIVELADORAS-JOHN DEERE-620G, MOTONIVELADORAS-JOHN DEERE-620G, RETROEXCAVADORAS-JOHN DEERE-310P, TRACTORES-JOHN DEERE-7215J",
+        "Sucursal": "PARANA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "-60,4375463",
+          "-31,7815004"
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Entre Rios",
+        "Nombre": "O.I.C. S.A.",
+        "CUIT": 30717500055,
+        "Dirección": "Ruta 12 y Guido Marizza",
+        "Localidad": "San Benito",
+        "Provincia": "Entre Rios",
+        "Teléfono": "0343-4979950/954",
+        "Correo": "administracionoicsa@gmail.com",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "-60,4165851",
+          "-31,7710111"
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Entre Rios",
+        "Nombre": "ORLANDO J. M. PETERSON",
+        "CUIT": 20100697441,
+        "Dirección": "Córdoba 538 – 6º Piso B",
+        "Localidad": "Paraná",
+        "Provincia": "Entre Rios",
+        "Teléfono": "0343-4323984",
+        "Correo": "petersoncop@yahoo.com.ar",
+        "CRM": "SI",
+        "Maquinas": "",
+        "Sucursal": "MERCEDES"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "-60,5175",
+          "-31,7440"
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Entre Rios",
+        "Nombre": "PAULINA C. DE MARTIN E HIJOS S.R.L.",
+        "CUIT": 30712114963,
+        "Dirección": "Alejandro Izaguirre 4991",
+        "Localidad": "Paraná",
+        "Provincia": "Entre Rios",
+        "Teléfono": "0343-4362292/4362512",
+        "Correo": "demartinsrl@hotmail.com",
+        "CRM": "SI",
+        "Maquinas": "",
+        "Sucursal": "PARANA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "-58,0264",
+          "-31,3402"
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Entre Rios",
+        "Nombre": "Perillo, Héctor Guillermo",
+        "CUIT": 20165346182,
+        "Dirección": "Boulevard Ayuí 1181",
+        "Localidad": "Concordia",
+        "Provincia": "Entre Rios",
+        "Teléfono": "0345-4254131",
+        "Correo": "wuiper1@gmail.com",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "-60,5175",
+          "-31,7440"
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Entre Rios",
+        "Nombre": "PROMETEO S.R.L.",
+        "CUIT": 30711833354,
+        "Dirección": "Rosario del Tala 625",
+        "Localidad": "Paraná",
+        "Provincia": "Entre Rios",
+        "Teléfono": "3434065053",
+        "Correo": "info@oleinizak.com.ar",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "-60,5175",
+          "-31,7440"
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Entre Rios",
+        "Nombre": "Puig Construcciones S.R.L.",
+        "CUIT": 30712309241,
+        "Dirección": "Arturo Guastavino 2344",
+        "Localidad": "Paraná",
+        "Provincia": "Entre Rios",
+        "Teléfono": "0343-4194377",
+        "Correo": "constructorapuig@hotmail.com",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "-60,5175",
+          "-31,7440"
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Entre Rios",
+        "Nombre": "REDENGAS S.A.",
+        "CUIT": 30677750266,
+        "Dirección": "P. Grella 1045",
+        "Localidad": "Paraná",
+        "Provincia": "Entre Rios",
+        "Teléfono": "0343-4343434",
+        "Correo": "redengas@redengas.com.ar",
+        "CRM": "SI",
+        "Maquinas": "",
+        "Sucursal": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "-60,4887222",
+          "-31,7574493"
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Entre Rios",
+        "Nombre": "SAN SOLAR ENERGIAS RENOVABLES",
+        "CUIT": "-",
+        "Dirección": "Almafuerte 2300",
+        "Localidad": "Paraná",
+        "Provincia": "Entre Rios",
+        "Teléfono": "0343-155001614",
+        "Correo": "",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "-60,4812933",
+          "-31,7563282"
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Entre Rios",
+        "Nombre": "SERVICIO INTEGRAL GENERAL",
+        "CUIT": 30714581356,
+        "Dirección": "Gualeguaychú 854 - Piso 2 - Of 2",
+        "Localidad": "Paraná",
+        "Provincia": "Entre Rios",
+        "Teléfono": "343-15236543",
+        "Correo": "gerenciasigargentina@gmail.com",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "-60,5214330",
+          "-31,7582036"
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Entre Rios",
+        "Nombre": "SERVICIOS PEDRIN S.A.",
+        "CUIT": 30709177733,
+        "Dirección": "Av. Ramírez 4050",
+        "Localidad": "Paraná",
+        "Provincia": "Entre Rios",
+        "Teléfono": "0343-4350561",
+        "Correo": "serviciospedrin@yahoo.com.ar",
+        "CRM": "SI",
+        "Maquinas": "MINICARGADORAS-BOBCAT-S530, EXCAVADORAS-NEW HOLLAND-E145C, RETROEXCAVADORAS-CASE-580N",
+        "Sucursal": "PARANA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "-60,4845105",
+          "-31,7521564"
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Entre Rios",
+        "Nombre": "STEEL HOLDING",
+        "CUIT": 30717171663,
+        "Dirección": "López Jordan 2742 - Unidad Uno (Acceso Norte)",
+        "Localidad": "Paraná",
+        "Provincia": "Entre Rios",
+        "Teléfono": "+54 9 3434695711",
+        "Correo": "info@steelholding.com.ar",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "-60,5175",
+          "-31,7440"
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Entre Rios",
+        "Nombre": "SUSTENTA S.R.L.",
+        "CUIT": 30715193066,
+        "Dirección": "Perú 281",
+        "Localidad": "Paraná",
+        "Provincia": "Entre Rios",
+        "Teléfono": "343-6214818",
+        "Correo": "info.sustenta@gmail.com",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "-60,5175",
+          "-31,7440"
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Entre Rios",
+        "Nombre": "SZCZECH S.A.",
+        "CUIT": 30715385151,
+        "Dirección": "Manuela Pedraza 580",
+        "Localidad": "Paraná",
+        "Provincia": "Entre Rios",
+        "Teléfono": "0343-4245918/4343787",
+        "Correo": "contacto@szczech.com.ar",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "-60,5268913",
+          "-31,7460202"
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Entre Rios",
+        "Nombre": "TODO MATERIAL",
+        "CUIT": 30658943762,
+        "Dirección": "Racedo 599",
+        "Localidad": "Paraná",
+        "Provincia": "Entre Rios",
+        "Teléfono": "4230007 / 3436 11-8750",
+        "Correo": "",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "-58,2292",
+          "-32,4847"
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Entre Rios",
+        "Nombre": "TRAZA S.A.",
+        "CUIT": 30708409886,
+        "Dirección": "Blvd. Hipolito Irigoyen 1522",
+        "Localidad": "Concepción del Uruguay",
+        "Provincia": "Entre Rios",
+        "Teléfono": "03442-430079",
+        "Correo": "mpietroboni@trazasa.com",
+        "CRM": "SI",
+        "Maquinas": "",
+        "Sucursal": "CONCORDIA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "-59,0233",
+          "-31,8678"
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Entre Rios",
+        "Nombre": "VERCO S.A.",
+        "CUIT": 30707504192,
+        "Dirección": "RN18 KM 149,70",
+        "Localidad": "Villaguay",
+        "Provincia": "Entre Rios",
+        "Teléfono": "03455-484773",
+        "Correo": "hormigonesverco@gmail.com",
+        "CRM": "SI",
+        "Maquinas": "EXCAVADORAS-SANY-SY215C, EXCAVADORAS-SANY-SY135C, MOTONIVELADORAS-LIANGONG-MG 14, RETROEXCAVADORAS-JCB-3CX, CARGADOR FRONTAL-OTRA MARCA-OTRO, MINICARGADORAS-OTRA MARCA-OTRO, RETROEXCAVADORAS-OTRA MARCA-OTRO, CARGADOR FRONTAL-OTRA MARCA-OTRO, TRACTORES-PAUNY-230A",
+        "Sucursal": "PARANA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "-60,4496039",
+          "-31,7633474"
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Entre Rios",
+        "Nombre": "VIANO CONSTRUCCIONES S.R.L.",
+        "CUIT": 30709891894,
+        "Dirección": "Av. Almafuerte 4778",
+        "Localidad": "Paraná",
+        "Provincia": "Entre Rios",
+        "Teléfono": "0343-4362744",
+        "Correo": "vianoconstruccionessrl@gmail.com",
+        "CRM": "SI",
+        "Maquinas": "RETROEXCAVADORAS-JOHN DEERE-310P",
+        "Sucursal": "PARANA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "-58,6368722",
+          "-31,7320832"
+        ]
+      },
+      "properties": {
+        "Tipo": "Socios",
+        "Delegacion": "Entre Rios",
+        "Nombre": "VIOBRAS SRL",
+        "CUIT": 30714897507,
+        "Dirección": "Atahualpa Yupanqui esq. Alfredo Citarrosa",
+        "Localidad": "Jubileo",
+        "Provincia": "Entre Rios",
+        "Teléfono": "+54 9 3456 25-6306",
+        "Correo": "ernestovidone@yahoo.com.ar",
+        "CRM": "NO",
+        "Maquinas": "",
+        "Sucursal": "-"
+      }
+    }
+  ]
+}
