@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="utf-8" />
-  <title>Dashboard Comercial </title>
+  <title>Dashboard Comercial Pro</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
   <style>
@@ -75,6 +75,15 @@
   let capaSucursales;
   let seleccionManual = new Set();
   let modoSeleccionActivo = false;
+
+  // Diccionario para nombres descriptivos en la exportación
+  const nombresDeBases = {
+    'base1': 'Socios CACF (Forrajeros)',
+    'base2': 'Socios CAPIA (Avícolas)',
+    'base3': 'Socios CAMARCO Santa Fe',
+    'base4': 'Comunas y Municipios',
+    'base5': 'Cooperativas Agropecuarias'
+  };
 
   function buscarProp(props, clave) {
     if (!props) return null;
@@ -173,7 +182,7 @@
         const p = f.properties;
         const idBase = f._baseID;
         const crmEstado = p.crm_filtrable;
-        const nombre = limpiar(buscarProp(p, "nombre") || buscarProp(p, "cliente"));
+        const nombre = limpiar(buscarProp(p, "cliente") || buscarProp(p, "nombre"));
         
         layer.on('click', (e) => {
           if (modoSeleccionActivo) {
@@ -186,12 +195,11 @@
           }
         });
 
-        // RE-INCORPORACIÓN DE POPUPS PARTICULARES
         let colH = (idBase === 'base4') ? "#8e44ad" : (idBase === 'base3' ? "#f39c12" : (idBase === 'base2' ? "#d35400" : "#2980b9"));
         let html = `<div style="min-width: 200px;"><b style="color:${colH}; text-transform:uppercase;">${nombre}</b><hr style="margin:5px 0; border:0; border-top:1px solid #eee;">`;
         
         if (idBase === 'base2') {
-          html += `📍 <b>Ubicación:</b> ${limpiar(buscarProp(p, "localidad"))}<br>🆔 <b>CUIT:</b> ${limpiar(buscarProp(p, "cuit"))}<br>🔍 <b>Relevado:</b> ${limpiar(buscarProp(p, "relevado"))}`;
+          html += `📍 <b>Ubicación:</b> ${limpiar(buscarProp(p, "localidad"))}, ${limpiar(buscarProp(p, "provincia"))}<br>🆔 <b>CUIT:</b> ${limpiar(buscarProp(p, "cuit"))}<br>🔍 <b>Relevado:</b> ${limpiar(buscarProp(p, "relevado"))}`;
         } else if (idBase === 'base1') {
           html += `📍 <b>Dir:</b> ${limpiar(buscarProp(p, "direccion"))}<br>📞 <b>Tel:</b> ${limpiar(buscarProp(p, "telefono"))}<br>📧 <b>Mail:</b> ${limpiar(buscarProp(p, "correo"))}<br>🚜 <b>Máq:</b> ${limpiar(buscarProp(p, "maquinas"))}`;
         } else if (idBase === 'base3') {
@@ -199,7 +207,7 @@
         } else if (idBase === 'base4') {
           html += `🆔 <b>CUIT:</b> ${limpiar(buscarProp(p, "cuit"))}<br>🆔 <b>ID:</b> ${limpiar(buscarProp(p, "idCliente"))}<br>🚜 <b>Máq:</b> ${limpiar(buscarProp(p, "maquinas"))}`;
         } else if (idBase === 'base5') {
-          html += `🏢 <b>Tipo:</b> ${limpiar(buscarProp(p, "tipo de espacio"))}<br>📍 <b>Dir:</b> ${limpiar(buscarProp(p, "direccion"))}`;
+          html += `🏢 <b>Tipo:</b> ${limpiar(buscarProp(p, "tipo de espacio"))}<br>📍 <b>Dir:</b> ${limpiar(buscarProp(p, "direccion"))}, ${limpiar(buscarProp(p, "provincia"))}`;
         }
         html += `<div style="margin-top:8px; border-top:1px solid #eee; padding-top:5px; font-weight:bold; color:${crmEstado==='SI'?'#27ae60':'#e74c3c'}">CRM: ${crmEstado}</div></div>`;
         layer.bindPopup(html);
@@ -218,9 +226,8 @@
       geojsonLayer.eachLayer(l => seleccionados.push(l.feature));
     }
 
-    if (seleccionados.length === 0) { alert("No hay datos."); return; }
+    if (seleccionados.length === 0) { alert("No hay datos para exportar."); return; }
 
-    // Cabecera con todos los campos posibles
     let csv = "\uFEFFBase,Nombre,CRM,Zona_Sucursal,CUIT,ID_Cliente,Direccion,Localidad,Provincia,Telefono,Email,Maquinas,Relevado,Tipo_Espacio\n";
     
     seleccionados.forEach(f => {
@@ -232,13 +239,13 @@
       }
 
       const row = [
-        f._baseID,
-        limpiar(buscarProp(p, "nombre") || buscarProp(p, "cliente")).replace(/,/g, ""),
+        nombresDeBases[f._baseID] || f._baseID, // Aquí ahora usa el nombre real
+        limpiar(buscarProp(p, "cliente") || buscarProp(p, "nombre")).replace(/,/g, ""),
         p.crm_filtrable,
         zona,
         limpiar(buscarProp(p, "cuit")),
         limpiar(buscarProp(p, "idCliente")),
-        limpiar(buscarProp(p, "direccion")).replace(/,/g, " "),
+        limpiar(buscarProp(p, "direccion") || buscarProp(p, "geocoding")).replace(/,/g, " "),
         limpiar(buscarProp(p, "localidad")),
         limpiar(buscarProp(p, "provincia")),
         limpiar(buscarProp(p, "telefono")),
@@ -253,7 +260,7 @@
     const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
     const link = document.createElement("a");
     link.href = URL.createObjectURL(blob);
-    link.download = `exportacion_comercial_${new Date().toISOString().slice(0,10)}.csv`;
+    link.download = `reporte_comercial_${new Date().toISOString().slice(0,10)}.csv`;
     link.click();
   }
 
