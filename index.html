@@ -39,7 +39,7 @@
       <option value="todas">Todas las Bases</option>
       <option value="base1">Socios CACF (Forrajeros)</option>
       <option value="base2">Socios CAPIA (Avícolas)</option>
-      <option value="base3">Socios CAMARCO Santa Fe</option>
+      <option value="base3">Socios CAMARCO</option>
       <option value="base4">Comunas y Municipios</option>
       <option value="base5">Cooperativas Agropecuarias</option>
     </select>
@@ -52,7 +52,7 @@
     </select>
   </div>
 
-  <div id="contadorPuntos" class="info-count">Puntos visibles: 0</div>
+  <div id="contadorPuntos" class="info-count">Visibles: 0 | Seleccionados: 0</div>
 
   <button id="btnModoSeleccion" class="btn-action btn-selection" onclick="toggleModoSeleccion()">
     🖱️ Modo Selección: OFF
@@ -76,11 +76,10 @@
   let seleccionManual = new Set();
   let modoSeleccionActivo = false;
 
-  // Diccionario para nombres descriptivos en la exportación
   const nombresDeBases = {
     'base1': 'Socios CACF (Forrajeros)',
     'base2': 'Socios CAPIA (Avícolas)',
-    'base3': 'Socios CAMARCO',
+    'base3': 'Socios CAMARCO Santa Fe',
     'base4': 'Comunas y Municipios',
     'base5': 'Cooperativas Agropecuarias'
   };
@@ -145,7 +144,6 @@
     const btn = document.getElementById("btnModoSeleccion");
     btn.innerText = modoSeleccionActivo ? "🖱️ Modo Selección: ON" : "🖱️ Modo Selección: OFF";
     btn.classList.toggle("active", modoSeleccionActivo);
-    document.getElementById("btnClear").style.display = seleccionManual.size > 0 ? "block" : "none";
   }
 
   function actualizarMapa() {
@@ -181,7 +179,6 @@
       onEachFeature: (f, layer) => {
         const p = f.properties;
         const idBase = f._baseID;
-        const crmEstado = p.crm_filtrable;
         const nombre = limpiar(buscarProp(p, "cliente") || buscarProp(p, "nombre"));
         
         layer.on('click', (e) => {
@@ -199,17 +196,23 @@
         let html = `<div style="min-width: 200px;"><b style="color:${colH}; text-transform:uppercase;">${nombre}</b><hr style="margin:5px 0; border:0; border-top:1px solid #eee;">`;
         
         if (idBase === 'base2') {
-          html += `📍 <b>Ubicación:</b> ${limpiar(buscarProp(p, "localidad"))}, ${limpiar(buscarProp(p, "provincia"))}<br>🆔 <b>CUIT:</b> ${limpiar(buscarProp(p, "cuit"))}<br>🔍 <b>Relevado:</b> ${limpiar(buscarProp(p, "relevado"))}`;
+          html += `📍 <b>Ubicación:</b> ${limpiar(buscarProp(p, "localidad"))}<br>🆔 <b>CUIT:</b> ${limpiar(buscarProp(p, "cuit"))}<br>🔍 <b>Relevado:</b> ${limpiar(buscarProp(p, "relevado"))}`;
         } else if (idBase === 'base1') {
           html += `📍 <b>Dir:</b> ${limpiar(buscarProp(p, "direccion"))}<br>📞 <b>Tel:</b> ${limpiar(buscarProp(p, "telefono"))}<br>📧 <b>Mail:</b> ${limpiar(buscarProp(p, "correo"))}<br>🚜 <b>Máq:</b> ${limpiar(buscarProp(p, "maquinas"))}`;
-        } else if (idBase === 'base3') {
-          html += `🆔 <b>CUIT:</b> ${limpiar(buscarProp(p, "cuit"))}<br>📍 <b>Dir:</b> ${limpiar(buscarProp(p, "direccion"))}, ${limpiar(buscarProp(p, "localidad"))}<br>🏢 <b>Suc:</b> ${limpiar(buscarProp(p, "sucursal"))}<br>🚜 <b>Máq:</b> ${limpiar(buscarProp(p, "maquinas"))}`;
+        } else if (idBase === 'base3') { // CAMARCO ACTUALIZADO
+          html += `🆔 <b>CUIT:</b> ${limpiar(buscarProp(p, "cuit"))}<br>
+                   📍 <b>Dir:</b> ${limpiar(buscarProp(p, "direccion"))}, ${limpiar(buscarProp(p, "localidad"))}<br>
+                   📞 <b>Tel:</b> ${limpiar(buscarProp(p, "telefono"))}<br>
+                   📧 <b>Mail:</b> ${limpiar(buscarProp(p, "correo"))}<br>
+                   🏢 <b>Sucursal:</b> ${limpiar(buscarProp(p, "sucursal"))}<br>
+                   🏛️ <b>Delegación:</b> ${limpiar(buscarProp(p, "delegacion"))}<br>
+                   🚜 <b>Máquinas:</b> ${limpiar(buscarProp(p, "maquinas"))}`;
         } else if (idBase === 'base4') {
           html += `🆔 <b>CUIT:</b> ${limpiar(buscarProp(p, "cuit"))}<br>🆔 <b>ID:</b> ${limpiar(buscarProp(p, "idCliente"))}<br>🚜 <b>Máq:</b> ${limpiar(buscarProp(p, "maquinas"))}`;
         } else if (idBase === 'base5') {
-          html += `🏢 <b>Tipo:</b> ${limpiar(buscarProp(p, "tipo de espacio"))}<br>📍 <b>Dir:</b> ${limpiar(buscarProp(p, "direccion"))}, ${limpiar(buscarProp(p, "provincia"))}`;
+          html += `🏢 <b>Tipo:</b> ${limpiar(buscarProp(p, "tipo de espacio"))}<br>📍 <b>Dir:</b> ${limpiar(buscarProp(p, "direccion"))}`;
         }
-        html += `<div style="margin-top:8px; border-top:1px solid #eee; padding-top:5px; font-weight:bold; color:${crmEstado==='SI'?'#27ae60':'#e74c3c'}">CRM: ${crmEstado}</div></div>`;
+        html += `<div style="margin-top:8px; border-top:1px solid #eee; padding-top:5px; font-weight:bold; color:${p.crm_filtrable==='SI'?'#27ae60':'#e74c3c'}">CRM: ${p.crm_filtrable}</div></div>`;
         layer.bindPopup(html);
       }
     }).addTo(map);
@@ -226,9 +229,9 @@
       geojsonLayer.eachLayer(l => seleccionados.push(l.feature));
     }
 
-    if (seleccionados.length === 0) { alert("No hay datos para exportar."); return; }
+    if (seleccionados.length === 0) { alert("No hay datos."); return; }
 
-    let csv = "\uFEFFBase,Nombre,CRM,Zona_Sucursal,CUIT,ID_Cliente,Direccion,Localidad,Provincia,Telefono,Email,Maquinas,Relevado,Tipo_Espacio\n";
+    let csv = "\uFEFFBase,Nombre,CRM,Zona_Sucursal,CUIT,ID_Cliente,Direccion,Localidad,Provincia,Telefono,Email,Maquinas,Relevado,Delegacion,Tipo_Espacio\n";
     
     seleccionados.forEach(f => {
       const p = f.properties;
@@ -239,7 +242,7 @@
       }
 
       const row = [
-        nombresDeBases[f._baseID] || f._baseID, // Aquí ahora usa el nombre real
+        nombresDeBases[f._baseID] || f._baseID,
         limpiar(buscarProp(p, "cliente") || buscarProp(p, "nombre")).replace(/,/g, ""),
         p.crm_filtrable,
         zona,
@@ -252,6 +255,7 @@
         limpiar(buscarProp(p, "correo") || buscarProp(p, "email")),
         limpiar(buscarProp(p, "maquinas")).replace(/,/g, " "),
         limpiar(buscarProp(p, "relevado")),
+        limpiar(buscarProp(p, "delegacion")),
         limpiar(buscarProp(p, "tipo de espacio"))
       ];
       csv += row.join(",") + "\n";
@@ -260,7 +264,7 @@
     const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
     const link = document.createElement("a");
     link.href = URL.createObjectURL(blob);
-    link.download = `reporte_comercial_${new Date().toISOString().slice(0,10)}.csv`;
+    link.download = `exportacion_comercial_${new Date().toISOString().slice(0,10)}.csv`;
     link.click();
   }
 
