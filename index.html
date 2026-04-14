@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="utf-8" />
-  <title>Dashboard Comercial - Mapa Integrado</title>
+  <title>Dashboard Comercial - Filtro Avanzado y Exportación</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
   <style>
@@ -11,12 +11,24 @@
     #panelCapas {
       position: absolute; top: 20px; right: 20px; z-index: 1000;
       background: #2c3e50; color: white; padding: 20px;
-      border-radius: 12px; width: 260px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+      border-radius: 12px; width: 280px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);
     }
     .control-group { margin-bottom: 15px; }
     label { display: block; margin-bottom: 5px; font-size: 0.7em; font-weight: bold; color: #bdc3c7; text-transform: uppercase; }
-    select { width: 100%; padding: 10px; border-radius: 8px; border: none; background: #fff; color: #333; font-weight: 600; cursor: pointer; }
+    select { width: 100%; padding: 10px; border-radius: 8px; border: none; background: #fff; color: #333; font-weight: 600; cursor: pointer; margin-bottom: 10px; }
     h3 { margin-top:0; text-align:center; font-size: 1.1em; letter-spacing: 1px; color: #fff; }
+    
+    .btn-action {
+      width: 100%; padding: 10px; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; transition: 0.3s; margin-top: 5px; color: white;
+    }
+    .btn-download { background: #27ae60; }
+    .btn-download:hover { background: #2ecc71; }
+    .btn-clear { background: #e74c3c; font-size: 0.8em; }
+    
+    .info-count { font-size: 0.8em; color: #ecf0f1; text-align: center; margin: 10px 0; background: rgba(0,0,0,0.2); padding: 5px; border-radius: 4px; }
+    
+    /* Efecto para puntos seleccionados manualmente */
+    .marker-selected { filter: drop-shadow(0 0 8px #9b59b6) brightness(1.2); stroke: #fff; stroke-width: 3px; }
   </style>
 </head>
 <body>
@@ -34,9 +46,7 @@
       <option value="base4">Comunas y Municipios</option>
       <option value="base5">Cooperativas Agropecuarias</option>
     </select>
-  </div>
-
-  <div class="control-group">
+    
     <label>📊 Estado CRM:</label>
     <select id="filtroCRM">
       <option value="todos">Todos los Clientes</option>
@@ -44,11 +54,21 @@
       <option value="NO">Fuera de CRM (NO)</option>
     </select>
   </div>
+
+  <div id="contadorPuntos" class="info-count">Puntos visibles: 0</div>
+
+  <button class="btn-action btn-download" onclick="exportarListado()">📥 Exportar Visible (CSV)</button>
+  <button class="btn-action btn-clear" onclick="limpiarSeleccionManual()">🧹 Limpiar Selección Manual</button>
+  
+  <p style="font-size: 0.7em; color: #bdc3c7; margin-top: 10px; text-align: center;">
+    * Tip: Podés hacer clic en los puntos para seleccionarlos uno por uno.
+  </p>
 </div>
 
 <div id="map"></div>
 
 <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@turf/turf@6/turf.min.js"></script>
 
 <script>
   var map = L.map('map').setView([-31.63, -60.70], 7);
@@ -57,6 +77,7 @@
   let datosBases = { base1: [], base2: [], base3: [], base4: [], base5: [] };
   let geojsonLayer;
   let capaSucursales;
+  let seleccionManual = new Set(); // Para guardar IDs de puntos clickeados
 
   function buscarProp(props, clave) {
     if (!props) return null;
@@ -77,44 +98,25 @@
       .then(r => r.json())
       .then(data => {
         capaSucursales = L.geoJSON(data, {
-          style: { 
-            color: "#000000", 
-            weight: 2, 
-            fillColor: "#34495e", 
-            fillOpacity: 0.05 
-          },
-          onEachFeature: function(f, l) {
+          style: { color: "#000", weight: 2, fillColor: "#34495e", fillOpacity: 0.05 },
+          onEachFeature: (f, l) => {
             const n = buscarProp(f.properties, "name") || buscarProp(f.properties, "sucursal") || "Zona";
             l.bindPopup(`<b>Sucursal:</b><br>${n}`);
           }
         }).addTo(map);
         capaSucursales.bringToBack();
-      }).catch(() => console.log("Archivo sucursales.geojson no encontrado"));
+      });
   }
 
   function procesarFeatures(features, idBase) {
-    return (features || []).map(f => {
+    return (features || []).map((f, index) => {
       let p = f.properties || {};
+      p._uniqueID = `${idBase}_${index}`; // ID único para selección manual
       let rawCRM = buscarProp(p, "crm");
       let idCli = buscarProp(p, "idCliente");
-      
-      let estadoFinal = "NO";
-      
-      // Lógica estándar de CRM
-      if (rawCRM && rawCRM.toString().toUpperCase().trim() === "SI") {
-        estadoFinal = "SI";
-      }
-      
-      // Regla Base 4: Sin ID no hay CRM SI
-      if (idBase === 'base4' && (!idCli || idCli === "-" || idCli === 0 || idCli === "0")) {
-        estadoFinal = "NO";
-      }
-
-      // Regla Base 5: Siempre NO (porque no tiene columna CRM)
-      if (idBase === 'base5') {
-        estadoFinal = "NO";
-      }
-
+      let estadoFinal = (rawCRM && rawCRM.toString().toUpperCase().trim() === "SI") ? "SI" : "NO";
+      if (idBase === 'base4' && (!idCli || idCli === "-" || idCli === "0")) estadoFinal = "NO";
+      if (idBase === 'base5') estadoFinal = "NO";
       p.crm_filtrable = estadoFinal;
       return { ...f, properties: p, _baseID: idBase };
     });
@@ -132,7 +134,6 @@
     datosBases.base3 = procesarFeatures(d3.features, 'base3');
     datosBases.base4 = procesarFeatures(d4.features, 'base4');
     datosBases.base5 = procesarFeatures(d5.features, 'base5');
-    
     cargarZonasSucursales();
     actualizarMapa();
   });
@@ -140,7 +141,6 @@
   function actualizarMapa() {
     const crmFiltro = document.getElementById("filtroCRM").value;
     const baseFiltro = document.getElementById("filtroBase").value;
-
     if (geojsonLayer) map.removeLayer(geojsonLayer);
 
     let combinados = [];
@@ -151,73 +151,96 @@
     }
 
     geojsonLayer = L.geoJSON(combinados, {
-      filter: function(f) {
+      filter: (f) => {
         const estado = f.properties.crm_filtrable;
-        if (crmFiltro === "todos") return true;
-        return estado === crmFiltro;
+        return crmFiltro === "todos" || estado === crmFiltro;
       },
-      pointToLayer: function(f, latlng) {
+      pointToLayer: (f, latlng) => {
         let col = "#3498db"; 
-        if (f._baseID === 'base5') col = "#27ae60"; // VERDE PARA COOPERATIVAS
-        if (f._baseID === 'base4') col = "#9b59b6"; // VIOLETA
-        if (f._baseID === 'base3') col = "#f1c40f"; // AMARILLO
-        if (f._baseID === 'base2') col = "#e67e22"; // NARANJA
-        return L.circleMarker(latlng, { radius: 8, fillColor: col, color: "#fff", weight: 1.5, fillOpacity: 0.9 });
-      },
-      onEachFeature: function(f, layer) {
-        const p = f.properties;
-        const idBase = f._baseID;
-        const nombre = limpiar(buscarProp(p, "nombre") || buscarProp(p, "cliente"), "Entidad");
-        const crmEstado = p.crm_filtrable;
+        if (f._baseID === 'base5') col = "#27ae60";
+        if (f._baseID === 'base4') col = "#9b59b6";
+        if (f._baseID === 'base3') col = "#f1c40f"; 
+        if (f._baseID === 'base2') col = "#e67e22"; 
         
-        let colH = "#2980b9";
-        if (idBase === 'base5') colH = "#219150";
-        if (idBase === 'base4') colH = "#8e44ad";
-        if (idBase === 'base3') colH = "#f39c12";
-        if (idBase === 'base2') colH = "#d35400";
+        let marker = L.circleMarker(latlng, { 
+          radius: 8, fillColor: col, color: seleccionManual.has(f.properties._uniqueID) ? "#000" : "#fff", 
+          weight: seleccionManual.has(f.properties._uniqueID) ? 3 : 1.5, fillOpacity: 0.9 
+        });
+        
+        // Manejo de selección manual
+        marker.on('click', (e) => {
+          L.DomEvent.stopPropagation(e);
+          const uid = f.properties._uniqueID;
+          if (seleccionManual.has(uid)) seleccionManual.delete(uid);
+          else seleccionManual.add(uid);
+          actualizarMapa(); // Refrescar para mostrar visualmente la selección
+        });
 
-        let html = `<div style="min-width: 230px; font-family: sans-serif; line-height: 1.4;">
-          <b style="color: ${colH}; text-transform: uppercase; font-size: 13px;">${nombre}</b>
-          <hr style="border:0; border-top:1px solid #eee; margin:8px 0;">`;
-
-        if (idBase === 'base5') { // COOPERATIVAS
-          html += `🏢 <b>Tipo de Espacio:</b> ${limpiar(buscarProp(p, "tipo de espacio"))}<br>
-                   📍 <b>Dirección:</b> ${limpiar(buscarProp(p, "direccion"))}<br>
-                   🌎 <b>Provincia:</b> ${limpiar(buscarProp(p, "provincia"))}<br>`;
-        } 
-        else if (idBase === 'base2') { // CAPIA
-          html += `📍 <b>Ubicación:</b> ${limpiar(buscarProp(p, "localidad"))}, ${limpiar(buscarProp(p, "provincia"))}<br>
-                   🆔 <b>CUIT:</b> ${limpiar(buscarProp(p, "cuit"))}<br>
-                   🔍 <b>Relevado:</b> ${limpiar(buscarProp(p, "relevado"))}<br>`;
-        } 
-        else if (idBase === 'base1') { // CACF
-          html += `📍 <b>Ubicación:</b> ${limpiar(buscarProp(p, "direccion"))}<br>
-                   📞 <b>Teléfono:</b> ${limpiar(buscarProp(p, "telefono"))}<br>
-                   📧 <b>Email:</b> ${limpiar(buscarProp(p, "correo"))}<br>
-                   🚜 <b>Máquinas (Cant):</b> ${limpiar(buscarProp(p, "maquinas"))}<br>`;
-        }
-        else if (idBase === 'base3') { // CAMARCO
-          html += `🆔 <b>CUIT:</b> ${limpiar(buscarProp(p, "cuit"))}<br>
-                   📍 <b>Dirección:</b> ${limpiar(buscarProp(p, "direccion"))}, ${limpiar(buscarProp(p, "localidad"))}<br>
-                   📞 <b>Teléfono:</b> ${limpiar(buscarProp(p, "telefono"))}<br>
-                   📧 <b>Email:</b> ${limpiar(buscarProp(p, "correo"))}<br>
-                   🚜 <b>Máquinas:</b> ${limpiar(buscarProp(p, "maquinas"))}<br>
-                   🏢 <b>Sucursal:</b> ${limpiar(buscarProp(p, "sucursal"))}<br>`;
-        }
-        else if (idBase === 'base4') { // COMUNAS
-          html += `🆔 <b>ID Cliente:</b> ${limpiar(buscarProp(p, "idCliente"))}<br>
-                   📍 <b>Ubicación:</b> ${limpiar(buscarProp(p, "geocoding"))}<br>
-                   🚜 <b>Máquinas:</b> ${limpiar(buscarProp(p, "maquinas"))}<br>`;
-        }
-
-        html += `<div style="background:#f8f9fa; padding:10px; border-radius:8px; margin-top:12px; border-left:5px solid #2c3e4e; display: flex; justify-content: space-between; align-items: center;">
-          <span style="font-weight: bold; font-size: 11px; color: #7f8c8d;">ESTADO CRM</span>
-          <span style="color: ${crmEstado === 'SI' ? '#27ae60' : '#e74c3c'}; font-weight: 800;">${crmEstado}</span>
-        </div></div>`;
-
-        layer.bindPopup(html);
+        return marker;
+      },
+      onEachFeature: (f, layer) => {
+        const p = f.properties;
+        layer.bindPopup(`<b>${limpiar(p.nombre || p.cliente)}</b><br>Base: ${f._baseID}<br>CRM: ${p.crm_filtrable}`);
       }
     }).addTo(map);
+
+    document.getElementById("contadorPuntos").innerText = `Puntos visibles: ${Object.keys(geojsonLayer._layers).length}`;
+  }
+
+  function exportarListado() {
+    let puntosAExportar = [];
+    
+    // Si hay selección manual, priorizamos esos. Si no, todo lo visible en el mapa.
+    if (seleccionManual.size > 0) {
+      const todos = [...datosBases.base1, ...datosBases.base2, ...datosBases.base3, ...datosBases.base4, ...datosBases.base5];
+      puntosAExportar = todos.filter(f => seleccionManual.has(f.properties._uniqueID));
+    } else {
+      // Exportar solo lo que está filtrado y visible actualmente
+      geojsonLayer.eachLayer(layer => {
+        puntosAExportar.push(layer.feature);
+      });
+    }
+
+    if (puntosAExportar.length === 0) { alert("No hay puntos para exportar."); return; }
+
+    let csv = "\uFEFFBase,Nombre,CRM,Ubicacion,Sucursal_Zona,CUIT,ID_Cliente\n";
+    
+    puntosAExportar.forEach(f => {
+      const p = f.properties;
+      let zonaSucursal = "Fuera de ADR";
+      
+      // Cruce espacial con Turf para saber la sucursal
+      if (capaSucursales) {
+        const pt = turf.point(f.geometry.coordinates);
+        capaSucursales.eachLayer(zona => {
+          if (turf.booleanPointInPolygon(pt, zona.feature)) {
+            zonaSucursal = buscarProp(zona.feature.properties, "name") || buscarProp(zona.feature.properties, "sucursal");
+          }
+        });
+      }
+
+      const row = [
+        f._baseID,
+        limpiar(p.nombre || p.cliente).replace(/,/g, " "),
+        p.crm_filtrable,
+        limpiar(p.localidad || p.direccion).replace(/,/g, " "),
+        zonaSucursal,
+        limpiar(p.cuit),
+        limpiar(p.idCliente)
+      ];
+      csv += row.join(",") + "\n";
+    });
+
+    const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+    const link = document.createElement("a");
+    link.href = URL.createObjectURL(blob);
+    link.download = `reporte_comercial_${new Date().toLocaleDateString()}.csv`;
+    link.click();
+  }
+
+  function limpiarSeleccionManual() {
+    seleccionManual.clear();
+    actualizarMapa();
   }
 
   document.getElementById("filtroCRM").addEventListener("change", actualizarMapa);
