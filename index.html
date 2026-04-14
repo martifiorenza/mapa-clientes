@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="utf-8" />
-  <title>Dashboard Comercial </title>
+  <title>Dashboard Comercial - PopUps Personalizados</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
   <style>
@@ -17,17 +17,13 @@
     label { display: block; margin-bottom: 5px; font-size: 0.7em; font-weight: bold; color: #bdc3c7; text-transform: uppercase; }
     select { width: 100%; padding: 10px; border-radius: 8px; border: none; background: #fff; color: #333; font-weight: 600; cursor: pointer; }
     h3 { margin-top:0; text-align:center; font-size: 1.1em; letter-spacing: 1px; color: #fff; }
-    
-    /* Estilo para el switch de ADR */
-    .switch-group { background: rgba(255,255,255,0.1); padding: 10px; border-radius: 8px; margin-bottom: 15px; display: flex; align-items: center; justify-content: space-between; cursor: pointer; }
+    .switch-group { background: rgba(255,255,255,0.1); padding: 10px; border-radius: 8px; margin-bottom: 15px; display: flex; align-items: center; justify-content: space-between; cursor: pointer; border: 1px solid rgba(255,255,255,0.2); }
     .switch-group label { margin: 0; cursor: pointer; color: #fff; font-size: 0.85em; text-transform: none; }
-    
     .btn-action { width: 100%; padding: 10px; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; transition: 0.3s; margin-top: 8px; color: white; display: flex; align-items: center; justify-content: center; gap: 5px; }
     .btn-download { background: #27ae60; }
     .btn-selection { background: #34495e; border: 1px solid #7f8c8d; }
     .btn-selection.active { background: #9b59b6; border-color: #fff; }
     .btn-clear { background: #e74c3c; font-size: 0.8em; }
-    
     .info-count { font-size: 0.8em; color: #ecf0f1; text-align: center; margin: 10px 0; background: rgba(0,0,0,0.2); padding: 5px; border-radius: 4px; }
     #contenedorDelegacion { display: none; background: rgba(255,255,255,0.05); padding: 10px; border-radius: 8px; border: 1px dashed #7f8c8d; margin-top: 10px; }
   </style>
@@ -36,31 +32,27 @@
 
 <div id="panelCapas">
   <h3>CONTROL DE MAPA</h3>
-
   <div class="switch-group">
-    <label for="checkADR">🗺️ Ver Zonas ADR (Sucursales)</label>
+    <label for="checkADR">🗺️ Ver Capa ADR (Sucursales)</label>
     <input type="checkbox" id="checkADR" checked onchange="toggleCapaADR()">
   </div>
-  
   <div class="control-group">
     <label>📂 Seleccionar Base:</label>
     <select id="filtroBase" onchange="gestionarFiltrosEspeciales()">
       <option value="todas">Todas las Bases</option>
       <option value="base1">Socios CACF (Forrajeros)</option>
       <option value="base2">Socios CAPIA (Avícolas)</option>
-      <option value="base3">Socios CAMARCO </option>
+      <option value="base3">Socios CAMARCO Santa Fe</option>
       <option value="base4">Comunas y Municipios</option>
       <option value="base5">Cooperativas Agropecuarias</option>
     </select>
   </div>
-
   <div id="contenedorDelegacion" class="control-group">
     <label>🏛️ Filtrar por Delegación:</label>
     <select id="filtroDelegacion" onchange="actualizarMapa()">
       <option value="todas">Todas las Delegaciones</option>
     </select>
   </div>
-
   <div class="control-group">
     <label>📊 Estado CRM:</label>
     <select id="filtroCRM" onchange="actualizarMapa()">
@@ -69,12 +61,8 @@
       <option value="NO">Fuera de CRM (NO)</option>
     </select>
   </div>
-
   <div id="contadorPuntos" class="info-count">Visibles: 0 | Seleccionados: 0</div>
-
-  <button id="btnModoSeleccion" class="btn-action btn-selection" onclick="toggleModoSeleccion()">
-    🖱️ Modo Selección: OFF
-  </button>
+  <button id="btnModoSeleccion" class="btn-action btn-selection" onclick="toggleModoSeleccion()">🖱️ Modo Selección: OFF</button>
   <button class="btn-action btn-download" onclick="exportarListado()">📥 Descargar Listado (CSV)</button>
   <button id="btnClear" class="btn-action btn-clear" style="display:none;" onclick="limpiarSeleccionManual()">🧹 Limpiar Selección</button>
 </div>
@@ -86,7 +74,7 @@
 
 <script>
   var map = L.map('map').setView([-31.63, -60.70], 7);
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { attribution: '© OpenStreetMap' }).addTo(map);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
 
   let datosBases = { base1: [], base2: [], base3: [], base4: [], base5: [] };
   let geojsonLayer;
@@ -112,32 +100,23 @@
     return v.toString().trim();
   }
 
-  // Función para prender/apagar el ADR
   function toggleCapaADR() {
-    const visible = document.getElementById("checkADR").checked;
-    if (capaSucursales) {
-      if (visible) {
-        capaSucursales.addTo(map);
-        capaSucursales.bringToBack();
-      } else {
-        map.removeLayer(capaSucursales);
-      }
+    if (!capaSucursales) return;
+    if (document.getElementById("checkADR").checked) {
+      capaSucursales.addTo(map);
+      capaSucursales.bringToBack();
+    } else {
+      map.removeLayer(capaSucursales);
     }
   }
 
   function cargarZonasSucursales() {
-    fetch('sucursales.geojson')
-      .then(r => r.json())
-      .then(data => {
-        capaSucursales = L.geoJSON(data, {
-          style: { color: "#2c3e50", weight: 2, fillColor: "#34495e", fillOpacity: 0.1 },
-          onEachFeature: (f, l) => {
-            const n = buscarProp(f.properties, "name") || buscarProp(f.properties, "sucursal") || "Zona";
-            l.bindPopup(`<b>Área de Influencia:</b><br>${n}`);
-          }
-        });
-        toggleCapaADR(); // Aplica el estado inicial del checkbox
+    fetch('sucursales.geojson').then(r => r.json()).then(data => {
+      capaSucursales = L.geoJSON(data, {
+        style: { color: "#2c3e50", weight: 2, fillColor: "#34495e", fillOpacity: 0.1 }
       });
+      toggleCapaADR();
+    }).catch(e => console.log("Sucursales no encontradas"));
   }
 
   Promise.all([
@@ -162,7 +141,11 @@
       let p = f.properties || {};
       p._uniqueID = `${idBase}_${index}`; 
       let rawCRM = buscarProp(p, "crm");
-      let estadoFinal = (rawCRM && rawCRM.toString().toUpperCase().trim() === "SI") ? "SI" : "NO";
+      let estadoFinal = "NO";
+      if (rawCRM) {
+          let crmStr = rawCRM.toString().toUpperCase().trim();
+          if (crmStr === "SI" || crmStr === "SÍ") estadoFinal = "SI";
+      }
       p.crm_filtrable = estadoFinal;
       return { ...f, properties: p, _baseID: idBase };
     });
@@ -222,7 +205,6 @@
         if (f._baseID === 'base4') col = "#9b59b6";
         if (f._baseID === 'base3') col = "#f1c40f"; 
         if (f._baseID === 'base2') col = "#e67e22"; 
-        
         let isSelected = seleccionManual.has(f.properties._uniqueID);
         return L.circleMarker(latlng, { 
           radius: isSelected ? 10 : 8, fillColor: col, color: isSelected ? "#000" : "#fff", 
@@ -248,26 +230,23 @@
         let colH = (idBase === 'base4') ? "#8e44ad" : (idBase === 'base3' ? "#f39c12" : (idBase === 'base2' ? "#d35400" : "#2980b9"));
         let html = `<div style="min-width: 200px;"><b style="color:${colH}; text-transform:uppercase;">${nombre}</b><hr style="margin:5px 0; border:0; border-top:1px solid #eee;">`;
         
-        if (idBase === 'base3') {
-          html += `🏛️ <b>Delegación:</b> ${limpiar(buscarProp(p, "delegacion"))}<br>
-                   🆔 <b>CUIT:</b> ${limpiar(buscarProp(p, "cuit"))}<br>
-                   🏢 <b>Sucursal:</b> ${limpiar(buscarProp(p, "sucursal"))}<br>
-                   🚜 <b>Máquinas:</b> ${limpiar(buscarProp(p, "maquinas"))}`;
-        } else if (idBase === 'base1') {
-          html += `📍 <b>Dir:</b> ${limpiar(buscarProp(p, "direccion"))}<br>
-                   🚜 <b>Máquinas:</b> ${limpiar(buscarProp(p, "maquinas"))}`;
-        } else if (idBase === 'base4') {
-          html += `🆔 <b>ID:</b> ${limpiar(buscarProp(p, "idCliente"))}<br>
-                   🚜 <b>Máq:</b> ${limpiar(buscarProp(p, "maquinas"))}`;
-        } else {
-          html += `📍 <b>Localidad:</b> ${limpiar(buscarProp(p, "localidad") || buscarProp(p, "direccion"))}`;
+        // --- POPUPS ESPECÍFICOS POR CADA BASE ---
+        if (idBase === 'base1') { // CACF
+          html += `📍 <b>Ubicación:</b> ${limpiar(buscarProp(p, "direccion"))}<br>📞 <b>Teléfono:</b> ${limpiar(buscarProp(p, "telefono"))}<br>📧 <b>Email:</b> ${limpiar(buscarProp(p, "correo"))}<br>🚜 <b>Maquinas:</b> ${limpiar(buscarProp(p, "maquinas"))}`;
+        } else if (idBase === 'base2') { // CAPIA
+          html += `📍 <b>Ubicación:</b> ${limpiar(buscarProp(p, "localidad"))}, ${limpiar(buscarProp(p, "provincia"))}<br>🆔 <b>CUIT:</b> ${limpiar(buscarProp(p, "cuit"))}<br>🔍 <b>Relevado:</b> ${limpiar(buscarProp(p, "relevado"))}`;
+        } else if (idBase === 'base3') { // CAMARCO
+          html += `🏛️ <b>Delegación:</b> ${limpiar(buscarProp(p, "delegacion"))}<br>🆔 <b>CUIT:</b> ${limpiar(buscarProp(p, "cuit"))}<br>📍 <b>Ubicación:</b> ${limpiar(buscarProp(p, "direccion"))}, ${limpiar(buscarProp(p, "localidad"))}<br>📞 <b>Teléfono:</b> ${limpiar(buscarProp(p, "telefono"))}<br>📧 <b>Email:</b> ${limpiar(buscarProp(p, "correo"))}<br>🏢 <b>Sucursal:</b> ${limpiar(buscarProp(p, "sucursal"))}<br>🚜 <b>Máquinas:</b> ${limpiar(buscarProp(p, "maquinas"))}`;
+        } else if (idBase === 'base4') { // COMUNAS
+          html += `🆔 <b>CUIT:</b> ${limpiar(buscarProp(p, "cuit"))}<br>🆔 <b>ID:</b> ${limpiar(buscarProp(p, "idCliente"))}<br>🚜 <b>Maquinas:</b> ${limpiar(buscarProp(p, "maquinas"))}`;
+        } else if (idBase === 'base5') { // COOPERATIVAS
+          html += `🏢 <b>Tipo:</b> ${limpiar(buscarProp(p, "tipo de espacio"))}<br>📍 <b>Dirección:</b> ${limpiar(buscarProp(p, "direccion"))}, ${limpiar(buscarProp(p, "provincia"))}`;
         }
         
         html += `<div style="margin-top:8px; border-top:1px solid #eee; padding-top:5px; font-weight:bold; color:${p.crm_filtrable==='SI'?'#27ae60':'#e74c3c'}">CRM: ${p.crm_filtrable}</div></div>`;
         layer.bindPopup(html);
       }
     }).addTo(map);
-
     document.getElementById("contadorPuntos").innerText = `Visibles: ${Object.keys(geojsonLayer._layers).length} | Seleccionados: ${seleccionManual.size}`;
   }
 
@@ -279,13 +258,11 @@
     } else {
       geojsonLayer.eachLayer(l => seleccionados.push(l.feature));
     }
-
-    let csv = "\uFEFFBase,Nombre,CRM,Delegacion,CUIT,Direccion,Maquinas\n";
+    let csv = "\uFEFFBase,Nombre,CRM,Delegacion,CUIT,ID_Cliente,Direccion,Email,Maquinas\n";
     seleccionados.forEach(f => {
       const p = f.properties;
-      csv += `${nombresDeBases[f._baseID]},${limpiar(p.nombre || p.cliente).replace(/,/g,"")},${p.crm_filtrable},${limpiar(buscarProp(p, "delegacion"))},${limpiar(buscarProp(p, "cuit"))},${limpiar(buscarProp(p, "direccion") || buscarProp(p, "geocoding")).replace(/,/g," ")},${limpiar(buscarProp(p, "maquinas"))}\n`;
+      csv += `${nombresDeBases[f._baseID]},${limpiar(p.nombre || p.cliente).replace(/,/g,"")},${p.crm_filtrable},${limpiar(buscarProp(p, "delegacion"))},${limpiar(buscarProp(p, "cuit"))},${limpiar(buscarProp(p, "idCliente"))},${limpiar(buscarProp(p, "direccion") || buscarProp(p, "geocoding")).replace(/,/g," ")},${limpiar(buscarProp(p, "correo") || buscarProp(p, "email"))},${limpiar(buscarProp(p, "maquinas"))}\n`;
     });
-
     const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
     const link = document.createElement("a");
     link.href = URL.createObjectURL(blob);
