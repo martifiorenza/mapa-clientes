@@ -21,7 +21,8 @@
         "Correo": "adm@alamco.com.ar",
         "CRM": "NO",
         "Maquinas": "",
-        "Sucursal": ""
+        "Sucursal": "",
+        "delegacion": "Santa Fe"
       }
     },
     {
@@ -44,7 +45,8 @@
         "Correo": "adm@angelboscarino.com.ar",
         "CRM": "NO",
         "Maquinas": "",
-        "Sucursal": "-"
+        "Sucursal": "-",
+        "delegacion": "Santa Fe"
       }
     },
     {
@@ -67,7 +69,8 @@
         "Correo": "recepción@camconstrucciones.com.ar",
         "CRM": "NO",
         "Maquinas": "",
-        "Sucursal": "-"
+        "Sucursal": "-",
+        "delegacion": "Santa Fe"
       }
     },
     {
@@ -90,7 +93,8 @@
         "Correo": "recepcion@capitelsa.com.ar",
         "CRM": "SI",
         "Maquinas": "",
-        "Sucursal": ""
+        "Sucursal": "",
+        "delegacion": "Santa Fe"
       }
     },
     {
@@ -113,7 +117,8 @@
         "Correo": "coemyc@coemyc.com",
         "CRM": "SI",
         "Maquinas": "MINICARGADORAS-OTRA MARCA-OTRO, MOTONIVELADORAS-XCMG-OTRO, MINICARGADORAS-OTRA MARCA-OTRO, MINICARGADORAS-OTRA MARCA-OTRO, MOTONIVELADORAS-CASE-OTRO, MOTONIVELADORAS-CATERPILLAR-OTRO, MOTONIVELADORAS-OTRA MARCA-OTRO, EXCAVADORAS-HYUNDAI-ROBEX 220 LC, EXCAVADORAS-HYUNDAI-ROBEX 220 LC, EXCAVADORAS-HYUNDAI-ROBEX 220 LC, RETROEXCAVADORAS-CASE-Retro, RETROEXCAVADORAS-CASE-Retro, RETROEXCAVADORAS-OTRA MARCA-OTRO, RETROEXCAVADORAS-OTRA MARCA-OTRO, CARGADOR FRONTAL-OTRA MARCA-OTRO, RETROEXCAVADORAS-JOHN DEERE-310J, CARGADOR FRONTAL-OTRA MARCA-OTRO, MINICARGADORAS-OTRA MARCA-OTRO, MINICARGADORAS-OTRA MARCA-OTRO, MOTONIVELADORAS-OTRA MARCA-OTRO",
-        "Sucursal": "SAN JUSTO"
+        "Sucursal": "SAN JUSTO",
+        "delegacion": "Santa Fe"
       }
     },
     {
@@ -136,7 +141,8 @@
         "Correo": "info@cocyar.com",
         "CRM": "SI",
         "Maquinas": "EXCAVADORAS-HYUNDAI-ROBEX 220 LC, EXCAVADORAS-HYUNDAI-ROBEX 220 LC, RETROEXCAVADORAS-JOHN DEERE-310L, RETROEXCAVADORAS-JOHN DEERE-310P",
-        "Sucursal": "SAN JUSTO"
+        "Sucursal": "SAN JUSTO",
+        "delegacion": "Santa Fe"
       }
     },
     {
@@ -159,7 +165,8 @@
         "Correo": "efarioli@coivalsa.com.ar",
         "CRM": "SI",
         "Maquinas": "",
-        "Sucursal": ""
+        "Sucursal": "",
+        "delegacion": "Santa Fe"
       }
     },
     {
@@ -182,7 +189,8 @@
         "Correo": "administracion@confortsa.com",
         "CRM": "SI",
         "Maquinas": "MINICARGADORAS-JOHN DEERE-326E, MINICARGADORAS-JOHN DEERE-318D, RETROEXCAVADORAS-JOHN DEERE-310J",
-        "Sucursal": "SAN JUSTO"
+        "Sucursal": "SAN JUSTO",
+        "delegacion": "Santa Fe"
       }
     },
     {
@@ -205,7 +213,8 @@
         "Correo": "administración@dubner.com.ar",
         "CRM": "SI",
         "Maquinas": "",
-        "Sucursal": ""
+        "Sucursal": "",
+        "delegacion": "Santa Fe"
       }
     },
     {
@@ -228,7 +237,8 @@
         "Correo": "gerencia@guerechet.com.ar",
         "CRM": "SI",
         "Maquinas": "CARGADOR AUTOPROPULSADO-OTRA MARCA-OTRO, CARGADOR AUTOPROPULSADO-OTRA MARCA-OTRO, MINICARGADORAS-OTRA MARCA-OTRO, RETROEXCAVADORAS-OTRA MARCA-OTRO, RETROEXCAVADORAS-OTRA MARCA-OTRO, RETROEXCAVADORAS-JOHN DEERE-310G, MOTONIVELADORAS-OTRA MARCA-OTRO, MOTONIVELADORAS-OTRA MARCA-OTRO, MOTONIVELADORAS-OTRA MARCA-OTRO",
-        "Sucursal": "SAN JUSTO"
+        "Sucursal": "SAN JUSTO",
+        "delegacion": "Santa Fe"
       }
     },
     {
@@ -251,7 +261,8 @@
         "Correo": "inarvialsa@inarvial.com.ar",
         "CRM": "SI",
         "Maquinas": "RETROEXCAVADORAS-JOHN DEERE-310G",
-        "Sucursal": "ROSARIO CONSTRUCCION"
+        "Sucursal": "ROSARIO CONSTRUCCION",
+        "delegacion": "Santa Fe"
       }
     },
     {
@@ -274,7 +285,8 @@
         "Correo": "administracion@memingenieria.com.ar",
         "CRM": "SI",
         "Maquinas": "",
-        "Sucursal": ""
+        "Sucursal": "",
+        "delegacion": "Santa Fe"
       }
     },
     {
@@ -297,7 +309,8 @@
         "Correo": "menara@menara.com.ar",
         "CRM": "SI",
         "Maquinas": "",
-        "Sucursal": ""
+        "Sucursal": "",
+        "delegacion": "Santa Fe"
       }
     },
     {
@@ -320,7 +333,8 @@
         "Correo": "secretaria@mundo-sa.com.ar",
         "CRM": "SI",
         "Maquinas": "RETROEXCAVADORAS-JOHN DEERE-310J, TRACTORES-MASSEY FERGUSON-1185, RETROEXCAVADORAS-HYUNDAI-OTRO, MOTONIVELADORAS-CATERPILLAR-140K, RETROEXCAVADORAS-JOHN DEERE-310J, TRACTORES-FIAT-780, RETROEXCAVADORAS-HYUNDAI-OTRO, MOTONIVELADORAS-CATERPILLAR-140K, RETROEXCAVADORAS-JOHN DEERE-310L, TRACTORES-FIAT-800, MINICARGADORAS-OTRA MARCA-OTRO, MOTONIVELADORAS-CATERPILLAR-OTRO, RETROEXCAVADORAS-JOHN DEERE-310K, CARGADOR AUTOPROPULSADO-OTRA MARCA-OTRO, MINICARGADORAS-OTRA MARCA-OTRO, MOTONIVELADORAS-CATERPILLAR-OTRO, RETROEXCAVADORAS-JOHN DEERE-310K, EXCAVADORAS-JOHN DEERE-210P, MINICARGADORAS-OTRA MARCA-OTRO, MOTONIVELADORAS-CATERPILLAR-OTRO, MOTONIVELADORAS-JOHN DEERE-670D, RETROEXCAVADORAS-JOHN DEERE-310P, EXCAVADORAS-CATERPILLAR-320, MOTONIVELADORAS-CATERPILLAR-OTRO, CARGADOR AUTOPROPULSADO-CATERPILLAR-924F, MINICARGADORAS-JOHN DEERE-326D, EXCAVADORAS-HYUNDAI-ROBEX 220 LC, CARGADOR AUTOPROPULSADO-CATERPILLAR-924F, MINICARGADORAS-JOHN DEERE-326D, EXCAVADORAS-HYUNDAI-ROBEX 220 LC, CARGADOR AUTOPROPULSADO-CATERPILLAR-924F, RETROEXCAVADORAS-HYUNDAI-OTRO, EXCAVADORAS-HYUNDAI-ROBEX 220 LC, TRACTORES-PAUNY-230C, RETROEXCAVADORAS-HYUNDAI-OTRO, EXCAVADORAS-HYUNDAI-ROBEX 220 LC, EXCAVADORAS-HITACHI-ZX250LC-5G, TRACTORES-PAUNY-EVO 250A, RETROEXCAVADORAS-HYUNDAI-OTRO, EXCAVADORAS-HYUNDAI-ROBEX 220 LC, MINICARGADORAS-JOHN DEERE-OTRO, TRACTORES-PAUNY-EVO 250A, RETROEXCAVADORAS-HYUNDAI-OTRO, EXCAVADORAS-HYUNDAI-160 LC, MINICARGADORAS-JOHN DEERE-326E, TRACTORES-PAUNY-EVO 250A, RETROEXCAVADORAS-HYUNDAI-OTRO, EXCAVADORAS-HYUNDAI-ROBEX 220 LC, RETROEXCAVADORAS-JOHN DEERE-310, TRACTORES-PAUNY-EVO 250A, RETROEXCAVADORAS-HYUNDAI-OTRO, EXCAVADORAS-HYUNDAI-ROBEX 220 LC, RETROEXCAVADORAS-JOHN DEERE-310G, TRACTORES-PAUNY-EVO 250A, EXCAVADORAS-HYUNDAI-ROBEX 220 LC, RETROEXCAVADORAS-JOHN DEERE-310G, TRACTORES-MASSEY FERGUSON-1175, EXCAVADORAS-HYUNDAI-ROBEX 220 LC",
-        "Sucursal": "ROSARIO CONSTRUCCION"
+        "Sucursal": "ROSARIO CONSTRUCCION",
+        "delegacion": "Santa Fe"
       }
     },
     {
@@ -343,7 +357,8 @@
         "Correo": "info@ecp.com.ar",
         "CRM": "SI",
         "Maquinas": "",
-        "Sucursal": ""
+        "Sucursal": "",
+        "delegacion": "Santa Fe"
       }
     },
     {
@@ -366,7 +381,8 @@
         "Correo": "administracion@grupoponce.com.ar",
         "CRM": "SI",
         "Maquinas": "",
-        "Sucursal": ""
+        "Sucursal": "",
+        "delegacion": "Santa Fe"
       }
     },
     {
@@ -389,7 +405,8 @@
         "Correo": "gracielafaccioli@electroluz.com.ar",
         "CRM": "SI",
         "Maquinas": "",
-        "Sucursal": "AVELLANEDA"
+        "Sucursal": "AVELLANEDA",
+        "delegacion": "Santa Fe"
       }
     },
     {
@@ -412,7 +429,8 @@
         "Correo": "info@premoldeadosbertone.com",
         "CRM": "SI",
         "Maquinas": "CARGADOR AUTOPROPULSADO-JOHN DEERE-644 G, CARGADOR AUTOPROPULSADO-JOHN DEERE-444G",
-        "Sucursal": ""
+        "Sucursal": "",
+        "delegacion": "Santa Fe"
       }
     },
     {
@@ -435,7 +453,8 @@
         "Correo": "info@riosaladosrl.com.ar",
         "CRM": "SI",
         "Maquinas": "MINIEXCAVADORAS-OTRA MARCA-OTRO, CARGADOR AUTOPROPULSADO-OTRA MARCA-OTRO, MOTONIVELADORAS-KOMATSU-OTRO, MOTONIVELADORAS-OTRA MARCA-OTRO, RETROEXCAVADORAS-JOHN DEERE-310P, RETROEXCAVADORAS-JOHN DEERE-310K, RETROEXCAVADORAS-OTRA MARCA-OTRO, RETROEXCAVADORAS-HYUNDAI-OTRO, EXCAVADORAS-KOMATSU-PC210 LC, EXCAVADORAS-KOMATSU-PC210 LC, EXCAVADORAS-KOMATSU-PC210 LC, EXCAVADORAS-KOMATSU-PC200 LC",
-        "Sucursal": "SAN JUSTO"
+        "Sucursal": "SAN JUSTO",
+        "delegacion": "Santa Fe"
       }
     },
     {
@@ -458,7 +477,8 @@
         "Correo": "tecsa@tecsa-sa.com",
         "CRM": "SI",
         "Maquinas": "",
-        "Sucursal": ""
+        "Sucursal": "",
+        "delegacion": "Santa Fe"
       }
     },
     {
@@ -481,7 +501,8 @@
         "Correo": "admiwinkelmannsrl@gmail.com",
         "CRM": "SI",
         "Maquinas": "",
-        "Sucursal": ""
+        "Sucursal": "",
+        "delegacion": "Santa Fe"
       }
     },
     {
@@ -504,7 +525,8 @@
         "Correo": "info@piramidesa.com.ar",
         "CRM": "SI",
         "Maquinas": "RETROEXCAVADORAS-JOHN DEERE-310L, RETROEXCAVADORAS-JOHN DEERE-310L, MINICARGADORAS-OTRA MARCA-OTRO, MINICARGADORAS-OTRA MARCA-OTRO, RETROEXCAVADORAS-JOHN DEERE-310P, RETROEXCAVADORAS-JOHN DEERE-310L",
-        "Sucursal": "SAN JUSTO"
+        "Sucursal": "SAN JUSTO",
+        "delegacion": "Santa Fe"
       }
     },
     {
@@ -527,7 +549,8 @@
         "Correo": "info@cinter.com.ar",
         "CRM": "SI",
         "Maquinas": "",
-        "Sucursal": ""
+        "Sucursal": "",
+        "delegacion": "Santa Fe"
       }
     },
     {
@@ -550,7 +573,8 @@
         "Correo": "jmcampanaarq@gmail.com",
         "CRM": "NO",
         "Maquinas": "",
-        "Sucursal": "-"
+        "Sucursal": "-",
+        "delegacion": "Santa Fe"
       }
     },
     {
@@ -573,7 +597,8 @@
         "Correo": "instecsrl@gmail.com",
         "CRM": "SI",
         "Maquinas": "",
-        "Sucursal": ""
+        "Sucursal": "",
+        "delegacion": "Santa Fe"
       }
     },
     {
@@ -596,7 +621,8 @@
         "Correo": "contacto@jbconstrucciones.com",
         "CRM": "SI",
         "Maquinas": "TRACTORES-DEUTZ-D66, TRACTORES-DEUTZ-D66, RETROEXCAVADORAS-CASE-580",
-        "Sucursal": "SAN JUSTO"
+        "Sucursal": "SAN JUSTO",
+        "delegacion": "Santa Fe"
       }
     },
     {
@@ -619,7 +645,8 @@
         "Correo": "inmobiliaria@benuzzi.com",
         "CRM": "NO",
         "Maquinas": "",
-        "Sucursal": "-"
+        "Sucursal": "-",
+        "delegacion": "Santa Fe"
       }
     },
     {
@@ -642,7 +669,8 @@
         "Correo": "administracion@parquesursrl.com.ar",
         "CRM": "SI",
         "Maquinas": "",
-        "Sucursal": ""
+        "Sucursal": "",
+        "delegacion": "Santa Fe"
       }
     },
     {
@@ -665,7 +693,8 @@
         "Correo": "santafemateriales@santafemateriales.com.ar",
         "CRM": "SI",
         "Maquinas": "",
-        "Sucursal": ""
+        "Sucursal": "",
+        "delegacion": "Santa Fe"
       }
     },
     {
@@ -688,7 +717,8 @@
         "Correo": "pilaysantafe@pilay.com.ar",
         "CRM": "SI",
         "Maquinas": "",
-        "Sucursal": ""
+        "Sucursal": "",
+        "delegacion": "Santa Fe"
       }
     },
     {
@@ -711,7 +741,8 @@
         "Correo": "secretaria@mundo-sa.com.ar",
         "CRM": "NO",
         "Maquinas": "",
-        "Sucursal": "-"
+        "Sucursal": "-",
+        "delegacion": "Santa Fe"
       }
     },
     {
@@ -734,7 +765,8 @@
         "Correo": "administracion@brconstrucciones.com.ar",
         "CRM": "NO",
         "Maquinas": "",
-        "Sucursal": "-"
+        "Sucursal": "-",
+        "delegacion": "Santa Fe"
       }
     },
     {
@@ -757,7 +789,8 @@
         "Correo": "edificarsrl@hotmail.com",
         "CRM": "NO",
         "Maquinas": "",
-        "Sucursal": "-"
+        "Sucursal": "-",
+        "delegacion": "Santa Fe"
       }
     },
     {
@@ -780,7 +813,8 @@
         "Correo": "info@neo-inversiones.com",
         "CRM": "SI",
         "Maquinas": "",
-        "Sucursal": ""
+        "Sucursal": "",
+        "delegacion": "Santa Fe"
       }
     },
     {
@@ -803,7 +837,8 @@
         "Correo": "admin@sauxwernly.com.ar",
         "CRM": "SI",
         "Maquinas": "",
-        "Sucursal": ""
+        "Sucursal": "",
+        "delegacion": "Santa Fe"
       }
     },
     {
@@ -826,7 +861,8 @@
         "Correo": "recepcion@ideasa.com.ar",
         "CRM": "SI",
         "Maquinas": "",
-        "Sucursal": "AVELLANEDA"
+        "Sucursal": "AVELLANEDA",
+        "delegacion": "Santa Fe"
       }
     },
     {
@@ -849,7 +885,8 @@
         "Correo": "info@grupo-bs.com.ar",
         "CRM": "SI",
         "Maquinas": "",
-        "Sucursal": ""
+        "Sucursal": "",
+        "delegacion": "Santa Fe"
       }
     },
     {
@@ -872,7 +909,8 @@
         "Correo": "administracion.tp@torrepuerto.com.ar",
         "CRM": "NO",
         "Maquinas": "",
-        "Sucursal": "-"
+        "Sucursal": "-",
+        "delegacion": "Santa Fe"
       }
     },
     {
@@ -895,7 +933,8 @@
         "Correo": "orioningenieriasrl@gmail.com",
         "CRM": "SI",
         "Maquinas": "",
-        "Sucursal": ""
+        "Sucursal": "",
+        "delegacion": "Santa Fe"
       }
     },
     {
@@ -918,7 +957,8 @@
         "Correo": "mt srl@hotmail.com",
         "CRM": "SI",
         "Maquinas": "",
-        "Sucursal": ""
+        "Sucursal": "",
+        "delegacion": "Santa Fe"
       }
     },
     {
@@ -941,7 +981,8 @@
         "Correo": "adm@robertopierantoni.com.ar",
         "CRM": "SI",
         "Maquinas": "EXCAVADORAS-HITACHI-OTRO",
-        "Sucursal": "ROSARIO CONSTRUCCION"
+        "Sucursal": "ROSARIO CONSTRUCCION",
+        "delegacion": "Santa Fe"
       }
     },
     {
@@ -964,7 +1005,8 @@
         "Correo": "administracion@ferroingenieria.com.ar",
         "CRM": "SI",
         "Maquinas": "",
-        "Sucursal": ""
+        "Sucursal": "",
+        "delegacion": "Santa Fe"
       }
     },
     {
@@ -987,7 +1029,8 @@
         "Correo": "administracion@tecnologiaaplicada.com.ar",
         "CRM": "SI",
         "Maquinas": "",
-        "Sucursal": ""
+        "Sucursal": "",
+        "delegacion": "Santa Fe"
       }
     },
     {
@@ -1010,7 +1053,8 @@
         "Correo": "info@sofiadesarrollos.com.ar",
         "CRM": "NO",
         "Maquinas": "",
-        "Sucursal": "-"
+        "Sucursal": "-",
+        "delegacion": "Santa Fe"
       }
     },
     {
@@ -1033,7 +1077,8 @@
         "Correo": "marianopanetto@hotmail.com",
         "CRM": "NO",
         "Maquinas": "",
-        "Sucursal": "-"
+        "Sucursal": "-",
+        "delegacion": "Santa Fe"
       }
     },
     {
@@ -1056,7 +1101,8 @@
         "Correo": "aimarconstruye@hotmail.com",
         "CRM": "SI",
         "Maquinas": "",
-        "Sucursal": ""
+        "Sucursal": "",
+        "delegacion": "Santa Fe"
       }
     },
     {
@@ -1079,7 +1125,8 @@
         "Correo": "augeconstruye.obras@gmail.com",
         "CRM": "NO",
         "Maquinas": "",
-        "Sucursal": "-"
+        "Sucursal": "-",
+        "delegacion": "Santa Fe"
       }
     },
     {
@@ -1102,7 +1149,8 @@
         "Correo": "adm.montano@hotmail.com",
         "CRM": "NO",
         "Maquinas": "",
-        "Sucursal": "-"
+        "Sucursal": "-",
+        "delegacion": "Santa Fe"
       }
     },
     {
@@ -1125,7 +1173,8 @@
         "Correo": "pronoingenieria@pronoing.com.ar ",
         "CRM": "SI",
         "Maquinas": "",
-        "Sucursal": ""
+        "Sucursal": "",
+        "delegacion": "Santa Fe"
       }
     },
     {
@@ -1148,7 +1197,8 @@
         "Correo": "servitecsrl@gmail.com ",
         "CRM": "SI",
         "Maquinas": "",
-        "Sucursal": ""
+        "Sucursal": "",
+        "delegacion": "Santa Fe"
       }
     },
     {
@@ -1171,7 +1221,8 @@
         "Correo": "administracion@dersrl.ar ",
         "CRM": "SI",
         "Maquinas": "",
-        "Sucursal": ""
+        "Sucursal": "",
+        "delegacion": "Santa Fe"
       }
     },
     {
@@ -1194,7 +1245,8 @@
         "Correo": "info@distribuidorarossi.com.ar ",
         "CRM": "SI",
         "Maquinas": "",
-        "Sucursal": ""
+        "Sucursal": "",
+        "delegacion": "Santa Fe"
       }
     },
     {
@@ -1217,7 +1269,8 @@
         "Correo": "info@domconstrucciones.com.ar ",
         "CRM": "NO",
         "Maquinas": "",
-        "Sucursal": "-"
+        "Sucursal": "-",
+        "delegacion": "Santa Fe"
       }
     },
     {
@@ -1240,7 +1293,8 @@
         "Correo": "arqluisnardelli@gmail.com ",
         "CRM": "SI",
         "Maquinas": "MINICARGADORAS-JOHN DEERE-316GR iT4, RETROEXCAVADORAS-JOHN DEERE-310P",
-        "Sucursal": "SAN JUSTO"
+        "Sucursal": "SAN JUSTO",
+        "delegacion": "Santa Fe"
       }
     },
     {
@@ -1263,7 +1317,8 @@
         "Correo": "gerencia@arcamconstructora.com ",
         "CRM": "NO",
         "Maquinas": "",
-        "Sucursal": "-"
+        "Sucursal": "-",
+        "delegacion": "Santa Fe"
       }
     },
     {
@@ -1286,7 +1341,8 @@
         "Correo": "tesoreria@grupobca.com.ar ",
         "CRM": "NO",
         "Maquinas": "",
-        "Sucursal": "-"
+        "Sucursal": "-",
+        "delegacion": "Santa Fe"
       }
     },
     {
@@ -1309,7 +1365,8 @@
         "Correo": "info@illeppac.com ",
         "CRM": "SI",
         "Maquinas": "MOTONIVELADORAS-JOHN DEERE-620P, RETROEXCAVADORAS-JOHN DEERE-310P, RETROEXCAVADORAS-JOHN DEERE-310P, RETROEXCAVADORAS-JOHN DEERE-310P",
-        "Sucursal": "SAN JUSTO"
+        "Sucursal": "SAN JUSTO",
+        "delegacion": "Santa Fe"
       }
     },
     {
@@ -1332,7 +1389,8 @@
         "Correo": "odelviso@consud.com.ar ",
         "CRM": "NO",
         "Maquinas": "",
-        "Sucursal": "-"
+        "Sucursal": "-",
+        "delegacion": "Santa Fe"
       }
     },
     {
@@ -1355,7 +1413,8 @@
         "Correo": "acabrera@alcasrl.com.ar ",
         "CRM": "SI",
         "Maquinas": "",
-        "Sucursal": "SAN JUSTO"
+        "Sucursal": "SAN JUSTO",
+        "delegacion": "Santa Fe"
       }
     },
     {
@@ -1378,7 +1437,8 @@
         "Correo": "administracion@romanoobras.com ",
         "CRM": "NO",
         "Maquinas": "",
-        "Sucursal": "-"
+        "Sucursal": "-",
+        "delegacion": "Santa Fe"
       }
     },
     {
@@ -1401,7 +1461,8 @@
         "Correo": "administracion@ferrersaobrasviales.com ",
         "CRM": "SI",
         "Maquinas": "EXCAVADORAS-DOOSAN-DX225LC, EXCAVADORAS-DOOSAN-DX225LC, EXCAVADORAS-CATERPILLAR-320, EXCAVADORAS-HYUNDAI-OTRO, EXCAVADORAS-HYUNDAI-OTRO, RETROEXCAVADORAS-CAT-416, MOTONIVELADORAS-SEM-919, CARGADOR FRONTAL-OTRA MARCA-OTRO, RETROEXCAVADORAS-JOHN DEERE-310L",
-        "Sucursal": ""
+        "Sucursal": "",
+        "delegacion": "Santa Fe"
       }
     },
     {
@@ -1424,7 +1485,8 @@
         "Correo": "contable@salasinmobiliaria.com.ar ",
         "CRM": "SI",
         "Maquinas": "",
-        "Sucursal": ""
+        "Sucursal": "",
+        "delegacion": "Santa Fe"
       }
     },
     {
@@ -1447,7 +1509,8 @@
         "Correo": "administracion@stellmat.com.ar ",
         "CRM": "NO",
         "Maquinas": "",
-        "Sucursal": "-"
+        "Sucursal": "-",
+        "delegacion": "Santa Fe"
       }
     },
     {
@@ -1470,7 +1533,8 @@
         "Correo": "admborgem@gmail.com ",
         "CRM": "NO",
         "Maquinas": "",
-        "Sucursal": "-"
+        "Sucursal": "-",
+        "delegacion": "Santa Fe"
       }
     },
     {
@@ -1493,7 +1557,8 @@
         "Correo": "icasrl@trcnet.com.ar ",
         "CRM": "SI",
         "Maquinas": "",
-        "Sucursal": "AVELLANEDA"
+        "Sucursal": "AVELLANEDA",
+        "delegacion": "Santa Fe"
       }
     },
     {
@@ -1516,7 +1581,8 @@
         "Correo": "of.administración@ingeap.com ",
         "CRM": "NO",
         "Maquinas": "",
-        "Sucursal": "-"
+        "Sucursal": "-",
+        "delegacion": "Santa Fe"
       }
     },
     {
@@ -1539,7 +1605,8 @@
         "Correo": "hmonsalvo@bildtecingenieria.com.ar ",
         "CRM": "SI",
         "Maquinas": "",
-        "Sucursal": ""
+        "Sucursal": "",
+        "delegacion": "Santa Fe"
       }
     },
     {
@@ -1562,7 +1629,8 @@
         "Correo": "administracion@sdingenieria.com.ar ",
         "CRM": "SI",
         "Maquinas": "TRACTORES-JOHN DEERE-7515",
-        "Sucursal": ""
+        "Sucursal": "",
+        "delegacion": "Santa Fe"
       }
     },
     {
@@ -1585,7 +1653,8 @@
         "Correo": "administracion@sdingenieria.com.ar ",
         "CRM": "NO",
         "Maquinas": "",
-        "Sucursal": "-"
+        "Sucursal": "-",
+        "delegacion": "Santa Fe"
       }
     },
     {
@@ -1608,7 +1677,8 @@
         "Correo": "info@blsconstrucciones.com ",
         "CRM": "NO",
         "Maquinas": "",
-        "Sucursal": "-"
+        "Sucursal": "-",
+        "delegacion": "Santa Fe"
       }
     },
     {
@@ -1631,7 +1701,8 @@
         "Correo": "contacto@aplinmobiliaria.com ",
         "CRM": "SI",
         "Maquinas": "",
-        "Sucursal": ""
+        "Sucursal": "",
+        "delegacion": "Santa Fe"
       }
     },
     {
@@ -1654,7 +1725,8 @@
         "Correo": "contacto@bgingenieria.com ",
         "CRM": "NO",
         "Maquinas": "",
-        "Sucursal": "-"
+        "Sucursal": "-",
+        "delegacion": "Santa Fe"
       }
     },
     {
@@ -1677,7 +1749,8 @@
         "Correo": "administracion@pilotesytuneles.com.ar ",
         "CRM": "NO",
         "Maquinas": "",
-        "Sucursal": "-"
+        "Sucursal": "-",
+        "delegacion": "Santa Fe"
       }
     },
     {
@@ -1700,7 +1773,8 @@
         "Correo": "a.bonvin@lalilysa.com.ar ",
         "CRM": "NO",
         "Maquinas": "",
-        "Sucursal": "-"
+        "Sucursal": "-",
+        "delegacion": "Santa Fe"
       }
     },
     {
@@ -1723,7 +1797,8 @@
         "Correo": "administracion@soint.com.ar ",
         "CRM": "NO",
         "Maquinas": "",
-        "Sucursal": "-"
+        "Sucursal": "-",
+        "delegacion": "Santa Fe"
       }
     },
     {
@@ -1746,7 +1821,8 @@
         "Correo": "info@sur-sa.com.ar ",
         "CRM": "SI",
         "Maquinas": "",
-        "Sucursal": ""
+        "Sucursal": "",
+        "delegacion": "Santa Fe"
       }
     },
     {
@@ -1769,7 +1845,8 @@
         "Correo": "info@ingenieriasie.com ",
         "CRM": "NO",
         "Maquinas": "",
-        "Sucursal": "-"
+        "Sucursal": "-",
+        "delegacion": "Santa Fe"
       }
     },
     {
@@ -1792,7 +1869,8 @@
         "Correo": "nueva.rlf.particular@gmail.com ",
         "CRM": "NO",
         "Maquinas": "",
-        "Sucursal": "-"
+        "Sucursal": "-",
+        "delegacion": "Santa Fe"
       }
     },
     {
@@ -1815,7 +1893,8 @@
         "Correo": "administracion@caphormigones.com ",
         "CRM": "NO",
         "Maquinas": "",
-        "Sucursal": "-"
+        "Sucursal": "-",
+        "delegacion": "Santa Fe"
       }
     },
     {
@@ -1838,7 +1917,8 @@
         "Correo": "info@arematpuerto.com.ar ",
         "CRM": "SI",
         "Maquinas": "",
-        "Sucursal": ""
+        "Sucursal": "",
+        "delegacion": "Santa Fe"
       }
     },
     {
@@ -1861,7 +1941,8 @@
         "Correo": "gyapur@eliasyapur.com.ar ",
         "CRM": "SI",
         "Maquinas": "",
-        "Sucursal": "AVELLANEDA"
+        "Sucursal": "AVELLANEDA",
+        "delegacion": "Santa Fe"
       }
     },
     {
@@ -1884,7 +1965,8 @@
         "Correo": "info@elemporiosrl.com.ar ",
         "CRM": "NO",
         "Maquinas": "",
-        "Sucursal": "-"
+        "Sucursal": "-",
+        "delegacion": "Santa Fe"
       }
     },
     {
@@ -1907,7 +1989,8 @@
         "Correo": "fisametal@fisametal.com.ar ",
         "CRM": "NO",
         "Maquinas": "",
-        "Sucursal": "-"
+        "Sucursal": "-",
+        "delegacion": "Santa Fe"
       }
     },
     {
@@ -1930,7 +2013,8 @@
         "Correo": "recepcion@inecosrl.com ",
         "CRM": "SI",
         "Maquinas": "",
-        "Sucursal": ""
+        "Sucursal": "",
+        "delegacion": "Santa Fe"
       }
     },
     {
@@ -1953,7 +2037,8 @@
         "Correo": "info@vicentemurilloehijos.com ",
         "CRM": "NO",
         "Maquinas": "",
-        "Sucursal": "-"
+        "Sucursal": "-",
+        "delegacion": "Santa Fe"
       }
     },
     {
@@ -1976,7 +2061,8 @@
         "Correo": "intecomsistemas@gmail.com ",
         "CRM": "NO",
         "Maquinas": "",
-        "Sucursal": "-"
+        "Sucursal": "-",
+        "delegacion": "Santa Fe"
       }
     },
     {
@@ -1999,7 +2085,8 @@
         "Correo": "nerina@culzoni.com ",
         "CRM": "SI",
         "Maquinas": "CARGADOR FRONTAL-JOHN DEERE-318D",
-        "Sucursal": ""
+        "Sucursal": "",
+        "delegacion": "Santa Fe"
       }
     },
     {
@@ -2022,7 +2109,8 @@
         "Correo": "administracion@sumiagro.com.ar ",
         "CRM": "NO",
         "Maquinas": "",
-        "Sucursal": "-"
+        "Sucursal": "-",
+        "delegacion": "Santa Fe"
       }
     },
     {
@@ -2045,7 +2133,8 @@
         "Correo": "ventas@tecnomateriales.com.ar ",
         "CRM": "SI",
         "Maquinas": "",
-        "Sucursal": ""
+        "Sucursal": "",
+        "delegacion": "Santa Fe"
       }
     },
     {
@@ -2068,7 +2157,8 @@
         "Correo": "info@dissersrl.com.ar ",
         "CRM": "NO",
         "Maquinas": "",
-        "Sucursal": "-"
+        "Sucursal": "-",
+        "delegacion": "Santa Fe"
       }
     },
     {
@@ -2091,7 +2181,8 @@
         "Correo": "palonso@miuniverso.ar ",
         "CRM": "SI",
         "Maquinas": "",
-        "Sucursal": ""
+        "Sucursal": "",
+        "delegacion": "Santa Fe"
       }
     },
     {
@@ -2114,7 +2205,8 @@
         "Correo": "jose.sanchez@acerma.com.ar ",
         "CRM": "NO",
         "Maquinas": "",
-        "Sucursal": "-"
+        "Sucursal": "-",
+        "delegacion": "Santa Fe"
       }
     },
     {
@@ -2137,7 +2229,8 @@
         "Correo": "info@raicesdelnorte.com.ar ",
         "CRM": "NO",
         "Maquinas": "",
-        "Sucursal": "-"
+        "Sucursal": "-",
+        "delegacion": "Santa Fe"
       }
     }
   ]
