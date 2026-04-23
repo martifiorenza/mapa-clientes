@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="utf-8" />
-  <title>Dashboard Comercial </title>
+  <title>Dashboard Comercial</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
   <style>
@@ -29,7 +29,7 @@
     .btn-clear { background: #e74c3c; font-size: 0.8em; }
     
     .info-count { font-size: 0.8em; color: #ecf0f1; text-align: center; margin: 10px 0; background: rgba(0,0,0,0.2); padding: 5px; border-radius: 4px; }
-    #contenedorDelegacion { display: none; background: rgba(255,255,255,0.05); padding: 10px; border-radius: 8px; border: 1px dashed #7f8c8d; margin-top: 10px; }
+    #contenedorDelegacion, #contenedorMisionesBase { display: none; background: rgba(255,255,255,0.05); padding: 10px; border-radius: 8px; border: 1px dashed #7f8c8d; margin-top: 10px; }
   </style>
 </head>
 <body>
@@ -51,6 +51,7 @@
       <option value="base3">Socios CAMARCO </option>
       <option value="base4">Comunas y Municipios</option>
       <option value="base5">Cooperativas Agropecuarias</option>
+      <option value="base6">Bases Misiones</option>
     </select>
   </div>
 
@@ -58,6 +59,13 @@
     <label>🏛️ Filtrar por Delegación:</label>
     <select id="filtroDelegacion" onchange="actualizarMapa()">
       <option value="todas">Todas las Delegaciones</option>
+    </select>
+  </div>
+
+  <div id="contenedorMisionesBase" class="control-group">
+    <label>🚩 Filtrar por Sub-Base (Misiones):</label>
+    <select id="filtroMisionesSubBase" onchange="actualizarMapa()">
+      <option value="todas">Todas las Sub-Bases</option>
     </select>
   </div>
 
@@ -88,7 +96,7 @@
   var map = L.map('map').setView([-31.63, -60.70], 7);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { attribution: '© OpenStreetMap' }).addTo(map);
 
-  let datosBases = { base1: [], base2: [], base3: [], base4: [], base5: [] };
+  let datosBases = { base1: [], base2: [], base3: [], base4: [], base5: [], base6: [] };
   let geojsonLayer;
   let capaSucursales;
   let seleccionManual = new Set();
@@ -97,7 +105,7 @@
   const nombresDeBases = {
     'base1': 'Socios CACF (Forrajeros)', 'base2': 'Socios CAPIA (Avícolas)',
     'base3': 'Socios CAMARCO Santa Fe', 'base4': 'Comunas y Municipios',
-    'base5': 'Cooperativas Agropecuarias'
+    'base5': 'Cooperativas Agropecuarias', 'base6': 'Bases Misiones'
   };
 
   function buscarProp(props, clave) {
@@ -136,19 +144,21 @@
     fetch('data2.geojson').then(r => r.json()).catch(() => ({features:[]})),
     fetch('data3.geojson').then(r => r.json()).catch(() => ({features:[]})),
     fetch('data4.geojson').then(r => r.json()).catch(() => ({features:[]})),
-    fetch('data5.geojson').then(r => r.json()).catch(() => ({features:[]}))
-  ]).then(([d1, d2, d3, d4, d5]) => {
+    fetch('data5.geojson').then(r => r.json()).catch(() => ({features:[]})),
+    fetch('data6.geojson').then(r => r.json()).catch(() => ({features:[]}))
+  ]).then(([d1, d2, d3, d4, d5, d6]) => {
     datosBases.base1 = procesarFeatures(d1.features, 'base1');
     datosBases.base2 = procesarFeatures(d2.features, 'base2');
     datosBases.base3 = procesarFeatures(d3.features, 'base3');
     datosBases.base4 = procesarFeatures(d4.features, 'base4');
     datosBases.base5 = procesarFeatures(d5.features, 'base5');
+    datosBases.base6 = procesarFeatures(d6.features, 'base6');
     llenarSelectorDelegaciones();
+    llenarSelectorMisionesBase();
     cargarZonasSucursales();
     actualizarMapa();
   });
 
-  // --- CORRECCIÓN FINAL CRM COMUNAS ---
   function procesarFeatures(features, idBase) {
     return (features || []).map((f, index) => {
       let p = f.properties || {};
@@ -156,7 +166,6 @@
       let rawCRM = buscarProp(p, "crm");
       let estadoFinal = "NO";
       
-      // Si el archivo dice SI, es SI. Sin importar el idCliente.
       if (rawCRM && rawCRM.toString().toUpperCase().trim().includes("SI")) {
           estadoFinal = "SI";
       }
@@ -176,9 +185,21 @@
     });
   }
 
+  // Llenar dinámicamente el campo BASE de la Base 6
+  function llenarSelectorMisionesBase() {
+    const selector = document.getElementById("filtroMisionesSubBase");
+    const basesMisiones = [...new Set(datosBases.base6.map(f => buscarProp(f.properties, "base")).filter(b => b))];
+    basesMisiones.sort().forEach(b => {
+      let opt = document.createElement("option");
+      opt.value = b; opt.innerText = b;
+      selector.appendChild(opt);
+    });
+  }
+
   function gestionarFiltrosEspeciales() {
     const base = document.getElementById("filtroBase").value;
     document.getElementById("contenedorDelegacion").style.display = (base === "base3" || base === "todas") ? "block" : "none";
+    document.getElementById("contenedorMisionesBase").style.display = (base === "base6" || base === "todas") ? "block" : "none";
     actualizarMapa();
   }
 
@@ -198,21 +219,29 @@
     const crmFiltro = document.getElementById("filtroCRM").value;
     const baseFiltro = document.getElementById("filtroBase").value;
     const delFiltro = document.getElementById("filtroDelegacion").value;
+    const misFiltro = document.getElementById("filtroMisionesSubBase").value;
 
     if (geojsonLayer) map.removeLayer(geojsonLayer);
 
     let combinados = (baseFiltro === "todas") 
-      ? [...datosBases.base1, ...datosBases.base2, ...datosBases.base3, ...datosBases.base4, ...datosBases.base5]
+      ? [...datosBases.base1, ...datosBases.base2, ...datosBases.base3, ...datosBases.base4, ...datosBases.base5, ...datosBases.base6]
       : (datosBases[baseFiltro] || []);
 
     geojsonLayer = L.geoJSON(combinados, {
       filter: (f) => {
         const pasaCRM = (crmFiltro === "todos" || f.properties.crm_filtrable === crmFiltro);
+        
         let pasaDelegacion = true;
         if (f._baseID === 'base3' && delFiltro !== "todas") {
           pasaDelegacion = (buscarProp(f.properties, "delegacion") === delFiltro);
         }
-        return pasaCRM && pasaDelegacion;
+
+        let pasaMisionesSubBase = true;
+        if (f._baseID === 'base6' && misFiltro !== "todas") {
+          pasaMisionesSubBase = (buscarProp(f.properties, "base") === misFiltro);
+        }
+
+        return pasaCRM && pasaDelegacion && pasaMisionesSubBase;
       },
       pointToLayer: (f, latlng) => {
         let col = "#3498db"; 
@@ -220,6 +249,7 @@
         if (f._baseID === 'base4') col = "#9b59b6";
         if (f._baseID === 'base3') col = "#f1c40f"; 
         if (f._baseID === 'base2') col = "#e67e22"; 
+        if (f._baseID === 'base6') col = "#e74c3c"; // Color Rojo para Misiones
         
         let isSelected = seleccionManual.has(f.properties._uniqueID);
         return L.circleMarker(latlng, { 
@@ -243,8 +273,7 @@
           }
         });
 
-        // --- POPUPS ORIGINALES (SIN CAMBIOS) ---
-        let colH = (idBase === 'base4') ? "#8e44ad" : (idBase === 'base3' ? "#f39c12" : (idBase === 'base2' ? "#d35400" : "#2980b9"));
+        let colH = (idBase === 'base4') ? "#8e44ad" : (idBase === 'base3' ? "#f39c12" : (idBase === 'base2' ? "#d35400" : (idBase === 'base6' ? "#c0392b" : "#2980b9")));
         let html = `<div style="min-width: 200px;"><b style="color:${colH}; text-transform:uppercase;">${nombre}</b><hr style="margin:5px 0; border:0; border-top:1px solid #eee;">`;
         
         if (idBase === 'base3') { // CAMARCO
@@ -257,6 +286,13 @@
           html += `🆔 <b>CUIT:</b> ${limpiar(buscarProp(p, "cuit"))}<br>🆔 <b>ID:</b> ${limpiar(buscarProp(p, "idCliente"))}<br>🚜 <b>Máq:</b> ${limpiar(buscarProp(p, "maquinas"))}`;
         } else if (idBase === 'base5') { // COOPERATIVAS
           html += `🏢 <b>Tipo:</b> ${limpiar(buscarProp(p, "tipo de espacio"))}<br>📍 <b>Dir:</b> ${limpiar(buscarProp(p, "direccion"))}, ${limpiar(buscarProp(p, "provincia"))}`;
+        } else if (idBase === 'base6') { // BASES MISIONES
+          html += `🚩 <b>Base:</b> ${limpiar(buscarProp(p, "base"))}<br>
+                   🆔 <b>CUIT:</b> ${limpiar(buscarProp(p, "cuit"))}<br>
+                   🏭 <b>Rubro:</b> ${limpiar(buscarProp(p, "rubro"))}<br>
+                   📍 <b>Ubicación:</b> ${limpiar(buscarProp(p, "direccion"))}, ${limpiar(buscarProp(p, "localidad"))}, ${limpiar(buscarProp(p, "provincia"))}<br>
+                   📞 <b>Tel:</b> ${limpiar(buscarProp(p, "telefono"))}<br>
+                   📧 <b>Mail:</b> ${limpiar(buscarProp(p, "email"))}`;
         }
         
         html += `<div style="margin-top:8px; font-weight:bold; color:${p.crm_filtrable==='SI'?'#27ae60':'#e74c3c'}">CRM: ${p.crm_filtrable}</div></div>`;
@@ -270,16 +306,16 @@
   function exportarListado() {
     let seleccionados = [];
     if (seleccionManual.size > 0) {
-      const todos = [...datosBases.base1, ...datosBases.base2, ...datosBases.base3, ...datosBases.base4, ...datosBases.base5];
+      const todos = [...datosBases.base1, ...datosBases.base2, ...datosBases.base3, ...datosBases.base4, ...datosBases.base5, ...datosBases.base6];
       seleccionados = todos.filter(f => seleccionManual.has(f.properties._uniqueID));
     } else {
       geojsonLayer.eachLayer(l => seleccionados.push(l.feature));
     }
 
-    let csv = "\uFEFFBase,Nombre,CRM,Delegacion,CUIT,ID_Cliente,Direccion,Email,Maquinas\n";
+    let csv = "\uFEFFBase,Nombre,CRM,Delegacion,SubBase_Misiones,CUIT,ID_Cliente,Direccion,Email,Maquinas,Rubro\n";
     seleccionados.forEach(f => {
       const p = f.properties;
-      csv += `${nombresDeBases[f._baseID]},${limpiar(p.nombre || p.cliente).replace(/,/g,"")},${p.crm_filtrable},${limpiar(buscarProp(p, "delegacion"))},${limpiar(buscarProp(p, "cuit"))},${limpiar(buscarProp(p, "idCliente"))},${limpiar(buscarProp(p, "direccion") || buscarProp(p, "geocoding")).replace(/,/g," ")},${limpiar(buscarProp(p, "correo") || buscarProp(p, "email"))},${limpiar(buscarProp(p, "maquinas"))}\n`;
+      csv += `${nombresDeBases[f._baseID]},${limpiar(p.nombre || p.cliente).replace(/,/g,"")},${p.crm_filtrable},${limpiar(buscarProp(p, "delegacion"))},${limpiar(buscarProp(p, "base"))},${limpiar(buscarProp(p, "cuit"))},${limpiar(buscarProp(p, "idCliente"))},${limpiar(buscarProp(p, "direccion") || buscarProp(p, "geocoding")).replace(/,/g," ")},${limpiar(buscarProp(p, "correo") || buscarProp(p, "email"))},${limpiar(buscarProp(p, "maquinas"))},${limpiar(buscarProp(p, "rubro"))}\n`;
     });
 
     const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
