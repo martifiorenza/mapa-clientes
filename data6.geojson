@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 {
 "type": "FeatureCollection",
 "name": "clientes_potenciales",
@@ -15487,3 +15488,315 @@
 { "type": "Feature", "properties": { "BASE": "Forestal", "CUIT": "18374027", "RUBRO": null, "NOMBRE": "YAPPE RUBEN", "DOMICILIO": null, "LOCALIDAD": "SAN VICENTE", "MUNICIPIO": null, "PROVINCIA": "Misiones", "LATITUD": -26.9892, "LONGITUD": -54.4855, "CRM": "NO", "EMAIL": null, "TELEFONO": null }, "geometry": { "type": "Point", "coordinates": [ -54.4855, -26.9892 ] } }
 ]
 }
+=======
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-55.8969, -27.3667] },
+      "properties": {
+        "BASE": "CAMECA", "NOMBRE": "ANGULAR S.R.L.", "DOMICILIO": "Av. Guillermo Marconi Piso 10", "LOCALIDAD": "POSADAS", "EMAIL": "contable.angular@hotmail", "TELEFONO": "0376-15-4286454 - 0376-4424315", "CUIT": "30707780319", "CRM": "NO"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-55.8969, -27.3667] },
+      "properties": {
+        "BASE": "CAMECA", "NOMBRE": "CANO JULIO OSCAR", "DOMICILIO": "Calle 182", "LOCALIDAD": "POSADAS", "EMAIL": "canoconstrucciones@gmail.com", "TELEFONO": "0376-15-4952710 - 0376-4952710", "CUIT": "20123272448", "CRM": "NO"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-55.8969, -27.3667] },
+      "properties": {
+        "BASE": "CAMECA", "NOMBRE": "CLARO ANIBAL OMAR", "DOMICILIO": "Bº 180Viv. Calle 184 A Casa", "LOCALIDAD": "POSADAS", "EMAIL": "anibalomarclaro@gmail.com", "TELEFONO": "0376-15-4824708", "CUIT": "20201173753", "CRM": "NO"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-54.6845, -27.0197] },
+      "properties": {
+        "BASE": "CAMECA", "NOMBRE": "GARAY JOSE ENRIQUE NICOLAS", "DOMICILIO": "Pje Cascuda -Lote (Dos de Mayo)", "LOCALIDAD": "Dos de Mayo", "EMAIL": "joennico_5@hotmail.com", "TELEFONO": "03755-15-609547", "CUIT": "20333561779", "CRM": "NO"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-55.8969, -27.3667] },
+      "properties": {
+        "BASE": "CAMECA", "NOMBRE": "ING. DEL PARANA", "DOMICILIO": "Magaldi", "LOCALIDAD": "POSADAS", "EMAIL": "ing.gastonmedina@gmail.com", "TELEFONO": "0376-15-4213511 - 0376-4469730", "CUIT": "30715474804", "CRM": "NO"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-55.8969, -27.3667] },
+      "properties": {
+        "BASE": "CAMECA", "NOMBRE": "ING. RESEK Y CIA S.R.L.", "DOMICILIO": "Sarmiento", "LOCALIDAD": "POSADAS", "EMAIL": "inj_julioresek@hotmail.com", "TELEFONO": "0376-15-4639809", "CUIT": "30710482310", "CRM": "NO"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-55.1333, -27.4833] },
+      "properties": {
+        "BASE": "CAMECA", "NOMBRE": "OZ SRL", "DOMICILIO": "Jujuy PB (Obera -Mnes)", "LOCALIDAD": "Obera", "EMAIL": "ingoctaviozibecchi@gmail.com", "TELEFONO": "03755-15-413992 - 03755-420287", "CUIT": "30715479288", "CRM": "NO"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-55.8969, -27.3667] },
+      "properties": {
+        "BASE": "CAMECA", "NOMBRE": "PORFIRIO MENCE", "DOMICILIO": "3 de Febrero 3ro A", "LOCALIDAD": "POSADAS", "EMAIL": "porfiriomence@gmail.com", "TELEFONO": "0376-15-4940920", "CUIT": "23271003269", "CRM": "NO"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-55.8969, -27.3667] },
+      "properties": {
+        "BASE": "CAMECA", "NOMBRE": "REJ CONSTRUCCIONES SRL", "DOMICILIO": "Felix de Azara 2 Piso", "LOCALIDAD": "POSADAS", "EMAIL": "rejconstrucciones@gmail.com", "TELEFONO": "0376-15-4950140 - 0376-4423381", "CUIT": "30715206389", "CRM": "SI"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-54.8963, -27.0963] },
+      "properties": {
+        "BASE": "CAMECA", "NOMBRE": "ROMA SRL", "DOMICILIO": "Ruta Nac 14 Colectora 14 A. del Valle", "LOCALIDAD": "Aristobulo del Valle", "EMAIL": "victoriazibecchi@hotmail.com", "TELEFONO": "03755-15-602378", "CUIT": "33711443229", "CRM": "NO"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-55.8969, -27.3667] },
+      "properties": {
+        "BASE": "CAMECA", "NOMBRE": "CUEROS TORRES S.A", "DOMICILIO": "AV URUGUAY", "LOCALIDAD": "POSADAS", "EMAIL": "cuerostorres@gmail.com", "TELEFONO": "0376-15-4418484 - 0376-440440/450", "CUIT": "33709962049", "CRM": "NO"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-55.8969, -27.3667] },
+      "properties": {
+        "BASE": "CAMECA", "NOMBRE": "BRASIL CERAMICA S.R.L.", "DOMICILIO": "AV QUARANTA", "LOCALIDAD": "POSADAS", "EMAIL": "ventas2@brasilceramicas.com", "TELEFONO": "0376-15-4950064 - 0376-5084613", "CUIT": "30708622970", "CRM": "NO"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-58.815218, -27.484729] },
+      "properties": {
+        "BASE": "CAMECA", "NOMBRE": "ACUSCIEL S.A", "DOMICILIO": "AV SAN MARTIN", "LOCALIDAD": "CORRIENTES", "EMAIL": "silvinaforastier@gmail.com", "TELEFONO": "0379-15-4781151 - 0376-4471121", "CUIT": "33708748809", "CRM": "NO"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-55.0667, -26.8333] },
+      "properties": {
+        "BASE": "CAMECA", "NOMBRE": "CERAMICA GARUHAPE SRL", "DOMICILIO": "Lote 28 Seccion Primera (Garuhape)", "LOCALIDAD": "Garuhape", "EMAIL": "ceramicagaruhape@prico.com.ar", "TELEFONO": "03743-15-667171 - 03743-491015", "CUIT": "30610466725", "CRM": "SI"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-55.8969, -27.3667] },
+      "properties": {
+        "BASE": "CAMECA", "NOMBRE": "MACOMA ENVIRONMENTAL TECHNOLOGIES S.A.", "DOMICILIO": "Calle 62 y 229 Pje Nemesio Parma", "LOCALIDAD": "POSADAS", "EMAIL": "emartin@macoma.us", "TELEFONO": "1 (702) 574-9448", "CUIT": "30717636518", "CRM": "NO"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-55.1333, -27.4833] },
+      "properties": {
+        "BASE": "CAMECA", "NOMBRE": "BECK CARLOS RENE", "DOMICILIO": "Buenos Aires P.B. Dpto 2(Obera Mnes)", "LOCALIDAD": "OBERA", "EMAIL": "beckenergie@gmail.com", "TELEFONO": "03755-15-589551", "CUIT": "20129621363", "CRM": "NO"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-55.1333, -27.4833] },
+      "properties": {
+        "BASE": "CAMECA", "NOMBRE": "DIGITAL CONSTRUCTION TECHNOLOGIES SRL (DCT)", "DOMICILIO": "Corrientes (Obera -Misiones)", "LOCALIDAD": "OBERA", "EMAIL": "fperrone@dctarg.com", "TELEFONO": "03755-15-650154", "CUIT": "30716566540", "CRM": "NO"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-55.8292, -27.4817] },
+      "properties": {
+        "BASE": "CAMECA", "NOMBRE": "BRASSER S.A.", "DOMICILIO": "RUTA 12 1/2 - CALLE POSADAS Y ALCAZAR (GARUPA-MISIONES)", "LOCALIDAD": "GARUPA", "EMAIL": "brasser.directorio@gmail.com", "TELEFONO": "0376-15-4332032 - 0376-4300535", "CUIT": "33694124319", "CRM": "NO"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-55.8969, -27.3667] },
+      "properties": {
+        "BASE": "CAMECA", "NOMBRE": "TECNONEA de AMADO ISMAEL HUSSEF", "DOMICILIO": "GENERAL MOSCONI Y CALLE 132", "LOCALIDAD": "POSADAS", "EMAIL": "tecnoneamisiones@gmail.com", "TELEFONO": "0376-15-4848521 - 0376-4632591", "CUIT": "20362098980", "CRM": "NO"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-66.32666, -33.287039] },
+      "properties": {
+        "BASE": "CAMECA", "NOMBRE": "CARLOS STACIUK", "DOMICILIO": "SAN LUIS", "LOCALIDAD": "SAN LUIS", "EMAIL": "ventas@carlosstaciuk.com.ar", "TELEFONO": "0376-15-4540463", "CUIT": "20074855009", "CRM": "NO"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-55.1333, -27.4833] },
+      "properties": {
+        "BASE": "CAMECA", "NOMBRE": "COMPAÑÍA ELECTRICA SRL", "DOMICILIO": "AV. BELTRAME-(OBERA-MNES)", "LOCALIDAD": "OBERA", "EMAIL": "administracion@neaelectrica.com.ar", "TELEFONO": "03755-15-692830 - 03755-425999/424747", "CUIT": "30716512149", "CRM": "NO"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-55.8292, -27.4817] },
+      "properties": {
+        "BASE": "CAMECA", "NOMBRE": "LITORCOL SAS", "DOMICILIO": "MINERAL (GARUPA-MNES)", "LOCALIDAD": "GARUPA", "EMAIL": "litorcol@hotmail.com", "TELEFONO": "0376-15-4365731", "CUIT": "30717432610", "CRM": "NO"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-62.007104, -30.712882] },
+      "properties": {
+        "BASE": "CAMECA", "NOMBRE": "AGRONORTE SRL", "DOMICILIO": "R. PROV.Nº 1KM 11-MORTERO -PROV CORDOBA", "LOCALIDAD": "MORTEROS", "EMAIL": "estivalettimatias@agronorte.com.ar", "TELEFONO": "03755-15-716690 - 03562-526137", "CUIT": "30547794482", "CRM": "SI"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-55.8969, -27.3667] },
+      "properties": {
+        "BASE": "CAMECA", "NOMBRE": "LOCALIDAD ELECTRICA S.R.L.", "DOMICILIO": "SANTA FE PISO 8", "LOCALIDAD": "POSADAS", "EMAIL": "edelman_p@LOCALIDAD-electrica.com.ar", "TELEFONO": "0376-15-4115834", "CUIT": "30715271393", "CRM": "NO"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-55.8969, -27.3667] },
+      "properties": {
+        "BASE": "CAMECA", "NOMBRE": "TECNOCIEL S.A.S.", "DOMICILIO": "AV. ANDRESITO 3064 1 D", "LOCALIDAD": "POSADAS", "EMAIL": "tecnocielsas@gmail.com", "TELEFONO": "0376-15-5139000", "CUIT": "30719197759", "CRM": "NO"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-58.43709, -34.60757] },
+      "properties": {
+        "BASE": "Bovinos", "NOMBRE": "DE COULON SA", "DOMICILIO": "v", "LOCALIDAD": "CABA", "EMAIL": "", "TELEFONO": "", "CUIT": "30672380649", "CRM": "NO"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-55.8969, -27.3667] },
+      "properties": {
+        "BASE": "Bovinos", "NOMBRE": "GANADERA EL PORVENIR S.A.", "DOMICILIO": "ayacucho 2242", "LOCALIDAD": "Posadas", "EMAIL": "", "TELEFONO": "", "CUIT": "30716619784", "CRM": "SI"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-55.050225, -26.972185] },
+      "properties": {
+        "BASE": "Bovinos", "NOMBRE": "WEIDMANN S.R.L.", "DOMICILIO": "lote 50 e parcela 186", "LOCALIDAD": "Ruiz de Montoya", "EMAIL": "", "TELEFONO": "", "CUIT": "30716703017", "CRM": "NO"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-55.8983, -27.7436] },
+      "properties": {
+        "BASE": "Bovinos", "NOMBRE": "D ALOIA LUCIANO AGUSTIN", "DOMICILIO": "-", "LOCALIDAD": "San Carlos", "EMAIL": "", "TELEFONO": "", "CUIT": "20408213674", "CRM": "NO"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-58.43709, -34.60757] },
+      "properties": {
+        "BASE": "Bovinos", "NOMBRE": "TORRES Q SOCIEDAD DE RESPONSABILIDAD LIMITADA", "DOMICILIO": "maipu 942", "LOCALIDAD": "CABA", "EMAIL": "", "TELEFONO": "", "CUIT": "30708794844", "CRM": "NO"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-58.43709, -34.60757] },
+      "properties": {
+        "BASE": "Bovinos", "NOMBRE": "ENERBOM SOCIEDAD ANONIMA", "DOMICILIO": "cordoba av. 315", "LOCALIDAD": "CABA", "EMAIL": "", "TELEFONO": "", "CUIT": "33558510809", "CRM": "SI"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-55.8969, -27.3667] },
+      "properties": {
+        "BASE": "Bovinos", "NOMBRE": "SILVESTRI ERNESTO DOMINGO", "DOMICILIO": "arevalos 1865", "LOCALIDAD": "Posadas", "EMAIL": "", "TELEFONO": "", "CUIT": "20202869751", "CRM": "NO"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-58.43709, -34.60757] },
+      "properties": {
+        "BASE": "Bovinos", "NOMBRE": "EXPORTEL S A", "DOMICILIO": "cordoba av. 315", "LOCALIDAD": "CABA", "EMAIL": "", "TELEFONO": "", "CUIT": "30618746441", "CRM": "NO"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-55.8969, -27.3667] },
+      "properties": {
+        "BASE": "Bovinos", "NOMBRE": "BACIGALUPI MIGUEL ANGEL", "DOMICILIO": "-", "LOCALIDAD": "Posadas", "EMAIL": "", "TELEFONO": "", "CUIT": "20113132885", "CRM": "NO"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-55.8969, -27.3667] },
+      "properties": {
+        "BASE": "Bovinos", "NOMBRE": "SERNE SRL", "DOMICILIO": "C Colón 2123", "LOCALIDAD": "Posadas", "EMAIL": "", "TELEFONO": "", "CUIT": "30708905387", "CRM": "SI"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-55.8969, -27.3667] },
+      "properties": {
+        "BASE": "Bovinos", "NOMBRE": "D ALOIA LUIS RAFAEL", "DOMICILIO": "Córdoba 2454", "LOCALIDAD": "Posadas", "EMAIL": "", "TELEFONO": "", "CUIT": "20174122769", "CRM": "NO"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-55.8969, -27.3667] },
+      "properties": {
+        "BASE": "Bovinos", "NOMBRE": "LOPEZ MARCELO JULIO", "DOMICILIO": "jorge newbery 3164", "LOCALIDAD": "Posadas", "EMAIL": "", "TELEFONO": "", "CUIT": "20205676970", "CRM": "NO"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-56.6871, -27.585] },
+      "properties": {
+        "BASE": "Bovinos", "NOMBRE": "COMPAÑIA GENERAL DE NEGOCIOS S.A.", "DOMICILIO": "libertador 1741", "LOCALIDAD": "Ituzaingo", "EMAIL": "", "TELEFONO": "", "CUIT": "30710738927", "CRM": "NO"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-55.8969, -27.3667] },
+      "properties": {
+        "BASE": "Bovinos", "NOMBRE": "WIRZ JUAN BAUTISTA", "DOMICILIO": "san luis 1757", "LOCALIDAD": "Posadas", "EMAIL": "", "TELEFONO": "", "CUIT": "20174121355", "CRM": "NO"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-56.00972, -28.04667] },
+      "properties": {
+        "BASE": "Bovinos", "NOMBRE": "GANADERA LOS CORRALES S.R.L.", "DOMICILIO": "julio argentino roca 3036", "LOCALIDAD": "Gobernador Virasoro", "EMAIL": "", "TELEFONO": "", "CUIT": "30712452885", "CRM": "SI"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-56.6871, -27.585] },
+      "properties": {
+        "BASE": "Bovinos", "NOMBRE": "TAYAR PABLO ENRIQUE", "DOMICILIO": "ruta provincial 120 38", "LOCALIDAD": "Ituzaingo", "EMAIL": "", "TELEFONO": "", "CUIT": "20253381389", "CRM": "NO"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-58.999894, -27.451979] },
+      "properties": {
+        "BASE": "Bovinos", "NOMBRE": "WIRZ ANA KARENINA", "DOMICILIO": "-", "LOCALIDAD": "Resistencia", "EMAIL": "", "TELEFONO": "", "CUIT": "27377046353", "CRM": "NO"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-55.8969, -27.3667] },
+      "properties": {
+        "BASE": "Bovinos", "NOMBRE": "WIRZ JUAN MARTIN", "DOMICILIO": "-", "LOCALIDAD": "Posadas", "EMAIL": "", "TELEFONO": "", "CUIT": "23404125109", "CRM": "NO"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-55.8969, -27.3667] },
+      "properties": {
+        "BASE": "Bovinos", "NOMBRE": "WIRZ SERGIO HUGO", "DOMICILIO": "morcillo 2631", "LOCALIDAD": "Posadas", "EMAIL": "", "TELEFONO": "", "CUIT": "20162558537", "CRM": "NO"
+      }
+>>>>>>> Stashed changes
