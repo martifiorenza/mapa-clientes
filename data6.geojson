@@ -15484,13 +15484,7 @@
 { "type": "Feature", "properties": { "BASE": "Forestal", "CUIT": "17008504", "RUBRO": null, "NOMBRE": "WUTZKE SERGIO ROBERTO", "DOMICILIO": null, "LOCALIDAD": "OBERA", "MUNICIPIO": null, "PROVINCIA": "Misiones", "LATITUD": -27.48333, "LONGITUD": -55.13333, "CRM": "NO", "EMAIL": null, "TELEFONO": null }, "geometry": { "type": "Point", "coordinates": [ -55.13333, -27.48333 ] } },
 { "type": "Feature", "properties": { "BASE": "Forestal", "CUIT": "11497493", "RUBRO": null, "NOMBRE": "YAKINCZUK MIGUEL JULIO", "DOMICILIO": null, "LOCALIDAD": "GUARANI", "MUNICIPIO": null, "PROVINCIA": "Misiones", "LATITUD": -27.55, "LONGITUD": -55.0833, "CRM": "NO", "EMAIL": null, "TELEFONO": null }, "geometry": { "type": "Point", "coordinates": [ -55.0833, -27.55 ] } },
 { "type": "Feature", "properties": { "BASE": "Forestal", "CUIT": "32731217", "RUBRO": null, "NOMBRE": "YAKUBOSKI DANIEL ROBERTO", "DOMICILIO": null, "LOCALIDAD": "25 DE MAYO", "MUNICIPIO": null, "PROVINCIA": "Misiones", "LATITUD": -27.37719, "LONGITUD": -54.74345, "CRM": "NO", "EMAIL": null, "TELEFONO": null }, "geometry": { "type": "Point", "coordinates": [ -54.74345, -27.37719 ] } },
-{ "type": "Feature", "properties": { "BASE": "Forestal", "CUIT": "18374027", "RUBRO": null, "NOMBRE": "YAPPE RUBEN", "DOMICILIO": null, "LOCALIDAD": "SAN VICENTE", "MUNICIPIO": null, "PROVINCIA": "Misiones", "LATITUD": -26.9892, "LONGITUD": -54.4855, "CRM": "NO", "EMAIL": null, "TELEFONO": null }, "geometry": { "type": "Point", "coordinates": [ -54.4855, -26.9892 ] } }
-]
-}
-=======
-{
-  "type": "FeatureCollection",
-  "features": [
+{ "type": "Feature", "properties": { "BASE": "Forestal", "CUIT": "18374027", "RUBRO": null, "NOMBRE": "YAPPE RUBEN", "DOMICILIO": null, "LOCALIDAD": "SAN VICENTE", "MUNICIPIO": null, "PROVINCIA": "Misiones", "LATITUD": -26.9892, "LONGITUD": -54.4855, "CRM": "NO", "EMAIL": null, "TELEFONO": null }, "geometry": { "type": "Point", "coordinates": [ -54.4855, -26.9892 ] } },
     {
       "type": "Feature",
       "geometry": { "type": "Point", "coordinates": [-55.8969, -27.3667] },
@@ -15798,6 +15792,6 @@
       "properties": {
         "BASE": "Bovinos", "NOMBRE": "WIRZ SERGIO HUGO", "DOMICILIO": "morcillo 2631", "LOCALIDAD": "Posadas", "EMAIL": "", "TELEFONO": "", "CUIT": "20162558537", "CRM": "NO"
       }
-    }
-  ]
+      }
+]
 }
