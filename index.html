@@ -291,7 +291,11 @@
         ? [].concat(datosBases.base1).concat(datosBases.base2).concat(datosBases.base3).concat(datosBases.base4).concat(datosBases.base5).concat(datosBases.base6)
         : (datosBases[baseFiltro] || []);
 
-      geojsonLayer = L.geoJSON(combinados, {
+      var featuresValidas = combinados.filter(function(f) {
+        return f && f.geometry && f.geometry.type && f.geometry.coordinates;
+      });
+
+      geojsonLayer = L.geoJSON(featuresValidas, {
         filter: function(f) {
           var pasaCRM = (crmFiltro === "todos" || f.properties.crm_filtrable === crmFiltro);
           var pasaDelegacion = true;
