@@ -191,7 +191,7 @@
           estadoFinal = "SI";
         }
         p.crm_filtrable = estadoFinal;
-        return { geometry: f.geometry, properties: p, _baseID: idBase };
+        return { type: "Feature", geometry: f.geometry, properties: p, _baseID: idBase };
       });
     }
 
@@ -291,11 +291,7 @@
         ? [].concat(datosBases.base1).concat(datosBases.base2).concat(datosBases.base3).concat(datosBases.base4).concat(datosBases.base5).concat(datosBases.base6)
         : (datosBases[baseFiltro] || []);
 
-      var featuresValidas = combinados.filter(function(f) {
-        return f && f.geometry && f.geometry.type && f.geometry.coordinates;
-      });
-
-      geojsonLayer = L.geoJSON(featuresValidas, {
+      geojsonLayer = L.geoJSON(combinados, {
         filter: function(f) {
           var pasaCRM = (crmFiltro === "todos" || f.properties.crm_filtrable === crmFiltro);
           var pasaDelegacion = true;
