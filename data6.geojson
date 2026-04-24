@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream
 {
 "type": "FeatureCollection",
 "name": "clientes_potenciales",
@@ -15793,10 +15792,12 @@
         "BASE": "Bovinos", "NOMBRE": "WIRZ JUAN MARTIN", "DOMICILIO": "-", "LOCALIDAD": "Posadas", "EMAIL": "", "TELEFONO": "", "CUIT": "23404125109", "CRM": "NO"
       }
     },
-    {
+{
       "type": "Feature",
       "geometry": { "type": "Point", "coordinates": [-55.8969, -27.3667] },
       "properties": {
         "BASE": "Bovinos", "NOMBRE": "WIRZ SERGIO HUGO", "DOMICILIO": "morcillo 2631", "LOCALIDAD": "Posadas", "EMAIL": "", "TELEFONO": "", "CUIT": "20162558537", "CRM": "NO"
       }
->>>>>>> Stashed changes
+    }
+  ]
+}
