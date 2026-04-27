@@ -308,6 +308,76 @@
       "properties": {
         "Base": "Bovinos", "nombre": "WIRZ SERGIO HUGO", "direccion": "morcillo 2631", "localidad": "Posadas", "email": "", "telefono": "", "cuit": "20162558537", "CRM": "NO"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-54.4866, -26.9932] },
+      "properties": {
+        "Base": "Cuencas Lecheras", "nombre": "Cooperativa Agropecuaria Las Mercedes", "direccion": "ruta prov 13 km 25", "localidad": "San Vicente", "email": "", "telefono": "", "cuit": "30687929671", "CRM": "NO"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-54.25, -27.0833] },
+      "properties": {
+        "Base": "Cuencas Lecheras", "nombre": "Cooperativa Agropecuaria Sarandí", "direccion": "lote once a secc ii ruta 2 km 0", "localidad": "El Soberbio", "email": "", "telefono": "", "cuit": "30711133654", "CRM": "NO"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-54.523773, -27.4739] },
+      "properties": {
+        "Base": "Cuencas Lecheras", "nombre": "Cooperativa Agropecuaria Tambera y Forestal Esperanza Km 7", "direccion": "km 7 paraje el progreso 0", "localidad": "Colonia Aurora", "email": "", "telefono": "", "cuit": "30713831405", "CRM": "NO"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-54.7428, -27.3772] },
+      "properties": {
+        "Base": "Cuencas Lecheras", "nombre": "Cooperativa Agropecuaria del  Alto Uruguay (CAUL)", "direccion": "av.san martin 299", "localidad": "25 de Mayo", "email": "", "telefono": "", "cuit": "30590073047", "CRM": "SI"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-54.523773, -27.4739] },
+      "properties": {
+        "Base": "Cuencas Lecheras", "nombre": "Cooperativa Agroindustrial Tambera y Granjera Aurora Ltda.", "direccion": "paraje iby pora lote 35", "localidad": "Colonia Aurora", "email": "", "telefono": "", "cuit": "30716300818", "CRM": "NO"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-54.1084, -26.6221] },
+      "properties": {
+        "Base": "Cuencas Lecheras", "nombre": "Cooperativa Agropecuaria El Polvorín Limitada", "direccion": "lote m subd. lot 6 r fracc m 0", "localidad": "San Pedro", "email": "", "telefono": "", "cuit": "30712286829", "CRM": "NO"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-53.735781, -26.059266] },
+      "properties": {
+        "Base": "Cuencas Lecheras", "nombre": "Cooperativa Avícola Tres Marías", "direccion": "lindero ruta provincial 23", "localidad": "San Antonio", "email": "", "telefono": "", "cuit": "30710947070", "CRM": "NO"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-54.1084, -26.6221] },
+      "properties": {
+        "Base": "Cuencas Lecheras", "nombre": "Cooperativa Agropecuaria para pequeños Productores de San Jorge", "direccion": "", "localidad": "San Pedro", "email": "", "telefono": "", "cuit": "-", "CRM": "NO"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-54.1084, -26.6221] },
+      "properties": {
+        "Base": "Cuencas Lecheras", "nombre": "Cooperativa Agropecuaria Ganadera y de Servicios Azul Ltda", "direccion": "lote 17 sub lote 1 fr m 0", "localidad": "San Pedro", "email": "", "telefono": "", "cuit": "30713695404", "CRM": "NO"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-55.3238, -27.6044] },
+      "properties": {
+        "Base": "Cuencas Lecheras", "nombre": "Cooperativa Agrícola Ganadera de Leandro N. Alem", "direccion": "ruta 14", "localidad": "Leandro N. Alem", "email": "", "telefono": "", "cuit": "30687857506", "CRM": "NO"
+      }
     }
   ]
 }
