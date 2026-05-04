@@ -376,7 +376,7 @@
       var csv = "Base,Nombre,CRM,Delegacion,SubBase_Misiones,CUIT,ID_Cliente,Direccion,Localidad,Provincia,Telefono,Email,Rubro\n";
       seleccionados.forEach(function(f) {
         var p = f.properties;
-        csv += nombresDeBases[f._baseID] + ',' + limpiar(p.nombre || p.cliente).replace(/,/g, "") + ',' + p.crm_filtrable + ',' + limpiar(buscarProp(p, "delegacion")) + ',' + limpiar(buscarProp(p, "base")) + ',' + limpiar(buscarProp(p, "cuit")) + ',' + limpiar(buscarProp(p, "idCliente")) + ',' + limpiar(buscarProp(p, "direccion") || buscarProp(p, "geocoding")).replace(/,/g, " ") + ',' + limpiar(buscarProp(p, "localidad")) + ',' + limpiar(buscarProp(p, "provincia")) + ',' + limpiar(buscarProp(p, "telefono")) + ',' + limpiar(buscarProp(p, "correo") || buscarProp(p, "email")) + ',' + limpiar(buscarProp(p, "rubro")) + '\n';
+        csv += nombresDeBases[f._baseID] + ',' + limpiar(buscarProp(p, "nombre") || buscarProp(p, "cliente")).replace(/,/g, "") + ',' + p.crm_filtrable + ',' + limpiar(buscarProp(p, "delegacion")) + ',' + limpiar(buscarProp(p, "base")) + ',' + limpiar(buscarProp(p, "cuit")) + ',' + limpiar(buscarProp(p, "idCliente")) + ',' + limpiar(buscarProp(p, "direccion") || buscarProp(p, "geocoding")).replace(/,/g, " ") + ',' + limpiar(buscarProp(p, "localidad")) + ',' + limpiar(buscarProp(p, "provincia")) + ',' + limpiar(buscarProp(p, "telefono")) + ',' + limpiar(buscarProp(p, "correo") || buscarProp(p, "email")) + ',' + limpiar(buscarProp(p, "rubro")) + '\n';
       });
       var blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
       var link = document.createElement("a");
