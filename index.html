@@ -373,29 +373,37 @@
       } else {
         geojsonLayer.eachLayer(function(l) { seleccionados.push(l.feature); });
       }
-      var porCuit = {};
-      seleccionados.forEach(function(f) {
+      var sinCuit = [];
+      var porGrupo = {};
+      seleccionados.forEach(function(f, idx) {
         var p = f.properties;
+        var base = f._baseID;
+        var subbase = limpiar(buscarProp(p, "base"));
         var cuit = limpiar(buscarProp(p, "cuit"));
-        if (!porCuit[cuit]) porCuit[cuit] = [];
-        porCuit[cuit].push(f);
+        if (cuit === "-" || cuit === "" || cuit === null) {
+          sinCuit.push(f);
+        } else {
+          var clave = base + "__" + subbase + "__" + cuit;
+          if (!porGrupo[clave]) porGrupo[clave] = [];
+          porGrupo[clave].push({ feature: f, idx: idx });
+        }
       });
-      var deduplicados = [];
-      Object.keys(porCuit).forEach(function(cuit) {
-        var grupo = porCuit[cuit];
+      var deduplicados = sinCuit.slice();
+      Object.keys(porGrupo).forEach(function(clave) {
+        var grupo = porGrupo[clave];
         if (grupo.length === 1) {
-          deduplicados.push(grupo[0]);
+          deduplicados.push(grupo[0].feature);
         } else {
           var mejor = grupo[0];
-          var mejorScore = contarCampos(mejor.properties);
+          var mejorScore = contarCampos(mejor.feature.properties);
           for (var i = 1; i < grupo.length; i++) {
-            var score = contarCampos(grupo[i].properties);
+            var score = contarCampos(grupo[i].feature.properties);
             if (score > mejorScore) {
               mejor = grupo[i];
               mejorScore = score;
             }
           }
-          deduplicados.push(mejor);
+          deduplicados.push(mejor.feature);
         }
       });
       var csv = "Base,Nombre,CRM,Delegacion,SubBase_Misiones,CUIT,ID_Cliente,Direccion,Localidad,Provincia,Telefono,Email,Rubro\n";
@@ -415,7 +423,10 @@
       var campos = ["cliente", "nombre", "cuit", "direccion", "geocoding", "localidad", "provincia", "telefono", "correo", "email", "delegacion", "base", "idCliente", "rubro"];
       campos.forEach(function(c) {
         var v = buscarProp(p, c);
-        if (v && v.toString().trim() !== "" && v.toString() !== "0" && v.toString() !== "-") score++;
+        if (v) {
+          var s = v.toString().trim().toUpperCase();
+          if (s !== "" && s !== "0" && s !== "-" && s !== "N/A" && s !== "NULL" && s !== "NA") score++;
+        }
       });
       return score;
     }
