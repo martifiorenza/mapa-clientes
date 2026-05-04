@@ -365,6 +365,19 @@
       document.getElementById("contadorPuntos").innerText = 'Visibles: ' + totalVisible + ' | Seleccionados: ' + seleccionManual.size;
     }
 
+    function obtenerValor(p, posiblesClaves) {
+      if (!p) return null;
+      for (var i = 0; i < posiblesClaves.length; i++) {
+        var claveBuscada = posiblesClaves[i].toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").trim();
+        var claves = Object.keys(p);
+        for (var j = 0; j < claves.length; j++) {
+          var claveReal = claves[j].toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").trim();
+          if (claveReal === claveBuscada) return p[claves[j]];
+        }
+      }
+      return null;
+    }
+
     function exportarListado() {
       var seleccionados = [];
       if (seleccionManual.size > 0) {
@@ -378,9 +391,10 @@
       seleccionados.forEach(function(f, idx) {
         var p = f.properties;
         var base = f._baseID;
-        var subbase = limpiar(buscarProp(p, "base"));
-        var cuit = limpiar(buscarProp(p, "cuit"));
-        if (cuit === "-" || cuit === "" || cuit === null) {
+        var subbase = obtenerValor(p, ["base"]) || "-";
+        var cuitRaw = obtenerValor(p, ["cuit", "CUIT", "Cuit"]);
+        var cuit = cuitRaw ? cuitRaw.toString().trim() : "";
+        if (cuit === "" || cuit === "0" || cuit === "-") {
           sinCuit.push(f);
         } else {
           var clave = base + "__" + subbase + "__" + cuit;
@@ -408,8 +422,7 @@
       });
       var csv = "Base,Nombre,CRM,Delegacion,SubBase_Misiones,CUIT,ID_Cliente,Direccion,Localidad,Provincia,Telefono,Email,Rubro\n";
       deduplicados.forEach(function(f) {
-        var p = f.properties;
-        csv += nombresDeBases[f._baseID] + ',' + limpiar(buscarProp(p, "cliente") || buscarProp(p, "nombre")).replace(/,/g, "") + ',' + p.crm_filtrable + ',' + limpiar(buscarProp(p, "delegacion")) + ',' + limpiar(buscarProp(p, "base")) + ',' + limpiar(buscarProp(p, "cuit")) + ',' + limpiar(buscarProp(p, "idCliente")) + ',' + limpiar(buscarProp(p, "direccion") || buscarProp(p, "geocoding")).replace(/,/g, " ") + ',' + limpiar(buscarProp(p, "localidad")) + ',' + limpiar(buscarProp(p, "provincia")) + ',' + limpiar(buscarProp(p, "telefono")) + ',' + limpiar(buscarProp(p, "correo") || buscarProp(p, "email")) + ',' + limpiar(buscarProp(p, "rubro")) + '\n';
+        csv += nombresDeBases[f._baseID] + ',' + exportarCSV(f.properties) + '\n';
       });
       var blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
       var link = document.createElement("a");
@@ -420,15 +433,39 @@
 
     function contarCampos(p) {
       var score = 0;
-      var campos = ["cliente", "nombre", "cuit", "direccion", "geocoding", "localidad", "provincia", "telefono", "correo", "email", "delegacion", "base", "idCliente", "rubro"];
+      var campos = [
+        ["cliente", "Cliente"], ["nombre", "Nombre", "NOMBRE"],
+        ["cuit", "CUIT", "Cuit"], ["direccion", "Direccion", "DIRECCIÓN", "DOMICILIO"],
+        ["geocoding"], ["localidad", "Localidad"], ["provincia", "Provincia"],
+        ["telefono", "Telefono", "TELÉFONO", "TELEFONO"],
+        ["correo", "email", "Email", "EMAIL", "correo electronico"],
+        ["delegacion", "Delegacion"], ["base", "Base", "BASE"],
+        ["idCliente", "idCliente"], ["rubro", "Rubro", "RUBRO"]
+      ];
       campos.forEach(function(c) {
-        var v = buscarProp(p, c);
+        var v = obtenerValor(p, c);
         if (v) {
           var s = v.toString().trim().toUpperCase();
           if (s !== "" && s !== "0" && s !== "-" && s !== "N/A" && s !== "NULL" && s !== "NA") score++;
         }
       });
       return score;
+    }
+
+    function exportarCSV(p) {
+      var nombre = obtenerValor(p, ["cliente", "Cliente"]) || obtenerValor(p, ["nombre", "Nombre", "NOMBRE"]) || "-";
+      var crm = p.crm_filtrable || "-";
+      var delegacion = obtenerValor(p, ["delegacion", "Delegacion"]) || "-";
+      var subbase = obtenerValor(p, ["base", "Base", "BASE"]) || "-";
+      var cuit = obtenerValor(p, ["cuit", "CUIT", "Cuit"]) || "-";
+      var idCliente = obtenerValor(p, ["idCliente"]) || "-";
+      var dir = obtenerValor(p, ["direccion", "Direccion", "DIRECCIÓN", "DOMICILIO"]) || obtenerValor(p, ["geocoding"]) || "-";
+      var loc = obtenerValor(p, ["localidad", "Localidad"]) || "-";
+      var prov = obtenerValor(p, ["provincia", "Provincia"]) || "-";
+      var tel = obtenerValor(p, ["telefono", "Telefono", "TELÉFONO", "TELEFONO"]) || "-";
+      var mail = obtenerValor(p, ["correo", "email", "Email", "EMAIL"]) || "-";
+      var rubro = obtenerValor(p, ["rubro", "Rubro", "RUBRO"]) || "-";
+      return nombre.replace(/,/g, "") + ',' + crm + ',' + delegacion + ',' + subbase + ',' + cuit + ',' + idCliente + ',' + dir.replace(/,/g, " ") + ',' + loc + ',' + prov + ',' + tel + ',' + mail + ',' + rubro;
     }
   </script>
 </body>
