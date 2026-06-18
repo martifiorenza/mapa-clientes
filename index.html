@@ -68,6 +68,7 @@
         <option value="base4">Comunas y Municipios</option>
         <option value="base5">Cooperativas Agropecuarias</option>
         <option value="base6">Bases Misiones</option>
+        <option value="base7">Bases Misiones 2</option>
       </select>
     </div>
     <div id="contenedorDelegacion" class="control-group">
@@ -111,7 +112,8 @@
       'base3': 'Socios CAMARCO Santa Fe',
       'base4': 'Comunas y Municipios',
       'base5': 'Cooperativas Agropecuarias',
-      'base6': 'Bases Misiones'
+      'base6': 'Bases Misiones',
+      'base7': 'Bases Misiones 2'
     };
 
     document.getElementById("btnIngresar").addEventListener("click", verificarCodigo);
@@ -135,7 +137,7 @@
     function initMapa() {
       map = L.map('map').setView([-31.63, -60.70], 7);
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { attribution: 'OpenStreetMap' }).addTo(map);
-      datosBases = { base1: [], base2: [], base3: [], base4: [], base5: [], base6: [] };
+      datosBases = { base1: [], base2: [], base3: [], base4: [], base5: [], base6: [], base7: [] };
       geojsonLayer = null;
       clusterGroup = null;
       capaSucursales = null;
@@ -149,9 +151,10 @@
         fetch('data4.geojson').then(function(r) { return r.json(); }).catch(function() { return {features: []}; }),
         fetch('data5.geojson').then(function(r) { return r.json(); }).catch(function() { return {features: []}; }),
         fetch('data6.geojson').then(function(r) { return r.json(); }).catch(function() { return {features: []}; }),
-        fetch('data7.geojson').then(function(r) { return r.json(); }).catch(function() { return {features: []}; })
+        fetch('data7.geojson').then(function(r) { return r.json(); }).catch(function() { return {features: []}; }),
+        fetch('data8.geojson').then(function(r) { return r.json(); }).catch(function() { return {features: []}; })
       ]).then(function(results) {
-        var d1 = results[0], d2 = results[1], d3 = results[2], d4 = results[3], d5 = results[4], d6 = results[5], d7 = results[6];
+        var d1 = results[0], d2 = results[1], d3 = results[2], d4 = results[3], d5 = results[4], d6 = results[5], d7 = results[6], d8 = results[7];
         datosBases.base1 = procesarFeatures(d1.features, 'base1');
         datosBases.base2 = procesarFeatures(d2.features, 'base2');
         datosBases.base3 = procesarFeatures(d3.features, 'base3');
@@ -159,6 +162,7 @@
         datosBases.base5 = procesarFeatures(d5.features, 'base5');
         var misionesFeatures = (d6.features || []).concat(d7.features || []);
         datosBases.base6 = procesarFeatures(misionesFeatures, 'base6');
+        datosBases.base7 = procesarFeatures(d8.features || [], 'base7');
         llenarSelectorDelegaciones();
         llenarSelectorMisionesBase();
         cargarZonasSucursales();
@@ -288,7 +292,7 @@
       });
 
       var combinados = (baseFiltro === "todas")
-        ? [].concat(datosBases.base1).concat(datosBases.base2).concat(datosBases.base3).concat(datosBases.base4).concat(datosBases.base5).concat(datosBases.base6)
+        ? [].concat(datosBases.base1).concat(datosBases.base2).concat(datosBases.base3).concat(datosBases.base4).concat(datosBases.base5).concat(datosBases.base6).concat(datosBases.base7)
         : (datosBases[baseFiltro] || []);
 
       geojsonLayer = L.geoJSON(combinados, {
@@ -306,11 +310,12 @@
         },
         pointToLayer: function(f, latlng) {
           var col = "#3498db";
-          if (f._baseID === 'base5') col = "#27ae60";
-          if (f._baseID === 'base4') col = "#9b59b6";
-          if (f._baseID === 'base3') col = "#f1c40f";
-          if (f._baseID === 'base2') col = "#e67e22";
-          if (f._baseID === 'base6') col = "#e74c3c";
+           if (f._baseID === 'base5') col = "#27ae60";
+           if (f._baseID === 'base4') col = "#9b59b6";
+           if (f._baseID === 'base3') col = "#f1c40f";
+           if (f._baseID === 'base2') col = "#e67e22";
+           if (f._baseID === 'base6') col = "#e74c3c";
+           if (f._baseID === 'base7') col = "#16a085";
           var isSelected = seleccionManual.has(f.properties._uniqueID);
           return L.circleMarker(latlng, {
             radius: isSelected ? 10 : 8,
@@ -335,10 +340,11 @@
             }
           });
           var colH = "#2980b9";
-          if (idBase === 'base4') colH = "#8e44ad";
-          if (idBase === 'base3') colH = "#f39c12";
-          if (idBase === 'base2') colH = "#d35400";
-          if (idBase === 'base6') colH = "#c0392b";
+           if (idBase === 'base4') colH = "#8e44ad";
+           if (idBase === 'base3') colH = "#f39c12";
+           if (idBase === 'base2') colH = "#d35400";
+           if (idBase === 'base6') colH = "#c0392b";
+           if (idBase === 'base7') colH = "#117864";
           var html = '<div style="min-width:200px;"><b style="color:' + colH + ';text-transform:uppercase;">' + nombre + '</b><hr style="margin:5px 0;border:0;border-top:1px solid #eee;">';
           if (idBase === 'base3') {
             html += 'Delegacion: ' + limpiar(buscarProp(p, "delegacion")) + '<br>CUIT: ' + limpiar(buscarProp(p, "cuit")) + '<br>Ubicacion: ' + limpiar(buscarProp(p, "direccion")) + ', ' + limpiar(buscarProp(p, "localidad")) + '<br>Tel: ' + limpiar(buscarProp(p, "telefono")) + '<br>Mail: ' + limpiar(buscarProp(p, "correo")) + '<br>Suc: ' + limpiar(buscarProp(p, "sucursal")) + '<br>Maq: ' + limpiar(buscarProp(p, "maquinas"));
@@ -350,9 +356,11 @@
             html += 'CUIT: ' + limpiar(buscarProp(p, "cuit")) + '<br>ID: ' + limpiar(buscarProp(p, "idCliente")) + '<br>Maq: ' + limpiar(buscarProp(p, "maquinas"));
           } else if (idBase === 'base5') {
             html += 'Tipo: ' + limpiar(buscarProp(p, "tipo de espacio")) + '<br>Dir: ' + limpiar(buscarProp(p, "direccion")) + ', ' + limpiar(buscarProp(p, "provincia"));
-          } else if (idBase === 'base6') {
-            html += 'Base: ' + limpiar(buscarProp(p, "base")) + '<br>CUIT: ' + limpiar(buscarProp(p, "cuit")) + '<br>Rubro: ' + limpiar(buscarProp(p, "rubro")) + '<br>Ubicacion: ' + limpiar(buscarProp(p, "direccion")) + ', ' + limpiar(buscarProp(p, "localidad")) + ', ' + limpiar(buscarProp(p, "provincia")) + '<br>Tel: ' + limpiar(buscarProp(p, "telefono")) + '<br>Mail: ' + limpiar(buscarProp(p, "email"));
-          }
+           } else if (idBase === 'base6') {
+             html += 'Base: ' + limpiar(buscarProp(p, "base")) + '<br>CUIT: ' + limpiar(buscarProp(p, "cuit")) + '<br>Rubro: ' + limpiar(buscarProp(p, "rubro")) + '<br>Ubicacion: ' + limpiar(buscarProp(p, "direccion")) + ', ' + limpiar(buscarProp(p, "localidad")) + ', ' + limpiar(buscarProp(p, "provincia")) + '<br>Tel: ' + limpiar(buscarProp(p, "telefono")) + '<br>Mail: ' + limpiar(buscarProp(p, "email"));
+           } else if (idBase === 'base7') {
+             html += 'Base: ' + limpiar(buscarProp(p, "base")) + '<br>CUIT: ' + limpiar(buscarProp(p, "cuit")) + '<br>Rubro: ' + limpiar(buscarProp(p, "rubro")) + '<br>Ubicacion: ' + limpiar(buscarProp(p, "direccion")) + ', ' + limpiar(buscarProp(p, "localidad")) + ', ' + limpiar(buscarProp(p, "provincia")) + '<br>Tel: ' + limpiar(buscarProp(p, "telefono")) + '<br>Mail: ' + limpiar(buscarProp(p, "email"));
+           }
           var crmColor = p.crm_filtrable === 'SI' ? '#27ae60' : '#e74c3c';
           html += '<div style="margin-top:8px;font-weight:bold;color:' + crmColor + '">CRM: ' + p.crm_filtrable + '</div></div>';
           layer.bindPopup(html);
@@ -381,7 +389,7 @@
     function exportarListado() {
       var seleccionados = [];
       if (seleccionManual.size > 0) {
-        var todos = [].concat(datosBases.base1).concat(datosBases.base2).concat(datosBases.base3).concat(datosBases.base4).concat(datosBases.base5).concat(datosBases.base6);
+        var todos = [].concat(datosBases.base1).concat(datosBases.base2).concat(datosBases.base3).concat(datosBases.base4).concat(datosBases.base5).concat(datosBases.base6).concat(datosBases.base7);
         seleccionados = todos.filter(function(f) { return seleccionManual.has(f.properties._uniqueID); });
       } else {
         geojsonLayer.eachLayer(function(l) { seleccionados.push(l.feature); });
