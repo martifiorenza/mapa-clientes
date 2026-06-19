@@ -31,11 +31,16 @@
     .btn-selection.active { background: #9b59b6; border-color: #fff; }
     .btn-clear { background: #e74c3c; font-size: 0.8em; }
     .info-count { font-size: 0.8em; color: #ecf0f1; text-align: center; margin: 10px 0; background: rgba(0,0,0,0.2); padding: 5px; border-radius: 4px; }
-    #metricasPanel { background: rgba(255,255,255,0.08); padding: 10px; border-radius: 8px; margin: 10px 0 0; border: 1px solid rgba(255,255,255,0.12); }
-    #metricasPanel .metricas-titulo { font-size: 0.7em; font-weight: bold; color: #bdc3c7; text-transform: uppercase; margin-bottom: 8px; }
-    #metricasPanel .metricas-linea { display: flex; justify-content: space-between; gap: 10px; font-size: 0.85em; color: #ecf0f1; margin-bottom: 6px; }
-    #metricasPanel .metricas-lista { margin: 8px 0 0; padding: 0; list-style: none; max-height: 140px; overflow: auto; }
-    #metricasPanel .metricas-lista li { display: flex; justify-content: space-between; gap: 10px; font-size: 0.78em; color: #ecf0f1; padding: 3px 0; border-top: 1px solid rgba(255,255,255,0.08); }
+    #btnMetricasToggle { position: fixed; top: 20px; left: 20px; z-index: 1001; width: 42px; height: 42px; border: none; border-radius: 50%; background: #2c3e50; color: #fff; cursor: pointer; box-shadow: 0 10px 30px rgba(0,0,0,0.35); font-size: 18px; display: flex; align-items: center; justify-content: center; }
+    #btnMetricasToggle:hover { background: #34495e; }
+    #metricasPanel { position: fixed; top: 72px; left: 20px; z-index: 1000; width: 230px; max-width: calc(100vw - 40px); max-height: calc(100vh - 92px); overflow: auto; background: #2c3e50; color: white; padding: 14px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.45); border: 1px solid rgba(255,255,255,0.12); opacity: 0; visibility: hidden; pointer-events: none; transform: translateX(-10px); transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s ease; }
+    #metricasPanel.abierto { opacity: 1; visibility: visible; pointer-events: auto; transform: translateX(0); }
+    #metricasPanel .metricas-header { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 8px; }
+    #metricasPanel .metricas-titulo { font-size: 0.72em; font-weight: bold; color: #bdc3c7; text-transform: uppercase; margin: 0; }
+    #metricasPanel .metricas-cerrar { border: none; background: rgba(255,255,255,0.1); color: #fff; width: 28px; height: 28px; border-radius: 50%; cursor: pointer; }
+    #metricasPanel .metricas-linea { display: flex; justify-content: space-between; gap: 10px; font-size: 0.82em; color: #ecf0f1; margin-bottom: 6px; }
+    #metricasPanel .metricas-lista { margin: 8px 0 0; padding: 0; list-style: none; max-height: 150px; overflow: auto; }
+    #metricasPanel .metricas-lista li { display: flex; justify-content: space-between; gap: 10px; font-size: 0.76em; color: #ecf0f1; padding: 3px 0; border-top: 1px solid rgba(255,255,255,0.08); }
     #contenedorDelegacion, #contenedorMisionesBase { display: none; background: rgba(255,255,255,0.05); padding: 10px; border-radius: 8px; border: 1px dashed #7f8c8d; margin-top: 10px; }
     .marker-cluster-small { background-color: rgba(52, 152, 219, 0.6); }
     .marker-cluster-small div { background-color: rgba(52, 152, 219, 0.8); }
@@ -104,8 +109,12 @@
       </select>
     </div>
     <div id="contadorPuntos" class="info-count">Visibles: 0 | Seleccionados: 0</div>
-    <div id="metricasPanel">
-      <div class="metricas-titulo">Metricas globales</div>
+    <button id="btnMetricasToggle" type="button" onclick="toggleMetricasPanel()" aria-controls="metricasPanel" aria-expanded="false">&#128202;</button>
+    <div id="metricasPanel" aria-hidden="true">
+      <div class="metricas-header">
+        <div class="metricas-titulo">Metricas globales</div>
+        <button type="button" class="metricas-cerrar" onclick="toggleMetricasPanel()" aria-label="Cerrar metricas">&times;</button>
+      </div>
       <div class="metricas-linea"><span>Ingresos de hoy</span><strong id="metricasIngresosHoy">0</strong></div>
       <div class="metricas-linea"><span>Exportaciones de hoy</span><strong id="metricasExportacionesHoy">0</strong></div>
       <ul id="metricasHistorial" class="metricas-lista"></ul>
@@ -155,6 +164,14 @@
       var partes = fechaKey.split("-");
       if (partes.length !== 3) return fechaKey;
       return partes[2] + "/" + partes[1] + "/" + partes[0].slice(2);
+    }
+
+    function toggleMetricasPanel() {
+      var panel = document.getElementById("metricasPanel");
+      var boton = document.getElementById("btnMetricasToggle");
+      var abierto = panel.classList.toggle("abierto");
+      panel.setAttribute("aria-hidden", abierto ? "false" : "true");
+      boton.setAttribute("aria-expanded", abierto ? "true" : "false");
     }
 
     function actualizarMetricasUI(metricas) {
