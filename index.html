@@ -41,6 +41,11 @@
     #metricasPanel .metricas-linea { display: flex; justify-content: space-between; gap: 10px; font-size: 0.82em; color: #ecf0f1; margin-bottom: 6px; }
     #metricasPanel .metricas-lista { margin: 8px 0 0; padding: 0; list-style: none; max-height: 150px; overflow: auto; }
     #metricasPanel .metricas-lista li { display: flex; justify-content: space-between; gap: 10px; font-size: 0.76em; color: #ecf0f1; padding: 3px 0; border-top: 1px solid rgba(255,255,255,0.08); }
+    #metricasPanel .metricas-rango { margin-top: 10px; padding-top: 10px; border-top: 1px solid rgba(255,255,255,0.12); }
+    #metricasPanel .metricas-rango label { display: block; margin-bottom: 6px; font-size: 0.68em; font-weight: bold; color: #bdc3c7; text-transform: uppercase; }
+    #metricasPanel .metricas-rango-fila { display: flex; gap: 8px; }
+    #metricasPanel .metricas-rango-fila input { width: 100%; padding: 8px; border-radius: 8px; border: none; font-size: 12px; }
+    #metricasPanel .metricas-rango button { width: 100%; }
     #contenedorDelegacion, #contenedorMisionesBase { display: none; background: rgba(255,255,255,0.05); padding: 10px; border-radius: 8px; border: 1px dashed #7f8c8d; margin-top: 10px; }
     .marker-cluster-small { background-color: rgba(52, 152, 219, 0.6); }
     .marker-cluster-small div { background-color: rgba(52, 152, 219, 0.8); }
@@ -118,6 +123,14 @@
       <div class="metricas-linea"><span>Ingresos de hoy</span><strong id="metricasIngresosHoy">0</strong></div>
       <div class="metricas-linea"><span>Exportaciones de hoy</span><strong id="metricasExportacionesHoy">0</strong></div>
       <ul id="metricasHistorial" class="metricas-lista"></ul>
+      <div class="metricas-rango">
+        <label>Exportar rango</label>
+        <div class="metricas-rango-fila">
+          <input type="date" id="metricasDesde" aria-label="Fecha desde">
+          <input type="date" id="metricasHasta" aria-label="Fecha hasta">
+        </div>
+        <button type="button" class="btn-action btn-download" onclick="exportarMetricasRango()">Descargar métricas (CSV)</button>
+      </div>
     </div>
     <button id="btnModoSeleccion" class="btn-action btn-selection" onclick="toggleModoSeleccion()">Modo Seleccion: OFF</button>
     <button class="btn-action btn-download" onclick="exportarListado()">Descargar Listado (CSV)</button>
@@ -134,6 +147,7 @@
     var CODIGO_SECRETO = "159753";
     var METRICAS_STORAGE_KEY = "mapa-clientes-metricas-v1";
     var METRICAS_API_URL = "/api/metrics";
+    var metricasGlobalesActuales = null;
     var map, datosBases, geojsonLayer, clusterGroup, capaSucursales, seleccionManual, modoSeleccionActivo;
     var zonaSeleccionadaLayer = null;
     var nombresDeBases = {
@@ -166,6 +180,89 @@
       return partes[2] + "/" + partes[1] + "/" + partes[0].slice(2);
     }
 
+    function obtenerMetricasActuales() {
+      return metricasGlobalesActuales || obtenerMetricasFallback();
+    }
+
+    function listarFechasMetricas(metricas) {
+      return Object.keys((metricas && metricas.dias) || {}).sort();
+    }
+
+    function prepararSelectorRangoMetricas(metricas) {
+      var desde = document.getElementById("metricasDesde");
+      var hasta = document.getElementById("metricasHasta");
+      if (!desde || !hasta) return;
+
+      var fechas = listarFechasMetricas(metricas);
+      if (fechas.length === 0) {
+        desde.value = "";
+        hasta.value = "";
+        desde.removeAttribute("min");
+        desde.removeAttribute("max");
+        hasta.removeAttribute("min");
+        hasta.removeAttribute("max");
+        return;
+      }
+
+      var minimo = fechas[0];
+      var maximo = fechas[fechas.length - 1];
+      desde.min = minimo;
+      desde.max = maximo;
+      hasta.min = minimo;
+      hasta.max = maximo;
+
+      if (!desde.value || desde.value < minimo || desde.value > maximo) desde.value = minimo;
+      if (!hasta.value || hasta.value < minimo || hasta.value > maximo) hasta.value = maximo;
+      if (desde.value > hasta.value) {
+        desde.value = minimo;
+        hasta.value = maximo;
+      }
+    }
+
+    function csvEscapar(v) {
+      var texto = (v === null || v === undefined) ? "" : v.toString();
+      if (texto.indexOf('"') !== -1) texto = texto.replace(/"/g, '""');
+      if (/[",\n;]/.test(texto)) return '"' + texto + '"';
+      return texto;
+    }
+
+    function exportarMetricasRango() {
+      var metricas = obtenerMetricasActuales();
+      var fechas = listarFechasMetricas(metricas);
+      if (fechas.length === 0) {
+        alert("No hay metricas para exportar");
+        return;
+      }
+
+      var desde = document.getElementById("metricasDesde").value || fechas[0];
+      var hasta = document.getElementById("metricasHasta").value || fechas[fechas.length - 1];
+
+      if (desde > hasta) {
+        alert("La fecha desde no puede ser mayor que la fecha hasta");
+        return;
+      }
+
+      var lineas = ["Fecha,Ingresos,Exportaciones"];
+      fechas.forEach(function(fechaKey) {
+        if (fechaKey >= desde && fechaKey <= hasta) {
+          var dia = metricas.dias[fechaKey] || { ingresos: 0, exportaciones: 0 };
+          lineas.push([csvEscapar(fechaKey), csvEscapar(dia.ingresos), csvEscapar(dia.exportaciones)].join(","));
+        }
+      });
+
+      if (lineas.length === 1) {
+        alert("No hay metricas en ese rango");
+        return;
+      }
+
+      var blob = new Blob([lineas.join("\n")], { type: "text/csv;charset=utf-8;" });
+      var link = document.createElement("a");
+      link.href = URL.createObjectURL(blob);
+      link.download = "metricas_" + desde + "_a_" + hasta + ".csv";
+      link.click();
+      setTimeout(function() { URL.revokeObjectURL(link.href); }, 1000);
+    }
+
     function toggleMetricasPanel() {
       var panel = document.getElementById("metricasPanel");
       var boton = document.getElementById("btnMetricasToggle");
@@ -176,6 +273,8 @@
 
     function actualizarMetricasUI(metricas) {
       var datos = metricas || obtenerMetricasFallback();
+      metricasGlobalesActuales = datos;
+      prepararSelectorRangoMetricas(datos);
       var hoy = obtenerFechaLocalKey();
       var hoyData = datos.dias[hoy] || { ingresos: 0, exportaciones: 0 };
       document.getElementById("metricasIngresosHoy").innerText = hoyData.ingresos;
