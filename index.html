@@ -270,6 +270,7 @@
       modoSeleccionActivo = !modoSeleccionActivo;
       document.getElementById("btnModoSeleccion").classList.toggle("active", modoSeleccionActivo);
       document.getElementById("btnModoSeleccion").innerText = modoSeleccionActivo ? "Modo Seleccion: ON" : "Modo Seleccion: OFF";
+      if (clusterGroup) clusterGroup.options.zoomToBoundsOnClick = !modoSeleccionActivo;
     }
 
     function limpiarSeleccionManual() {
@@ -326,7 +327,7 @@
         maxClusterRadius: 40,
         spiderfyOnMaxZoom: true,
         showCoverageOnHover: false,
-        zoomToBoundsOnClick: true,
+        zoomToBoundsOnClick: !modoSeleccionActivo,
         disableClusteringAtZoom: 18,
         iconCreateFunction: function(cluster) {
           var count = cluster.getChildCount();
@@ -339,6 +340,11 @@
             iconSize: L.point(40, 40)
           });
         }
+      });
+      clusterGroup.on('clusterclick', function(e) {
+        if (!modoSeleccionActivo) return;
+        L.DomEvent.stop(e.originalEvent);
+        e.layer.spiderfy();
       });
 
       var combinados = (baseFiltro === "todas")
