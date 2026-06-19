@@ -107,6 +107,7 @@
   <script>
     var CODIGO_SECRETO = "159753";
     var map, datosBases, geojsonLayer, clusterGroup, capaSucursales, seleccionManual, modoSeleccionActivo;
+    var zonaSeleccionadaLayer = null;
     var nombresDeBases = {
       'base1': 'Socios CACF (Forrajeros)',
       'base2': 'Socios CAPIA (Avicolas)',
@@ -145,6 +146,7 @@
       capaSucursales = null;
       seleccionManual = new Set();
       modoSeleccionActivo = false;
+      zonaSeleccionadaLayer = null;
 
       Promise.all([
         fetch('data.geojson').then(function(r) { return r.json(); }).catch(function() { return {features: []}; }),
@@ -216,7 +218,16 @@
     function cargarZonasSucursales() {
       fetch('sucursales.geojson').then(function(r) { return r.json(); }).then(function(data) {
         capaSucursales = L.geoJSON(data, {
-          style: { color: "#2c3e50", weight: 2, fillColor: "#34495e", fillOpacity: 0.1 }
+          style: { color: "#2c3e50", weight: 2, fillColor: "#34495e", fillOpacity: 0.1 },
+          onEachFeature: function(f, layer) {
+            var nombreZona = limpiar(buscarProp(f.properties, "name") || buscarProp(f.properties, "nombre"));
+            layer.bindPopup('<b>' + nombreZona + '</b>');
+            layer.on('click', function(e) {
+              L.DomEvent.stopPropagation(e);
+              layer.openPopup();
+              if (modoSeleccionActivo) seleccionarZonaADR(layer, nombreZona);
+            });
+          }
         });
         toggleCapaADR();
       }).catch(function(e) { console.log("Sucursales no encontradas"); });
@@ -263,8 +274,43 @@
 
     function limpiarSeleccionManual() {
       seleccionManual.clear();
+      limpiarSeleccionADR();
       actualizarMapa();
-      document.getElementById("btnClear").style.display = "none";
+      actualizarBotonLimpiar();
+    }
+
+    function actualizarBotonLimpiar() {
+      document.getElementById("btnClear").style.display = (seleccionManual.size > 0 || zonaSeleccionadaLayer) ? "block" : "none";
+    }
+
+    function limpiarSeleccionADR() {
+      if (!zonaSeleccionadaLayer || !capaSucursales) {
+        zonaSeleccionadaLayer = null;
+        return;
+      }
+      capaSucursales.resetStyle(zonaSeleccionadaLayer);
+      zonaSeleccionadaLayer = null;
+    }
+
+    function seleccionarZonaADR(layer, nombreZona) {
+      if (zonaSeleccionadaLayer && zonaSeleccionadaLayer !== layer) {
+        capaSucursales.resetStyle(zonaSeleccionadaLayer);
+      }
+
+      if (zonaSeleccionadaLayer === layer) {
+        capaSucursales.resetStyle(layer);
+        zonaSeleccionadaLayer = null;
+      } else {
+        zonaSeleccionadaLayer = layer;
+        layer.setStyle({
+          color: "#d35400",
+          weight: 3,
+          fillColor: "#f39c12",
+          fillOpacity: 0.25
+        });
+      }
+
+      actualizarBotonLimpiar();
     }
 
     function actualizarMapa() {
@@ -341,7 +387,7 @@
               if (seleccionManual.has(uid)) seleccionManual.delete(uid);
               else seleccionManual.add(uid);
               actualizarMapa();
-              document.getElementById("btnClear").style.display = seleccionManual.size > 0 ? "block" : "none";
+              actualizarBotonLimpiar();
             }
           });
           var colH = "#2980b9";
@@ -379,6 +425,7 @@
       map.addLayer(clusterGroup);
       var totalVisible = Object.keys(geojsonLayer._layers).length;
       document.getElementById("contadorPuntos").innerText = 'Visibles: ' + totalVisible + ' | Seleccionados: ' + seleccionManual.size;
+      actualizarBotonLimpiar();
     }
 
     function obtenerValor(p, posiblesClaves) {
