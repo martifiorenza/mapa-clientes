@@ -31,6 +31,11 @@
     .btn-selection.active { background: #9b59b6; border-color: #fff; }
     .btn-clear { background: #e74c3c; font-size: 0.8em; }
     .info-count { font-size: 0.8em; color: #ecf0f1; text-align: center; margin: 10px 0; background: rgba(0,0,0,0.2); padding: 5px; border-radius: 4px; }
+    #metricasPanel { background: rgba(255,255,255,0.08); padding: 10px; border-radius: 8px; margin: 10px 0 0; border: 1px solid rgba(255,255,255,0.12); }
+    #metricasPanel .metricas-titulo { font-size: 0.7em; font-weight: bold; color: #bdc3c7; text-transform: uppercase; margin-bottom: 8px; }
+    #metricasPanel .metricas-linea { display: flex; justify-content: space-between; gap: 10px; font-size: 0.85em; color: #ecf0f1; margin-bottom: 6px; }
+    #metricasPanel .metricas-lista { margin: 8px 0 0; padding: 0; list-style: none; max-height: 140px; overflow: auto; }
+    #metricasPanel .metricas-lista li { display: flex; justify-content: space-between; gap: 10px; font-size: 0.78em; color: #ecf0f1; padding: 3px 0; border-top: 1px solid rgba(255,255,255,0.08); }
     #contenedorDelegacion, #contenedorMisionesBase { display: none; background: rgba(255,255,255,0.05); padding: 10px; border-radius: 8px; border: 1px dashed #7f8c8d; margin-top: 10px; }
     .marker-cluster-small { background-color: rgba(52, 152, 219, 0.6); }
     .marker-cluster-small div { background-color: rgba(52, 152, 219, 0.8); }
@@ -84,6 +89,12 @@
         <option value="todas">Todas las Sub-Bases</option>
       </select>
     </div>
+    <div id="contenedorRubro" class="control-group" style="display:none;">
+      <label>Filtrar por Rubro:</label>
+      <select id="filtroRubro" onchange="actualizarMapa()">
+        <option value="todos">Todos los Rubros</option>
+      </select>
+    </div>
     <div class="control-group">
       <label>Estado CRM:</label>
       <select id="filtroCRM" onchange="actualizarMapa()">
@@ -93,6 +104,12 @@
       </select>
     </div>
     <div id="contadorPuntos" class="info-count">Visibles: 0 | Seleccionados: 0</div>
+    <div id="metricasPanel">
+      <div class="metricas-titulo">Metricas globales</div>
+      <div class="metricas-linea"><span>Ingresos de hoy</span><strong id="metricasIngresosHoy">0</strong></div>
+      <div class="metricas-linea"><span>Exportaciones de hoy</span><strong id="metricasExportacionesHoy">0</strong></div>
+      <ul id="metricasHistorial" class="metricas-lista"></ul>
+    </div>
     <button id="btnModoSeleccion" class="btn-action btn-selection" onclick="toggleModoSeleccion()">Modo Seleccion: OFF</button>
     <button class="btn-action btn-download" onclick="exportarListado()">Descargar Listado (CSV)</button>
     <button id="btnClear" class="btn-action btn-clear" style="display:none;" onclick="limpiarSeleccionManual()">Limpiar Seleccion</button>
@@ -106,6 +123,8 @@
 
   <script>
     var CODIGO_SECRETO = "159753";
+    var METRICAS_STORAGE_KEY = "mapa-clientes-metricas-v1";
+    var METRICAS_API_URL = "/api/metrics";
     var map, datosBases, geojsonLayer, clusterGroup, capaSucursales, seleccionManual, modoSeleccionActivo;
     var zonaSeleccionadaLayer = null;
     var nombresDeBases = {
@@ -124,10 +143,52 @@
       if (e.key === "Enter") verificarCodigo();
     });
 
+    function obtenerFechaLocalKey(fecha) {
+      var d = fecha || new Date();
+      var anio = d.getFullYear();
+      var mes = String(d.getMonth() + 1).padStart(2, "0");
+      var dia = String(d.getDate()).padStart(2, "0");
+      return anio + "-" + mes + "-" + dia;
+    }
+
+    function formatearFechaCorta(fechaKey) {
+      var partes = fechaKey.split("-");
+      if (partes.length !== 3) return fechaKey;
+      return partes[2] + "/" + partes[1] + "/" + partes[0].slice(2);
+    }
+
+    function actualizarMetricasUI(metricas) {
+      var datos = metricas || obtenerMetricasFallback();
+      var hoy = obtenerFechaLocalKey();
+      var hoyData = datos.dias[hoy] || { ingresos: 0, exportaciones: 0 };
+      document.getElementById("metricasIngresosHoy").innerText = hoyData.ingresos;
+      document.getElementById("metricasExportacionesHoy").innerText = hoyData.exportaciones;
+
+      var historial = document.getElementById("metricasHistorial");
+      if (!historial) return;
+      var fechas = Object.keys(datos.dias).sort(function(a, b) { return b.localeCompare(a); }).slice(0, 7);
+      historial.innerHTML = "";
+      if (fechas.length === 0) {
+        historial.innerHTML = '<li><span>Sin datos</span><span>-</span></li>';
+        return;
+      }
+      fechas.forEach(function(fechaKey) {
+        var dia = datos.dias[fechaKey];
+        var li = document.createElement("li");
+        li.innerHTML = '<span>' + formatearFechaCorta(fechaKey) + '</span><span>I:' + dia.ingresos + ' | E:' + dia.exportaciones + '</span>';
+        historial.appendChild(li);
+      });
+    }
+
+    cargarMetricasGlobales().then(actualizarMetricasUI).catch(function() {
+      actualizarMetricasUI(obtenerMetricasFallback());
+    });
+
     function verificarCodigo() {
       var input = document.getElementById("inputCodigo").value;
       var error = document.getElementById("loginError");
       if (input === CODIGO_SECRETO) {
+        registrarEventoMetrica("ingreso");
         document.getElementById("loginOverlay").style.display = "none";
         document.getElementById("map").style.display = "block";
         initMapa();
@@ -191,6 +252,10 @@
       return v.toString().trim();
     }
 
+    function normalizarTexto(v) {
+      return limpiar(v, "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").trim();
+    }
+
     function procesarFeatures(features, idBase) {
       return (features || []).map(function(f, index) {
         var p = f.properties || {};
@@ -202,6 +267,53 @@
         }
         p.crm_filtrable = estadoFinal;
         return { type: "Feature", geometry: f.geometry, properties: p, _baseID: idBase };
+      });
+    }
+
+    function obtenerMetricasFallback() {
+      try {
+        var raw = localStorage.getItem(METRICAS_STORAGE_KEY);
+        if (raw) return JSON.parse(raw);
+      } catch (e) {}
+      return { dias: {} };
+    }
+
+    function guardarMetricasFallback(metricas) {
+      try {
+        localStorage.setItem(METRICAS_STORAGE_KEY, JSON.stringify(metricas));
+      } catch (e) {}
+    }
+
+    function cargarMetricasGlobales() {
+      return fetch(METRICAS_API_URL, { cache: "no-store" }).then(function(r) {
+        if (!r.ok) throw new Error("No se pudieron cargar las metricas");
+        return r.json();
+      });
+    }
+
+    function registrarEventoMetrica(tipo) {
+      var payload = { tipo: tipo, fecha: obtenerFechaLocalKey() };
+      return fetch(METRICAS_API_URL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload)
+      }).then(function(r) {
+        if (!r.ok) throw new Error("No se pudieron guardar las metricas");
+        return r.json();
+      }).then(function(data) {
+        actualizarMetricasUI(data);
+        return data;
+      }).catch(function() {
+        var metricas = obtenerMetricasFallback();
+        var hoy = obtenerFechaLocalKey();
+        if (!metricas.dias[hoy]) {
+          metricas.dias[hoy] = { ingresos: 0, exportaciones: 0 };
+        }
+        if (tipo === "ingreso") metricas.dias[hoy].ingresos += 1;
+        if (tipo === "exportacion") metricas.dias[hoy].exportaciones += 1;
+        guardarMetricasFallback(metricas);
+        actualizarMetricasUI(metricas);
+        return metricas;
       });
     }
 
@@ -259,10 +371,32 @@
       });
     }
 
+    function llenarSelectorRubros(base) {
+      var selector = document.getElementById("filtroRubro");
+      selector.innerHTML = '<option value="todos">Todos los Rubros</option>';
+
+      var fuente = base === "base7" ? datosBases.base7 : datosBases.base9;
+      var rubros = fuente.map(function(f) {
+        return buscarProp(f.properties, "rubro");
+      }).filter(function(r) { return r; });
+
+      var unicas = [...new Set(rubros)].sort();
+      unicas.forEach(function(r) {
+        var opt = document.createElement("option");
+        opt.value = r;
+        opt.innerText = r;
+        selector.appendChild(opt);
+      });
+    }
+
     function gestionarFiltrosEspeciales() {
       var base = document.getElementById("filtroBase").value;
       document.getElementById("contenedorDelegacion").style.display = (base === "base3" || base === "todas") ? "block" : "none";
       document.getElementById("contenedorMisionesBase").style.display = (base === "base6" || base === "todas") ? "block" : "none";
+      var mostrarRubro = (base === "base7" || base === "base9");
+      document.getElementById("contenedorRubro").style.display = mostrarRubro ? "block" : "none";
+      if (mostrarRubro) llenarSelectorRubros(base);
+      else document.getElementById("filtroRubro").value = "todos";
       actualizarMapa();
     }
 
@@ -319,6 +453,7 @@
       var baseFiltro = document.getElementById("filtroBase").value;
       var delFiltro = document.getElementById("filtroDelegacion").value;
       var misFiltro = document.getElementById("filtroMisionesSubBase").value;
+      var rubroFiltro = document.getElementById("filtroRubro").value;
 
       if (geojsonLayer) map.removeLayer(geojsonLayer);
       if (clusterGroup) map.removeLayer(clusterGroup);
@@ -362,7 +497,11 @@
           if (f._baseID === 'base6' && misFiltro !== "todas") {
             pasaMisionesSubBase = (buscarProp(f.properties, "base") === misFiltro);
           }
-          return pasaCRM && pasaDelegacion && pasaMisionesSubBase;
+          var pasaRubro = true;
+          if ((f._baseID === 'base7' || f._baseID === 'base9') && rubroFiltro !== "todos") {
+            pasaRubro = normalizarTexto(obtenerValor(f.properties, ["rubro", "Rubro", "RUBRO"])) === normalizarTexto(rubroFiltro);
+          }
+          return pasaCRM && pasaDelegacion && pasaMisionesSubBase && pasaRubro;
         },
         pointToLayer: function(f, latlng) {
           var col = "#3498db";
@@ -448,6 +587,7 @@
     }
 
     function exportarListado() {
+      registrarEventoMetrica("exportacion");
       var seleccionados = [];
       if (seleccionManual.size > 0) {
         var todos = [].concat(datosBases.base1).concat(datosBases.base2).concat(datosBases.base3).concat(datosBases.base4).concat(datosBases.base5).concat(datosBases.base6).concat(datosBases.base7).concat(datosBases.base9);
