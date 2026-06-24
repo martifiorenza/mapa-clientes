@@ -85,6 +85,7 @@
         <option value="base6">Bases Misiones</option>
         <option value="base7">Bases Misiones 2</option>
         <option value="base9">Prooveedores Santa Fe</option>
+        <option value="base10">Listados Corrientes</option>
       </select>
     </div>
     <div id="contenedorDelegacion" class="control-group">
@@ -158,7 +159,8 @@
       'base5': 'Cooperativas Agropecuarias',
       'base6': 'Bases Misiones',
       'base7': 'Bases Misiones 2',
-      'base9': 'Prooveedores Santa Fe'
+      'base9': 'Prooveedores Santa Fe',
+      'base10': 'Listados Corrientes'
     };
 
     document.getElementById("btnIngresar").addEventListener("click", verificarCodigo);
@@ -317,7 +319,7 @@
     function initMapa() {
       map = L.map('map').setView([-31.63, -60.70], 7);
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { attribution: 'OpenStreetMap' }).addTo(map);
-      datosBases = { base1: [], base2: [], base3: [], base4: [], base5: [], base6: [], base7: [], base9: [] };
+      datosBases = { base1: [], base2: [], base3: [], base4: [], base5: [], base6: [], base7: [], base9: [], base10: [] };
       geojsonLayer = null;
       clusterGroup = null;
       capaSucursales = null;
@@ -334,9 +336,10 @@
         fetch('data6.geojson').then(function(r) { return r.json(); }).catch(function() { return {features: []}; }),
         fetch('data7.geojson').then(function(r) { return r.json(); }).catch(function() { return {features: []}; }),
         fetch('data8.geojson').then(function(r) { return r.json(); }).catch(function() { return {features: []}; }),
-        fetch('data9.geojson').then(function(r) { return r.json(); }).catch(function() { return {features: []}; })
+        fetch('data9.geojson').then(function(r) { return r.json(); }).catch(function() { return {features: []}; }),
+        fetch('data10.geojson').then(function(r) { return r.json(); }).catch(function() { return {features: []}; })
       ]).then(function(results) {
-        var d1 = results[0], d2 = results[1], d3 = results[2], d4 = results[3], d5 = results[4], d6 = results[5], d7 = results[6], d8 = results[7], d9 = results[8];
+        var d1 = results[0], d2 = results[1], d3 = results[2], d4 = results[3], d5 = results[4], d6 = results[5], d7 = results[6], d8 = results[7], d9 = results[8], d10 = results[9];
         datosBases.base1 = procesarFeatures(d1.features, 'base1');
         datosBases.base2 = procesarFeatures(d2.features, 'base2');
         datosBases.base3 = procesarFeatures(d3.features, 'base3');
@@ -346,6 +349,7 @@
         datosBases.base6 = procesarFeatures(misionesFeatures, 'base6');
         datosBases.base7 = procesarFeatures(d8.features || [], 'base7');
         datosBases.base9 = procesarFeatures(d9.features || [], 'base9');
+        datosBases.base10 = procesarFeatures(d10.features || [], 'base10');
         llenarSelectorDelegaciones();
         llenarSelectorMisionesBase();
         cargarZonasSucursales();
@@ -491,7 +495,7 @@
       var selector = document.getElementById("filtroRubro");
       selector.innerHTML = '<option value="todos">Todos los Rubros</option>';
 
-      var fuente = base === "base7" ? datosBases.base7 : datosBases.base9;
+      var fuente = datosBases[base] || [];
       var rubros = fuente.map(function(f) {
         return buscarProp(f.properties, "rubro");
       }).filter(function(r) { return r; });
@@ -509,7 +513,7 @@
       var base = document.getElementById("filtroBase").value;
       document.getElementById("contenedorDelegacion").style.display = (base === "base3" || base === "todas") ? "block" : "none";
       document.getElementById("contenedorMisionesBase").style.display = (base === "base6" || base === "todas") ? "block" : "none";
-      var mostrarRubro = (base === "base7" || base === "base9");
+      var mostrarRubro = (base === "base7" || base === "base9" || base === "base10");
       document.getElementById("contenedorRubro").style.display = mostrarRubro ? "block" : "none";
       if (mostrarRubro) llenarSelectorRubros(base);
       else document.getElementById("filtroRubro").value = "todos";
@@ -599,7 +603,7 @@
       });
 
       var combinados = (baseFiltro === "todas")
-        ? [].concat(datosBases.base1).concat(datosBases.base2).concat(datosBases.base3).concat(datosBases.base4).concat(datosBases.base5).concat(datosBases.base6).concat(datosBases.base7).concat(datosBases.base9)
+        ? [].concat(datosBases.base1).concat(datosBases.base2).concat(datosBases.base3).concat(datosBases.base4).concat(datosBases.base5).concat(datosBases.base6).concat(datosBases.base7).concat(datosBases.base9).concat(datosBases.base10)
         : (datosBases[baseFiltro] || []);
 
       geojsonLayer = L.geoJSON(combinados, {
@@ -614,9 +618,9 @@
             pasaMisionesSubBase = (buscarProp(f.properties, "base") === misFiltro);
           }
           var pasaRubro = true;
-          if ((f._baseID === 'base7' || f._baseID === 'base9') && rubroFiltro !== "todos") {
-            pasaRubro = normalizarTexto(obtenerValor(f.properties, ["rubro", "Rubro", "RUBRO"])) === normalizarTexto(rubroFiltro);
-          }
+           if ((f._baseID === 'base7' || f._baseID === 'base9' || f._baseID === 'base10') && rubroFiltro !== "todos") {
+              pasaRubro = normalizarTexto(obtenerValor(f.properties, ["rubro", "Rubro", "RUBRO"])) === normalizarTexto(rubroFiltro);
+            }
           return pasaCRM && pasaDelegacion && pasaMisionesSubBase && pasaRubro;
         },
         pointToLayer: function(f, latlng) {
@@ -628,7 +632,8 @@
             if (f._baseID === 'base6') col = "#e74c3c";
             if (f._baseID === 'base7') col = "#16a085";
             if (f._baseID === 'base9') col = "#8e44ad";
-          var isSelected = seleccionManual.has(f.properties._uniqueID);
+            if (f._baseID === 'base10') col = "#2c3e50";
+           var isSelected = seleccionManual.has(f.properties._uniqueID);
           return L.circleMarker(latlng, {
             radius: isSelected ? 10 : 8,
             fillColor: col,
@@ -658,6 +663,7 @@
             if (idBase === 'base6') colH = "#c0392b";
             if (idBase === 'base7') colH = "#117864";
             if (idBase === 'base9') colH = "#6c3483";
+            if (idBase === 'base10') colH = "#1f2d3a";
            var html = '<div style="min-width:200px;"><b style="color:' + colH + ';text-transform:uppercase;">' + nombre + '</b><hr style="margin:5px 0;border:0;border-top:1px solid #eee;">';
           if (idBase === 'base3') {
             html += 'Delegacion: ' + limpiar(buscarProp(p, "delegacion")) + '<br>CUIT: ' + limpiar(buscarProp(p, "cuit")) + '<br>Ubicacion: ' + limpiar(buscarProp(p, "direccion")) + ', ' + limpiar(buscarProp(p, "localidad")) + '<br>Tel: ' + limpiar(buscarProp(p, "telefono")) + '<br>Mail: ' + limpiar(buscarProp(p, "correo")) + '<br>Suc: ' + limpiar(buscarProp(p, "sucursal")) + '<br>Maq: ' + limpiar(buscarProp(p, "maquinas"));
@@ -673,8 +679,10 @@
              html += 'Base: ' + limpiar(buscarProp(p, "base")) + '<br>CUIT: ' + limpiar(buscarProp(p, "cuit")) + '<br>Rubro: ' + limpiar(buscarProp(p, "rubro")) + '<br>Ubicacion: ' + limpiar(buscarProp(p, "direccion")) + ', ' + limpiar(buscarProp(p, "localidad")) + ', ' + limpiar(buscarProp(p, "provincia")) + '<br>Tel: ' + limpiar(buscarProp(p, "telefono")) + '<br>Mail: ' + limpiar(buscarProp(p, "email"));
             } else if (idBase === 'base7') {
               html += 'Base: ' + limpiar(buscarProp(p, "base")) + '<br>CUIT: ' + limpiar(buscarProp(p, "cuit")) + '<br>Rubro: ' + limpiar(buscarProp(p, "rubro")) + '<br>Ubicacion: ' + limpiar(buscarProp(p, "direccion")) + ', ' + limpiar(buscarProp(p, "localidad")) + ', ' + limpiar(buscarProp(p, "provincia")) + '<br>Tel: ' + limpiar(buscarProp(p, "telefono")) + '<br>Mail: ' + limpiar(buscarProp(p, "email"));
-            } else if (idBase === 'base9') {
-              html += 'Base: ' + limpiar(buscarProp(p, "base")) + '<br>CUIT: ' + limpiar(buscarProp(p, "cuit")) + '<br>Rubro: ' + limpiar(buscarProp(p, "rubro")) + '<br>Ubicacion: ' + limpiar(buscarProp(p, "direccion")) + ', ' + limpiar(buscarProp(p, "localidad")) + ', ' + limpiar(buscarProp(p, "provincia")) + '<br>AFIP: ' + limpiar(buscarProp(p, "AFIP")) + '<br>Tel: ' + limpiar(buscarProp(p, "telefono")) + '<br>Mail: ' + limpiar(buscarProp(p, "email"));
+             } else if (idBase === 'base9') {
+               html += 'Base: ' + limpiar(buscarProp(p, "base")) + '<br>CUIT: ' + limpiar(buscarProp(p, "cuit")) + '<br>Rubro: ' + limpiar(buscarProp(p, "rubro")) + '<br>Ubicacion: ' + limpiar(buscarProp(p, "direccion")) + ', ' + limpiar(buscarProp(p, "localidad")) + ', ' + limpiar(buscarProp(p, "provincia")) + '<br>AFIP: ' + limpiar(buscarProp(p, "AFIP")) + '<br>Tel: ' + limpiar(buscarProp(p, "telefono")) + '<br>Mail: ' + limpiar(buscarProp(p, "email"));
+            } else if (idBase === 'base10') {
+              html += 'Base: ' + limpiar(buscarProp(p, "base")) + '<br>CUIT: ' + limpiar(buscarProp(p, "cuit")) + '<br>Rubro: ' + limpiar(buscarProp(p, "rubro")) + '<br>Ubicacion: ' + limpiar(buscarProp(p, "direccion")) + ', ' + limpiar(buscarProp(p, "localidad")) + ', ' + limpiar(buscarProp(p, "provincia")) + '<br>AFIP: ' + limpiar(buscarProp(p, "AFIP")) + '<br>CRM: ' + limpiar(buscarProp(p, "CRM")) + '<br>Tel: ' + limpiar(buscarProp(p, "telefono"));
             }
           var crmColor = p.crm_filtrable === 'SI' ? '#27ae60' : '#e74c3c';
           html += '<div style="margin-top:8px;font-weight:bold;color:' + crmColor + '">CRM: ' + p.crm_filtrable + '</div></div>';
@@ -706,7 +714,7 @@
       registrarEventoMetrica("exportacion");
       var seleccionados = [];
       if (seleccionManual.size > 0) {
-        var todos = [].concat(datosBases.base1).concat(datosBases.base2).concat(datosBases.base3).concat(datosBases.base4).concat(datosBases.base5).concat(datosBases.base6).concat(datosBases.base7).concat(datosBases.base9);
+        var todos = [].concat(datosBases.base1).concat(datosBases.base2).concat(datosBases.base3).concat(datosBases.base4).concat(datosBases.base5).concat(datosBases.base6).concat(datosBases.base7).concat(datosBases.base9).concat(datosBases.base10);
         seleccionados = todos.filter(function(f) { return seleccionManual.has(f.properties._uniqueID); });
       } else {
         geojsonLayer.eachLayer(function(l) { seleccionados.push(l.feature); });
