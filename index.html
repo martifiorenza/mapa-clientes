@@ -154,7 +154,7 @@
     var nombresDeBases = {
       'base1': 'Socios CACF (Forrajeros)',
       'base2': 'Socios CAPIA (Avicolas)',
-      'base3': 'Socios CAMARCO Santa Fe',
+      'base3': 'Socios CAMARCO',
       'base4': 'Comunas y Municipios',
       'base5': 'Cooperativas Agropecuarias',
       'base6': 'Bases Misiones',
@@ -337,12 +337,13 @@
         fetch('data7.geojson').then(function(r) { return r.json(); }).catch(function() { return {features: []}; }),
         fetch('data8.geojson').then(function(r) { return r.json(); }).catch(function() { return {features: []}; }),
         fetch('data9.geojson').then(function(r) { return r.json(); }).catch(function() { return {features: []}; }),
-        fetch('data10.geojson').then(function(r) { return r.json(); }).catch(function() { return {features: []}; })
+        fetch('data10.geojson').then(function(r) { return r.json(); }).catch(function() { return {features: []}; }),
+        fetch('data11.geojson').then(function(r) { return r.json(); }).catch(function() { return {features: []}; })
       ]).then(function(results) {
-        var d1 = results[0], d2 = results[1], d3 = results[2], d4 = results[3], d5 = results[4], d6 = results[5], d7 = results[6], d8 = results[7], d9 = results[8], d10 = results[9];
+        var d1 = results[0], d2 = results[1], d3 = results[2], d4 = results[3], d5 = results[4], d6 = results[5], d7 = results[6], d8 = results[7], d9 = results[8], d10 = results[9], d11 = results[10];
         datosBases.base1 = procesarFeatures(d1.features, 'base1');
         datosBases.base2 = procesarFeatures(d2.features, 'base2');
-        datosBases.base3 = procesarFeatures(d3.features, 'base3');
+        datosBases.base3 = procesarFeatures((d3.features || []).concat(d11.features || []), 'base3');
         datosBases.base4 = procesarFeatures(d4.features, 'base4');
         datosBases.base5 = procesarFeatures(d5.features, 'base5');
         var misionesFeatures = (d6.features || []).concat(d7.features || []);
