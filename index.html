@@ -18,6 +18,12 @@
     .brand-logo::after { content: ""; position: absolute; left: 50%; bottom: 8px; transform: translateX(-50%); width: 24px; height: 17px; border-radius: 16px 16px 10px 10px; background: #fff; }
     .brand-name { margin: 0; color: #2c3e50; font-size: 1.35em; line-height: 1; font-weight: 800; }
     .brand-subtitle { margin: 4px 0 0; color: #7f8c8d; font-size: 0.9em; }
+    .web-link-row { display: flex; align-items: center; gap: 8px; margin-top: 8px; word-break: break-word; }
+    .web-link-row a { color: #2980b9; text-decoration: none; }
+    .web-link-row a:hover { text-decoration: underline; }
+    .web-link-icon { position: relative; width: 18px; height: 18px; border-radius: 6px; flex: 0 0 auto; background: linear-gradient(135deg, #27ae60, #2c3e50); box-shadow: 0 4px 12px rgba(44, 62, 80, 0.18); }
+    .web-link-icon::before { content: ""; position: absolute; top: 3px; left: 50%; transform: translateX(-50%); width: 5px; height: 5px; border-radius: 50%; background: #fff; }
+    .web-link-icon::after { content: ""; position: absolute; left: 50%; bottom: 3px; transform: translateX(-50%); width: 9px; height: 7px; border-radius: 8px 8px 5px 5px; background: #fff; }
     #loginBox input { width: 100%; padding: 14px; margin-bottom: 15px; border: 2px solid #ddd; border-radius: 8px; font-size: 18px; text-align: center; letter-spacing: 4px; }
     #loginBox button { width: 100%; padding: 14px; background: #2c3e50; color: white; border: none; border-radius: 8px; font-size: 16px; cursor: pointer; font-weight: bold; }
     #loginBox button:hover { background: #34495e; }
@@ -81,7 +87,7 @@
   </div>
 
   <div id="panelCapas">
-    <h3><span class="brand-logo" aria-hidden="true" style="width:32px;height:32px;border-radius:12px;"></span><span>Mapa de Leads</span></h3>
+    <h3><span>Mapa de Leads</span></h3>
     <div class="switch-group">
       <label for="checkADR">Ver Capa ADR (Sucursales)</label>
       <input type="checkbox" id="checkADR" checked onchange="toggleCapaADR()">
@@ -698,6 +704,8 @@
             } else if (idBase === 'base10') {
               html += 'Base: ' + limpiar(buscarProp(p, "base")) + '<br>CUIT: ' + limpiar(buscarProp(p, "cuit")) + '<br>Rubro: ' + limpiar(buscarProp(p, "rubro")) + '<br>Ubicacion: ' + limpiar(buscarProp(p, "direccion")) + ', ' + limpiar(buscarProp(p, "localidad")) + ', ' + limpiar(buscarProp(p, "provincia")) + '<br>AFIP: ' + limpiar(buscarProp(p, "AFIP")) + '<br>CRM: ' + limpiar(buscarProp(p, "CRM")) + '<br>Tel: ' + limpiar(buscarProp(p, "telefono"));
             }
+          var webHtml = construirFilaWeb(p);
+          if (webHtml) html += webHtml;
           var crmColor = p.crm_filtrable === 'SI' ? '#27ae60' : '#e74c3c';
           html += '<div style="margin-top:8px;font-weight:bold;color:' + crmColor + '">CRM: ' + p.crm_filtrable + '</div></div>';
           layer.bindPopup(html);
@@ -722,6 +730,25 @@
         }
       }
       return null;
+    }
+
+    function normalizarUrlWeb(valor) {
+      if (!valor) return null;
+      var texto = valor.toString().trim();
+      if (!texto) return null;
+      if (/^https?:\/\//i.test(texto)) return texto;
+      if (/^www\./i.test(texto)) return 'https://' + texto;
+      if (texto.indexOf('@') !== -1) return null;
+      if (/^[\w.-]+\.[a-z]{2,}(\/.*)?$/i.test(texto)) return 'https://' + texto;
+      return null;
+    }
+
+    function construirFilaWeb(p) {
+      var valorWeb = obtenerValor(p, ["email_web", "web", "website", "url", "sitio", "pagina", "Correo"]);
+      var urlWeb = normalizarUrlWeb(valorWeb);
+      if (!urlWeb) return "";
+      var textoWeb = limpiar(valorWeb);
+      return '<div class="web-link-row"><span class="web-link-icon" aria-hidden="true"></span><a href="' + urlWeb + '" target="_blank" rel="noopener noreferrer">' + textoWeb + '</a></div>';
     }
 
     function exportarListado() {
