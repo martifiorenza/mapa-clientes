@@ -95,7 +95,7 @@
       <label>Seleccionar Base:</label>
       <select id="filtroBase" onchange="gestionarFiltrosEspeciales()">
         <option value="todas">Todas las Bases</option>
-        <option value="base1">Socios CACF (Forrajeros)</option>
+        <option value="base1">Socios CACF (Picadores)</option>
         <option value="base2">Socios CAPIA (Avicolas)</option>
         <option value="base3">Socios CAMARCO</option>
         <option value="base4">Comunas y Municipios</option>
@@ -170,7 +170,7 @@
     var map, datosBases, geojsonLayer, clusterGroup, capaSucursales, seleccionManual, modoSeleccionActivo;
     var zonaSeleccionadaLayer = null;
     var nombresDeBases = {
-      'base1': 'Socios CACF (Forrajeros)',
+      'base1': 'Socios CACF (Picadores)',
       'base2': 'Socios CAPIA (Avicolas)',
       'base3': 'Socios CAMARCO',
       'base4': 'Comunas y Municipios',
@@ -687,7 +687,7 @@
           if (idBase === 'base3') {
             html += 'Delegacion: ' + limpiar(buscarProp(p, "delegacion")) + '<br>CUIT: ' + limpiar(buscarProp(p, "cuit")) + '<br>Ubicacion: ' + limpiar(buscarProp(p, "direccion")) + ', ' + limpiar(buscarProp(p, "localidad")) + '<br>Tel: ' + limpiar(buscarProp(p, "telefono")) + '<br>Mail: ' + limpiar(buscarProp(p, "correo")) + '<br>Suc: ' + limpiar(buscarProp(p, "sucursal")) + '<br>Maq: ' + limpiar(buscarProp(p, "maquinas"));
           } else if (idBase === 'base1') {
-            html += 'Ubicacion: ' + limpiar(buscarProp(p, "direccion")) + '<br>Tel: ' + limpiar(buscarProp(p, "telefono")) + '<br>Mail: ' + limpiar(buscarProp(p, "correo")) + '<br>Maq: ' + limpiar(buscarProp(p, "maquinas"));
+            html += 'Contacto: ' + limpiar(buscarProp(p, "contacto")) + '<br>CUIT: ' + limpiar(buscarProp(p, "cuit")) + '<br>Ubicacion: ' + limpiar(buscarProp(p, "direccion")) + ', ' + limpiar(buscarProp(p, "localidad")) + ', ' + limpiar(buscarProp(p, "provincia")) + '<br>Tel: ' + limpiar(buscarProp(p, "telefono")) + '<br>Mail: ' + limpiar(buscarProp(p, "correo") || buscarProp(p, "email")) + '<br>Maq: ' + limpiar(buscarProp(p, "maquinas")) + '<br>Cabezales: ' + limpiar(buscarProp(p, "cabezales")) + '<br>Embolsadoras: ' + limpiar(buscarProp(p, "embolsadoras")) + '<br>Implementos: ' + limpiar(buscarProp(p, "implementos"));
           } else if (idBase === 'base2') {
             html += 'Ubicacion: ' + limpiar(buscarProp(p, "localidad")) + ', ' + limpiar(buscarProp(p, "provincia")) + '<br>CUIT: ' + limpiar(buscarProp(p, "cuit")) + '<br>Relevado: ' + limpiar(buscarProp(p, "relevado"));
           } else if (idBase === 'base4') {
@@ -793,7 +793,7 @@
           deduplicados.push(mejor.feature);
         }
       });
-      var csv = "Base,Nombre,CRM,Delegacion,SubBase_Misiones,CUIT,ID_Cliente,Direccion,Localidad,Provincia,Telefono,Email,Rubro\n";
+      var csv = "Base,Nombre,CRM,Delegacion,SubBase_Misiones,CUIT,ID_Cliente,Direccion,Localidad,Provincia,Telefono,Email,Rubro,Maquinas\n";
       deduplicados.forEach(function(f) {
         csv += nombresDeBases[f._baseID] + ',' + exportarCSV(f.properties) + '\n';
       });
@@ -813,6 +813,7 @@
         ["telefono", "Telefono", "TELÉFONO", "TELEFONO"],
         ["correo", "email", "Email", "EMAIL", "correo electronico"],
         ["delegacion", "Delegacion"], ["base", "Base", "BASE"],
+        ["maquinas", "Maquinas"],
         ["idCliente", "idCliente"], ["rubro", "Rubro", "RUBRO"]
       ];
       campos.forEach(function(c) {
@@ -838,7 +839,8 @@
       var tel = obtenerValor(p, ["telefono", "Telefono", "TELÉFONO", "TELEFONO"]) || "-";
       var mail = obtenerValor(p, ["correo", "email", "Email", "EMAIL"]) || "-";
       var rubro = obtenerValor(p, ["rubro", "Rubro", "RUBRO"]) || "-";
-      return nombre.replace(/,/g, "") + ',' + crm + ',' + delegacion + ',' + subbase + ',' + cuit + ',' + idCliente + ',' + dir.replace(/,/g, " ") + ',' + loc + ',' + prov + ',' + tel + ',' + mail + ',' + rubro;
+      var maquinas = obtenerValor(p, ["maquinas", "Maquinas"]) || "-";
+      return nombre.replace(/,/g, "") + ',' + crm + ',' + delegacion + ',' + subbase + ',' + cuit + ',' + idCliente + ',' + dir.replace(/,/g, " ") + ',' + loc + ',' + prov + ',' + tel + ',' + mail + ',' + rubro + ',' + maquinas.replace(/,/g, " ");
     }
   </script>
 </body>
