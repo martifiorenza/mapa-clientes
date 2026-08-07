@@ -7,66 +7,76 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/MarkerCluster.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/MarkerCluster.Default.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Host+Grotesk:wght@400;500;600;700&family=Titillium+Web:wght@600;700&display=swap" rel="stylesheet">
   <style>
-    body { margin: 0; padding: 0; font-family: 'Segoe UI', sans-serif; background: #f0f2f5; }
-    #loginOverlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(135deg, #1a5276, #2c3e50); z-index: 9999; display: flex; align-items: center; justify-content: center; }
-    #loginBox { background: white; padding: 40px; border-radius: 16px; box-shadow: 0 20px 60px rgba(0,0,0,0.5); text-align: center; max-width: 360px; width: 90%; }
-    #loginBox h2 { color: #2c3e50; margin-bottom: 20px; }
+    :root { --jd-green: #367c2b; --jd-yellow: #ffde00; --jd-white: #fff; --jd-black: #27251f; }
+    * { box-sizing: border-box; }
+    body { margin: 0; padding: 0; font-family: 'Host Grotesk', sans-serif; color: var(--jd-black); background: var(--jd-white); }
+    button, input, select { font: inherit; }
+    h1, h2, h3, h4, h5, h6, .brand-name, .metricas-titulo { font-family: 'Titillium Web', sans-serif; }
+    #loginOverlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(135deg, var(--jd-green), var(--jd-black)); z-index: 9999; display: flex; align-items: center; justify-content: center; }
+    #loginBox { background: var(--jd-white); padding: 40px; border: 4px solid var(--jd-yellow); border-radius: 16px; box-shadow: 0 20px 60px rgba(39,37,31,0.5); text-align: center; max-width: 360px; width: 90%; }
+    #loginBox h2 { color: var(--jd-black); margin-bottom: 20px; }
     .brand-row { display: flex; align-items: center; justify-content: center; gap: 12px; margin-bottom: 14px; }
-    .brand-logo { position: relative; width: 48px; height: 48px; border-radius: 16px; background: linear-gradient(135deg, #27ae60, #2c3e50); box-shadow: 0 10px 24px rgba(44, 62, 80, 0.25); flex: 0 0 auto; }
-    .brand-logo::before { content: ""; position: absolute; top: 9px; left: 50%; transform: translateX(-50%); width: 13px; height: 13px; border-radius: 50%; background: #fff; }
-    .brand-logo::after { content: ""; position: absolute; left: 50%; bottom: 8px; transform: translateX(-50%); width: 24px; height: 17px; border-radius: 16px 16px 10px 10px; background: #fff; }
-    .brand-name { margin: 0; color: #2c3e50; font-size: 1.35em; line-height: 1; font-weight: 800; }
-    .brand-subtitle { margin: 4px 0 0; color: #7f8c8d; font-size: 0.9em; }
+    .brand-logo { position: relative; width: 48px; height: 48px; border-radius: 16px; background: linear-gradient(135deg, var(--jd-green), var(--jd-black)); box-shadow: 0 10px 24px rgba(39,37,31,0.25); flex: 0 0 auto; }
+    .brand-logo::before { content: ""; position: absolute; top: 9px; left: 50%; transform: translateX(-50%); width: 13px; height: 13px; border-radius: 50%; background: var(--jd-yellow); }
+    .brand-logo::after { content: ""; position: absolute; left: 50%; bottom: 8px; transform: translateX(-50%); width: 24px; height: 17px; border-radius: 16px 16px 10px 10px; background: var(--jd-yellow); }
+    .brand-name { margin: 0; color: var(--jd-green); font-size: 1.5em; line-height: 1; font-weight: 700; }
+    .brand-subtitle { margin: 4px 0 0; color: var(--jd-black); font-size: 0.9em; }
     .web-link-row { display: flex; align-items: center; gap: 8px; margin-top: 8px; word-break: break-word; }
-    .web-link-row a { color: #2980b9; text-decoration: none; }
+    .web-link-row a { color: var(--jd-green); text-decoration: none; }
     .web-link-row a:hover { text-decoration: underline; }
-    .web-link-icon { position: relative; width: 18px; height: 18px; border-radius: 6px; flex: 0 0 auto; background: linear-gradient(135deg, #27ae60, #2c3e50); box-shadow: 0 4px 12px rgba(44, 62, 80, 0.18); }
-    .web-link-icon::before { content: ""; position: absolute; top: 3px; left: 50%; transform: translateX(-50%); width: 5px; height: 5px; border-radius: 50%; background: #fff; }
-    .web-link-icon::after { content: ""; position: absolute; left: 50%; bottom: 3px; transform: translateX(-50%); width: 9px; height: 7px; border-radius: 8px 8px 5px 5px; background: #fff; }
-    #loginBox input { width: 100%; padding: 14px; margin-bottom: 15px; border: 2px solid #ddd; border-radius: 8px; font-size: 18px; text-align: center; letter-spacing: 4px; }
-    #loginBox button { width: 100%; padding: 14px; background: #2c3e50; color: white; border: none; border-radius: 8px; font-size: 16px; cursor: pointer; font-weight: bold; }
-    #loginBox button:hover { background: #34495e; }
+    .web-link-icon { position: relative; width: 18px; height: 18px; border-radius: 6px; flex: 0 0 auto; background: linear-gradient(135deg, var(--jd-green), var(--jd-black)); box-shadow: 0 4px 12px rgba(39,37,31,0.18); }
+    .web-link-icon::before { content: ""; position: absolute; top: 3px; left: 50%; transform: translateX(-50%); width: 5px; height: 5px; border-radius: 50%; background: var(--jd-yellow); }
+    .web-link-icon::after { content: ""; position: absolute; left: 50%; bottom: 3px; transform: translateX(-50%); width: 9px; height: 7px; border-radius: 8px 8px 5px 5px; background: var(--jd-yellow); }
+    #loginBox input { width: 100%; padding: 14px; margin-bottom: 15px; border: 2px solid var(--jd-black); border-radius: 8px; font-size: 18px; text-align: center; letter-spacing: 4px; }
+    #loginBox input:focus { outline: 3px solid var(--jd-yellow); border-color: var(--jd-green); }
+    #loginBox button { width: 100%; padding: 14px; background: var(--jd-yellow); color: var(--jd-black); border: 2px solid var(--jd-black); border-radius: 8px; font-size: 16px; cursor: pointer; font-weight: 700; }
+    #loginBox button:hover { background: var(--jd-green); color: var(--jd-white); }
     #loginError { color: #e74c3c; margin-top: 10px; font-size: 14px; display: none; }
     #map { height: 100vh; width: 100%; display: none; }
-    #panelCapas { position: absolute; top: 20px; right: 20px; z-index: 1000; background: #2c3e50; color: white; padding: 20px; border-radius: 12px; width: 280px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
+    #panelCapas { position: absolute; top: 20px; right: 20px; z-index: 1000; background: var(--jd-black); color: var(--jd-white); padding: 20px; border-top: 5px solid var(--jd-yellow); border-radius: 12px; width: 280px; box-shadow: 0 10px 30px rgba(39,37,31,0.5); }
     .control-group { margin-bottom: 12px; }
-    label { display: block; margin-bottom: 5px; font-size: 0.7em; font-weight: bold; color: #bdc3c7; text-transform: uppercase; }
-    select { width: 100%; padding: 10px; border-radius: 8px; border: none; background: #fff; color: #333; font-weight: 600; cursor: pointer; }
-    h3 { margin-top: 0; text-align: center; font-size: 1.1em; letter-spacing: 1px; color: #fff; }
+    label { display: block; margin-bottom: 5px; font-size: 0.7em; font-weight: bold; color: var(--jd-yellow); text-transform: uppercase; }
+    select { width: 100%; padding: 10px; border-radius: 8px; border: 2px solid var(--jd-white); background: var(--jd-white); color: var(--jd-black); font-weight: 600; cursor: pointer; }
+    select:focus { outline: 3px solid var(--jd-yellow); border-color: var(--jd-green); }
+    h3 { margin-top: 0; text-align: center; font-size: 1.25em; letter-spacing: 1px; color: var(--jd-yellow); }
     #panelCapas h3 { display: flex; align-items: center; justify-content: center; gap: 10px; }
     .switch-group { background: rgba(255,255,255,0.1); padding: 10px; border-radius: 8px; margin-bottom: 15px; display: flex; align-items: center; justify-content: space-between; cursor: pointer; border: 1px solid rgba(255,255,255,0.2); }
-    .switch-group label { margin: 0; cursor: pointer; color: #fff; font-size: 0.85em; text-transform: none; }
-    .btn-action { width: 100%; padding: 10px; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; transition: 0.3s; margin-top: 8px; color: white; display: flex; align-items: center; justify-content: center; gap: 5px; }
-    .btn-download { background: #27ae60; }
-    .btn-download:hover { background: #2ecc71; }
-    .btn-selection { background: #34495e; border: 1px solid #7f8c8d; }
-    .btn-selection.active { background: #9b59b6; border-color: #fff; }
-    .btn-clear { background: #e74c3c; font-size: 0.8em; }
-    .info-count { font-size: 0.8em; color: #ecf0f1; text-align: center; margin: 10px 0; background: rgba(0,0,0,0.2); padding: 5px; border-radius: 4px; }
-    #btnMetricasToggle { position: fixed; top: 100px; left: 20px; z-index: 1001; width: 42px; height: 42px; border: none; border-radius: 50%; background: #2c3e50; color: #fff; cursor: pointer; box-shadow: 0 10px 30px rgba(0,0,0,0.35); font-size: 18px; display: flex; align-items: center; justify-content: center; }
-    #btnMetricasToggle:hover { background: #34495e; }
-    #metricasPanel { position: fixed; top: 152px; left: 20px; z-index: 1000; width: 230px; max-width: calc(100vw - 40px); max-height: calc(100vh - 172px); overflow: auto; background: #2c3e50; color: white; padding: 14px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.45); border: 1px solid rgba(255,255,255,0.12); opacity: 0; visibility: hidden; pointer-events: none; transform: translateX(-10px); transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s ease; }
+    .switch-group label { margin: 0; cursor: pointer; color: var(--jd-white); font-size: 0.85em; text-transform: none; }
+    .btn-action { width: 100%; padding: 10px; border: 2px solid transparent; border-radius: 8px; font-weight: bold; cursor: pointer; transition: 0.3s; margin-top: 8px; color: var(--jd-white); display: flex; align-items: center; justify-content: center; gap: 5px; }
+    .btn-download { background: var(--jd-green); border-color: var(--jd-green); }
+    .btn-download:hover { background: var(--jd-yellow); border-color: var(--jd-yellow); color: var(--jd-black); }
+    .btn-selection { background: var(--jd-black); border-color: var(--jd-white); }
+    .btn-selection.active { background: var(--jd-yellow); border-color: var(--jd-yellow); color: var(--jd-black); }
+    .btn-clear { background: var(--jd-white); border-color: var(--jd-white); color: var(--jd-black); font-size: 0.8em; }
+    .info-count { font-size: 0.8em; color: var(--jd-white); text-align: center; margin: 10px 0; background: rgba(255,255,255,0.1); padding: 5px; border-radius: 4px; }
+    #btnMetricasToggle { position: fixed; top: 100px; left: 20px; z-index: 1001; width: 42px; height: 42px; border: 2px solid var(--jd-black); border-radius: 50%; background: var(--jd-yellow); color: var(--jd-black); cursor: pointer; box-shadow: 0 10px 30px rgba(39,37,31,0.35); font-size: 18px; display: flex; align-items: center; justify-content: center; }
+    #btnMetricasToggle:hover { background: var(--jd-green); color: var(--jd-white); }
+    #metricasPanel { position: fixed; top: 152px; left: 20px; z-index: 1000; width: 230px; max-width: calc(100vw - 40px); max-height: calc(100vh - 172px); overflow: auto; background: var(--jd-black); color: var(--jd-white); padding: 14px; border-radius: 12px; box-shadow: 0 10px 30px rgba(39,37,31,0.45); border: 2px solid var(--jd-yellow); opacity: 0; visibility: hidden; pointer-events: none; transform: translateX(-10px); transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s ease; }
     #metricasPanel.abierto { opacity: 1; visibility: visible; pointer-events: auto; transform: translateX(0); }
     #metricasPanel .metricas-header { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 8px; }
-    #metricasPanel .metricas-titulo { font-size: 0.72em; font-weight: bold; color: #bdc3c7; text-transform: uppercase; margin: 0; }
-    #metricasPanel .metricas-cerrar { border: none; background: rgba(255,255,255,0.1); color: #fff; width: 28px; height: 28px; border-radius: 50%; cursor: pointer; }
-    #metricasPanel .metricas-linea { display: flex; justify-content: space-between; gap: 10px; font-size: 0.82em; color: #ecf0f1; margin-bottom: 6px; }
+    #metricasPanel .metricas-titulo { font-size: 0.8em; font-weight: bold; color: var(--jd-yellow); text-transform: uppercase; margin: 0; }
+    #metricasPanel .metricas-cerrar { border: none; background: var(--jd-yellow); color: var(--jd-black); width: 28px; height: 28px; border-radius: 50%; cursor: pointer; }
+    #metricasPanel .metricas-linea { display: flex; justify-content: space-between; gap: 10px; font-size: 0.82em; color: var(--jd-white); margin-bottom: 6px; }
     #metricasPanel .metricas-lista { margin: 8px 0 0; padding: 0; list-style: none; max-height: 150px; overflow: auto; }
-    #metricasPanel .metricas-lista li { display: flex; justify-content: space-between; gap: 10px; font-size: 0.76em; color: #ecf0f1; padding: 3px 0; border-top: 1px solid rgba(255,255,255,0.08); }
+    #metricasPanel .metricas-lista li { display: flex; justify-content: space-between; gap: 10px; font-size: 0.76em; color: var(--jd-white); padding: 3px 0; border-top: 1px solid rgba(255,255,255,0.15); }
     #metricasPanel .metricas-rango { margin-top: 10px; padding-top: 10px; border-top: 1px solid rgba(255,255,255,0.12); }
-    #metricasPanel .metricas-rango label { display: block; margin-bottom: 6px; font-size: 0.68em; font-weight: bold; color: #bdc3c7; text-transform: uppercase; }
+    #metricasPanel .metricas-rango label { display: block; margin-bottom: 6px; font-size: 0.68em; font-weight: bold; color: var(--jd-yellow); text-transform: uppercase; }
     #metricasPanel .metricas-rango-fila { display: flex; gap: 8px; }
     #metricasPanel .metricas-rango-fila input { width: 100%; padding: 8px; border-radius: 8px; border: none; font-size: 12px; }
     #metricasPanel .metricas-rango button { width: 100%; }
-    #contenedorDelegacion, #contenedorMisionesBase { display: none; background: rgba(255,255,255,0.05); padding: 10px; border-radius: 8px; border: 1px dashed #7f8c8d; margin-top: 10px; }
-    .marker-cluster-small { background-color: rgba(52, 152, 219, 0.6); }
-    .marker-cluster-small div { background-color: rgba(52, 152, 219, 0.8); }
-    .marker-cluster-medium { background-color: rgba(241, 196, 15, 0.6); }
-    .marker-cluster-medium div { background-color: rgba(241, 196, 15, 0.8); }
-    .marker-cluster-large { background-color: rgba(155, 89, 182, 0.6); }
-    .marker-cluster-large div { background-color: rgba(155, 89, 182, 0.8); }
-    .marker-cluster-small, .marker-cluster-medium, .marker-cluster-large { color: white; font-weight: bold; }
+    #contenedorDelegacion, #contenedorMisionesBase { display: none; background: rgba(255,255,255,0.05); padding: 10px; border-radius: 8px; border: 1px dashed var(--jd-yellow); margin-top: 10px; }
+    .marker-cluster-small { background-color: rgba(54,124,43,0.55); }
+    .marker-cluster-small div { background-color: rgba(54,124,43,0.9); }
+    .marker-cluster-medium { background-color: rgba(255,222,0,0.55); }
+    .marker-cluster-medium div { background-color: rgba(255,222,0,0.9); }
+    .marker-cluster-large { background-color: rgba(39,37,31,0.55); }
+    .marker-cluster-large div { background-color: rgba(39,37,31,0.9); }
+    .marker-cluster-small, .marker-cluster-large { color: var(--jd-white); font-weight: bold; }
+    .marker-cluster-medium { color: var(--jd-black); font-weight: bold; }
     .marker-cluster div { width: 30px; height: 30px; margin-left: 5px; margin-top: 5px; text-align: center; border-radius: 50%; font-size: 12px; line-height: 30px; }
   </style>
 </head>
